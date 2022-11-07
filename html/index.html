@@ -11,7 +11,7 @@
 
 <body>
 	<main class="main">
-		<div class="background --type001 --invisible">
+		<div class="background --type001 ">
 			<div class="background__square"></div>
 			<div class="background__animation">
 				<div class="girl">
@@ -30,7 +30,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="background --type002 --visible">
+		<div class="background --type002 --invisible">
 			<ul class="cards">
 				<li class="card__item">
 					<button type="button" class="card__btn" name="carta">
@@ -87,8 +87,8 @@
 				</div>
 				<div class="menu__person">
 					<img id="person1" class="person origen " src="../images/recurso_1.png" alt="persona que habla">
-					<img id="person2" class="person invisible conoce " src="../images/recurso16.png" alt="persona que habla">
-					<img id="person3" class="person invisible ruta " src="../images/recurso30.png" alt="persona que habla">
+					<img id="person2" class="person --invisible conoce " src="../images/recurso16.png" alt="persona que habla">
+					<img id="person3" class="person --invisible ruta " src="../images/recurso30.png" alt="persona que habla">
 
 				</div>
 			</section>
@@ -98,7 +98,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="origen" class="content__dialog invisible origen ">
+			<section id="origen" class="content__dialog --invisible origen ">
 				<div class="dialog">
 					<div class="dialogBox__text" id="change">Durante el año 2022, la Agencia Nacional de Seguridad Vial se propuso construir una Metodología de intervención comunitaria para fortalecer comportamientos viales.
 				</div>
@@ -108,20 +108,20 @@
 					</audio>
 					<div id="play_origen" class="play">Reproducir Audio</div>
 			</section>
-			<section id="origen" class="content__dialog invisible conoce ">
+			<section id="origen" class="content__dialog --invisible conoce ">
 				<div class="dialog">
-					<div class="dialogBox__text" id="change">¡Hola! Mi nombre es Manuel. Soy conductor de una ruta escolar que transita por esta zona. Aprovechando este encuentro, quiero contarte sobre la metodología que hemos venido implementando con otros actores viales, multisectoriales y comunitarios, para garantizar el cuidado de la vida en la vía
+					<div class="dialogBox__text" id="change2">¡Hola! Mi nombre es Manuel. Soy conductor de una ruta escolar que transita por esta zona. Aprovechando este encuentro, quiero contarte sobre la metodología que hemos venido implementando con otros actores viales, multisectoriales y comunitarios, para garantizar el cuidado de la vida en la vía
 
 				</div>
-					<audio controls id="my_audio_conoce" onended="cards()">
+					<audio id="my_audio_conoce" >
 					  <source src="../audios/audio.wav" type="audio/wav">
 					  Your browser does not support the audio element.
 					</audio>
 					<div id="play_conoce" class="play" >Reproducir Audio</div>
 			</section>		
-			<section id="origen" class="content__dialog invisible ruta ">
+			<section id="origen" class="content__dialog --invisible ruta ">
 				<div class="dialog">
-					<div class="dialogBox__text" id="change">¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Co￾mités Comunitarios y Multisectoriales para fortalecer una cultura vial
+					<div class="dialogBox__text" id="change3">¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y Multisectoriales para fortalecer una cultura vial
 				</div>
 					<audio  id="my_audio_ruta">
 					  <source src="../audios/audio.wav" type="audio/wav">

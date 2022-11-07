@@ -83,7 +83,7 @@ button{
 }
 /* Estilos dialogos */
 
-.invisible{
+.--invisible{
     display: none !important;
 }
 .visible{
@@ -261,8 +261,11 @@ audio::-webkit-media-controls-timeline{
 }
 
 @media screen and (max-width:1450px){
-    .person{
+    .person {
         height: 500px;
+        left: 315px;
+        position: absolute;
+        bottom: 0;
     }
     .dialog{
         width: 60%;
