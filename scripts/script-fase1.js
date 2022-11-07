@@ -1,3 +1,18 @@
+//active
+$('.phase__text').click(function(){
+    if($(this).hasClass('phase__text_active')){
+        $('.phase__text').removeClass('phase__text_active')
+    } else {
+        $('.phase__text').removeClass('phase__text_active')
+        $(this).addClass('phase__text_active')
+    }
+});
+
+
+document.getElementById ("btn_obj_f1").addEventListener ("click", btn_obj_f1, false);
+document.getElementById ("btn_pas_f1").addEventListener ("click", btn_pas_f1, false);
+document.getElementById ("btn_her_f1").addEventListener ("click", btn_her_f1, false);
+document.getElementById ("btn_tip_f1").addEventListener ("click", btn_tip_f1, false);
 
 //Audios y textos
 $(function() {
