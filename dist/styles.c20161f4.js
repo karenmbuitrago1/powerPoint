@@ -192,7 +192,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_39.jpg":[["recurso_39.c2c5009d.jpg","../images/recurso_39.jpg"],"../images/recurso_39.jpg"],"./..\\images\\recurso_41.png":[["recurso_41.c0d09a86.png","../images/recurso_41.png"],"../images/recurso_41.png"],"./..\\images\\recurso_42.png":[["recurso_42.219f01b9.png","../images/recurso_42.png"],"../images/recurso_42.png"],"./..\\images\\recurso_45.png":[["recurso_45.c7ec4aca.png","../images/recurso_45.png"],"../images/recurso_45.png"],"./..\\images\\recurso_46.png":[["recurso_46.b2c8adfc.png","../images/recurso_46.png"],"../images/recurso_46.png"],"./..\\images\\recurso_48.png":[["recurso_48.6ce0b401.png","../images/recurso_48.png"],"../images/recurso_48.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_39.jpg":[["recurso_39.c2c5009d.jpg","../images/recurso_39.jpg"],"../images/recurso_39.jpg"],"./..\\images\\recurso_41.png":[["recurso_41.c0d09a86.png","../images/recurso_41.png"],"../images/recurso_41.png"],"./..\\images\\recurso_42.png":[["recurso_42.219f01b9.png","../images/recurso_42.png"],"../images/recurso_42.png"],"./..\\images\\recurso_48.png":[["recurso_48.6ce0b401.png","../images/recurso_48.png"],"../images/recurso_48.png"],"./..\\images\\recurso_45.png":[["recurso_45.c7ec4aca.png","../images/recurso_45.png"],"../images/recurso_45.png"],"./..\\images\\recurso_46.png":[["recurso_46.b2c8adfc.png","../images/recurso_46.png"],"../images/recurso_46.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50958" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52275" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

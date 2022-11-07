@@ -25,6 +25,7 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
+    height: 70%;
 }
 
 .postits__itemTittle{
@@ -66,18 +67,44 @@
 }
 
 #post3 {
-    background-image: url('../images/recurso_45.png');
-    background-repeat: no-repeat;
-    height: 278px;
-}
-#post4 {
-    background-image: url('../images/recurso_46.png');
-    background-repeat: no-repeat;
-    height: 250px;
-}
-#post5 {
     background-image: url('../images/recurso_48.png');
     background-repeat: no-repeat;
-    height: 250px;
+    height: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+}
+#post4 {
+    background-image: url('../images/recurso_45.png');
+    background-repeat: no-repeat;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 249px;
+    position: absolute;
+    right: 2%;
+}
+#post5 {
+    background-image: url('../images/recurso_46.png');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 338px;
+    width: 312px;
+}
+
+#post5 p{
+    padding: 0 32px 0 8px;
+}
+
+.postits__itemPost.--thirdColumn{
+    width: 100%;
+}
+.postits__itemList{
+    padding: 0;
+    height: 100%;
 }
 
