@@ -4,7 +4,12 @@
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--type007{
+    background-image: url('../images/recurso57.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .menu__title:before{
     border-radius: 10px;
     content: "";
@@ -162,7 +167,13 @@ p.titulo_opc {
 #endMessage {
   display: none;
 }
-
+.drag_done{
+    color: #fff;
+    font-size: 42px;
+}
+.--pas_2_fase1{
+    padding-top: 7%;
+}
 @media screen and (max-width:1450px){
     .titlePhase{
         font-size: 56px;
