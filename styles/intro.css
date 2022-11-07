@@ -236,9 +236,12 @@ audio::-webkit-media-controls-timeline{
 @media screen and (max-width:1450px){
     .person {
         height: 500px;
-        left: 315px;
+        left: 22%;
         position: absolute;
         bottom: 0;
+    }
+    .menu__personRight{
+        right: 19%;
     }
     .dialog{
         width: 60%;
