@@ -11,8 +11,40 @@
 
 <body>
 	<main class="main">
-		<div class="background --type004 ">
+		<div class="background --type004 --invisible">
 			<div class="background__square"></div>
+		</div>
+		<div class="background --type005 --visible">
+			<ul class="postits__list">
+				<li class="postits__item">
+					<p class="postits__itemTittle">Objetivo de la fase:</p>
+					<div class="postits__itemPost">
+						<p class="postits__text">Definir el perfil profesional y las funciones de quién o quiénes, desde las concesiones, orientarán la implementación de la metodología.</p>
+					</div>
+				</li>
+				<li class="postits__item">
+					<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
+					<div class="postits__itemPost">
+						<p class="postits__text">30 días</p>
+					</div>
+				</li>
+				<li class="postits__item">
+					<p class="postits__itemTittle">Recursos requeridos:</p>
+					<div class="postits__itemPost">
+						<ul class="postits__itemList">
+							<li class="list__item">
+								<p>Financieros: Se debe garantizar la disponibilidad presupuestaria para la contratación del profesional que liderará esta metodología. </p>
+							</li>
+							<li class="list__item">
+								<p>Humanos: Se necesitará apoyo de recursos humanos para adelantar procesos internos de revisión de hojas de vida entrevistas y contratación.</p>
+							</li>
+							<li class="list__item">
+								<p>Técnicos: Es necesario contar con las herramientas necesarias para que la persona contratada pueda realizar su trabajo en condiciones óptimas. Por ejemplo, la creación de una cuenta de correo, la entrega de un computador, acceso a documentación, entre otros.</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div class="content">
 			<section class="content__menu">
@@ -31,25 +63,25 @@
 					</div>
 					<div class="phase__menu">
 						<ul class="phase__menuList">
-							<li class="phase__menuItem">
+							<li class="phase__menuItem" id="btn_obj_f1">
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="/recurso_32.b7671b35.png" alt="Icono tabla de planificacion">
 								</div>
 								<p class="phase__text">Objetivo - Tiempo - Recursos </p>
 							</li>
-							<li class="phase__menuItem">
+							<li class="phase__menuItem" id="btn_pas_f1">
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="/recurso_33.2acf8c09.png" alt="Icono tabla de planificacion">
 								</div>
 								<p class="phase__text">Paso a paso </p>
 							</li>
-							<li class="phase__menuItem">
+							<li class="phase__menuItem" id="btn_her_f1">
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="/recurso_34.cb2164ce.png" alt="Icono tabla de planificacion">
 								</div>
 								<p class="phase__text">Herramientas </p>
 							</li>
-							<li class="phase__menuItem">
+							<li class="phase__menuItem" id="btn_tip_f1">
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="/recurso_35.f3fe874f.png" alt="Icono tabla de planificacion">
 								</div>
@@ -63,9 +95,13 @@
 				</div>
 				<div class="menu__person --person4">
 					<img id="person4" class="person" src="/recurso_36.81b64691.png" alt="persona que habla">
+					<!-- <img id="person6" class="person" src="../images/recurso_39.png" alt="persona que habla"> -->
+
 				</div>
 				<div class="menu__personRight">
 					<img id="person5" class="person" src="/recurso_37.989d7d1f.png" alt="persona que habla">
+					<!-- <img id="person7" class="person" src="../images/recurso_40.png" alt="persona que habla"> -->
+					
 				</div>
 			</section>
 			<section id="origen" class="content__dialog origen ">

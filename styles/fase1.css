@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     margin: 16px 0;
+    cursor: pointer;
 }
 
 .phase__menuIcon{
