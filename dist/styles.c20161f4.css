@@ -638,14 +638,17 @@ audio::-webkit-media-controls-timeline{
     width: 100%;
 }
 
-.route__list li:nth-child(1) img{
-    margin: 0 159px;
+.route__list li:nth-child(1) a{
+    margin: 0 100px;
+    background-repeat: no-repeat;
 }
-.route__list li:nth-child(2) img{
-    margin: 0 259px;
+.route__list li:nth-child(2) a{
+    /* margin: 0 259px; */
+    background-repeat: no-repeat;
 }
-.route__list li:nth-child(3) img{
-    margin: 0 259px;
+.route__list li:nth-child(3) a{
+    /* margin: 0 259px; */
+    background-repeat: no-repeat;
 }
 .route__list li:nth-child(4) img{
     margin: 0 159px;
@@ -654,14 +657,13 @@ audio::-webkit-media-controls-timeline{
 .route__item{
     display: flex;
     margin: 16px 8px;
-    justify-content: space-around
+    justify-content: space-between;
 }
 
 .route__img{
     cursor: pointer;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 133px;
+    height: 132px;
+    width: 392px;
 }
 
 #img1{
@@ -670,30 +672,23 @@ audio::-webkit-media-controls-timeline{
 #img1:hover{
     background-image: url('/recurso_119.1b3fca67.png');
 }
-
 #img2{
-    background-image: url('/recurso_110.07af3dcd.png');
+    background-image: url('/recurso_111.594de14d.png');
 }
 #img2:hover{
     background-image: url('/recurso_120.deac15de.png');
 }
 #img3{
-    background-image: url('/recurso_111.594de14d.png');
+    background-image: url('/recurso_112.9ef979f2.png');
 }
 #img3:hover{
     background-image: url('/recurso_121.cf7b5542.png');
 }
 #img4{
-    background-image: url('/recurso_113.c1072f70.png');
-}
-#img4:hover{
-    background-image: url('/recurso_122.441cd817.png');
+    background-image: url('/recurso_117.ad68cea8.png');
 }
 #img5{
-    background-image: url('/recurso_114.2c368ad2.png');
-}
-#img5:hover{
-    background-image: url('/recurso_123.ee3c0476.png');
+    background-image: url('/recurso_117.ad68cea8.png');
 }
 #img6{
     background-image: url('/recurso_115.8cf363c9.png');
@@ -713,5 +708,6 @@ audio::-webkit-media-controls-timeline{
 #img8:hover{
     background-image: url('/recurso_126.b3bfce22.png');
 }
+
 /* Estilos globales */
 /*# sourceMappingURL=/styles.c20161f4.css.map */

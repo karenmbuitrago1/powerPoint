@@ -53,14 +53,17 @@
     width: 100%;
 }
 
-.route__list li:nth-child(1) img{
-    margin: 0 159px;
+.route__list li:nth-child(1) a{
+    margin: 0 100px;
+    background-repeat: no-repeat;
 }
-.route__list li:nth-child(2) img{
-    margin: 0 259px;
+.route__list li:nth-child(2) a{
+    /* margin: 0 259px; */
+    background-repeat: no-repeat;
 }
-.route__list li:nth-child(3) img{
-    margin: 0 259px;
+.route__list li:nth-child(3) a{
+    /* margin: 0 259px; */
+    background-repeat: no-repeat;
 }
 .route__list li:nth-child(4) img{
     margin: 0 159px;
@@ -69,14 +72,13 @@
 .route__item{
     display: flex;
     margin: 16px 8px;
-    justify-content: space-around
+    justify-content: space-between;
 }
 
 .route__img{
     cursor: pointer;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 133px;
+    height: 132px;
+    width: 392px;
 }
 
 #img1{
@@ -85,30 +87,23 @@
 #img1:hover{
     background-image: url('../images/recurso_119.png');
 }
-
 #img2{
-    background-image: url('../images/recurso_110.png');
+    background-image: url('../images/recurso_111.png');
 }
 #img2:hover{
     background-image: url('../images/recurso_120.png');
 }
 #img3{
-    background-image: url('../images/recurso_111.png');
+    background-image: url('../images/recurso_112.png');
 }
 #img3:hover{
     background-image: url('../images/recurso_121.png');
 }
 #img4{
-    background-image: url('../images/recurso_113.png');
-}
-#img4:hover{
-    background-image: url('../images/recurso_122.png');
+    background-image: url('../images/recurso_117.png');
 }
 #img5{
-    background-image: url('../images/recurso_114.png');
-}
-#img5:hover{
-    background-image: url('../images/recurso_123.png');
+    background-image: url('../images/recurso_117.png');
 }
 #img6{
     background-image: url('../images/recurso_115.png');
