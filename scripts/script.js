@@ -241,7 +241,7 @@ $("#my_audio_conoce").on("ended", function() {
   });
 $("#my_audio_ruta").on("ended", function() {
     $("#play_ruta").html('Reproducir Audio');
-    window.location.href = 'fases.html'
+    window.location.href = 'ruta.html'
 });
 
 
