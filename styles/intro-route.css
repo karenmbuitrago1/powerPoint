@@ -65,8 +65,9 @@
     /* margin: 0 259px; */
     background-repeat: no-repeat;
 }
-.route__list li:nth-child(4) img{
-    margin: 0 159px;
+.route__list li:nth-child(4) a{
+    margin: 0 100px;
+    background-repeat: no-repeat;
 }
 
 .route__item{
@@ -100,10 +101,16 @@
     background-image: url('../images/recurso_121.png');
 }
 #img4{
-    background-image: url('../images/recurso_117.png');
+    background-image: url('../images/recurso_113.png');
+}
+#img4:hover{
+    background-image: url('../images/recurso_122.png');
 }
 #img5{
-    background-image: url('../images/recurso_117.png');
+    background-image: url('../images/recurso_114.png');
+}
+#img5:hover{
+    background-image: url('../images/recurso_123.png');
 }
 #img6{
     background-image: url('../images/recurso_115.png');

@@ -650,8 +650,9 @@ audio::-webkit-media-controls-timeline{
     /* margin: 0 259px; */
     background-repeat: no-repeat;
 }
-.route__list li:nth-child(4) img{
-    margin: 0 159px;
+.route__list li:nth-child(4) a{
+    margin: 0 100px;
+    background-repeat: no-repeat;
 }
 
 .route__item{
@@ -685,10 +686,16 @@ audio::-webkit-media-controls-timeline{
     background-image: url('/recurso_121.cf7b5542.png');
 }
 #img4{
-    background-image: url('/recurso_117.ad68cea8.png');
+    background-image: url('/recurso_113.c1072f70.png');
+}
+#img4:hover{
+    background-image: url('/recurso_122.441cd817.png');
 }
 #img5{
-    background-image: url('/recurso_117.ad68cea8.png');
+    background-image: url('/recurso_114.2c368ad2.png');
+}
+#img5:hover{
+    background-image: url('/recurso_123.ee3c0476.png');
 }
 #img6{
     background-image: url('/recurso_115.8cf363c9.png');
