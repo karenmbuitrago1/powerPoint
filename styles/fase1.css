@@ -120,6 +120,48 @@
     position: absolute;
     top: 112px;
 }
+/*Elementos de arrastre*/
+.respuesta {
+    width: 91%;
+    background: #efefef;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container_drag{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+.box.over {
+  border: 3px dotted #666;
+}
+.box {
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+  list-style: none;
+  margin-bottom: 30px;
+}
+p.titulo_opc {
+    line-height: 13px;
+    color: #083b85;
+    font-size: 13px;
+}
+.text_opc{
+    line-height: 13px;
+    font-size: 11px;
+}
+.bg_bl{
+	background: #fff;
+}
+#endMessage {
+  display: none;
+}
 
 @media screen and (max-width:1450px){
     .titlePhase{
