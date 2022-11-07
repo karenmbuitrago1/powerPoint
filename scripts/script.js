@@ -10,6 +10,10 @@ $('.menu__listBtn').click(function(){
 });
 
 
+document.getElementById ("btn_origen").addEventListener ("click", btn_origen, false);
+document.getElementById ("btn_conoce").addEventListener ("click", btn_conoce, false);
+document.getElementById ("btn_ruta").addEventListener ("click", btn_ruta, false);
+
 // Cambio de Botones
 function btn_origen(){
   $("#bienvenida").addClass("--invisible");
@@ -30,7 +34,6 @@ function btn_conoce(){
   $(".dialog").removeClass("--invisible");
   $("#person2").removeClass("--invisible");  
 }
-
 function btn_ruta(){
   $("#bienvenida").addClass("--invisible");
   $(".origen").addClass("--invisible");
