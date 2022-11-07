@@ -1,5 +1,14 @@
 /* Estilos globales */
 
+@import "../styles/global.css";
+
+/* Estilos intro */
+
 @import "../styles/intro.css";
 @import "../styles/intro-card.css";
 @import "../styles/intro-route.css";
+
+/* Estilos fases  */
+
+
+@import "../styles/fase1.css";
