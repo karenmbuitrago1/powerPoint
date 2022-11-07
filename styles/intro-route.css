@@ -56,18 +56,22 @@
 .route__list li:nth-child(1) a{
     margin: 0 100px;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .route__list li:nth-child(2) a{
     /* margin: 0 259px; */
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .route__list li:nth-child(3) a{
     /* margin: 0 259px; */
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .route__list li:nth-child(4) a{
     margin: 0 100px;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .route__item{
@@ -79,7 +83,7 @@
 .route__img{
     cursor: pointer;
     height: 132px;
-    width: 392px;
+    width: 300px;
 }
 
 #img1{
@@ -137,8 +141,18 @@
         background-size: 100%;
     }
     .route__img {
-        width: 262px;
+        width: 273px;
     }
+}
+
+@media screen and (max-width:1366px){
+    .route__img {
+        width: 237px;
+    }
+    .route__list{
+        width: 93%;
+    }
+   
 }
 
 @media screen and (max-width:1280px){

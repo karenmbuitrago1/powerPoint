@@ -168,11 +168,15 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../styles/intro.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../styles/global.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\images\\recurso_2.png":[["recurso_2.9a482cb9.png","../images/recurso_2.png"],"../images/recurso_2.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro-card.css":[function(require,module,exports) {
+},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\fonts\\Futura_Bold_font.ttf":[["Futura_Bold_font.a62f843a.ttf","../fonts/Futura_Bold_font.ttf"],"../fonts/Futura_Bold_font.ttf"],"./..\\fonts\\Futura_Extra_Black_font.ttf":[["Futura_Extra_Black_font.2e5f4a13.ttf","../fonts/Futura_Extra_Black_font.ttf"],"../fonts/Futura_Extra_Black_font.ttf"],"./..\\fonts\\futura_medium.ttf":[["futura_medium.e953120c.ttf","../fonts/futura_medium.ttf"],"../fonts/futura_medium.ttf"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\recurso_2.png":[["recurso_2.9a482cb9.png","../images/recurso_2.png"],"../images/recurso_2.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro-card.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -180,11 +184,15 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_31.png":[["recurso_31.b1a2787e.png","../images/recurso_31.png"],"../images/recurso_31.png"],"./..\\images\\recurso_110.png":[["recurso_110.07af3dcd.png","../images/recurso_110.png"],"../images/recurso_110.png"],"./..\\images\\recurso_119.png":[["recurso_119.1b3fca67.png","../images/recurso_119.png"],"../images/recurso_119.png"],"./..\\images\\recurso_111.png":[["recurso_111.594de14d.png","../images/recurso_111.png"],"../images/recurso_111.png"],"./..\\images\\recurso_120.png":[["recurso_120.deac15de.png","../images/recurso_120.png"],"../images/recurso_120.png"],"./..\\images\\recurso_112.png":[["recurso_112.9ef979f2.png","../images/recurso_112.png"],"../images/recurso_112.png"],"./..\\images\\recurso_121.png":[["recurso_121.cf7b5542.png","../images/recurso_121.png"],"../images/recurso_121.png"],"./..\\images\\recurso_113.png":[["recurso_113.c1072f70.png","../images/recurso_113.png"],"../images/recurso_113.png"],"./..\\images\\recurso_122.png":[["recurso_122.441cd817.png","../images/recurso_122.png"],"../images/recurso_122.png"],"./..\\images\\recurso_114.png":[["recurso_114.2c368ad2.png","../images/recurso_114.png"],"../images/recurso_114.png"],"./..\\images\\recurso_123.png":[["recurso_123.ee3c0476.png","../images/recurso_123.png"],"../images/recurso_123.png"],"./..\\images\\recurso_115.png":[["recurso_115.8cf363c9.png","../images/recurso_115.png"],"../images/recurso_115.png"],"./..\\images\\recurso_124.png":[["recurso_124.5c0e9488.png","../images/recurso_124.png"],"../images/recurso_124.png"],"./..\\images\\recurso_116.png":[["recurso_116.3025dda5.png","../images/recurso_116.png"],"../images/recurso_116.png"],"./..\\images\\recurso_125.png":[["recurso_125.b215a643.png","../images/recurso_125.png"],"../images/recurso_125.png"],"./..\\images\\recurso_117.png":[["recurso_117.ad68cea8.png","../images/recurso_117.png"],"../images/recurso_117.png"],"./..\\images\\recurso_126.png":[["recurso_126.b3bfce22.png","../images/recurso_126.png"],"../images/recurso_126.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_31.png":[["recurso_31.b1a2787e.png","../images/recurso_31.png"],"../images/recurso_31.png"],"./..\\images\\recurso_110.png":[["recurso_110.07af3dcd.png","../images/recurso_110.png"],"../images/recurso_110.png"],"./..\\images\\recurso_119.png":[["recurso_119.1b3fca67.png","../images/recurso_119.png"],"../images/recurso_119.png"],"./..\\images\\recurso_111.png":[["recurso_111.594de14d.png","../images/recurso_111.png"],"../images/recurso_111.png"],"./..\\images\\recurso_120.png":[["recurso_120.deac15de.png","../images/recurso_120.png"],"../images/recurso_120.png"],"./..\\images\\recurso_112.png":[["recurso_112.9ef979f2.png","../images/recurso_112.png"],"../images/recurso_112.png"],"./..\\images\\recurso_121.png":[["recurso_121.cf7b5542.png","../images/recurso_121.png"],"../images/recurso_121.png"],"./..\\images\\recurso_113.png":[["recurso_113.c1072f70.png","../images/recurso_113.png"],"../images/recurso_113.png"],"./..\\images\\recurso_122.png":[["recurso_122.441cd817.png","../images/recurso_122.png"],"../images/recurso_122.png"],"./..\\images\\recurso_114.png":[["recurso_114.2c368ad2.png","../images/recurso_114.png"],"../images/recurso_114.png"],"./..\\images\\recurso_123.png":[["recurso_123.ee3c0476.png","../images/recurso_123.png"],"../images/recurso_123.png"],"./..\\images\\recurso_115.png":[["recurso_115.8cf363c9.png","../images/recurso_115.png"],"../images/recurso_115.png"],"./..\\images\\recurso_124.png":[["recurso_124.5c0e9488.png","../images/recurso_124.png"],"../images/recurso_124.png"],"./..\\images\\recurso_116.png":[["recurso_116.3025dda5.png","../images/recurso_116.png"],"../images/recurso_116.png"],"./..\\images\\recurso_125.png":[["recurso_125.b215a643.png","../images/recurso_125.png"],"../images/recurso_125.png"],"./..\\images\\recurso_117.png":[["recurso_117.ad68cea8.png","../images/recurso_117.png"],"../images/recurso_117.png"],"./..\\images\\recurso_126.png":[["recurso_126.b3bfce22.png","../images/recurso_126.png"],"../images/recurso_126.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase1.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\recurso_38.png":[["recurso_38.bcce04d1.png","../images/recurso_38.png"],"../images/recurso_38.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -209,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57053" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63903" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

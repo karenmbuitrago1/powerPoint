@@ -1,0 +1,103 @@
+.background.--type004{
+    background-image: url('../images/recurso_38.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu__title:before{
+    border-radius: 10px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 36px solid var(--titleBlue);
+    border-top: 12px solid var(--titleBlue);
+    border-bottom: 36px solid transparent;
+    left: 234px;
+    top: 151px;
+}
+
+.menu__phase{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    font-family: 'Futura_bold';
+}
+
+.phase__textMain{
+    margin: 16px;
+    padding: 8px;
+}
+
+
+.titlePhase{
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+    margin: 8px;
+}
+
+.title__secondary{
+    font-size: 64px;
+    color: white;
+    margin: 0;
+}
+
+.phase__textDescription{
+    color: white;
+    margin: 16px;
+    padding: 0 48px 0 8px;
+    font-family: 'Futura_medium';
+}
+
+.textDescription{
+    font-size: 20px;
+}
+
+.phase__menuList{
+    list-style: none;
+    padding: 8px;
+    margin: 16px;
+}
+
+.phase__menuItem{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.phase__menuIcon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background-color: var(--mainButton);
+}
+
+.phase__icon{
+    width: 42%;
+}
+
+.phase__menuText{
+    font-family: 'Futura_heavy';
+    color: white;
+}
+
+.phase__text{
+    margin: 8px;
+    font-size: 21px;
+    padding: 0 8px;
+    font-family: 'Futura_heavy';
+    color: white;
+}
+
+.phase__textMin{
+    margin: 0 8px;
+    padding: 0 8px;
+    font-size: 14px;
+    font-family: 'Futura_medium';
+}
