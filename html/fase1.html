@@ -11,10 +11,10 @@
 
 <body>
 	<main class="main">
-		<div class="background --type004 --invisible">
+		<div class="background --type004">
 			<div class="background__square"></div>
 		</div>
-		<div class="background --type005 --visible">
+		<div class="background --type005 --invisible">
 			<ul class="postits__list">
 				<li class="postits__item">
 					<p class="postits__itemTittle">Objetivo de la fase:</p>
@@ -67,7 +67,7 @@
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="../images/recurso_32.png" alt="Icono tabla de planificacion">
 								</div>
-								<p class="phase__text">Objetivo - Tiempo - Recursos </p>
+								<p class="phase__text phase__text_active">Objetivo - Tiempo - Recursos </p>
 							</li>
 							<li class="phase__menuItem" id="btn_pas_f1">
 								<div class="phase__menuIcon">
@@ -95,18 +95,18 @@
 				</div>
 				<div class="menu__person --person4">
 					<img id="person4" class="person" src="../images/recurso_36.png" alt="persona que habla">
-					<img id="person6" class="person --her_fase1 --invisible" src="../images/recurso_39.png" alt="persona que habla">
+					<img id="person6" class="person --pas_fase1 --invisible" src="../images/recurso_49.png" alt="persona que habla">
 
 				</div>
 				<div class="menu__personRight">
 					<img id="person5" class="person" src="../images/recurso_37.png" alt="persona que habla">
-					<img id="person7" class="person --her_fase1 --invisible" src="../images/recurso_40.png" alt="persona que habla">
+					<img id="person7" class="person --pas_fase1 --invisible" src="../images/recurso_50.png" alt="persona que habla">
 					
 				</div>
 			</section>
-			<section id="origen" class="content__dialog origen ">
+			<section id="obj_f1" class="content__dialog origen obj_f1">
 				<div class="phase__dialog">
-					<div class="dialogBox__text" id="change">¡Hola! Bienvenido a la primera fase de nuestra metodolo￾gía. Mi nombre es Ana, soy lideresa social del territorio. También nos 
+					<div class="dialogBox__text" id="change_f1_1">¡Hola! Bienvenido a la primera fase de nuestra metodología. Mi nombre es Ana, soy lideresa social del territorio. También nos 
 						acompaña Pedro, uno de los constructores que está desarrollando 
 						un proyecto vial en esta zona.
 					</div>
@@ -116,6 +116,17 @@
 					</audio>
 					<div id="play_f1_bienvenida" class="play">Reproducir Audio</div>
 			</section>
+			<section  class="content__dialog origen --invisible --pas_fase1">
+				<div class="phase__dialog">
+					<div class="dialogBox__text" id="change_f1_2">¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este 
+						territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial. 						
+					</div>
+					<audio id="my_audio_f1_2">
+						<source src="../audios/2Alirio-campo.mp3" type="audio/mp3">
+						Your browser does not support the audio element.
+					</audio>
+					<div id="play_paso_f1" class="play">Reproducir Audio</div>
+			</section>			
 		</div>
 		</div>
 	</main>

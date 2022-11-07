@@ -96,7 +96,7 @@
     color: white;
 }
 
-.phase__text:hover,.phase__text_activo{
+.phase__text:hover,.phase__text_active{
     color:var(--mainButton);
 }
 

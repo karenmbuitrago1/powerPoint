@@ -14,6 +14,46 @@ document.getElementById ("btn_pas_f1").addEventListener ("click", btn_pas_f1, fa
 document.getElementById ("btn_her_f1").addEventListener ("click", btn_her_f1, false);
 document.getElementById ("btn_tip_f1").addEventListener ("click", btn_tip_f1, false);
 
+// Cambio de Botones
+
+function btn_obj_f1(){
+    $("#my_audio_f1_1").trigger('pause');
+    $("#play_paso_f1").html('Reproducir Audio');
+    $("#person6").addClass("--invisible");
+    $(".--pas_fase1").addClass("--invisible");
+    $("#person7").addClass("--invisible"); 
+    $("#person4").removeClass("--invisible");
+    $("#person5").removeClass("--invisible");
+    $(".paso_paso").removeClass("--invisible");
+    $(".obj_f1").removeClass("--invisible");
+    $(".herr_f1").addClass("--invisible");
+    $(".tip_f1").addClass("--invisible");
+    var highestTimeoutId = setTimeout(";");
+    for (var i = 0 ; i < highestTimeoutId ; i++) {
+        clearTimeout(i); 
+    }
+    }
+
+function btn_pas_f1(){
+    $("#my_audio_f1_1").trigger('pause');
+    $("#play_paso_f1").html('Reproducir Audio');
+    $(".--pas_fase1").removeClass("--invisible");
+    $("#person4").addClass("--invisible");
+    $("#person5").addClass("--invisible"); 
+    $("#person6").removeClass("--invisible");
+    $("#person7").removeClass("--invisible");
+    $(".paso_paso").removeClass("--invisible");
+    $(".obj_f1").addClass("--invisible");
+    $(".herr_f1").addClass("--invisible");
+    $(".tip_f1").addClass("--invisible");
+    var highestTimeoutId = setTimeout(";");
+    for (var i = 0 ; i < highestTimeoutId ; i++) {
+        clearTimeout(i); 
+    }
+    }
+
+
+
 //Audios y textos
 $(function() {
     var is_playing;
@@ -68,6 +108,52 @@ $(function() {
     $("#my_audio_f1_1").on("ended", function() {
       $("#play_f1_bienvenida").html('Reproducir Audio');
   });
+
+  $("#play_paso_f1").click(function(e) {
+    var original = '¡¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
+    var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
+    var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda';
+    
+    
+    $("#play_paso_f1").html('Reproduciendo...');
+
+    if(e.target.tagName !== "AUDIO") {
+    if (is_playing) {
+      $('#change_f1_2').html(original);
+      $('#my_audio_f1_2')[0].load();
+      $('#my_audio_f1_2')[0].play();
+ 
+       setTimeout(function(){
+           $('#change_f1_2').html(text1);
+       }, 9000);
+       setTimeout(function(){
+           $('#change_f1_2').html(text1_1);
+       }, 21000);
+       $('#change_f1_2').html(original);
+             is_playing = true;
+
+    } else {
+      $('#change_f1_1').html(original);
+      $('#my_audio_f1_2')[0].load();
+      $('#my_audio_f1_2')[0].play();
+      is_playing = true;
+      setTimeout(function(){
+          $('#change_f1_2').html(text1);
+      }, 9000);
+      setTimeout(function(){
+          $('#change_f1_2').html(text1_1);
+      }, 21000);
+
+      $('#change_f1_1').html(original);
+            is_playing = true;
+  }
+    } else {
+      e.stopPropagtion()
+    }
+  });
+  $("#my_audio_f1_2").on("ended", function() {
+    $("#play_paso_f1").html('Reproducir Audio');
+});
 
 
 });
