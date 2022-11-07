@@ -14,7 +14,7 @@
 		<div class="background --type004 --invisible">
 			<div class="background__square"></div>
 		</div>
-		<div class="background --type005 --visible">
+		<div class="background --type005">
 			<div class="postits">
 				<ul class="postits__list">
 					<li class="postits__item">
@@ -31,7 +31,7 @@
 					</li>
 					<li class="postits__item">
 						<p class="postits__itemTittle">Recursos requeridos:</p>
-						<div class="postits__itemPost">
+						<div class="postits__itemPost --thirdColumn">
 							<ul class="postits__itemList">
 								<li class="list__item">
 									<div id="post3">
@@ -39,13 +39,13 @@
 									</div>
 								</li>
 								<li class="list__item">
-									<div id="post4">
-										<p class="postits__text">Humanos: Se necesitará apoyo de recursos humanos para adelantar procesos internos de revisión de hojas de vida entrevistas y contratación.</p>
+									<div id="post5">
+										<p class="postits__text">Técnicos: Es necesario contar con las herramientas necesarias para que la persona contratada pueda realizar su trabajo en condiciones óptimas. Por ejemplo, la creación de una cuenta de correo, la entrega de un computador, acceso a documentación, entre otros.</p>
 									</div>
 								</li>
 								<li class="list__item">
-									<div id="post5">
-										<p class="postits__text">Técnicos: Es necesario contar con las herramientas necesarias para que la persona contratada pueda realizar su trabajo en condiciones óptimas. Por ejemplo, la creación de una cuenta de correo, la entrega de un computador, acceso a documentación, entre otros.</p>
+									<div id="post4">
+										<p class="postits__text">Humanos: Se necesitará apoyo de recursos humanos para adelantar procesos internos de revisión de hojas de vida entrevistas y contratación.</p>
 									</div>
 								</li>
 							</ul>
@@ -75,7 +75,7 @@
 								<div class="phase__menuIcon">
 									<img class="phase__icon" src="/recurso_32.b7671b35.png" alt="Icono tabla de planificacion">
 								</div>
-								<p class="phase__text">Objetivo - Tiempo - Recursos </p>
+								<p class="phase__text phase__text_active">Objetivo - Tiempo - Recursos </p>
 							</li>
 							<li class="phase__menuItem" id="btn_pas_f1">
 								<div class="phase__menuIcon">
@@ -103,18 +103,18 @@
 				</div>
 				<div class="menu__person --person4">
 					<img id="person4" class="person" src="/recurso_36.81b64691.png" alt="persona que habla">
-					<img id="person6" class="person --her_fase1 --invisible" src="/recurso_49.ab31750c.png" alt="persona que habla">
+					<img id="person6" class="person --pas_fase1 --invisible" src="/recurso_49.ab31750c.png" alt="persona que habla">
 
 				</div>
 				<div class="menu__personRight">
 					<img id="person5" class="person" src="/recurso_37.989d7d1f.png" alt="persona que habla">
-					<img id="person7" class="person --her_fase1 --invisible" src="/recurso_50.ff9f4334.png" alt="persona que habla">
+					<img id="person7" class="person --pas_fase1 --invisible" src="/recurso_50.ff9f4334.png" alt="persona que habla">
 					
 				</div>
 			</section>
-			<section id="origen" class="content__dialog origen ">
+			<section id="obj_f1" class="content__dialog origen obj_f1 ">
 				<div class="phase__dialog">
-					<div class="dialogBox__text" id="change">¡Hola! Bienvenido a la primera fase de nuestra metodolo￾gía. Mi nombre es Ana, soy lideresa social del territorio. También nos 
+					<div class="dialogBox__text" id="change_f1_1">¡Hola! Bienvenido a la primera fase de nuestra metodología. Mi nombre es Ana, soy lideresa social del territorio. También nos 
 						acompaña Pedro, uno de los constructores que está desarrollando 
 						un proyecto vial en esta zona.
 					</div>
@@ -124,6 +124,37 @@
 					</audio>
 					<div id="play_f1_bienvenida" class="play">Reproducir Audio</div>
 			</div></section>
+			<section class="content__dialog origen --invisible --pas_fase1">
+				<div class="phase__dialog">
+					<div class="dialogBox__text" id="change_f1_2">¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este 
+						territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial. 						
+					</div>
+					<audio id="my_audio_f1_2">
+						<source src="/2Alirio-campo.8800371d.mp3" type="audio/mp3">
+						Your browser does not support the audio element.
+					</audio>
+					<div id="play_paso_f1" class="play">Reproducir Audio</div>
+			</div></section>		
+			<section class="content__dialog origen  --pas_2_fase1 --invisible">
+				<div>
+					<ul class="draggable-list container_drag">
+					  <li id="e1" class="box bg_bl" draggable="true"><p class="titulo_opc">Revisión de capacades instaladas</p><p class="text_opc">Las concesiones establecerán los miembros del equipo que podrían aportar en la construcción e implementación de la medolología.</p></li>
+					  <li id="e2" class="box bg_bl" draggable="true"><p class="titulo_opc">Definición de roles y funciones</p><p class="text_opc">Atendiendo a las capacidadfes del equipo, se establecerán los roles y funciones de cada uno de sus integrantes</p></li>
+					  <li id="e3" class="box bg_bl" draggable="true"><p class="titulo_opc">Selección del equipo</p><p class="text_opc">Una vez identificados los posibles integrantes del equipo, se procederá a la revisión de hojas de vida y la realización de entrevistas.</p></li>
+					  <li id="e4" class="box bg_bl" draggable="true"><p class="titulo_opc">Valoración de contratación adicional </p><p class="text_opc">Unidades instaladas en las conversiones, se evaluará la necesidad de controlar o no un profesional externo que apoye la implementación</p></li>
+					</ul>
+
+					<ul class="draggable-list container_drag">
+					  <li id="s2" class="box" draggable="true"><img src="/Recurso52.4716f682.png" alt="opcion_uno" width="100%"></li>
+					  <li id="s3" class="box" draggable="true"><img src="/Recurso53.c1d0f954.png" alt="opcion_uno" width="100%"></li>
+					  <li id="s1" class="box" draggable="true"><img src="/Recurso54.93f3096d.png" alt="opcion_uno" width="100%"></li>
+					  <li id="s4" class="box" draggable="true"><img src="/Recurso55.570b3a94.png" alt="opcion_uno" width="100%"></li>
+					</ul>
+				  </div>
+				<div id="endMessage">
+				  <h3>¡Bien hecho!</h3>
+			   </div>
+			</section>	
 		</div>
 		
 	</main>
