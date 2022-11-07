@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/index.css">
+	<title>Fase 1 - Agencia Nacional de Seguridad Vial</title>
+</head>
+
+<body>
+	<main class="main">
+		<div class="background --type001 ">
+			<div class="background__square"></div>
+			<div class="background__animation">
+				<div class="girl">
+					<img class="girl__img" src="../images/recurso_17.png" alt="mujer">
+				</div>
+				<ul class="background__animationList">
+					<li class="background__item" id="bike2">
+						<img class="bike2" src="../images/recurso_8.png" alt="persona en ">
+					</li>
+					<li class="background__item" id="bike">
+						<img class="bike" src="../images/recurso_6.png" alt="persona en ">
+					</li>
+					<li class="background__item" id="moto">
+						<img class="moto" src="../images/recurso_5.png" alt="persona en moto">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="background --type002 --invisible">
+			<ul class="cards">
+				<li class="card__item">
+					<button type="button" class="card__btn" name="carta">
+						<p class="card__text">Sexo, orientación sexual e identidad de género</p>
+						<p class="card__text2">Afirmamos que ninguna persona podrá ser excluida, rechazada y violentada por su sexo, su orientación sexual o su identidad de género</p>
+					</button>
+				</li>
+				<li class="card__item">
+					<button type="button" class="card__btn" name="carta">
+						<p class="card__text">Discapacidad</p>
+						<p class="card__text2">Atendemos a las condiciones espaciales y sociales que impiden que las personas con capacidades físicas y mentales diversas, para hacer viable su participación efectiva en el proyecto.</p>
+					</button>
+				</li>
+				<li class="card__item">
+					<button type="button" class="card__btn" name="carta">
+						<p class="card__text">Curso de vida</p>
+						<p class="card__text2">Reconocemos las particularidades de los diferentes grupos de edad presentes en la comunidad, entendiendo que tienen características, potencialidades y necesidades físicas, emocionales y sociales distintas y pueden enfrentar desigualdades de manera distinta.</p>
+					</button>
+				</li>
+				<li class="card__item">
+					<button type="button" class="card__btn" name="carta">
+						<p class="card__text">Comunidades étnicas</p>
+						<p class="card__text2">Sabemos que los grupos étnicos han sido históricamente excluidos y que, para que ello deje de ocurrir, es necesario generar planes que les integren e incluyan socialmente.</p>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<section class="content__menu">
+				<div class="menu__logo">
+					<img class="logo" src="../images/recurso_11.png" alt="logo">
+                    <h1>FASE 1</h1>
+				</div>
+				<div class="menu__options">
+					<ul class="menu__list" id="menu_botones">
+						<li class="menu__listItem">
+							<button type="button" class="menu__listBtn menu__listBtn_active" id="btn_origen">
+								<img class="menu__listBtn__img" src="../images/play.png" />
+								<p class="menu__listBtn__text">Punto de origen</p>
+							</button>
+						</li>
+						<li class="menu__listItem">
+							<button type="button" class="menu__listBtn" id="btn_conoce">
+								<img class="menu__listBtn__img" src="../images/play.png" />
+								<p class="menu__listBtn__text">¡Conoce nuestro modelo y enfoque!</p>
+							</button>
+						</li>
+						<li class="menu__listItem">
+							<button type="button" class="menu__listBtn" id="btn_ruta">
+								<img class="menu__listBtn__img" src="../images/play.png" />
+								<p class="menu__listBtn__text">Ruta de movilidad</p>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="menu__person">
+					<img id="person1" class="person origen " src="../images/recurso_1.png" alt="persona que habla">
+					<img id="person2" class="person --invisible conoce " src="../images/recurso16.png" alt="persona que habla">
+					<img id="person3" class="person --invisible ruta " src="../images/recurso30.png" alt="persona que habla">
+
+				</div>
+			</section>
+			<section id="origen" class="content__dialog origen ">
+				<div class="dialog">
+					<div class="dialogBox__text" id="change">¡Bienvenido a la Metodología de intervención basada en modelos de desarrollo comunitario para proyectos viales! Antes de iniciar, déjame contarte cómo nace esta iniciativa…
+				</div>
+					<audio  id="my_audio">
+					  <source src="../audios/1_Bienvenida_transito.mp3" type="audio/mp3">
+					  Your browser does not support the audio element.
+					</audio>
+					<div id="play_origen" class="play">Reproducir Audio</div>
+			</section>
+			<section id="origen" class="content__dialog --invisible conoce ">
+				<div class="dialog">
+					<div class="dialogBox__text" id="change2">¡Hola! Mi nombre es Manuel. Soy conductor de una ruta escolar que transita por esta zona. Aprovechando este encuentro, quiero contarte sobre la metodología que hemos venido implementando con otros actores viales, multisectoriales y comunitarios, para garantizar el cuidado de la vida en la vía
+
+				</div>
+					<audio id="my_audio_conoce" >
+					  <source src="../audios/2_Manuel_Juanita_transito.mp3" type="audio/mp3">
+					  Your browser does not support the audio element.
+					</audio>
+					<div id="play_conoce" class="play" >Reproducir Audio</div>
+			</section>		
+			<section id="origen" class="content__dialog --invisible ruta ">
+				<div class="dialog">
+					<div class="dialogBox__text" id="change3">¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y Multisectoriales para fortalecer una cultura vial
+				</div>
+					<audio  id="my_audio_ruta">
+					  <source src="../audios/3_Javier_transito.mp3" type="audio/mp3">
+					  Your browser does not support the audio element.
+					</audio>
+					<div id="play_ruta" class="play" >Reproducir Audio</div>
+			</section>			
+		</div>
+		</div>
+	</main>
+</body>
+	<script data-require="jquery@3.0.0" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+	<script src="../scripts/script.js"></script>
+</html>
