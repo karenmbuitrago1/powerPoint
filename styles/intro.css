@@ -70,6 +70,24 @@ body{
     background-color: var(--firstBlue);
     margin: 0 0 8px 0;
 }
+/* Estilos dialogos */
+
+.invisible{
+    display: none !important;
+}
+.visible{
+    display: block;
+}
+div.play {
+    color: #d90e43;
+    cursor: pointer;
+}
+audio::-webkit-media-controls-play-button{
+    display: none;
+}
+audio::-webkit-media-controls-timeline{
+    pointer-events: none;
+}
 
 
 /* Estilos elementos animados*/
@@ -168,7 +186,7 @@ body{
     color: white;
 }
 
-.menu__listBtn:hover{
+.menu__listBtn:hover,.menu__listBtn_active{
     background-color: var(--hoverButton);
 }
 
