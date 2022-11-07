@@ -334,6 +334,18 @@ audio::-webkit-media-controls-timeline{
         height: 70%;
         width: 27%;
     }
+    .logo{
+        width: 80%;
+    }
+    .menu__title{
+        width: 30%;
+    }
+    .menu__title:before {
+        top: 82%;
+    }
+    .menu__phase {
+        height: 84%;
+    }
 }
 
 @media screen and (max-width:720px){
@@ -403,7 +415,7 @@ audio::-webkit-media-controls-timeline{
 
 @media screen and (max-width:375px){
     .logo{
-        width: 56px;
+        width: 45%;
     }
     .menu__listItem{
         margin: 4px 0;
@@ -1009,6 +1021,48 @@ audio::-webkit-media-controls-timeline{
     position: absolute;
     top: 112px;
 }
+/*Elementos de arrastre*/
+.respuesta {
+    width: 91%;
+    background: #efefef;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container_drag{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+.box.over {
+  border: 3px dotted #666;
+}
+.box {
+  border-radius: .5em;
+  padding: 10px;
+  cursor: move;
+  list-style: none;
+  margin-bottom: 30px;
+}
+p.titulo_opc {
+    line-height: 13px;
+    color: #083b85;
+    font-size: 13px;
+}
+.text_opc{
+    line-height: 13px;
+    font-size: 11px;
+}
+.bg_bl{
+	background: #fff;
+}
+#endMessage {
+  display: none;
+}
 
 @media screen and (max-width:1450px){
     .titlePhase{
@@ -1172,14 +1226,18 @@ audio::-webkit-media-controls-timeline{
     width: 70%;
     position: absolute;
     right: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-content: center;
 
 }
 .postits__list{
     height: 100%;
     padding: 0;
     display: flex;
-    align-items: center;
     list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .postits__item{
@@ -1187,7 +1245,7 @@ audio::-webkit-media-controls-timeline{
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 70%;
+    height: 100%;
 }
 
 .postits__itemTittle{
@@ -1212,6 +1270,7 @@ audio::-webkit-media-controls-timeline{
 #post1 {
     background-image: url('/recurso_41.c0d09a86.png');
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 #post2 {
     background-image: url('/recurso_42.219f01b9.png');
@@ -1246,7 +1305,8 @@ audio::-webkit-media-controls-timeline{
     justify-content: center;
     width: 249px;
     position: absolute;
-    right: 2%;
+    right: 1%;
+    top: 66%;
 }
 #post5 {
     background-image: url('/recurso_46.b2c8adfc.png');
@@ -1256,6 +1316,9 @@ audio::-webkit-media-controls-timeline{
     justify-content: center;
     height: 338px;
     width: 312px;
+    position: absolute;
+    top: 40%;
+    right: 15%;
 }
 
 #post5 p{
@@ -1266,10 +1329,97 @@ audio::-webkit-media-controls-timeline{
     width: 100%;
 }
 .postits__itemList{
-    padding: 0;
     height: 100%;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-content: stretch;
+    flex-direction: column;
 }
 
+
+@media screen and (max-width:1450px){
+    #post1 {
+        background-size: 100%;
+        height: 322px;
+        width: 96%;
+    }
+    #post2 {
+        background-size: 100%;
+        height: 222px;
+        width: 70%;
+    }
+    #post3{
+        background-size: 100%;
+        height: 231px;
+        width: 218px;
+        font-size: 14px;
+    }
+    #post5{
+        background-size: 100%;
+        height: 291px;
+        width: 251px;
+        font-size: 14px;
+        position: absolute;
+        right: 17%;
+        top: 44%;
+    }
+    #post4{
+        top: 70%;
+        right: 4%;
+        background-size: 100%;
+        height: 224px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 206px;
+        position: absolute;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .postits__itemTittle {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .postits {
+        height: 54%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .postits__item{
+        width: 33%;
+    }
+    .postits__text {
+       font-size: 15px;
+    }
+    #post1 {
+        height: 249px;
+    }
+    #post2 {
+        height: 195px;
+        width: 77%;
+    }
+    #post5 {
+        right: 20%;
+        top: 50%;
+    }
+    #post4 {
+        top: 69%;
+        right: 0%;
+    }
+}
+
+@media screen and (max-width:375px){
+    .postits {
+        width: 100%;
+    }
+}
 
 /* Estilos globales */
 

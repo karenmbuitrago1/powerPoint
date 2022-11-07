@@ -259,6 +259,18 @@ audio::-webkit-media-controls-timeline{
         height: 70%;
         width: 27%;
     }
+    .logo{
+        width: 80%;
+    }
+    .menu__title{
+        width: 30%;
+    }
+    .menu__title:before {
+        top: 82%;
+    }
+    .menu__phase {
+        height: 84%;
+    }
 }
 
 @media screen and (max-width:720px){
@@ -328,7 +340,7 @@ audio::-webkit-media-controls-timeline{
 
 @media screen and (max-width:375px){
     .logo{
-        width: 56px;
+        width: 45%;
     }
     .menu__listItem{
         margin: 4px 0;
