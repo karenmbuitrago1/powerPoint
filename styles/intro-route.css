@@ -1,0 +1,130 @@
+/* Estilos flip ruta intro */
+
+.background.--type003{
+    background-image: url('../images/recurso_31.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.routeContent{
+    height: 100%;
+    width: 30%;
+}
+
+.routeContent__menu{
+    height: 100%;
+    background-color: var(--secondBlue);
+}
+.route{
+    width: 70%;
+}
+.route__center{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.route__options{
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.route__list{
+    top: 0;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+
+#contentBtn{
+    width: 100%;
+}
+
+.route__list li:nth-child(1) img{
+    margin: 0 159px;
+}
+.route__list li:nth-child(2) img{
+    margin: 0 259px;
+}
+.route__list li:nth-child(3) img{
+    margin: 0 259px;
+}
+.route__list li:nth-child(4) img{
+    margin: 0 159px;
+}
+
+.route__item{
+    display: flex;
+    margin: 16px 8px;
+    justify-content: space-around
+}
+
+.route__img{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 133px;
+}
+
+#img1{
+    background-image: url('../images/recurso_110.png');
+}
+#img1:hover{
+    background-image: url('../images/recurso_119.png');
+}
+
+#img2{
+    background-image: url('../images/recurso_110.png');
+}
+#img2:hover{
+    background-image: url('../images/recurso_120.png');
+}
+#img3{
+    background-image: url('../images/recurso_111.png');
+}
+#img3:hover{
+    background-image: url('../images/recurso_121.png');
+}
+#img4{
+    background-image: url('../images/recurso_113.png');
+}
+#img4:hover{
+    background-image: url('../images/recurso_122.png');
+}
+#img5{
+    background-image: url('../images/recurso_114.png');
+}
+#img5:hover{
+    background-image: url('../images/recurso_123.png');
+}
+#img6{
+    background-image: url('../images/recurso_115.png');
+}
+#img6:hover{
+    background-image: url('../images/recurso_124.png');
+}
+#img7{
+    background-image: url('../images/recurso_116.png');
+}
+#img7:hover{
+    background-image: url('../images/recurso_125.png');
+}
+#img8{
+    background-image: url('../images/recurso_117.png');
+}
+#img8:hover{
+    background-image: url('../images/recurso_126.png');
+}

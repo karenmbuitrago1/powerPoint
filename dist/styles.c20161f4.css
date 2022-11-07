@@ -1,0 +1,717 @@
+:root {
+    --firstBlue:            #1db5e0;
+    --secondBlue:           #083b85;
+    --dialogBeige:          #fbf6db;
+
+    --mainButton:           #0096e0;
+    --hoverButton:          #f85636;
+
+}
+
+@font-face {
+    font-family: Futura_bold;
+    src: url("/Futura_Heavy_font.d4dfe0e7.ttf");
+}
+
+@keyframes animationMoto {
+    0%   {left: calc(0px); bottom: calc(104px);}
+    50%  {left: calc(620px); bottom: calc(104px);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {left: calc(2000px); bottom: calc(104px);}
+}
+
+@keyframes animationBike{
+    0%   {left: calc(200px); bottom: calc(156px);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {left: calc(2000px); bottom: calc(156px);}
+}
+
+@keyframes animationBike2{
+    0%   {right: calc(0px); bottom: calc(180px);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {right: calc(1880px); bottom: calc(180px);}
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}   
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Futura_bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.background{
+    height: 100%;
+}
+
+.background.--invisible{
+    display: none;
+}
+
+.background.--type001{
+    background-image: url('/recurso_2.9a482cb9.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__square{
+    width: 100%;
+    height: 160px;
+    background-color: var(--firstBlue);
+    margin: 0 0 8px 0;
+}
+/* Estilos dialogos */
+
+.--invisible{
+    display: none !important;
+}
+.visible{
+    display: block;
+}
+div.play {
+    color: #d90e43;
+    cursor: pointer;
+}
+audio::-webkit-media-controls-play-button{
+    display: none;
+}
+audio::-webkit-media-controls-timeline{
+    pointer-events: none;
+}
+
+
+/* Estilos elementos animados*/
+
+.background__animation{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.background__animationList{
+    list-style: none;
+}
+
+.background__item{
+    right: calc(0px);
+    position: absolute;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#moto{
+    bottom: calc(104px);
+    animation-name: animationMoto;
+}
+
+#bike{
+    bottom: calc(156px);
+    animation-name: animationBike;
+}
+
+#bike2{
+    bottom: calc(206px);
+    animation-name: animationBike2;
+}
+
+.girl{
+    display: flex;
+    height: 74%;
+    width: 20%;
+    align-items: flex-end;
+    z-index: 9;
+}
+
+.girl__img{
+    width: 57px;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Estilos menu izquierda */
+
+.content__menu{
+    width: 30%;
+    height: 100%;
+    background-color: var(--secondBlue);
+}
+
+.menu__options{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__listItem{
+    margin: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__listBtn{
+    cursor: pointer;
+    background-color: var(--mainButton);
+    border-radius: 32px 0 0 32px;
+    border: none;
+    display: flex;
+    font-size: 18px;
+    font-family: 'Futura_bold';
+    text-align: start;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu__listBtn:hover,.menu__listBtn_active{
+    background-color: var(--hoverButton);
+}
+
+.menu__listBtn__img{
+    border-radius: 100%;
+    background: white;
+    padding: 8px;
+    margin: 8px;
+    height: 24px;
+}
+
+.menu__listBtn__text{
+    margin: 0 8px;
+}
+
+.menu__person{
+    position: absolute;
+    display: inline-flex;
+    width: 33%;
+    flex-direction: row-reverse;
+    bottom: 0;
+}
+.person{
+    height: 630px;
+}
+
+
+/* Estilos menu derecha - dialogo */
+
+.content__dialog{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.dialog{
+    line-height: 24px;
+    background: var(--dialogBeige);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    color: var(--secondBlue);
+    font-weight: 800;
+    width: 63%;
+    height: fit-content;
+    position: absolute;
+    top: 112px;
+}
+
+.dialog__text:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 40px solid var(--dialogBeige);
+    border-right: 27px solid transparent;
+    border-top: 12px solid var(--dialogBeige);
+    border-bottom: 54px solid transparent;
+    left: 34px;
+    top: 70px;
+}
+
+@media screen and (max-width:1450px){
+    .person {
+        height: 500px;
+        left: 315px;
+        position: absolute;
+        bottom: 0;
+    }
+    .dialog{
+        width: 60%;
+    }
+    .girl__img {
+        width: 55px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .dialog{
+        width: 55%;
+    }
+    .girl {
+        height: 70%;
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:720px){
+    .background__square{
+        display: none;
+    }
+    .background__animation{
+        display: block;
+        z-index: 2;
+    }
+    .girl{
+        display: none;
+    }
+    .content {
+        display: block;
+    }
+    .content__menu{
+        height: 40%;
+        width: 100%;
+    }
+    .content__dialog{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(6,5,41, 65%);
+    }
+    .logo{
+        width: 96px;
+    }
+    .menu__options{
+        display: block;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .menu__listItem{
+        margin: 8px 0;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu__listBtn{
+        align-items: center;
+        width: 93%;
+        border-radius: 32px;
+    }
+    .menu__listBtn__text {
+        font-size: 24px;
+    }
+    .dialog{
+        width: 80%;
+        top: 403px;
+        line-height: 28px;
+        padding: 24px;
+    }
+    .dialog__text{
+        font-size: 24px;
+    }
+
+    .dialog__text:before{
+        left: 144px;
+        top: 144px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .logo{
+        width: 56px;
+    }
+    .menu__listItem{
+        margin: 4px 0;
+    }
+    .menu__listBtn{
+        font-size: 14px;
+    }
+    .menu__listBtn__img{
+        margin: 0;
+        height: 16px;
+        padding: 6px;
+    }
+    .menu__listBtn__text {
+        font-size: 16px;
+    }
+    .person{
+        height: 309px 
+    }
+    .dialog{
+        width: 80%;
+        top: 216px;
+    }
+    .dialog__text{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .dialog__text:before{
+        left: 77px;
+        top: 110px;
+        border-bottom: 16px solid transparent;
+    }
+}
+
+@media screen and (max-width:360px){
+    .content__menu {
+        height: 30%;
+    }
+    .logo{
+        width: 48px;
+    }
+    .menu__listItem {
+        margin: 2px 0;
+    }
+    .menu__listBtn__text {
+        font-size: 14px;
+    }
+    .person{
+        height: 272px 
+    }
+    .dialog{
+        top: 203px;
+    }
+    .dialog__text{
+        line-height: 17px;
+        font-size: 14px;
+    }
+    .dialog__text:before{
+        top: 117px;
+    }
+}
+
+
+/* Estilos flip cards intro */
+
+.background.--type002{
+    background-image: url('/recurso_29.21c67454.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    justify-content: space-around;
+}
+.cards{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 11;
+    width: 90%;
+}
+
+.cards li:nth-child(1){
+    background-image: url('/recurso_19.ee4c4300.png');
+}
+.cards li:hover:nth-child(1){
+    background-image: url('/recurso_24.2429bc12.png');
+}
+.cards li:nth-child(2){
+    background-image: url('/recurso_21.c690b91a.png');
+}
+.cards li:hover:nth-child(2){
+    background-image: url('/recurso_25.d6e177be.png');
+}
+.cards li:nth-child(3){
+    background-image: url('/recurso_22.1e3a42a6.png');
+}
+.cards li:hover:nth-child(3){
+    background-image: url('/recurso_26.3d9f7e3e.png');
+}
+.cards li:nth-child(4){
+    background-image: url('/recurso_23.cd936983.png');
+}
+.cards li:hover:nth-child(4){
+    background-image: url('/recurso_27.f83eaa75.png');
+}
+
+.card__item{
+    margin: 8px;
+    width: 38%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 8px;
+    height: 257px;  
+}
+
+.card__item .card__text2{
+    display: none;
+}
+
+.card__item:hover{
+    transform: rotateY(180deg);
+}
+
+.card__item:hover .card__text{
+    display: none;
+}
+
+.card__item:hover .card__text2{
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.card__btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: 16px;
+    color: white;
+    font-family: 'Futura_bold';
+}
+
+.card__text{
+    width: 50%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.card__text2{
+    width: 100%;
+    font-size: 20px;
+    text-transform: none;
+}
+
+
+@media screen and (max-width:1450px){
+    .card__item{
+        width: 46%;
+    }
+    .card__btn{
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .card__btn{
+        padding: 8px;
+    }
+    .card__text{
+        font-size: 20px;
+    }
+    .card__text2{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .background.--type002{
+        bottom: 0;
+        height: 68%;
+        width: 100%;
+    }
+    .cards{
+        margin: 8px;
+        height: 67%;
+    }
+    .card__item{
+        padding: 8px;
+        height: 181px;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:375px){
+    .background.--type002{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .card__item{
+        width: 72%;
+        height: 139px;
+    }
+    .card__text{
+        font-size: 18px;
+    }
+    .card__text2{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .background.--type002{
+        height: 70%;
+    }
+    .card__text2{
+        margin: 0;
+        font-size: 12px;
+    }
+}
+/* Estilos flip ruta intro */
+
+.background.--type003{
+    background-image: url('/recurso_31.b1a2787e.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.routeContent{
+    height: 100%;
+    width: 30%;
+}
+
+.routeContent__menu{
+    height: 100%;
+    background-color: var(--secondBlue);
+}
+.route{
+    width: 70%;
+}
+.route__center{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.route__options{
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.route__list{
+    top: 0;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+
+#contentBtn{
+    width: 100%;
+}
+
+.route__list li:nth-child(1) img{
+    margin: 0 159px;
+}
+.route__list li:nth-child(2) img{
+    margin: 0 259px;
+}
+.route__list li:nth-child(3) img{
+    margin: 0 259px;
+}
+.route__list li:nth-child(4) img{
+    margin: 0 159px;
+}
+
+.route__item{
+    display: flex;
+    margin: 16px 8px;
+    justify-content: space-around
+}
+
+.route__img{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 133px;
+}
+
+#img1{
+    background-image: url('/recurso_110.07af3dcd.png');
+}
+#img1:hover{
+    background-image: url('/recurso_119.1b3fca67.png');
+}
+
+#img2{
+    background-image: url('/recurso_110.07af3dcd.png');
+}
+#img2:hover{
+    background-image: url('/recurso_120.deac15de.png');
+}
+#img3{
+    background-image: url('/recurso_111.594de14d.png');
+}
+#img3:hover{
+    background-image: url('/recurso_121.cf7b5542.png');
+}
+#img4{
+    background-image: url('/recurso_113.c1072f70.png');
+}
+#img4:hover{
+    background-image: url('/recurso_122.441cd817.png');
+}
+#img5{
+    background-image: url('/recurso_114.2c368ad2.png');
+}
+#img5:hover{
+    background-image: url('/recurso_123.ee3c0476.png');
+}
+#img6{
+    background-image: url('/recurso_115.8cf363c9.png');
+}
+#img6:hover{
+    background-image: url('/recurso_124.5c0e9488.png');
+}
+#img7{
+    background-image: url('/recurso_116.3025dda5.png');
+}
+#img7:hover{
+    background-image: url('/recurso_125.b215a643.png');
+}
+#img8{
+    background-image: url('/recurso_117.ad68cea8.png');
+}
+#img8:hover{
+    background-image: url('/recurso_126.b3bfce22.png');
+}
+/* Estilos globales */
+/*# sourceMappingURL=/styles.c20161f4.css.map */
