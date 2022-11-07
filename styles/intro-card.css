@@ -1,0 +1,104 @@
+.background.--type002{
+    background-image: url('../images/recurso_29.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+.cards{
+    width: 60%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 11;
+}
+
+.cards li:nth-child(1){
+    background-image: url('../images/recurso_19.png');
+    background-repeat: no-repeat;
+}
+.cards li:hover:nth-child(1){
+    background-image: url('../images/recurso_24.png');
+    background-repeat: no-repeat;
+}
+.cards li:nth-child(2){
+    background-image: url('../images/recurso_21.png');
+    background-repeat: no-repeat;
+}
+.cards li:hover:nth-child(2){
+    background-image: url('../images/recurso_25.png');
+    background-repeat: no-repeat;
+}
+.cards li:nth-child(3){
+    background-image: url('../images/recurso_22.png');
+    background-repeat: no-repeat;
+}
+.cards li:hover:nth-child(3){
+    background-image: url('../images/recurso_26.png');
+    background-repeat: no-repeat;
+}
+.cards li:nth-child(4){
+    background-image: url('../images/recurso_23.png');
+    background-repeat: no-repeat;
+}
+.cards li:hover:nth-child(4){
+    background-image: url('../images/recurso_27.png');
+    background-repeat: no-repeat;
+}
+
+.card__item{
+    margin: 24px;
+    width: 448px;
+    height: 257px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card__item .card__text2{
+    display: none;
+}
+
+.card__item:hover{
+    transform: rotateY(180deg);
+}
+
+.card__item:hover .card__text{
+    display: none;
+}
+
+.card__item:hover .card__text2{
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.card__btn{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 24px;
+    color: white;
+    font-family: 'Futura_bold';
+}
+
+.card__text{
+    width: 44%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.card__text2{
+    width: 100%;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.card__img{
+    width: 200px;
+}
