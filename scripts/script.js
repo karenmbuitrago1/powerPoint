@@ -46,20 +46,17 @@ function btn_ruta(){
 //Audios y textos
 $(function() {
   var is_playing;
-  var original = $('#change').html();
-  var original2 = $('#change2').html();  
-  var original3 = $('#change3').html();
-
+  
   $("#play_origen").click(function(e) {
+    var original = 'Durante el año 2022, la Agencia Nacional de Seguridad Vial se propuso construir una Metodología de intervención comunitaria para fortalecer comportamientos viales.';
     var text1 = 'Para dar alcance a este objetivo, indagó acciones adelantadas por 36 concesiónes en el país para garantizar la participación comunitaria y la gestión social en el marco de la implementación de proyectos viales, identificando, entre otros, lecciones aprendidas y buenas prácticas.';
     var text1_2 = 'A partir de los hallazgos de esta exploración, surge la presente propuesta metodológica, estructurada en 8 fases, cuyo propósito central es proporcionar herramientas de co-construcción orientadas a promover la generación de una cultura vial';
     var text1_3 = 'Basada en el respeto por la vida, a partir de la intervención participativa, integradora y pertinente, tanto de las concesiones, como de los actores sociales y comunitarios. ¡Sin más preámbulo, comencemos este recorrido!';
 
-
+    console.log(original);
     if(e.target.tagName !== "AUDIO") {
     if (is_playing) {
       $('#change').html(original);
-      $('#my_audio').stop();
       $('#my_audio')[0].play();
        
        setTimeout(function(){
@@ -72,6 +69,8 @@ $(function() {
            $('#change').html(text1_3);
        }, 7000);
        $('#change').html(original);
+             is_playing = true;
+
     } else {
       $('#change').html(original);
       $('#my_audio').stop();
@@ -95,6 +94,7 @@ $(function() {
   });
 
     $("#play_conoce").click(function(e) {
+    var original2 = '¡Hola! Mi nombre es Manuel. Soy conductor de una ruta escolar que transita por esta zona. Aprovechando este encuentro, quiero contarte sobre la metodología que hemos venido implementando con otros actores viales, multisectoriales y comunitarios, para garantizar el cuidado de la vida en la vía';    
     var text2 = 'Esta metodología tiene como propósito promover la cultura vial, a partir de la participación, la integración y el empoderamiento de actores sociales, tanto comunitarios como, institucionales. ¡Sí! Aquí todos aportamos, por eso, hoy estamos acá las y los integrantes del Comité Comunitario y Multisectorial, te acompañaremos a conocer cada fase de la metodología';
     var text2_2 = 'Partimos de identificar factores de riesgo y problemáticas que pueden afectar a las comunidades cuando se implementa un proyecto vial, pero también, de reconocer las capacidades que tienen todos sus integrantes para aportar en su prevención, reducción de impacto o solución. Todas las personas participamos y tomamos decisiones pensando, no sólo en nuestro bienestar individual, sino principalmente, en el colectivo.';
     var text2_3 = 'Precisamente, porque reconocemos las capacidades de los miembros de la comunidad, generamos procesos colectivos de participación en los que todas las personas son bienvenidas, sin ningún tipo de discriminación o exclusión en razón de edad, sexo, género, condición social, pertenencia étnica, discapacidad, entre otros. Pero de eso...';
@@ -107,7 +107,8 @@ $(function() {
     if (is_playing) {
       $('#my_audio_conoce').stop();
       $('#my_audio_conoce')[0].play();
-       
+      
+      $('#change2').html(original2);       
        setTimeout(function(){
            $('#change2').html(text2);
        }, 2000);
@@ -119,6 +120,7 @@ $(function() {
       $('#my_audio_conoce').stop();
       $('#my_audio_conoce')[0].play();
       is_playing = true;
+
        $('#change2').html(original2);
        setTimeout(function(){
            $('#change2').html(text2);
@@ -126,7 +128,6 @@ $(function() {
        setTimeout(function(){
            $('#change2').html(text2_2);
        }, 5000);
-       $('#change2').html(original2);       
     }
     } else {
       e.stopPropagtion()
@@ -144,26 +145,28 @@ $("#my_audio_conoce").on("ended", function() {
 
 //Dialogos Boton Ruta
     $("#play_ruta").click(function(e) {
+
+    var original3 = '¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y Multisectoriales para fortalecer una cultura vial';
     var text3 = 'Esta metodología se encuentra estructurada en 8 fases que te presentaré a continuación. No olvides dar clic sobre cada una para descubrir cuál es su objetivo… ¡Comencemos!';
     
     if(e.target.tagName !== "AUDIO") {
     if (is_playing) {
       $('#my_audio_ruta').stop();
       $('#my_audio_ruta')[0].play();
-       
+      
+      $('#change3').html(original3);       
        setTimeout(function(){
            $('#change3').html(text3);
        }, 2000);
-       $('#change').html(original2);
+       $('#change').html(original3);
     } else {
       $('#my_audio_ruta').stop();
       $('#my_audio_ruta')[0].play();
       is_playing = true;
-       $('#change3').html(original2);
+       $('#change3').html(original3);
        setTimeout(function(){
            $('#change3').html(text3);
        }, 2000);
-       $('#change3').html(original2);       
     }
     } else {
       e.stopPropagtion()
