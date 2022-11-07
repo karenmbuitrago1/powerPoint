@@ -950,6 +950,7 @@ audio::-webkit-media-controls-timeline{
     display: flex;
     align-items: center;
     margin: 16px 0;
+    cursor: pointer;
 }
 
 .phase__menuIcon{
@@ -977,6 +978,10 @@ audio::-webkit-media-controls-timeline{
     padding: 0 8px;
     font-family: 'Futura_heavy';
     color: white;
+}
+
+.phase__text:hover,.phase__text_activo{
+    color:var(--mainButton);
 }
 
 .phase__textMin{
@@ -1150,6 +1155,13 @@ audio::-webkit-media-controls-timeline{
         top: 52%;
     }
 }
+.background.--type005{
+    background-image: url('/recurso_31.b1a2787e.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* Estilos globales */
 
 /* Estilos intro */
