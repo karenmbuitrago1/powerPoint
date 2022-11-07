@@ -116,7 +116,12 @@ audio::-webkit-media-controls-play-button{
 audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
-
+.principal {
+    height: 460px;
+    width: auto !important;
+    position: absolute;
+    bottom: 0;
+}
 
 /* Estilos elementos animados*/
 
@@ -1023,7 +1028,7 @@ audio::-webkit-media-controls-timeline{
         top: 156px;
     }
     .titlePhase {
-        font-size: 104px;
+        font-size: 48px;
     }
     .menu__phase{
         width: 100%;
@@ -1060,6 +1065,89 @@ audio::-webkit-media-controls-timeline{
     #person4
     #person5 {
         height: 463px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .menu__title:before {
+        top: 70px;
+        left: 158px;
+    }
+    .menu__phase {
+        top: 15%;
+    }
+    .title__secondary {
+        font-size: 28px;
+    }
+    .phase__textMain {
+        margin: 0 16px;
+    }
+    .phase__textDescription{
+        margin: 0 16px;
+    }
+    .textDescription {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    .content__menu {
+        height: 53%;
+    }
+    .phase__menuList {
+        margin: 8px 0;
+    }
+    .phase__menuItem {
+        padding: 8px;
+        margin: 0;
+        width: 45%;
+    }
+    .phase__text {
+        font-size: 14px;
+        margin: 0;
+    }
+    .phase__menuIcon {
+        width: 32px;
+        height: 32px;
+    }
+    .phase__icon {
+        width: 52%;
+    }
+    .phase__dialog {
+        top: 55%;
+        font-size: 14px;
+        line-height: 15px;
+        width: 81%;
+    }
+    .phase__textMin {
+        font-size: 6px;
+        margin: 0;
+    }
+
+    #person4{
+        height: 150px;
+    }
+
+    #person5{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .menu__title {
+        height: 10%;
+    }
+    .menu__title:before {
+        top: 50px;
+        border-top: 11px solid var(--titleBlue);
+        border-bottom: 24px solid transparent;
+    }
+    .menu__phase {
+        top: 12%;
+    }
+    .title__secondary {
+        font-size: 22px;
+    }
+    .phase__dialog {
+        top: 52%;
     }
 }
 /* Estilos globales */
