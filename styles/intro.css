@@ -99,7 +99,12 @@ audio::-webkit-media-controls-play-button{
 audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
-
+.principal {
+    height: 460px;
+    width: auto !important;
+    position: absolute;
+    bottom: 0;
+}
 
 /* Estilos elementos animados*/
 
