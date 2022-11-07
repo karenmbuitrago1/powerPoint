@@ -72,7 +72,7 @@
 
 .route__item{
     display: flex;
-    margin: 16px 8px;
+    margin: 16px -16px;
     justify-content: space-between;
 }
 
@@ -129,4 +129,111 @@
 }
 #img8:hover{
     background-image: url('../images/recurso_126.png');
+}
+
+
+@media screen and (max-width:1450px){
+    .route__list li a{
+        background-size: 100%;
+    }
+    .route__img {
+        width: 262px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .route__img {
+        width: 262px;
+    }
+    .center{
+        width: 34%;
+    }
+    .route__list li:nth-child(1) a {
+        margin: 0 76px;
+    }
+    .route__list li:nth-child(4) a {
+        margin: 0 76px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .background__content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .routeContent {
+        height: 20%;
+        width: 100%;
+    }
+    .route{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+    }
+    .route__center{
+        display: flex;
+        justify-content: center;
+        margin: 8px; 
+        height: 35%;
+    }
+
+    .center {
+        width: 48%;
+    }
+
+    .route__options{
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        bottom: 0;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: space-evenly;  
+    }
+    .route__list{
+        list-style: none;
+        padding: 0;
+        width: 90%;
+        margin: 0px;
+        height: 55%;
+    }
+    .route__item{
+        display: flex;
+        justify-content: space-around;
+    }
+    .route__img{
+        margin: 8px;
+        width: 324px;
+    }
+    .route__list li:nth-child(1) a {
+        margin: 0;
+    }
+    .route__list li:nth-child(2) a {
+        margin: 0;
+    }
+    .route__list li:nth-child(3) a {
+        margin: 0;
+    }
+    .route__list li:nth-child(4) a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:375px){
+    .route__item {
+        margin: 2px;
+    }
+    .route__list{
+        margin: 8px 0;
+        height: 50%;
+    }
+    .route__img{
+        width: 164px;
+        height: 67px;
+    }
 }
