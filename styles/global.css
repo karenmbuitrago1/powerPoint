@@ -29,6 +29,11 @@
     src: url("../fonts/futura_medium.ttf");
 }
 
+@font-face {
+    font-family: indie;
+    src: url("../fonts/indie.ttf");
+}
+
 @keyframes animationMoto {
     0%   {left: calc(0px); bottom: calc(104px);}
     50%  {left: calc(620px); bottom: calc(104px);}
