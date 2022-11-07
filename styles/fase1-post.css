@@ -1,6 +1,83 @@
 .background.--type005{
-    background-image: url('../images/recurso_31.png');
+    background-image: url('../images/recurso_39.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
+.postits{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 0;
+
+}
+.postits__list{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.postits__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.postits__itemTittle{
+    font-family: 'Futura_bold';
+    color:  var(--secondBlue);  
+    font-size: 40px;
+}
+
+.postits__text{
+    margin: 16px;
+    padding: 16px;
+    color:  var(--secondBlue);  
+}
+
+.postits__itemPost{
+    height: 370px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#post1 {
+    background-image: url('../images/recurso_41.png');
+    background-repeat: no-repeat;
+}
+#post2 {
+    background-image: url('../images/recurso_42.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+#post2 p{
+    font-size: 40px;
+    font-family: 'indie';
+}
+
+.postits__itemList{
+    list-style: none;
+}
+
+#post3 {
+    background-image: url('../images/recurso_45.png');
+    background-repeat: no-repeat;
+    height: 278px;
+}
+#post4 {
+    background-image: url('../images/recurso_46.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+#post5 {
+    background-image: url('../images/recurso_48.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+

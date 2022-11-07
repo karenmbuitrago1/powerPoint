@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\fonts\\Futura_Bold_font.ttf":[["Futura_Bold_font.a62f843a.ttf","../fonts/Futura_Bold_font.ttf"],"../fonts/Futura_Bold_font.ttf"],"./..\\fonts\\Futura_Extra_Black_font.ttf":[["Futura_Extra_Black_font.2e5f4a13.ttf","../fonts/Futura_Extra_Black_font.ttf"],"../fonts/Futura_Extra_Black_font.ttf"],"./..\\fonts\\futura_medium.ttf":[["futura_medium.e953120c.ttf","../fonts/futura_medium.ttf"],"../fonts/futura_medium.ttf"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro.css":[function(require,module,exports) {
+},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\fonts\\Futura_Bold_font.ttf":[["Futura_Bold_font.a62f843a.ttf","../fonts/Futura_Bold_font.ttf"],"../fonts/Futura_Bold_font.ttf"],"./..\\fonts\\Futura_Extra_Black_font.ttf":[["Futura_Extra_Black_font.2e5f4a13.ttf","../fonts/Futura_Extra_Black_font.ttf"],"../fonts/Futura_Extra_Black_font.ttf"],"./..\\fonts\\futura_medium.ttf":[["futura_medium.e953120c.ttf","../fonts/futura_medium.ttf"],"../fonts/futura_medium.ttf"],"./..\\fonts\\indie.ttf":[["indie.02959d34.ttf","../fonts/indie.ttf"],"../fonts/indie.ttf"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -192,7 +192,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_31.png":[["recurso_31.b1a2787e.png","../images/recurso_31.png"],"../images/recurso_31.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_39.jpg":[["recurso_39.c2c5009d.jpg","../images/recurso_39.jpg"],"../images/recurso_39.jpg"],"./..\\images\\recurso_41.png":[["recurso_41.c0d09a86.png","../images/recurso_41.png"],"../images/recurso_41.png"],"./..\\images\\recurso_42.png":[["recurso_42.219f01b9.png","../images/recurso_42.png"],"../images/recurso_42.png"],"./..\\images\\recurso_45.png":[["recurso_45.c7ec4aca.png","../images/recurso_45.png"],"../images/recurso_45.png"],"./..\\images\\recurso_46.png":[["recurso_46.b2c8adfc.png","../images/recurso_46.png"],"../images/recurso_46.png"],"./..\\images\\recurso_48.png":[["recurso_48.6ce0b401.png","../images/recurso_48.png"],"../images/recurso_48.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50416" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50958" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -365,73 +365,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-  var id = bundles[bundles.length - 1];
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-    throw err;
-  }
-}
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-var bundleLoaders = {};
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-var bundles = {};
-function loadBundle(bundle) {
-  var id;
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-      return resolved;
-    }).catch(function (e) {
-      delete bundles[bundle];
-      throw e;
-    });
-  }
-}
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],0:[function(require,module,exports) {
-var b=require("../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-loader.js");
-},{}]},{},["../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
+},{}]},{},["../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/styles.c20161f4.js.map

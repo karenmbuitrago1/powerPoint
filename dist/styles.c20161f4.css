@@ -29,6 +29,11 @@
     src: url("/futura_medium.e953120c.ttf");
 }
 
+@font-face {
+    font-family: indie;
+    src: url("/indie.02959d34.ttf");
+}
+
 @keyframes animationMoto {
     0%   {left: calc(0px); bottom: calc(104px);}
     50%  {left: calc(620px); bottom: calc(104px);}
@@ -1156,11 +1161,88 @@ audio::-webkit-media-controls-timeline{
     }
 }
 .background.--type005{
-    background-image: url('/recurso_31.b1a2787e.png');
+    background-image: url('/recurso_39.c2c5009d.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
+.postits{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 0;
+
+}
+.postits__list{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.postits__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.postits__itemTittle{
+    font-family: 'Futura_bold';
+    color:  var(--secondBlue);  
+    font-size: 40px;
+}
+
+.postits__text{
+    margin: 16px;
+    padding: 16px;
+    color:  var(--secondBlue);  
+}
+
+.postits__itemPost{
+    height: 370px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#post1 {
+    background-image: url('/recurso_41.c0d09a86.png');
+    background-repeat: no-repeat;
+}
+#post2 {
+    background-image: url('/recurso_42.219f01b9.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+#post2 p{
+    font-size: 40px;
+    font-family: 'indie';
+}
+
+.postits__itemList{
+    list-style: none;
+}
+
+#post3 {
+    background-image: url('/recurso_45.c7ec4aca.png');
+    background-repeat: no-repeat;
+    height: 278px;
+}
+#post4 {
+    background-image: url('/recurso_46.b2c8adfc.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+#post5 {
+    background-image: url('/recurso_48.6ce0b401.png');
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
 
 /* Estilos globales */
 
