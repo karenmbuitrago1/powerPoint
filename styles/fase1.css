@@ -95,6 +95,10 @@
     color: white;
 }
 
+.phase__text:hover,.phase__text_activo{
+    color:var(--mainButton);
+}
+
 .phase__textMin{
     margin: 0 8px;
     padding: 0 8px;
