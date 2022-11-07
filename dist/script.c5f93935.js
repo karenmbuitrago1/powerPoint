@@ -133,16 +133,26 @@ document.getElementById("btn_ruta").addEventListener("click", btn_ruta, false);
 
 // Cambio de Botones
 function btn_origen() {
-  $("#bienvenida").addClass("--invisible");
+  $("#my_audio_conoce").trigger('pause');
+  $("#play_conoce").html('Reproducir Audio');
+  $("#my_audio_ruta").trigger('pause');
+  $("#play_ruta").html('Reproducir Audio');
   $(".origen").removeClass("--invisible");
   $(".ruta").addClass("--invisible");
   $(".conoce").addClass("--invisible");
   $(".background").removeClass("--invisible");
   $(".--type002").addClass("--invisible");
   $(".dialog").removeClass("--invisible");
+  var highestTimeoutId = setTimeout(";");
+  for (var i = 0; i < highestTimeoutId; i++) {
+    clearTimeout(i);
+  }
 }
 function btn_conoce() {
-  $("#bienvenida").addClass("--invisible");
+  $("#my_audio").trigger('pause');
+  $("#play_origen").html('Reproducir Audio');
+  $("#my_audio_ruta").trigger('pause');
+  $("#play_ruta").html('Reproducir Audio');
   $(".origen").addClass("--invisible");
   $(".ruta").addClass("--invisible");
   $(".conoce").removeClass("--invisible");
@@ -150,9 +160,16 @@ function btn_conoce() {
   $(".--type002").addClass("--invisible");
   $(".dialog").removeClass("--invisible");
   $("#person2").removeClass("--invisible");
+  var highestTimeoutId = setTimeout(";");
+  for (var i = 0; i < highestTimeoutId; i++) {
+    clearTimeout(i);
+  }
 }
 function btn_ruta() {
-  $("#bienvenida").addClass("--invisible");
+  $("#my_audio").trigger('pause');
+  $("#play_origen").html('Reproducir Audio');
+  $("#my_audio_conoce").trigger('pause');
+  $("#play_conoce").html('Reproducir Audio');
   $(".origen").addClass("--invisible");
   $(".conoce").addClass("--invisible");
   $(".ruta").removeClass("--invisible");
@@ -160,51 +177,65 @@ function btn_ruta() {
   $(".--type002").addClass("--invisible");
   $(".dialog").removeClass("--invisible");
   $("#person3").removeClass("--invisible");
+  var highestTimeoutId = setTimeout(";");
+  for (var i = 0; i < highestTimeoutId; i++) {
+    clearTimeout(i);
+  }
 }
 //Audios y textos
 $(function () {
   var is_playing;
   $("#play_origen").click(function (e) {
-    var original = 'Durante el año 2022, la Agencia Nacional de Seguridad Vial se propuso construir una Metodología de intervención comunitaria para fortalecer comportamientos viales.';
-    var text1 = 'Para dar alcance a este objetivo, indagó acciones adelantadas por 36 concesiónes en el país para garantizar la participación comunitaria y la gestión social en el marco de la implementación de proyectos viales, identificando, entre otros, lecciones aprendidas y buenas prácticas.';
+    var original = '¡Bienvenido a la Metodología de intervención basada en modelos de desarrollo comunitario para proyectos viales! Antes de iniciar, déjame contarte cómo nace esta iniciativa…';
+    var text1 = 'Durante el año 2022, la Agencia Nacional de Seguridad Vial se propuso construir una Metodología de intervención comunitaria para fortalecer comportamientos viales.';
+    var text1_1 = 'Para dar alcance a este objetivo, indagó acciones adelantadas por 36 concesiónes en el país para garantizar la participación comunitaria y la gestión social en el marco de la implementación de proyectos viales, identificando, entre otros, lecciones aprendidas y buenas prácticas.';
     var text1_2 = 'A partir de los hallazgos de esta exploración, surge la presente propuesta metodológica, estructurada en 8 fases, cuyo propósito central es proporcionar herramientas de co-construcción orientadas a promover la generación de una cultura vial';
     var text1_3 = 'Basada en el respeto por la vida, a partir de la intervención participativa, integradora y pertinente, tanto de las concesiones, como de los actores sociales y comunitarios. ¡Sin más preámbulo, comencemos este recorrido!';
-    console.log(original);
+    $("#play_origen").html('Reproduciendo...');
     if (e.target.tagName !== "AUDIO") {
       if (is_playing) {
         $('#change').html(original);
+        $('#my_audio')[0].load();
         $('#my_audio')[0].play();
         setTimeout(function () {
           $('#change').html(text1);
-        }, 2000);
+        }, 12000);
+        setTimeout(function () {
+          $('#change').html(text1_1);
+        }, 21000);
         setTimeout(function () {
           $('#change').html(text1_2);
-        }, 5000);
+        }, 37000);
         setTimeout(function () {
           $('#change').html(text1_3);
-        }, 7000);
+        }, 51000);
         $('#change').html(original);
         is_playing = true;
       } else {
         $('#change').html(original);
-        $('#my_audio').stop();
+        $('#my_audio')[0].load();
         $('#my_audio')[0].play();
         is_playing = true;
-        $('#change').html(original);
         setTimeout(function () {
           $('#change').html(text1);
-        }, 2000);
+        }, 11000);
+        setTimeout(function () {
+          $('#change').html(text1_1);
+        }, 21000);
         setTimeout(function () {
           $('#change').html(text1_2);
-        }, 5000);
+        }, 37000);
         setTimeout(function () {
           $('#change').html(text1_3);
-        }, 7000);
+        }, 51000);
         $('#change').html(original);
       }
     } else {
       e.stopPropagtion();
     }
+  });
+  $("#my_audio").on("ended", function () {
+    $("#play_origen").html('Reproducir Audio');
   });
   $("#play_conoce").click(function (e) {
     var original2 = '¡Hola! Mi nombre es Manuel. Soy conductor de una ruta escolar que transita por esta zona. Aprovechando este encuentro, quiero contarte sobre la metodología que hemos venido implementando con otros actores viales, multisectoriales y comunitarios, para garantizar el cuidado de la vida en la vía';
@@ -215,36 +246,68 @@ $(function () {
     var text2_5 = '¡Buenas tardes, Juanita! Estamos conversando un poco sobre el proyecto de seguridad vial en el que participas con tu comunidad. ¿Quieres acomodar las cosas en tu lugar y contarnos un poco al respecto?';
     var text2_6 = '¡Claro que sí Don Manuel! Lo que a mí más me ha gustado de la metodología, es que todos participamos reconociendo nuestras diferencias. De hecho, tenía como tarea para hoy, construir algunos carteles para compartir ...';
     var text2_7 = 'con mis compañeros cómo, con esta metodología nos hemos comprometido a promover la integración de todas las personas. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
+    $("#play_conoce").html('Reproduciendo...');
     if (e.target.tagName !== "AUDIO") {
       if (is_playing) {
-        $('#my_audio_conoce').stop();
+        $('#my_audio_conoce')[0].load();
         $('#my_audio_conoce')[0].play();
         $('#change2').html(original2);
         setTimeout(function () {
           $('#change2').html(text2);
-        }, 2000);
+        }, 19000);
         setTimeout(function () {
           $('#change2').html(text2_2);
-        }, 5000);
-        $('#change').html(original2);
+        }, 32000);
+        setTimeout(function () {
+          $('#change2').html(text2_3);
+        }, 53000);
+        setTimeout(function () {
+          $('#change2').html(text2_4);
+        }, 72000);
+        setTimeout(function () {
+          $('#change2').html(text2_5);
+        }, 80000);
+        setTimeout(function () {
+          $('#change2').html(text2_6);
+        }, 90000);
+        setTimeout(function () {
+          $('#change2').html(text2_7);
+        }, 102000);
+        $('#change2').html(original2);
       } else {
-        $('#my_audio_conoce').stop();
+        $('#my_audio_conoce')[0].load();
         $('#my_audio_conoce')[0].play();
         is_playing = true;
         $('#change2').html(original2);
         setTimeout(function () {
           $('#change2').html(text2);
-        }, 2000);
+        }, 19000);
         setTimeout(function () {
           $('#change2').html(text2_2);
-        }, 5000);
+        }, 32000);
+        setTimeout(function () {
+          $('#change2').html(text2_3);
+        }, 53000);
+        setTimeout(function () {
+          $('#change2').html(text2_4);
+        }, 73000);
+        setTimeout(function () {
+          $('#change2').html(text2_5);
+        }, 80000);
+        setTimeout(function () {
+          $('#change2').html(text2_6);
+        }, 90000);
+        setTimeout(function () {
+          $('#change2').html(text2_7);
+        }, 102000);
+        $('#change2').html(original2);
       }
     } else {
       e.stopPropagtion();
     }
   });
   $("#my_audio_conoce").on("ended", function () {
-    console.log("termino");
+    $("#play_conoce").html('Reproducir Audio');
     $(".background").addClass("--invisible");
     $(".--type002").removeClass("--invisible");
     $(".dialog").addClass("--invisible");
@@ -255,33 +318,32 @@ $(function () {
   $("#play_ruta").click(function (e) {
     var original3 = '¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y Multisectoriales para fortalecer una cultura vial';
     var text3 = 'Esta metodología se encuentra estructurada en 8 fases que te presentaré a continuación. No olvides dar clic sobre cada una para descubrir cuál es su objetivo… ¡Comencemos!';
+    $("#play_ruta").html('Reproduciendo...');
     if (e.target.tagName !== "AUDIO") {
       if (is_playing) {
-        $('#my_audio_ruta').stop();
+        $('#my_audio_ruta')[0].load();
         $('#my_audio_ruta')[0].play();
         $('#change3').html(original3);
         setTimeout(function () {
           $('#change3').html(text3);
-        }, 2000);
-        $('#change').html(original3);
+        }, 13000);
+        $('#change3').html(original3);
       } else {
-        $('#my_audio_ruta').stop();
+        $('#my_audio_ruta')[0].load();
         $('#my_audio_ruta')[0].play();
         is_playing = true;
         $('#change3').html(original3);
         setTimeout(function () {
           $('#change3').html(text3);
-        }, 2000);
+        }, 12000);
       }
     } else {
       e.stopPropagtion();
     }
   });
   $("#my_audio_ruta").on("ended", function () {
-    $(".background").addClass("--invisible");
-    $(".--type002").removeClass("--invisible");
-    $(".dialog").addClass("--invisible");
-    $("#person3").addClass("--invisible");
+    $("#play_ruta").html('Reproducir Audio');
+    window.location.href = 'ruta.html';
   });
 });
 
@@ -397,7 +459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51561" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56765" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

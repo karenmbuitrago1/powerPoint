@@ -74,9 +74,21 @@
 				<div class="menu__options">
 					<ul class="menu__list" id="menu_botones">
 						<li class="menu__listItem">
-							<button type="button" class="menu__listBtn menu__listBtn_active" id="btn_origen">
+							<button type="button" class="menu__listBtn" id="btn_origen">
 								<img class="menu__listBtn__img" src="../images/play.png" />
 								<p class="menu__listBtn__text">Punto de origen</p>
+							</button>
+						</li>
+						<li class="menu__listItem">
+							<button type="button" class="menu__listBtn" id="btn_conoce">
+								<img class="menu__listBtn__img" src="../images/play.png" />
+								<p class="menu__listBtn__text">¡Conoce nuestro modelo y enfoque!</p>
+							</button>
+						</li>
+						<li class="menu__listItem">
+							<button type="button" class="menu__listBtn" id="btn_ruta">
+								<img class="menu__listBtn__img" src="../images/play.png" />
+								<p class="menu__listBtn__text">Ruta de movilidad</p>
 							</button>
 						</li>
 					</ul>
@@ -88,13 +100,23 @@
 
 				</div>
 			</section>
-			<section id="origen" class="content__dialog origen ">
+			<section id="bienvenida" class="content__dialog ">
 				<div class="dialog">
-					<div class="dialogBox__text" id="change">¡Bienvenido a la Metodología de intervención basada en modelos de desarrollo comunitario para proyectos viales! Antes de iniciar, déjame contarte cómo nace esta iniciativa…
+					<div class="dialog__text">¡Bienvenido a la Metodología de intervención basada en modelos de
+						desarrollo comunitario para proyectos viales! Antes de iniciar, déjame contarte cómo nace esta
+						iniciativa…
+					</div>
 				</div>
-					<audio  id="my_audio">
-					  <source src="../audios/1_Bienvenida_transito.mp3" type="audio/mp3">
-					  Your browser does not support the audio element.
+			</section>
+			<section class="content__dialog --invisible origen ">
+				<div class="dialog">
+					<div class="dialogBox__text" id="change">Durante el año 2022, la Agencia Nacional de Seguridad Vial
+						se propuso construir una Metodología de intervención comunitaria para fortalecer comportamientos
+						viales.
+					</div>
+					<audio id="my_audio">
+						<source src="../audios/audio.wav" type="audio/wav">
+						Your browser does not support the audio element.
 					</audio>
 					<div id="play_origen" class="play">Reproducir Audio</div>
 			</section>
@@ -105,20 +127,22 @@
 						metodología que hemos venido implementando con otros actores viales, multisectoriales y
 						comunitarios, para garantizar el cuidado de la vida en la vía
 
-				</div>
-					<audio id="my_audio_conoce" >
-					  <source src="../audios/2_Manuel_Juanita_transito.mp3" type="audio/mp3">
-					  Your browser does not support the audio element.
+					</div>
+					<audio id="my_audio_conoce">
+						<source src="../audios/audio.wav" type="audio/wav">
+						Your browser does not support the audio element.
 					</audio>
 					<div id="play_conoce" class="play">Reproducir Audio</div>
 			</section>
 			<section class="content__dialog --invisible ruta ">
 				<div class="dialog">
-					<div class="dialogBox__text" id="change3">¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y Multisectoriales para fortalecer una cultura vial
-				</div>
-					<audio  id="my_audio_ruta">
-					  <source src="../audios/3_Javier_transito.mp3" type="audio/mp3">
-					  Your browser does not support the audio element.
+					<div class="dialogBox__text" id="change3">¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don
+						Manuel y Juanita, he apoyado la conformación e implementación de los Comités Comunitarios y
+						Multisectoriales para fortalecer una cultura vial
+					</div>
+					<audio id="my_audio_ruta">
+						<source src="../audios/audio.wav" type="audio/wav">
+						Your browser does not support the audio element.
 					</audio>
 					<div id="play_ruta" class="play">Reproducir Audio</div>
 			</section>
