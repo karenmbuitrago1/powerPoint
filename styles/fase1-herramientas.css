@@ -1,0 +1,51 @@
+.tools{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cards.--toolsCards{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cards.--toolsCards li{
+    height: 40%;
+    background-image: url('../images/recurso_59.png');
+}
+
+.cards.--toolsCards li:hover{
+    height: 40%;
+    background-image: url('../images/recurso_60.png');
+}
+
+.card__text.--toolsText{
+    margin: 0 0 0 98px;
+}
+
+@media screen and (max-width: 720px){
+    .cards.--toolsCards {
+        margin: 8px;
+        height: 42%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card__item {
+        width: 62%;
+        height: 50%;
+    }
+    .cards.--toolsCards {
+        margin: 8px;
+        height: 45%;
+        width: 100%;
+    }
+    .card__text.--toolsText {
+        margin: 0 0 0 63px;
+    }
+    .card__text2.--toolsText{
+        margin: 0;
+        font-size: 10px;
+    }
+}
+

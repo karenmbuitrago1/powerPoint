@@ -207,6 +207,10 @@ audio::-webkit-media-controls-timeline{
     position: absolute;
     top: 0;
 }
+.logo{
+    width: 90%;
+}
+
 .menu__options{
     display: flex;
     flex-direction: row-reverse;
@@ -261,17 +265,15 @@ audio::-webkit-media-controls-timeline{
     flex-direction: row-reverse;
     bottom: 0;
     left: 22%;
+    height: 64%;
 }
 
 .menu__personRight{
     position: absolute;
     bottom: 0;
     right: 8%;
+    height: 64%;
 }
-.person{
-    height: 630px;
-}
-
 
 /* Estilos menu derecha - dialogo */
 
@@ -343,9 +345,7 @@ audio::-webkit-media-controls-timeline{
     .menu__title:before {
         top: 82%;
     }
-    .menu__phase {
-        height: 84%;
-    }
+    
 }
 
 @media screen and (max-width:720px){
@@ -397,6 +397,12 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn__text {
         font-size: 24px;
     }
+    .menu__person.--person4{
+        left: 6%;
+    }
+    .menu__personRight{
+        right: 30%;
+    }
     .dialog{
         width: 80%;
         top: 403px;
@@ -431,9 +437,6 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn__text {
         font-size: 16px;
     }
-    .person{
-        height: 309px 
-    }
     .dialog{
         width: 80%;
         top: 216px;
@@ -446,6 +449,9 @@ audio::-webkit-media-controls-timeline{
         left: 77px;
         top: 110px;
         border-bottom: 16px solid transparent;
+    }
+    .person{
+        height: 47%; 
     }
 }
 
@@ -461,9 +467,6 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__listBtn__text {
         font-size: 14px;
-    }
-    .person{
-        height: 272px 
     }
     .dialog{
         top: 203px;
@@ -905,7 +908,12 @@ audio::-webkit-media-controls-timeline{
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--type007{
+    background-image: url('/recurso57.0ad092c1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .menu__title:before{
     border-radius: 10px;
     content: "";
@@ -916,11 +924,11 @@ audio::-webkit-media-controls-timeline{
     border-top: 12px solid var(--titleBlue);
     border-bottom: 36px solid transparent;
     left: 234px;
-    top: 151px;
+    top: 87%;
 }
 
 .menu__phase{
-    height: 80%;
+    height: 84%;
     position: absolute;
     bottom: 0;
     width: 30%;
@@ -935,7 +943,7 @@ audio::-webkit-media-controls-timeline{
 
 .titlePhase{
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 64px;
     color: white;
     margin: 8px;
 }
@@ -1063,6 +1071,14 @@ p.titulo_opc {
 #endMessage {
   display: none;
 }
+.drag_done{
+    color: #fff;
+    font-size: 42px;
+}
+.--pas_2_fase1{
+    padding-top: 7%;
+}
+
 
 @media screen and (max-width:1450px){
     .titlePhase{
@@ -1078,6 +1094,13 @@ p.titulo_opc {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width:1280px){
+    .menu__phase {
+        height: 84%;
+    }
+}
+
 
 @media screen and (max-width:720px){
     .content__menu {
@@ -1119,13 +1142,7 @@ p.titulo_opc {
         width: 50%;
     }
 
-    .menu__person.--person4{
-        left: 6%;
-    }
-
-    .menu__personRight{
-        right: 30%;
-    }
+   
     #person4
     #person5 {
         height: 463px;
@@ -1195,7 +1212,7 @@ p.titulo_opc {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:360px){
     .menu__title {
         height: 10%;
     }
@@ -1420,6 +1437,58 @@ p.titulo_opc {
         width: 100%;
     }
 }
+
+.tools{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cards.--toolsCards{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cards.--toolsCards li{
+    height: 40%;
+    background-image: url('/recurso_59.df87a0ed.png');
+}
+
+.cards.--toolsCards li:hover{
+    height: 40%;
+    background-image: url('/recurso_60.3808ff9c.png');
+}
+
+.card__text.--toolsText{
+    margin: 0 0 0 98px;
+}
+
+@media screen and (max-width: 720px){
+    .cards.--toolsCards {
+        margin: 8px;
+        height: 42%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card__item {
+        width: 62%;
+        height: 50%;
+    }
+    .cards.--toolsCards {
+        margin: 8px;
+        height: 45%;
+        width: 100%;
+    }
+    .card__text.--toolsText {
+        margin: 0 0 0 63px;
+    }
+    .card__text2.--toolsText{
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
 
 /* Estilos globales */
 
