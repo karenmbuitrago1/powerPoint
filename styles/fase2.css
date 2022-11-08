@@ -10,6 +10,11 @@
     background-size: cover;
 }
 
+.bckg__img{
+    position: absolute;
+    top: 40%;
+    right: 4%;
+}
 
 .menu__title.--phase2 {
     background-color: var(--titlePurple);
@@ -27,3 +32,22 @@
 .phase__text_active.--phase {
     color: var(--titlePurple);
 }
+
+
+@media screen and (max-width: 720px){
+    .bckg__img{
+        top: 57%;
+        right: 0%;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .bckg__img{
+        top: 61%;
+        right: 0%;
+        width: 100%;
+    }
+}
+
+
