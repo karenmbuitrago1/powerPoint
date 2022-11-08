@@ -1250,7 +1250,12 @@ p.titulo_opc {
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--obj_fase2_postits{
+    background-image: url('/recurso90.058d747a.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .postits{
     height: 100%;
     width: 70%;
@@ -1601,6 +1606,11 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.bckg__img{
+    position: absolute;
+    top: 48%;
+    right: 17%;
+}
 
 .menu__title.--phase2 {
     background-color: var(--titlePurple);
@@ -1618,6 +1628,42 @@ p.titulo_opc {
 .phase__text_active.--phase {
     color: var(--titlePurple);
 }
+
+
+@media screen and (max-width: 1450px){
+    .bckg__img{
+        top: 41%;
+        right: 7%;
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+    .bckg__img{
+        top: 41%;
+        right: 6%;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    .bckg__img{
+        top: 57%;
+        right: 0%;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .bckg__img{
+        top: 61%;
+        right: 0%;
+        width: 100%;
+    }
+}
+
+
+
 /* Estilos globales */
 
 /* Estilos intro */
