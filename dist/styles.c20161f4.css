@@ -1671,13 +1671,19 @@ p.titulo_opc {
     background-color: var(--firstOrange);
 
 }
-.background.--type007{
+.background.--type009{
     background-image: url('/recurso_7.5b9994e7.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+.content__dialog.--pas_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .background__animation.--phase3{
     display: flex;
@@ -1725,6 +1731,12 @@ p.titulo_opc {
 
 
 
+.background.--obj_fase3_postits{
+    background-image: url('/recurso_15.d0444efe.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* Estilos globales */
 
 /* Estilos intro */
