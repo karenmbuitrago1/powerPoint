@@ -18,6 +18,13 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.background.--tip_fase2{
+    background-image: url('../images/recurso97.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 317px;
+}
 .bckg__img{
     position: absolute;
     top: 48%;
