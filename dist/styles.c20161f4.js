@@ -196,11 +196,15 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_59.png":[["recurso_59.df87a0ed.png","../images/recurso_59.png"],"../images/recurso_59.png"],"./..\\images\\recurso_60.png":[["recurso_60.3808ff9c.png","../images/recurso_60.png"],"../images/recurso_60.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_59.png":[["recurso_59.df87a0ed.png","../images/recurso_59.png"],"../images/recurso_59.png"],"./..\\images\\recurso_60.png":[["recurso_60.3808ff9c.png","../images/recurso_60.png"],"../images/recurso_60.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\recurso_73.png":[["recurso_73.0ad2bcce.png","../images/recurso_73.png"],"../images/recurso_73.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","../styles/fase2.css":"../styles/fase2.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

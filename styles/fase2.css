@@ -1,0 +1,29 @@
+.background__square.--phase2{
+    background-color: var(--firstPurple);
+
+}
+
+.background.--type006{
+    background-image: url('../images/recurso_73.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.menu__title.--phase2 {
+    background-color: var(--titlePurple);
+}
+
+.menu__title.--phase2:before {
+    border-left: 36px solid var(--titlePurple);
+    border-top: 12px solid var(--titlePurple);
+}
+
+.phase__menuIcon.--phase2 {
+    background-color: var(--titlePurple);
+}
+
+.phase__text_active.--phase {
+    color: var(--titlePurple);
+}

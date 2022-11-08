@@ -7,7 +7,7 @@
     --mainButton:           #0096e0;
     --hoverButton:          #f85636;
 
-    --firstPurple:            #1db5e0;
+    --firstPurple:            #f9d7f9;
     --secondPurple:           #083b85;
     --titlePurple:            #ea7de4;
 
@@ -1509,9 +1509,39 @@ p.titulo_opc {
 }
 
 
+.background__square.--phase2{
+    background-color: var(--firstPurple);
+
+}
+
+.background.--type006{
+    background-image: url('/recurso_73.0ad2bcce.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.menu__title.--phase2 {
+    background-color: var(--titlePurple);
+}
+
+.menu__title.--phase2:before {
+    border-left: 36px solid var(--titlePurple);
+    border-top: 12px solid var(--titlePurple);
+}
+
+.phase__menuIcon.--phase2 {
+    background-color: var(--titlePurple);
+}
+
+.phase__text_active.--phase {
+    color: var(--titlePurple);
+}
 /* Estilos globales */
 
 /* Estilos intro */
+
 
 /* Estilos fases  */
 

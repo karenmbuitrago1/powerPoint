@@ -8,9 +8,11 @@
 @import "../styles/intro-card.css";
 @import "../styles/intro-route.css";
 
-/* Estilos fases  */
 
+/* Estilos fases  */
 
 @import "../styles/fase1.css";
 @import "../styles/fase1-post.css";
 @import "../styles/fase1-herramientas.css";
+
+@import "../styles/fase2.css";
