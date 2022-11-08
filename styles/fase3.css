@@ -9,6 +9,23 @@
     background-size: cover;
 }
 
+
+.background__animation.--phase3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
 .menu__title.--phase3 {
     background-color: var(--titleOrange);
 }
@@ -29,3 +46,12 @@
 .phase__text.--phase3:hover {
     color: var(--titleOrange);
 }
+
+
+@media screen and (max-width: 720px){
+    .background__animation.--phase3{
+        height: 73%;
+    }
+}
+
+
