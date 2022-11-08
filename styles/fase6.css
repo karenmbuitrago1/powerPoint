@@ -52,12 +52,7 @@
 .phase__text.--phase6:hover {
     color: var(--titleYellow);
 }
-img.--pas_fase3{
-    height: 400px;
-}
-.--person_pas_f3{
-    align-items: flex-end;
-}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase6{
         height: 73%;
@@ -119,12 +114,7 @@ img.--pas_fase3{
 .phase__text.--phase6:hover {
     color: var(--titleYellow);
 }
-img.--pas_fase3{
-    height: 400px;
-}
-.--person_pas_f3{
-    align-items: flex-end;
-}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase6{
         height: 73%;

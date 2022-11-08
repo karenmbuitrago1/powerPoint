@@ -13,8 +13,15 @@
     --firstOrange:          #f7d6c9;
     --titleOrange:          #ffa070;
 
-    --firstGreen:           #b8bf5c;
-    --titleGreen:           #ebed98;
+    --firstGreen:           #ebed98;
+    --titleGreen:           #b8bf5c;
+
+    --fisrtPink:            #e78784; 
+    --titlePink:            #f77978; 
+
+
+    --firstYellow:          #f7dda4; 
+    --titleYellow:          #f4bc2f;
 }
 
 @font-face {
@@ -1855,12 +1862,7 @@ p.titulo_opc {
 .phase__text.--phase3:hover {
     color: var(--titleOrange);
 }
-img.--pas_fase3{
-    height: 400px;
-}
-.--person_pas_f3{
-    align-items: flex-end;
-}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase3{
         height: 73%;
@@ -1929,14 +1931,197 @@ img.--pas_fase3{
 .phase__text.--phase4:hover {
     color: var(--titleGreen);
 }
-img.--pas_fase3{
-    height: 400px;
-}
-.--person_pas_f3{
-    align-items: flex-end;
-}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase4{
+        height: 73%;
+    }
+}
+
+
+
+.background__square.--phase5{
+    background-color: var(--firstPink);
+
+}
+.background.--type009{
+    background-image: url('/recurso_7.5b9994e7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase5 {
+    background-color: var(--titlePink);
+}
+
+.menu__title.--phase5:before {
+    border-left: 36px solid var(--titlePink);
+    border-top: 12px solid var(--titlePink);
+}
+
+.phase__menuIcon.--phase5 {
+    background-color: var(--titlePink);
+}
+
+.phase__text_active.--phase5 {
+    color: var(--titlePink);
+}
+
+.phase__text.--phase5:hover {
+    color: var(--titlePink);
+}
+
+@media screen and (max-width: 720px){
+    .background__animation.--phase5{
+        height: 73%;
+    }
+}
+
+
+
+.background__square.--phase6{
+    background-color: var(--firstYellow);
+
+}
+.background.--type009{
+    background-image: url('/recurso_7.5b9994e7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.menu__title.--phase6:before {
+    border-left: 36px solid var(--titleYellow);
+    border-top: 12px solid var(--titleYellow);
+}
+
+.phase__menuIcon.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.phase__text_active.--phase6 {
+    color: var(--titleYellow);
+}
+
+.phase__text.--phase6:hover {
+    color: var(--titleYellow);
+}
+
+@media screen and (max-width: 720px){
+    .background__animation.--phase6{
+        height: 73%;
+    }
+}
+
+
+.background__square.--phase6{
+    background-color: var(--firstYellow);
+
+}
+.background.--type009{
+    background-image: url('/recurso_7.5b9994e7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.menu__title.--phase6:before {
+    border-left: 36px solid var(--titleYellow);
+    border-top: 12px solid var(--titleYellow);
+}
+
+.phase__menuIcon.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.phase__text_active.--phase6 {
+    color: var(--titleYellow);
+}
+
+.phase__text.--phase6:hover {
+    color: var(--titleYellow);
+}
+
+@media screen and (max-width: 720px){
+    .background__animation.--phase6{
         height: 73%;
     }
 }
@@ -1949,6 +2134,7 @@ img.--pas_fase3{
 
 
 /* Estilos fases  */
+
 
 
 /*# sourceMappingURL=/styles.c20161f4.css.map */
