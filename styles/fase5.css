@@ -52,12 +52,7 @@
 .phase__text.--phase5:hover {
     color: var(--titlePink);
 }
-img.--pas_fase3{
-    height: 400px;
-}
-.--person_pas_f3{
-    align-items: flex-end;
-}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase5{
         height: 73%;

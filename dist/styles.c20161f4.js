@@ -220,11 +220,19 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"./..\\images\\recurso_7.png":[["recurso_7.5b9994e7.png","../images/recurso_7.png"],"../images/recurso_7.png"],"./..\\images\\recurso_16.png":[["recurso_16.94b2fa25.png","../images/recurso_16.png"],"../images/recurso_16.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase5.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\recurso_7.png":[["recurso_7.5b9994e7.png","../images/recurso_7.png"],"../images/recurso_7.png"],"./..\\images\\recurso_16.png":[["recurso_16.94b2fa25.png","../images/recurso_16.png"],"../images/recurso_16.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase6.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"./..\\images\\recurso_7.png":[["recurso_7.5b9994e7.png","../images/recurso_7.png"],"../images/recurso_7.png"],"./..\\images\\recurso_16.png":[["recurso_16.94b2fa25.png","../images/recurso_16.png"],"../images/recurso_16.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/index.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","../styles/fase1-tips.css":"../styles/fase1-tips.css","../styles/fase2.css":"../styles/fase2.css","../styles/fase2-herramientas.css":"../styles/fase2-herramientas.css","../styles/fase3.css":"../styles/fase3.css","../styles/fase3-post.css":"../styles/fase3-post.css","../styles/fase4.css":"../styles/fase4.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","../styles/fase1-tips.css":"../styles/fase1-tips.css","../styles/fase2.css":"../styles/fase2.css","../styles/fase2-herramientas.css":"../styles/fase2-herramientas.css","../styles/fase3.css":"../styles/fase3.css","../styles/fase3-post.css":"../styles/fase3-post.css","../styles/fase4.css":"../styles/fase4.css","../styles/fase5.css":"../styles/fase5.css","../styles/fase6.css":"../styles/fase6.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -249,7 +257,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62074" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62866" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
