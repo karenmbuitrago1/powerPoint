@@ -4,7 +4,12 @@
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--obj_fase2_postits{
+    background-image: url('../images/recurso90.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .postits{
     height: 100%;
     width: 70%;
