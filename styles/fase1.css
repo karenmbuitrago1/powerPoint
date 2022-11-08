@@ -29,6 +29,7 @@
     margin: 8px;
     border-radius: 32px;
     text-decoration: none;
+    height: 2%;
 }
 
 .background__backtText:hover{

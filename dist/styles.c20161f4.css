@@ -13,6 +13,8 @@
     --firstOrange:          #f7d6c9;
     --titleOrange:          #ffa070;
 
+    --firstGreen:           #b8bf5c;
+    --titleGreen:           #ebed98;
 }
 
 @font-face {
@@ -955,6 +957,7 @@ audio::-webkit-media-controls-timeline{
     margin: 8px;
     border-radius: 32px;
     text-decoration: none;
+    height: 2%;
 }
 
 .background__backtText:hover{
@@ -1725,6 +1728,79 @@ p.titulo_opc {
 
 
 
+.tools{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cards.--toolsCards2{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.cards.--toolsCards2 li:nth-child(1){
+    height: 40%;
+    background-image: url('/recurso_25.d6e177be.png');
+}
+
+.cards.--toolsCards2 li:hover:nth-child(1){
+    height: 40%;
+    background-image: url('/recurso_25.d6e177be.png');
+}
+
+.cards.--toolsCards2 li:nth-child(2){
+    height: 40%;
+    background-image: url('/recurso_26.3d9f7e3e.png');
+}
+
+.cards.--toolsCards2 li:hover:nth-child(2){
+    height: 40%;
+    background-image: url('/recurso_26.3d9f7e3e.png');
+}
+
+.card__text.--toolsText2{
+    font-size: 40px;
+    margin: 16px;
+}
+
+.card__text2.--toolsText{
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+}
+
+@media screen and (max-width: 720px){
+    .cards.--toolsCards2 {
+        margin: 8px;
+        height: 42%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card__item.--toolsCards2 {
+        width: 43%;
+        height: 27%;
+    }
+    .cards.--toolsCards2 {
+        margin: 8px;
+        height: 45%;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .card__text.--toolsText {
+        margin: 0 0 0 63px;
+    }
+    .card__text2.--toolsText{
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+
 .background__square.--phase3{
     background-color: var(--firstOrange);
 
@@ -1799,11 +1875,80 @@ img.--pas_fase3{
     background-attachment: fixed;
     background-size: cover;
 }
+.background__square.--phase4{
+    background-color: var(--firstGreen);
+
+}
+.background.--type009{
+    background-image: url('/recurso_7.5b9994e7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase4 {
+    background-color: var(--titleGreen);
+}
+
+.menu__title.--phase4:before {
+    border-left: 36px solid var(--titleGreen);
+    border-top: 12px solid var(--titleGreen);
+}
+
+.phase__menuIcon.--phase4 {
+    background-color: var(--titleGreen);
+}
+
+.phase__text_active.--phase4 {
+    color: var(--titleGreen);
+}
+
+.phase__text.--phase4:hover {
+    color: var(--titleGreen);
+}
+img.--pas_fase3{
+    height: 400px;
+}
+.--person_pas_f3{
+    align-items: flex-end;
+}
+@media screen and (max-width: 720px){
+    .background__animation.--phase4{
+        height: 73%;
+    }
+}
+
+
+
 /* Estilos globales */
 
 /* Estilos intro */
 
 
 /* Estilos fases  */
+
 
 /*# sourceMappingURL=/styles.c20161f4.css.map */
