@@ -7,6 +7,13 @@
     --mainButton:           #0096e0;
     --hoverButton:          #f85636;
 
+    --firstPurple:            #1db5e0;
+    --secondPurple:           #083b85;
+    --titlePurple:            #ea7de4;
+
+    --mainPurple:           #0096e0;
+    --hoverPurple:          #f85636;
+
 }
 
 @font-face {
@@ -914,6 +921,12 @@ audio::-webkit-media-controls-timeline{
     background-attachment: fixed;
     background-size: cover;
 }
+.background.--type008{
+    background-image: url('/recurso_tip.f7d213c5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .menu__title:before{
     border-radius: 10px;
     content: "";
@@ -1461,6 +1474,12 @@ p.titulo_opc {
 
 .card__text.--toolsText{
     margin: 0 0 0 98px;
+}
+
+.card__text2.--toolsText{
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
 }
 
 @media screen and (max-width: 720px){
