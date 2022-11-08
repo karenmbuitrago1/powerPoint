@@ -953,7 +953,6 @@ audio::-webkit-media-controls-timeline{
     color: white;
     font-size: 20px;
     margin: 8px;
-    border: 2px solid white;
     border-radius: 32px;
     text-decoration: none;
 }
@@ -962,9 +961,7 @@ audio::-webkit-media-controls-timeline{
     color: var(--hoverButton);
 }
 
-.menu__title:bef
-
-ore{
+.menu__title:before{
     border-radius: 10px;
     content: "";
     width: 0px;
@@ -1204,6 +1201,14 @@ p.titulo_opc {
 }
 
 @media screen and (max-width:375px){
+    .background__back{
+        font-size: 14px;
+        margin: 0;
+        padding: 4px;
+    }
+    .background__backtText{
+        margin: 0;
+    }
     .menu__title:before {
         top: 70px;
         left: 158px;
@@ -1267,6 +1272,9 @@ p.titulo_opc {
 }
 
 @media screen and (max-width:360px){
+    .background__back{
+        bottom: 0;
+    }
     .menu__title {
         height: 10%;
     }
@@ -1771,8 +1779,12 @@ p.titulo_opc {
 .phase__text.--phase3:hover {
     color: var(--titleOrange);
 }
-
-
+img.--pas_fase3{
+    height: 400px;
+}
+.--person_pas_f3{
+    align-items: flex-end;
+}
 @media screen and (max-width: 720px){
     .background__animation.--phase3{
         height: 73%;

@@ -27,7 +27,6 @@
     color: white;
     font-size: 20px;
     margin: 8px;
-    border: 2px solid white;
     border-radius: 32px;
     text-decoration: none;
 }
@@ -36,9 +35,7 @@
     color: var(--hoverButton);
 }
 
-.menu__title:bef
-
-ore{
+.menu__title:before{
     border-radius: 10px;
     content: "";
     width: 0px;
@@ -278,6 +275,14 @@ p.titulo_opc {
 }
 
 @media screen and (max-width:375px){
+    .background__back{
+        font-size: 14px;
+        margin: 0;
+        padding: 4px;
+    }
+    .background__backtText{
+        margin: 0;
+    }
     .menu__title:before {
         top: 70px;
         left: 158px;
@@ -341,6 +346,9 @@ p.titulo_opc {
 }
 
 @media screen and (max-width:360px){
+    .background__back{
+        bottom: 0;
+    }
     .menu__title {
         height: 10%;
     }
