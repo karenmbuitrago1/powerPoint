@@ -38,6 +38,9 @@ function btn_obj_f2(){
     $(".--tip_fase2").addClass("--invisible");
     $(".background").addClass("--type006");
     $(".background").removeClass("--obj_fase2_postits");
+    $(".background").removeClass("--her_fase2");
+    $(".background__image").removeClass("--invisible");
+
 
     var highestTimeoutId = setTimeout(";");
     for (var i = 0 ; i < highestTimeoutId ; i++) {
@@ -67,6 +70,9 @@ function btn_pas_f2(){
     $(".--tip_fase2").addClass("--invisible");
     $(".background").addClass("--type006");
     $(".background").removeClass("--obj_fase2_postits");
+    $(".background").removeClass("--her_fase2");
+    $(".background__image").removeClass("--invisible");
+
 
 
 
@@ -123,6 +129,10 @@ function btn_pas_f2(){
             $(".background").addClass("--type008");
             $(".background").removeClass("--invisible");
             $(".--tip_fase2").removeClass("--invisible");
+            $(".background").removeClass("--her_fase2");
+            $(".background__image").removeClass("--invisible");
+
+
 
         
             var highestTimeoutId = setTimeout(";");

@@ -50,7 +50,6 @@ function btn_pas_f3(){
     $("#person4").addClass("--invisible");
     $("#person5").addClass("--invisible"); 
     $("#person6").removeClass("--invisible");
-    $("#person7").removeClass("--invisible");
     $(".paso_paso").removeClass("--invisible");
     $(".obj_f3").addClass("--invisible");
     $(".herr_f3").addClass("--invisible");
@@ -132,9 +131,10 @@ $(function() {
     var is_playing;
     
     $("#play_f3_bienvenida").click(function(e) {
-      var original = 'Me alegra que estén tan participativos hoy, pero vamos a pedir la palabra. De esta forma, garantizamos que todos nos escuchemos por igual. Para continuar, quiero presentar la segunda fase, denominada ¡La vida en la vía, un asunto de todos!';
-      var text1 = 'Esta fase tiene como propósito identificar los actores clave que, dentro de nuestra comunidad y en los diferentes sectores que en ella intervienen, pueden aportar de manera positiva en la implementación de nuestra metodología, favoreciendo la apropiación local y promoviendo la seguridad vial.';
-      var text1_1 = 'La Junta de Acción Comunal ha preparado algunas notas adhesivas, con datos importantes que debemos tener en cuenta en esta segunda fase. Ahora, los dejo con Juan y Margarita, que les van a presentar el paso a paso a seguir.';
+      var original = 'Hola, mi nombre es Pastor. Soy un ganadero de la región. Mis vaquitas y yo proveemos de leche a todos los vecinos del sector. Por ahí se rumora que aquí producimos la mejor leche de todo el país. No sé si sea cierto, lo único que sé, es que lo que hacemos, lo hacemos con mucho amor.';
+      var text1 = 'Les cuento que yo también hago parte de esta metodología, pues muchas veces, las obras afectan espacios que utilizamos aquí en la finca para mis animalitos, entonces trabajamos de manera conjunta para reducir los problemas y los riesgos. Como dicen por ahí, para que nadie salga perjudicado.';
+      var text1_1 = 'Voy a contarles un poco sobre la fase que más me gusta, se llama: ¡Geografías humanas! Ahí lo que hacemos es caracterizar el espacio físico y humano donde se realizará el proyecto vial, para identificar factores de riesgo asociados a la ocupación y uso del espacio.';
+      var text1_2 = 'Anoche estuve preparando algunas notas adhesivas para ustedes, con datos importantes que deben tener en cuenta. Ahora, los dejo con William y Andrés, para que les cuenten un poco más al respecto';
       
       $("#play_f3_bienvenida").html('Reproduciendo...');
   
@@ -146,10 +146,13 @@ $(function() {
    
          setTimeout(function(){
              $('#change_f3_1').html(text1);
-         }, 16000);
+         }, 20000);
          setTimeout(function(){
              $('#change_f3_1').html(text1_1);
-         }, 32000);
+         }, 36000);
+         setTimeout(function(){
+          $('#change_f3_1').html(text1_2);
+        }, 51000);
          $('#change_f3_1').html(original);
                is_playing = true;
   
@@ -159,13 +162,16 @@ $(function() {
         $('#my_audio_f3_1')[0].play();
         is_playing = true;
         setTimeout(function(){
-            $('#change_f3_1').html(text1);
-        }, 16000);
-        setTimeout(function(){
-            $('#change_f3_1').html(text1_1);
-        }, 32000);
-        $('#change_f3_1').html(original);
-              is_playing = true;
+          $('#change_f3_1').html(text1);
+      }, 20000);
+      setTimeout(function(){
+          $('#change_f3_1').html(text1_1);
+      }, 36000);
+      setTimeout(function(){
+       $('#change_f3_1').html(text1_2);
+     }, 51000);
+      $('#change_f3_1').html(original);
+            is_playing = true;
     }
       } else {
         e.stopPropagtion()
@@ -182,8 +188,8 @@ $(function() {
   });
 
   $("#play_paso_f3").click(function(e) {
-    var original = '¡Buenos días para todos! Para los que no me conocen yo soy Juan. Vendo jugos de naranja y fruta en las mañanas en la esquina del salón comunal. Por allá los espero. Me acompaña la señorita Margarita, ella es motociclista.';
-    var text1 = 'Hoy nos han dado la tarea de mostrarles las instrucciones que deben seguir para desarrollar esta fase. Como soy amante de los rompecabezas, construimos unas fichas con la hoja de ruta. ¡Ayúdennos a armarlas para conocer el paso a paso!';
+    var original = '¡Bienvenido de vuelta! Mi nombre es William. Trabajo con Andrés repartiendo la leche de Pastor por toda la vereda. Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase';
+    var text1 = 'Ambos diseñamos una hoja de ruta, a manera de mapa, que esperamos sea de gran ayuda… No olvides dar clic sobre cada estación, para conocer en qué consisten los pasos a seguir…';
     
     
     $("#play_paso_f3").html('Reproduciendo...');
