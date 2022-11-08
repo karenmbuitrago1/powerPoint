@@ -10,6 +10,12 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.background.--type008{
+    background-image: url('../images/recurso_tip.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .menu__title:before{
     border-radius: 10px;
     content: "";
