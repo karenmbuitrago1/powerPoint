@@ -12,8 +12,14 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.background.--pas_fase8{
+    background-image: url('../images/recurso_244.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .background.--her_fase8{
-    background-image: url('../images/recurso95.png');
+    background-image: url('../images/recurso_144.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

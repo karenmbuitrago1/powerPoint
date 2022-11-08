@@ -2243,8 +2243,14 @@ p.titulo_opc {
     background-attachment: fixed;
     background-size: cover;
 }
+.background.--pas_fase8{
+    background-image: url('/recurso_244.dafeb43b.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .background.--her_fase8{
-    background-image: url('/recurso95.8b88286d.png');
+    background-image: url('/recurso_144.59b73b90.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2317,6 +2323,11 @@ p.titulo_opc {
 }
 
 
+
+.card__text.--toolsText8{
+    font-size: 24px;
+    margin: 16px;
+}
 
 /* Estilos globales */
 
