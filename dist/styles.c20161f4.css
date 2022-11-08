@@ -220,6 +220,8 @@ audio::-webkit-media-controls-timeline{
 .menu__options{
     display: flex;
     flex-direction: row-reverse;
+    height: 60%;
+    align-items: center;
 }
 
 .menu__list{
@@ -429,6 +431,13 @@ audio::-webkit-media-controls-timeline{
     .logo{
         width: 45%;
     }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
     .menu__listItem{
         margin: 4px 0;
     }
@@ -442,6 +451,13 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__listBtn__text {
         font-size: 16px;
+    }
+
+    .menu__options {
+        display: flex;
+        height: 64%;
+        align-items: center;
+        justify-content: center;
     }
     .dialog{
         width: 80%;
@@ -926,7 +942,29 @@ audio::-webkit-media-controls-timeline{
     background-attachment: fixed;
     background-size: cover;
 }
-.menu__title:before{
+
+.background__back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 32px;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.background__backtText:hover{
+    color: var(--hoverButton);
+}
+
+.menu__title:bef
+
+ore{
     border-radius: 10px;
     content: "";
     width: 0px;
@@ -1117,6 +1155,10 @@ p.titulo_opc {
 @media screen and (max-width:720px){
     .content__menu {
         height: 48%;
+    }
+
+    .background__back {
+        border: none;
     }
 
     .menu__title{
@@ -1597,14 +1639,22 @@ p.titulo_opc {
     background-color: var(--firstPurple);
 
 }
-
+.rompecabezas{
+    width: 100%;
+    margin-top: 7%;
+}
 .background.--type006{
     background-image: url('/recurso_73.0ad2bcce.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--her_fase2{
+    background-image: url('/recurso95.8b88286d.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .bckg__img{
     position: absolute;
     top: 48%;

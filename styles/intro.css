@@ -139,6 +139,8 @@ audio::-webkit-media-controls-timeline{
 .menu__options{
     display: flex;
     flex-direction: row-reverse;
+    height: 60%;
+    align-items: center;
 }
 
 .menu__list{
@@ -348,6 +350,13 @@ audio::-webkit-media-controls-timeline{
     .logo{
         width: 45%;
     }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
     .menu__listItem{
         margin: 4px 0;
     }
@@ -361,6 +370,13 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__listBtn__text {
         font-size: 16px;
+    }
+
+    .menu__options {
+        display: flex;
+        height: 64%;
+        align-items: center;
+        justify-content: center;
     }
     .dialog{
         width: 80%;

@@ -16,7 +16,29 @@
     background-attachment: fixed;
     background-size: cover;
 }
-.menu__title:before{
+
+.background__back{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 32px;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.background__backtText:hover{
+    color: var(--hoverButton);
+}
+
+.menu__title:bef
+
+ore{
     border-radius: 10px;
     content: "";
     width: 0px;
@@ -207,6 +229,10 @@ p.titulo_opc {
 @media screen and (max-width:720px){
     .content__menu {
         height: 48%;
+    }
+
+    .background__back {
+        border: none;
     }
 
     .menu__title{
