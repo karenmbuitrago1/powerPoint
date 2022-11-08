@@ -22,6 +22,9 @@
     --firstYellow:          #f7dda4; 
     --titleYellow:          #f4bc2f;
 
+    --firstLightGreen:      #c27c5f; 
+    --titleLightGreen:      #79c279;
+
     --firstMora:             #d4d4f4; 
     --titleMora:             #9e94f7;
 }
@@ -2132,6 +2135,95 @@ p.titulo_opc {
 @media screen and (max-width: 720px){
     .background__animation.--phase6{
         height: 73%;
+    }
+}
+
+
+
+.background__square.--phase7{
+    background-color: var(--firstLightGreen);
+
+}
+.rompecabezas{
+    width: 100%;
+    margin-top: 7%;
+}
+.background.--type014{
+    background-image: url('/recurso_190.19353560.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.background.--her_fase8{
+    background-image: url('/recurso95.8b88286d.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.background.--tip_fase8{
+    background-image: url('/recurso97.fba8b7e3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 317px;
+}
+.bckg__img{
+    position: absolute;
+    top: 48%;
+    right: 17%;
+}
+
+.menu__title.--phase7 {
+    background-color: var(--titleLightGreen);
+}
+
+.menu__title.--phase7:before {
+    border-left: 36px solid var(--titleLightGreen);
+    border-top: 12px solid var(--titleLightGreen);
+}
+
+.phase__menuIcon.--phase7 {
+    background-color: var(--titleLightGreen);
+}
+
+.phase__text_active.--phase7 {
+    color: var(--titleLightGreen);
+}
+
+.phase__text.--phase7:hover {
+    color: var(--titleLightGreen);
+}
+
+
+@media screen and (max-width: 1450px){
+    .bckg__img{
+        top: 41%;
+        right: 7%;
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+    .bckg__img{
+        top: 41%;
+        right: 6%;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    .bckg__img{
+        top: 57%;
+        right: 0%;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .bckg__img{
+        top: 61%;
+        right: 0%;
+        width: 100%;
     }
 }
 
