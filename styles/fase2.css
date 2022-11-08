@@ -2,14 +2,22 @@
     background-color: var(--firstPurple);
 
 }
-
+.rompecabezas{
+    width: 100%;
+    margin-top: 7%;
+}
 .background.--type006{
     background-image: url('../images/recurso_73.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
+.background.--her_fase2{
+    background-image: url('../images/recurso95.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .bckg__img{
     position: absolute;
     top: 48%;

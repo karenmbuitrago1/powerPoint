@@ -36,6 +36,8 @@ function btn_obj_f2(){
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
     $(".--tip_fase2").addClass("--invisible");
+    $(".background").addClass("--type006");
+    $(".background").removeClass("--obj_fase2_postits");
 
     var highestTimeoutId = setTimeout(";");
     for (var i = 0 ; i < highestTimeoutId ; i++) {
@@ -63,6 +65,8 @@ function btn_pas_f2(){
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
     $(".--tip_fase2").addClass("--invisible");
+    $(".background").addClass("--type006");
+    $(".background").removeClass("--obj_fase2_postits");
 
 
 
@@ -88,9 +92,10 @@ function btn_pas_f2(){
         $(".--her_fase2").removeClass("--invisible");
         $(".background").removeClass("--type008");
         $(".--obj_fase2_postits").addClass("--invisible");
-        $(".background").addClass("--type007");
+        $(".background").addClass("--her_fase2");
         $(".background").removeClass("--invisible");
         $(".--tip_fase2").addClass("--invisible");
+        $(".background__image").addClass("--invisible");
 
 
     
@@ -220,7 +225,9 @@ $(function() {
     $("#play_paso_f2").html('Reproducir Audio');
     $(".--pas_fase2").addClass("--invisible");
     $(".--pas_2_fase2").removeClass("--invisible");
-    $(".background").addClass("--type005");
+    $(".background").removeClass("--type005");
+    $(".background").removeClass("--type006");
+    $(".background").addClass("--obj_fase2_postits");
 });
 
 });
