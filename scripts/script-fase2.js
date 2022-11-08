@@ -182,9 +182,8 @@ $(function() {
   });
 
   $("#play_paso_f2").click(function(e) {
-    var original = '¡¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
-    var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
-    var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda';
+    var original = '¡Buenos días para todos! Para los que no me conocen yo soy Juan. Vendo jugos de naranja y fruta en las mañanas en la esquina del salón comunal. Por allá los espero. Me acompaña la señorita Margarita, ella es motociclista.';
+    var text1 = 'Hoy nos han dado la tarea de mostrarles las instrucciones que deben seguir para desarrollar esta fase. Como soy amante de los rompecabezas, construimos unas fichas con la hoja de ruta. ¡Ayúdennos a armarlas para conocer el paso a paso!';
     
     
     $("#play_paso_f2").html('Reproduciendo...');
@@ -197,26 +196,20 @@ $(function() {
  
        setTimeout(function(){
            $('#change_f2_2').html(text1);
-       }, 9000);
-       setTimeout(function(){
-           $('#change_f2_2').html(text1_1);
-       }, 21000);
+       }, 15000);
        $('#change_f2_2').html(original);
              is_playing = true;
 
     } else {
-      $('#change_f2_1').html(original);
+      $('#change_f2_2').html(original);
       $('#my_audio_f2_2')[0].load();
       $('#my_audio_f2_2')[0].play();
       is_playing = true;
       setTimeout(function(){
           $('#change_f2_2').html(text1);
-      }, 9000);
-      setTimeout(function(){
-          $('#change_f2_2').html(text1_1);
-      }, 21000);
+      }, 15000);
 
-      $('#change_f2_1').html(original);
+      $('#change_f2_2').html(original);
             is_playing = true;
   }
     } else {
