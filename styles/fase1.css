@@ -26,11 +26,11 @@
     border-top: 12px solid var(--titleBlue);
     border-bottom: 36px solid transparent;
     left: 234px;
-    top: 151px;
+    top: 87%;
 }
 
 .menu__phase{
-    height: 80%;
+    height: 84%;
     position: absolute;
     bottom: 0;
     width: 30%;
@@ -45,7 +45,7 @@
 
 .titlePhase{
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 64px;
     color: white;
     margin: 8px;
 }
@@ -180,6 +180,8 @@ p.titulo_opc {
 .--pas_2_fase1{
     padding-top: 7%;
 }
+
+
 @media screen and (max-width:1450px){
     .titlePhase{
         font-size: 56px;
@@ -194,6 +196,13 @@ p.titulo_opc {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width:1280px){
+    .menu__phase {
+        height: 84%;
+    }
+}
+
 
 @media screen and (max-width:720px){
     .content__menu {
@@ -235,13 +244,7 @@ p.titulo_opc {
         width: 50%;
     }
 
-    .menu__person.--person4{
-        left: 6%;
-    }
-
-    .menu__personRight{
-        right: 30%;
-    }
+   
     #person4
     #person5 {
         height: 463px;
@@ -311,7 +314,7 @@ p.titulo_opc {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:360px){
     .menu__title {
         height: 10%;
     }

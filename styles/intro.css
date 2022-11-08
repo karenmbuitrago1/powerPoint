@@ -132,6 +132,10 @@ audio::-webkit-media-controls-timeline{
     position: absolute;
     top: 0;
 }
+.logo{
+    width: 90%;
+}
+
 .menu__options{
     display: flex;
     flex-direction: row-reverse;
@@ -186,17 +190,15 @@ audio::-webkit-media-controls-timeline{
     flex-direction: row-reverse;
     bottom: 0;
     left: 22%;
+    height: 64%;
 }
 
 .menu__personRight{
     position: absolute;
     bottom: 0;
     right: 8%;
+    height: 64%;
 }
-.person{
-    height: 630px;
-}
-
 
 /* Estilos menu derecha - dialogo */
 
@@ -268,9 +270,7 @@ audio::-webkit-media-controls-timeline{
     .menu__title:before {
         top: 82%;
     }
-    .menu__phase {
-        height: 84%;
-    }
+    
 }
 
 @media screen and (max-width:720px){
@@ -322,6 +322,12 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn__text {
         font-size: 24px;
     }
+    .menu__person.--person4{
+        left: 6%;
+    }
+    .menu__personRight{
+        right: 30%;
+    }
     .dialog{
         width: 80%;
         top: 403px;
@@ -356,9 +362,6 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn__text {
         font-size: 16px;
     }
-    .person{
-        height: 309px 
-    }
     .dialog{
         width: 80%;
         top: 216px;
@@ -371,6 +374,9 @@ audio::-webkit-media-controls-timeline{
         left: 77px;
         top: 110px;
         border-bottom: 16px solid transparent;
+    }
+    .person{
+        height: 47%; 
     }
 }
 
@@ -386,9 +392,6 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__listBtn__text {
         font-size: 14px;
-    }
-    .person{
-        height: 272px 
     }
     .dialog{
         top: 203px;
