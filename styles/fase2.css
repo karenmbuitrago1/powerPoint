@@ -12,8 +12,8 @@
 
 .bckg__img{
     position: absolute;
-    top: 40%;
-    right: 4%;
+    top: 48%;
+    right: 17%;
 }
 
 .menu__title.--phase2 {
@@ -31,6 +31,22 @@
 
 .phase__text_active.--phase {
     color: var(--titlePurple);
+}
+
+
+@media screen and (max-width: 1450px){
+    .bckg__img{
+        top: 41%;
+        right: 7%;
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+    .bckg__img{
+        top: 41%;
+        right: 6%;
+    }
 }
 
 
