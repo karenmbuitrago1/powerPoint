@@ -196,7 +196,11 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_59.png":[["recurso_59.df87a0ed.png","../images/recurso_59.png"],"../images/recurso_59.png"],"./..\\images\\recurso_60.png":[["recurso_60.3808ff9c.png","../images/recurso_60.png"],"../images/recurso_60.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase2.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_59.png":[["recurso_59.df87a0ed.png","../images/recurso_59.png"],"../images/recurso_59.png"],"./..\\images\\recurso_60.png":[["recurso_60.3808ff9c.png","../images/recurso_60.png"],"../images/recurso_60.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase1-tips.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\recurso_62.png":[["recurso_62.2955d4f9.png","../images/recurso_62.png"],"../images/recurso_62.png"],"./..\\images\\recurso_24.png":[["recurso_24.2429bc12.png","../images/recurso_24.png"],"../images/recurso_24.png"],"./..\\images\\recurso_63.png":[["recurso_63.c7cf548f.png","../images/recurso_63.png"],"../images/recurso_63.png"],"./..\\images\\recurso_25.png":[["recurso_25.d6e177be.png","../images/recurso_25.png"],"../images/recurso_25.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -204,7 +208,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","../styles/fase2.css":"../styles/fase2.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../styles/global.css":"../styles/global.css","../styles/intro.css":"../styles/intro.css","../styles/intro-card.css":"../styles/intro-card.css","../styles/intro-route.css":"../styles/intro-route.css","../styles/fase1.css":"../styles/fase1.css","../styles/fase1-post.css":"../styles/fase1-post.css","../styles/fase1-herramientas.css":"../styles/fase1-herramientas.css","../styles/fase1-tips.css":"../styles/fase1-tips.css","../styles/fase2.css":"../styles/fase2.css","_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -229,7 +233,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57157" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59079" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
