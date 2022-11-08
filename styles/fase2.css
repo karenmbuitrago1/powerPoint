@@ -29,7 +29,11 @@
     background-color: var(--titlePurple);
 }
 
-.phase__text_active.--phase {
+.phase__text_active.--phase2 {
+    color: var(--titlePurple);
+}
+
+.phase__text.--phase2:hover {
     color: var(--titlePurple);
 }
 

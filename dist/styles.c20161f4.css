@@ -7,12 +7,11 @@
     --mainButton:           #0096e0;
     --hoverButton:          #f85636;
 
-    --firstPurple:            #f9d7f9;
-    --secondPurple:           #083b85;
-    --titlePurple:            #ea7de4;
+    --firstPurple:          #f9d7f9;
+    --titlePurple:          #ea7de4;
 
-    --mainPurple:           #0096e0;
-    --hoverPurple:          #f85636;
+    --firstOrange:          #f7d6c9;
+    --titleOrange:          #ffa070;
 
 }
 
@@ -1625,7 +1624,11 @@ p.titulo_opc {
     background-color: var(--titlePurple);
 }
 
-.phase__text_active.--phase {
+.phase__text_active.--phase2 {
+    color: var(--titlePurple);
+}
+
+.phase__text.--phase2:hover {
     color: var(--titlePurple);
 }
 
@@ -1664,6 +1667,37 @@ p.titulo_opc {
 
 
 
+.background__square.--phase3{
+    background-color: var(--firstOrange);
+
+}
+.background.--type007{
+    background-image: url('/recurso_7.5b9994e7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu__title.--phase3 {
+    background-color: var(--titleOrange);
+}
+
+.menu__title.--phase3:before {
+    border-left: 36px solid var(--titleOrange);
+    border-top: 12px solid var(--titleOrange);
+}
+
+.phase__menuIcon.--phase3 {
+    background-color: var(--titleOrange);
+}
+
+.phase__text_active.--phase3 {
+    color: var(--titleOrange);
+}
+
+.phase__text.--phase3:hover {
+    color: var(--titleOrange);
+}
 /* Estilos globales */
 
 /* Estilos intro */

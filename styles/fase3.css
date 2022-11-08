@@ -1,0 +1,31 @@
+.background__square.--phase3{
+    background-color: var(--firstOrange);
+
+}
+.background.--type007{
+    background-image: url('../images/recurso_7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu__title.--phase3 {
+    background-color: var(--titleOrange);
+}
+
+.menu__title.--phase3:before {
+    border-left: 36px solid var(--titleOrange);
+    border-top: 12px solid var(--titleOrange);
+}
+
+.phase__menuIcon.--phase3 {
+    background-color: var(--titleOrange);
+}
+
+.phase__text_active.--phase3 {
+    color: var(--titleOrange);
+}
+
+.phase__text.--phase3:hover {
+    color: var(--titleOrange);
+}
