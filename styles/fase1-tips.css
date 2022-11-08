@@ -1,0 +1,42 @@
+.cards.--toolsTips{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cards.--toolsTips li:nth-child(1){
+    height: 40%;
+    background-image: url('../images/recurso_62.png');
+}
+.cards.--toolsTips li:hover:nth-child(1){
+    background-image: url('../images/recurso_24.png');
+}
+
+.cards.--toolsTips li:nth-child(2){
+    height: 40%;
+    background-image: url('../images/recurso_63.png');
+}
+.cards.--toolsTips li:hover:nth-child(2){
+    background-image: url('../images/recurso_25.png');
+}
+
+.card__text2.--tipsText{
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 720px){
+    .tools.--toolsTips{
+        justify-content: space-around;
+    }
+    .cards.--toolsTips {
+        margin: 8px;
+        height: 40%;
+    }
+    .card__text2.--tipsText {
+        margin: 0;
+        font-size: 14px;
+        padding: 0;
+    }
+}
