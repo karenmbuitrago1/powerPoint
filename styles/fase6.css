@@ -1,0 +1,134 @@
+.background__square.--phase6{
+    background-color: var(--firstYellow);
+
+}
+.background.--type009{
+    background-image: url('../images/recurso_7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('../images/recurso_16.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.menu__title.--phase6:before {
+    border-left: 36px solid var(--titleYellow);
+    border-top: 12px solid var(--titleYellow);
+}
+
+.phase__menuIcon.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.phase__text_active.--phase6 {
+    color: var(--titleYellow);
+}
+
+.phase__text.--phase6:hover {
+    color: var(--titleYellow);
+}
+img.--pas_fase3{
+    height: 400px;
+}
+.--person_pas_f3{
+    align-items: flex-end;
+}
+@media screen and (max-width: 720px){
+    .background__animation.--phase6{
+        height: 73%;
+    }
+}
+
+
+.background__square.--phase6{
+    background-color: var(--firstYellow);
+
+}
+.background.--type009{
+    background-image: url('../images/recurso_7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('../images/recurso_16.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.menu__title.--phase6:before {
+    border-left: 36px solid var(--titleYellow);
+    border-top: 12px solid var(--titleYellow);
+}
+
+.phase__menuIcon.--phase6 {
+    background-color: var(--titleYellow);
+}
+
+.phase__text_active.--phase6 {
+    color: var(--titleYellow);
+}
+
+.phase__text.--phase6:hover {
+    color: var(--titleYellow);
+}
+img.--pas_fase3{
+    height: 400px;
+}
+.--person_pas_f3{
+    align-items: flex-end;
+}
+@media screen and (max-width: 720px){
+    .background__animation.--phase6{
+        height: 73%;
+    }
+}
+
+

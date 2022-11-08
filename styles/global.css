@@ -13,8 +13,15 @@
     --firstOrange:          #f7d6c9;
     --titleOrange:          #ffa070;
 
-    --firstGreen:           #b8bf5c;
-    --titleGreen:           #ebed98;
+    --firstGreen:           #ebed98;
+    --titleGreen:           #b8bf5c;
+
+    --fisrtPink:            #e78784; 
+    --titlePink:            #f77978; 
+
+
+    --firstYellow:          #f7dda4; 
+    --titleYellow:          #f4bc2f;
 }
 
 @font-face {

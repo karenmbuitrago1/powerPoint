@@ -1,0 +1,67 @@
+.background__square.--phase5{
+    background-color: var(--firstPink);
+
+}
+.background.--type009{
+    background-image: url('../images/recurso_7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_fase3{
+    background-image: url('../images/recurso_16.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background__animation.--phase5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 61%;
+    width: 89%;
+}
+
+.cow{
+    width: 28%;
+}
+
+.pig{
+    width: 16%;
+}
+
+.menu__title.--phase5 {
+    background-color: var(--titlePink);
+}
+
+.menu__title.--phase5:before {
+    border-left: 36px solid var(--titlePink);
+    border-top: 12px solid var(--titlePink);
+}
+
+.phase__menuIcon.--phase5 {
+    background-color: var(--titlePink);
+}
+
+.phase__text_active.--phase5 {
+    color: var(--titlePink);
+}
+
+.phase__text.--phase5:hover {
+    color: var(--titlePink);
+}
+img.--pas_fase3{
+    height: 400px;
+}
+.--person_pas_f3{
+    align-items: flex-end;
+}
+@media screen and (max-width: 720px){
+    .background__animation.--phase5{
+        height: 73%;
+    }
+}
+
+
