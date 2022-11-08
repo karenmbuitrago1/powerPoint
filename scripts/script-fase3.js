@@ -20,7 +20,7 @@ function btn_obj_f3(){
     $("#my_audio_f3_2").trigger('pause');
     $("#play_f3_bienvenida").html('Reproducir Audio');
     $("#person6").addClass("--invisible");
-    $(".--pas_fase2").addClass("--invisible");
+    $(".--pas_fase3").addClass("--invisible");
     $("#person7").addClass("--invisible"); 
     $("#person4").removeClass("--invisible");
     $("#person5").removeClass("--invisible");
@@ -28,14 +28,14 @@ function btn_obj_f3(){
     $(".obj_f3").removeClass("--invisible");
     $(".herr_f3").addClass("--invisible");
     $(".tip_f3").addClass("--invisible");
-    $(".--pas_2_fase2").addClass("--invisible");
+    $(".--pas_2_fase3").addClass("--invisible");
     $(".background").removeClass("--type005");
-    $(".background").removeClass("--type007");
-    $(".--her_fase2").addClass("--invisible");
-    $(".--obj_fase2_postits").addClass("--invisible");
+    $(".background").addClass("--type009");
+    $(".--her_fase3").addClass("--invisible");
+    $(".--obj_fase3_postits").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
-    $(".--tip_fase2").addClass("--invisible");
+    $(".--tip_fase3").addClass("--invisible");
 
     var highestTimeoutId = setTimeout(";");
     for (var i = 0 ; i < highestTimeoutId ; i++) {
@@ -46,7 +46,7 @@ function btn_obj_f3(){
 function btn_pas_f3(){
     $("#my_audio_f3_1").trigger('pause');
     $("#play_paso_f3").html('Reproducir Audio');
-    $(".--pas_fase2").removeClass("--invisible");
+    $(".--pas_fase3").removeClass("--invisible");
     $("#person4").addClass("--invisible");
     $("#person5").addClass("--invisible"); 
     $("#person6").removeClass("--invisible");
@@ -55,14 +55,14 @@ function btn_pas_f3(){
     $(".obj_f3").addClass("--invisible");
     $(".herr_f3").addClass("--invisible");
     $(".tip_f3").addClass("--invisible");
-    $(".--pas_2_fase2").addClass("--invisible");
+    $(".--pas_2_fase3").addClass("--invisible");
     $(".background").removeClass("--type005");
-    $(".background").removeClass("--type007");
-    $(".--obj_fase2_postits").addClass("--invisible");
-    $(".--her_fase2").addClass("--invisible");
+    $(".background").removeClass("--type009");
+    $(".--obj_fase3_postits").addClass("--invisible");
+    $(".--her_fase3").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
-    $(".--tip_fase2").addClass("--invisible");
+    $(".--tip_fase3").addClass("--invisible");
 
 
 
@@ -74,7 +74,7 @@ function btn_pas_f3(){
     function btn_her_f3(){
         $("#my_audio_f3_1").trigger('pause');
         $("#my_audio_f3_2").trigger('pause');
-        $(".--pas_fase2").addClass("--invisible");
+        $(".--pas_fase3").addClass("--invisible");
         $("#person4").addClass("--invisible");
         $("#person5").addClass("--invisible"); 
         $("#person6").addClass("--invisible");
@@ -83,14 +83,14 @@ function btn_pas_f3(){
         $(".obj_f3").addClass("--invisible");
         $(".herr_f3").addClass("--invisible");
         $(".tip_f3").addClass("--invisible");
-        $(".--pas_2_fase2").addClass("--invisible");
+        $(".--pas_2_fase3").addClass("--invisible");
         $(".background").removeClass("--type005");
-        $(".--her_fase2").removeClass("--invisible");
+        $(".--her_fase3").removeClass("--invisible");
         $(".background").removeClass("--type008");
-        $(".--obj_fase2_postits").addClass("--invisible");
-        $(".background").addClass("--type007");
+        $(".--obj_fase3_postits").addClass("--invisible");
+        $(".background").addClass("--type009");
         $(".background").removeClass("--invisible");
-        $(".--tip_fase2").addClass("--invisible");
+        $(".--tip_fase3").addClass("--invisible");
 
 
     
@@ -102,7 +102,7 @@ function btn_pas_f3(){
         function btn_tip_f3(){
             $("#my_audio_f3_1").trigger('pause');
             $("#my_audio_f3_2").trigger('pause');
-            $(".--pas_fase2").addClass("--invisible");
+            $(".--pas_fase3").addClass("--invisible");
             $("#person4").addClass("--invisible");
             $("#person5").addClass("--invisible"); 
             $("#person6").addClass("--invisible");
@@ -111,13 +111,13 @@ function btn_pas_f3(){
             $(".obj_f3").addClass("--invisible");
             $(".herr_f3").addClass("--invisible");
             $(".tip_f3").addClass("--invisible");
-            $(".--pas_2_fase2").addClass("--invisible");
+            $(".--pas_2_fase3").addClass("--invisible");
             $(".background").removeClass("--type005");
-            $(".--her_fase2").addClass("--invisible");
-            $(".--obj_fase2_postits").addClass("--invisible");
+            $(".--her_fase3").addClass("--invisible");
+            $(".--obj_fase3_postits").addClass("--invisible");
             $(".background").addClass("--type008");
             $(".background").removeClass("--invisible");
-            $(".--tip_fase2").removeClass("--invisible");
+            $(".--tip_fase3").removeClass("--invisible");
 
         
             var highestTimeoutId = setTimeout(";");
@@ -173,10 +173,10 @@ $(function() {
     });
     $("#my_audio_f3_1").on("ended", function() {
       $("#play_f3_bienvenida").html('Reproducir Audio');
-      $(".--obj_fase2_postits").removeClass("--invisible");
-      $(".--type007").addClass("--invisible");
+      $(".--obj_fase3_postits").removeClass("--invisible");
+      $(".--type009").addClass("--invisible");
       $(".obj_f3").addClass("--invisible");
-      $(".--obj_fase2").addClass("--invisible");
+      $(".--obj_fase3").addClass("--invisible");
       $(".background").addClass("--type005");
 
   });
@@ -218,8 +218,8 @@ $(function() {
   });
   $("#my_audio_f3_2").on("ended", function() {
     $("#play_paso_f3").html('Reproducir Audio');
-    $(".--pas_fase2").addClass("--invisible");
-    $(".--pas_2_fase2").removeClass("--invisible");
+    $(".--pas_fase3").addClass("--invisible");
+    $(".--pas_2_fase3").removeClass("--invisible");
     $(".background").addClass("--type005");
 });
 

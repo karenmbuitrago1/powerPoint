@@ -2,13 +2,19 @@
     background-color: var(--firstOrange);
 
 }
-.background.--type007{
+.background.--type009{
     background-image: url('../images/recurso_7.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+.content__dialog.--pas_fase3{
+    background-image: url('../images/recurso_16.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .background__animation.--phase3{
     display: flex;
