@@ -201,8 +201,8 @@ $(function() {
   });
 
   $("#play_paso_f2").click(function(e) {
-    var original = '¡¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
-    var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
+    var original = '¡Buenos días para todos! Para los que no me conocen yo soy Juan. Vendo jugos de naranja y fruta en las mañanas en la esquina del salón comunal. Por allá los espero. Me acompaña la señorita Margarita, ella es motociclista';
+    var text1 = 'Hoy nos han dado la tarea de mostrarles las instrucciones que deben seguir para desarrollar esta fase. Como soy amante de los rompecabezas, construimos unas fichas con la hoja de ruta. ¡Ayúdennos a armarlas para conocer el paso a paso';
     
     
     $("#play_paso_f2").html('Reproduciendo...');
@@ -215,7 +215,7 @@ $(function() {
  
        setTimeout(function(){
            $('#change_f2_2').html(text1);
-       }, 9000);
+       }, 14000);
        $('#change_f2_2').html(original);
              is_playing = true;
 
@@ -226,7 +226,7 @@ $(function() {
       is_playing = true;
       setTimeout(function(){
           $('#change_f2_2').html(text1);
-      }, 9000);
+      }, 14000);
 
       $('#change_f2_2').html(original);
             is_playing = true;
