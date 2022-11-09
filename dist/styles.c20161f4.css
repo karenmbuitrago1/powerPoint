@@ -2277,6 +2277,13 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.content__dialog.--obj_fase8_postits{
+    background-image: url('/recurso_238.f2b052e9.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .bckg__img{
     position: absolute;
     top: 48%;
