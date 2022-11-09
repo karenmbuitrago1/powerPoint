@@ -149,10 +149,10 @@ $(function () {
 	var is_playing;
 
 	$("#play_f7_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
+		var original = '¡Hola! Mi nombre es Saúl, soy el gerente comercial de Calzados paso firme, una tienda de zapatos formales y deportivos que lleva 30 años en esta zona. Ahí trabajaron mis abuelos, mis padres y ahora mi esposa y yo. Al igual que ellos,';
 		var text1 = '...he vivido toda mi vida aquí. Por esa razón, siempre ayudo a mi comunidad en lo que puedo. ¡Por supuesto, yo también hago parte de esta iniciativa!';
 		var text1_1 = 'Quisiera contarte en qué consiste esta fase llamada ¡Manos a la obra! El propósito es implementar las estrategias de intervención comunitaria que diseñamos en la fase anterior. Los vecinos y yo';
-		var text1_2 = '...hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a';
+		var text1_2 = '...hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Paula para que te cuente mas al respecto';
 
 		$("#play_f7_bienvenida").html('Reproduciendo...');
 
@@ -164,13 +164,13 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f7_1').html(text1);
-				}, 15000);
+				}, 16000);
 				setTimeout(function () {
 					$('#change_f7_1').html(text1_1);
-				}, 30000);
+				}, 26000);
 				setTimeout(function () {
 					$('#change_f7_1').html(text1_2);
-				}, 45000);				
+				}, 36000);				
 				$('#change_f7_1').html(original);
 				is_playing = true;
 
@@ -181,13 +181,13 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f7_1').html(text1);
-				}, 15000);
+				}, 16000);
 				setTimeout(function () {
 					$('#change_f7_1').html(text1_1);
-				}, 30000);
+				}, 26000);
 				setTimeout(function () {
 					$('#change_f7_1').html(text1_2);
-				}, 45000);				
+				}, 36000);				
 				$('#change_f7_1').html(original);
 				is_playing = true;
 			}
@@ -220,7 +220,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f7_2').html(text1);
-				}, 14000);
+				}, 11000);
 				$('#change_f7_2').html(original);
 				is_playing = true;
 
@@ -231,7 +231,7 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f7_2').html(text1);
-				}, 14000);
+				}, 11000);
 
 				$('#change_f7_2').html(original);
 				is_playing = true;

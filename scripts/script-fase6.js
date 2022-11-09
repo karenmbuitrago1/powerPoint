@@ -154,10 +154,9 @@ $(function () {
 	var is_playing;
 
 	$("#play_f6_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
-		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
-		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
-		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
+		var original = '¡Hola! Mi nombre es Magdalena, soy madre comunitaria y también hago parte de esta iniciativa. Quisiera contarte en qué consiste esta fase que hemos denominado ¡Construyendo puentes!';
+		var text1 = 'El propósito es diseñar con la comunidad y con miembros de diferentes sectores, acciones que contribuyan a mejorar los comportamientos viales y a cuidar la vida de todos y todas. ¡Así es, tal cual lo están haciendo mis compañeros allí atrás!';
+		var text1_1 = 'De manera conjunta, hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Telesforo y Amalia para que te cuenten un poco más.';
 
 		$("#play_f6_bienvenida").html('Reproduciendo...');
 
@@ -169,13 +168,10 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f6_1').html(text1);
-				}, 15000);
+				}, 12000);
 				setTimeout(function () {
 					$('#change_f6_1').html(text1_1);
-				}, 30000);
-				setTimeout(function () {
-					$('#change_f6_1').html(text1_2);
-				}, 45000);				
+				}, 26000);				
 				$('#change_f6_1').html(original);
 				is_playing = true;
 
@@ -186,13 +182,10 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f6_1').html(text1);
-				}, 15000);
+				}, 12000);
 				setTimeout(function () {
 					$('#change_f6_1').html(text1_1);
-				}, 30000);
-				setTimeout(function () {
-					$('#change_f6_1').html(text1_2);
-				}, 45000);				
+				}, 26000);				
 				$('#change_f6_1').html(original);
 				is_playing = true;
 			}
@@ -211,8 +204,8 @@ $(function () {
 	});
 
 	$("#play_paso_f6").click(function (e) {
-		var original = '¡Bienvenido de nuevo! Mi nombre es Josefina. Soy empresaria automotriz. Una de las sedes de mi negocio queda aquí en el barrio, así que ya sabe, si tiene alguna falla con su vehículo, no dude en contactarme.';
-		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
+		var original = '¡Hola, cómo está! Mi nombre es Amalia y estoy aquí con Telesforo para mostrarle los pasos que debe seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos le ayude. Como hay tantos niños y niñas en la comunidad, para el encuentro de hoy pusimos el paso a paso en unos globos de fiesta,';
+		var text1 = '...así, cada vez que se estalla uno, sale volando el papelito con la descripción... ¡Venga y juega con nosotros! De clic en cada globo y descubra en qué consiste cada paso.';
 
 
 		$("#play_paso_f6").html('Reproduciendo...');
@@ -225,7 +218,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f6_2').html(text1);
-				}, 14000);
+				}, 17000);
 				$('#change_f6_2').html(original);
 				is_playing = true;
 
@@ -236,7 +229,7 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f6_2').html(text1);
-				}, 14000);
+				}, 17000);
 
 				$('#change_f6_2').html(original);
 				is_playing = true;
