@@ -150,9 +150,9 @@ $(function () {
 
 	$("#play_f7_bienvenida").click(function (e) {
 		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
-		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
-		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
-		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
+		var text1 = '...he vivido toda mi vida aquí. Por esa razón, siempre ayudo a mi comunidad en lo que puedo. ¡Por supuesto, yo también hago parte de esta iniciativa!';
+		var text1_1 = 'Quisiera contarte en qué consiste esta fase llamada ¡Manos a la obra! El propósito es implementar las estrategias de intervención comunitaria que diseñamos en la fase anterior. Los vecinos y yo';
+		var text1_2 = '...hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a';
 
 		$("#play_f7_bienvenida").html('Reproduciendo...');
 
@@ -206,8 +206,8 @@ $(function () {
 	});
 
 	$("#play_paso_f7").click(function (e) {
-		var original = '¡Bienvenido de nuevo! Mi nombre es Josefina. Soy empresaria automotriz. Una de las sedes de mi negocio queda aquí en el barrio, así que ya sabe, si tiene alguna falla con su vehículo, no dude en contactarme.';
-		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
+		var original = '¡Hola! Mi nombre es Paula. Soy taxista desde hace 10 años. Transito frecuentemente por esta zona. La mayoría de mis servicios inician o llegan aquí.';
+		var text1 = 'Como miembro de esta metodología, quiero mostrarte los pasos que debes seguir para desarrollar esta fase. Diseñé una hoja de ruta que espero te ayude... ¡Da clic sobre cada paso y descubre de qué se trata!';
 
 
 		$("#play_paso_f7").html('Reproduciendo...');
