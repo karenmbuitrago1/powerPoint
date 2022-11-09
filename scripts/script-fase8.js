@@ -149,9 +149,10 @@ $(function () {
 	var is_playing;
 
 	$("#play_f8_bienvenida").click(function (e) {
-		var original = 'Me alegra que estén tan participativos hoy, pero vamos a pedir la palabra. De esta forma, garantizamos que todos nos escuchemos por igual. Para continuar, quiero presentar la segunda fase, denominada ¡La vida en la vía, un asunto de todos!';
-		var text1 = 'Esta fase tiene como propósito identificar los actores clave que, dentro de nuestra comunidad y en los diferentes sectores que en ella intervienen, pueden aportar de manera positiva en la implementación de nuestra metodología, favoreciendo la apropiación local y promoviendo la seguridad vial.';
-		var text1_1 = 'La Junta de Acción Comunal ha preparado algunas notas adhesivas, con datos importantes que debemos tener en cuenta en esta segunda fase. Ahora, los dejo con Juan y Margarita, que les van a presentar el paso a paso a seguir.';
+		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
+		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
+		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
+		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
 
 		$("#play_f8_bienvenida").html('Reproduciendo...');
 
@@ -163,10 +164,13 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f8_1').html(text1);
-				}, 16000);
+				}, 15000);
 				setTimeout(function () {
 					$('#change_f8_1').html(text1_1);
-				}, 32000);
+				}, 30000);
+				setTimeout(function () {
+					$('#change_f8_1').html(text1_2);
+				}, 45000);				
 				$('#change_f8_1').html(original);
 				is_playing = true;
 
@@ -177,10 +181,13 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f8_1').html(text1);
-				}, 16000);
+				}, 15000);
 				setTimeout(function () {
 					$('#change_f8_1').html(text1_1);
-				}, 32000);
+				}, 30000);
+				setTimeout(function () {
+					$('#change_f8_1').html(text1_2);
+				}, 45000);				
 				$('#change_f8_1').html(original);
 				is_playing = true;
 			}
@@ -199,8 +206,8 @@ $(function () {
 	});
 
 	$("#play_paso_f8").click(function (e) {
-		var original = '¡¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
-		var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
+		var original = '¡Bienvenido de nuevo! Mi nombre es Josefina. Soy empresaria automotriz. Una de las sedes de mi negocio queda aquí en el barrio, así que ya sabe, si tiene alguna falla con su vehículo, no dude en contactarme.';
+		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
 
 
 		$("#play_paso_f8").html('Reproduciendo...');
@@ -213,7 +220,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f8_2').html(text1);
-				}, 9000);
+				}, 14000);
 				$('#change_f8_2').html(original);
 				is_playing = true;
 
@@ -224,7 +231,7 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f8_2').html(text1);
-				}, 9000);
+				}, 14000);
 
 				$('#change_f8_2').html(original);
 				is_playing = true;
