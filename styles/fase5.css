@@ -9,28 +9,49 @@
     background-size: cover;
 }
 
+.background__image.--pas_phase6{
+    position: absolute;
+    top: 57%;
+    right: 25%;
+    z-index: 11;
+    width: 17%;
+}
+
 .content__dialog.--pas_fase5{
-    background-image: url('../images/recurso_16.png');
+    background-image: url('../images/recurso_122_122.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content__dialog.--pas_2_fase6{
+    background-image: url('../images/recurso_160.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.background__animation.--phase5{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 61%;
-    width: 89%;
+.content__dialog.--obj_fase5_postits{
+    background-image: url('../images/recurso_122_122.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.cow{
-    width: 28%;
+.background.--her_fase6{
+    background-image: url('../images/recurso_174.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.pig{
-    width: 16%;
+.background.--tip_fase6{
+    background-image: url('../images/recurso_73.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
 
 .menu__title.--phase5 {
     background-color: var(--titlePink);
