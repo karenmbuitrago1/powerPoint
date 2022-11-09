@@ -28,3 +28,6 @@
 .cards.--toolsTips5 li:hover:nth-child(2){
     background-image: url('../images/recurso_25.png');
 }
+.cards.--toolsTips5 li:nth-child(3){
+    background-image: url('../images/recurso_41_41.png');
+}

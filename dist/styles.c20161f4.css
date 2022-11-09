@@ -1981,21 +1981,24 @@ p.titulo_opc {
     background-size: cover;
 }
 
-.background__animation.--phase4{
-    display: flex;
-    justify-content: flex-start;
+.background.--her_fase4{
+    background-image: url('/recurso57.0ad092c1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background.--tip_fase4{
+    background-image: url('/recurso_95.b88ea7ad.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--tip_fase4{
     align-items: flex-end;
-    height: 61%;
-    width: 89%;
 }
 
-.cow{
-    width: 28%;
-}
-
-.pig{
-    width: 16%;
-}
 
 .menu__title.--phase4 {
     background-color: var(--titleGreen);
@@ -2016,6 +2019,14 @@ p.titulo_opc {
 
 .phase__text.--phase4:hover {
     color: var(--titleGreen);
+}
+
+
+.tools.--phase4{
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+
 }
 
 @media screen and (max-width: 720px){
@@ -2195,6 +2206,9 @@ p.titulo_opc {
 }
 .cards.--toolsTips5 li:hover:nth-child(2){
     background-image: url('/recurso_25.d6e177be.png');
+}
+.cards.--toolsTips5 li:nth-child(3){
+    background-image: url('/recurso_41_41.c1a4a2d9.png');
 }
 
 .background__square.--phase6{

@@ -220,7 +220,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_59_59.png":[["recurso_59_59.278e8718.png","../images/recurso_59_59.png"],"../images/recurso_59_59.png"],"./..\\images\\recurso_73_73.png":[["recurso_73_73.2e9b00d5.png","../images/recurso_73_73.png"],"../images/recurso_73_73.png"],"./..\\images\\recurso_67.png":[["recurso_67.41d0ebe7.png","../images/recurso_67.png"],"../images/recurso_67.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase4-memoria.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_59_59.png":[["recurso_59_59.278e8718.png","../images/recurso_59_59.png"],"../images/recurso_59_59.png"],"./..\\images\\recurso_73_73.png":[["recurso_73_73.2e9b00d5.png","../images/recurso_73_73.png"],"../images/recurso_73_73.png"],"./..\\images\\recurso_67.png":[["recurso_67.41d0ebe7.png","../images/recurso_67.png"],"../images/recurso_67.png"],"./..\\images\\recurso57.jpg":[["recurso57.0ad092c1.jpg","../images/recurso57.jpg"],"../images/recurso57.jpg"],"./..\\images\\recurso_95.png":[["recurso_95.b88ea7ad.png","../images/recurso_95.png"],"../images/recurso_95.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase4-memoria.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -232,7 +232,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_62.png":[["recurso_62.2955d4f9.png","../images/recurso_62.png"],"../images/recurso_62.png"],"./..\\images\\recurso_24.png":[["recurso_24.2429bc12.png","../images/recurso_24.png"],"../images/recurso_24.png"],"./..\\images\\recurso_63.png":[["recurso_63.c7cf548f.png","../images/recurso_63.png"],"../images/recurso_63.png"],"./..\\images\\recurso_25.png":[["recurso_25.d6e177be.png","../images/recurso_25.png"],"../images/recurso_25.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase6.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_62.png":[["recurso_62.2955d4f9.png","../images/recurso_62.png"],"../images/recurso_62.png"],"./..\\images\\recurso_24.png":[["recurso_24.2429bc12.png","../images/recurso_24.png"],"../images/recurso_24.png"],"./..\\images\\recurso_63.png":[["recurso_63.c7cf548f.png","../images/recurso_63.png"],"../images/recurso_63.png"],"./..\\images\\recurso_25.png":[["recurso_25.d6e177be.png","../images/recurso_25.png"],"../images/recurso_25.png"],"./..\\images\\recurso_41_41.png":[["recurso_41_41.c1a4a2d9.png","../images/recurso_41_41.png"],"../images/recurso_41_41.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase6.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
