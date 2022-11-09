@@ -23,6 +23,13 @@
     background-image: url('../images/recurso_25.png');
 }
 
+.cards.--toolsTips li:nth-child(3){
+    height: 40%;
+    background-image: url('../images/recurso_41_41.png');
+}
+.cards.--toolsTips li:hover:nth-child(3){
+    background-image: url('../images/recurso_26.png');
+}
 .card__text2.--tipsText{
     margin: 0;
     font-size: 14px;

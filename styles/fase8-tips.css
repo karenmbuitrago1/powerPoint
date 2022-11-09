@@ -1,0 +1,32 @@
+.content__dialog.--tip_fase8{
+    align-items: flex-end;
+}
+
+.tools.--toolsTips8{
+    height: 71%;
+}
+
+.pas__listItem{
+    background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.pas__textPaso{
+	background-color: #a640a9;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.pas__pasoTitle{
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
