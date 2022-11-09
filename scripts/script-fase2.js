@@ -35,12 +35,12 @@ function btn_obj_f2(){
     $(".--obj_fase2_postits").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
+    $(".background").removeClass("--tip_fase2");
     $(".--tip_fase2").addClass("--invisible");
     $(".background").addClass("--type006");
     $(".background").removeClass("--obj_fase2_postits");
     $(".background").removeClass("--her_fase2");
     $(".background__image").removeClass("--invisible");
-    $(".background").removeClass("--tip_fase2");
 
 
 
@@ -69,16 +69,12 @@ function btn_pas_f2(){
     $(".--her_fase2").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
+    $(".background").removeClass("--tip_fase2");
     $(".--tip_fase2").addClass("--invisible");
     $(".background").addClass("--type006");
     $(".background").removeClass("--obj_fase2_postits");
     $(".background").removeClass("--her_fase2");
     $(".background__image").removeClass("--invisible");
-    $(".background").removeClass("--tip_fase2");
-
-
-
-
 
 
     var highestTimeoutId = setTimeout(";");
@@ -105,10 +101,9 @@ function btn_pas_f2(){
         $(".--obj_fase2_postits").addClass("--invisible");
         $(".background").addClass("--her_fase2");
         $(".background").removeClass("--invisible");
+        $(".background").removeClass("--tip_fase2");
         $(".--tip_fase2").addClass("--invisible");
         $(".background__image").addClass("--invisible");
-        $(".background").removeClass("--tip_fase2");
-
 
 
     
@@ -133,11 +128,9 @@ function btn_pas_f2(){
             $(".background").removeClass("--type005");
             $(".--her_fase2").addClass("--invisible");
             $(".--obj_fase2_postits").addClass("--invisible");
-            $(".background").addClass("--type008");
             $(".background").removeClass("--invisible");
             $(".--tip_fase2").removeClass("--invisible");
             $(".background").removeClass("--her_fase2");
-            $(".background__image").removeClass("--invisible");
             $(".background").addClass("--tip_fase2");
             $(".background__image").addClass("--invisible");
 
