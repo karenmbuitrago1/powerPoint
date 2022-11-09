@@ -224,9 +224,10 @@ $(function() {
   });
   $("#my_audio_f3_2").on("ended", function() {
     $("#play_paso_f3").html('Reproducir Audio');
-    $(".--pas_fase3").addClass("--invisible");
-    $(".--pas_2_fase3").removeClass("--invisible");
-    $(".background").addClass("--type005");
+    //$(".--pas_fase3").addClass("--invisible");
+    //$(".--pas_2_fase3").removeClass("--invisible");
+    //$(".background").addClass("--type005");
+    $(".background__square").removeClass("--invisible");
 });
 
 
