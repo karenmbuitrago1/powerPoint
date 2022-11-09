@@ -232,7 +232,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_190.png":[["recurso_190.19353560.png","../images/recurso_190.png"],"../images/recurso_190.png"],"./..\\images\\recurso95.png":[["recurso95.8b88286d.png","../images/recurso95.png"],"../images/recurso95.png"],"./..\\images\\recurso97.png":[["recurso97.fba8b7e3.png","../images/recurso97.png"],"../images/recurso97.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase8.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_190.png":[["recurso_190.19353560.png","../images/recurso_190.png"],"../images/recurso_190.png"],"./..\\images\\recurso95.png":[["recurso95.8b88286d.png","../images/recurso95.png"],"../images/recurso95.png"],"./..\\images\\recurso97.png":[["recurso97.fba8b7e3.png","../images/recurso97.png"],"../images/recurso97.png"],"./..\\images\\recurso_198.png":[["recurso_198.b0c4e2ea.png","../images/recurso_198.png"],"../images/recurso_198.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase8.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);

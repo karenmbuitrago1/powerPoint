@@ -2,24 +2,34 @@
     background-color: var(--firstLightGreen);
 
 }
-.rompecabezas{
-    width: 100%;
-    margin-top: 7%;
-}
 .background.--type014{
     background-image: url('../images/recurso_190.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--her_fase8{
+.background.--her_fase7{
     background-image: url('../images/recurso95.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--tip_fase8{
+.background.--tip_fase7{
     background-image: url('../images/recurso97.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase7{
+    background-image: url('../images/recurso_198.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--obj_fase7_postits{
+    background-image: url('../images/recurso_198.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

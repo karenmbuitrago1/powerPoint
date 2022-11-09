@@ -25,8 +25,8 @@
     --firstLightGreen:      #c27c5f; 
     --titleLightGreen:      #79c279;
 
-    --firstMora:             #d4d4f4; 
-    --titleMora:             #9e94f7;
+    --firstMora:            #d4d4f4; 
+    --titleMora:            #9e94f7;
 }
 
 @font-face {
@@ -2202,24 +2202,34 @@ p.titulo_opc {
     background-color: var(--firstLightGreen);
 
 }
-.rompecabezas{
-    width: 100%;
-    margin-top: 7%;
-}
 .background.--type014{
     background-image: url('/recurso_190.19353560.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--her_fase8{
+.background.--her_fase7{
     background-image: url('/recurso95.8b88286d.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--tip_fase8{
+.background.--tip_fase7{
     background-image: url('/recurso97.fba8b7e3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase7{
+    background-image: url('/recurso_198.b0c4e2ea.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--obj_fase7_postits{
+    background-image: url('/recurso_198.b0c4e2ea.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
