@@ -2295,6 +2295,17 @@ p.titulo_opc {
     background-repeat: no-repeat;
 }
 
+
+
+@media screen and (max-width: 720px){
+    .pas__list8{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .background__square.--phase8{
     background-color: var(--firstMora);
 
