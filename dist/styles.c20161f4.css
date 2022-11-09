@@ -1889,7 +1889,7 @@ p.titulo_opc {
     background-size: cover;
 }
 
-.content__dialog.--pas_fase3{
+.background.--pas_fase3_bg{
     background-image: url('/recurso_16.94b2fa25.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -2211,13 +2211,13 @@ p.titulo_opc {
     background-size: cover;
 }
 .background.--her_fase7{
-    background-image: url('/recurso95.8b88286d.png');
+    background-image: url('/recurso_208.133bafe9.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 .background.--tip_fase7{
-    background-image: url('/recurso97.fba8b7e3.png');
+    background-image: url('/recurso_216.f865a5d7.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2256,6 +2256,10 @@ p.titulo_opc {
 
 .phase__text.--phase7:hover {
     color: var(--titleLightGreen);
+}
+
+.content__dialog.--tip_fase7{
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 720px){
