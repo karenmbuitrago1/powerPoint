@@ -53,33 +53,29 @@
 
 
 @media screen and (max-width: 720px){
-    .postits.--fase8{
-        background-image: url('../images/recurso_238.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    
+    .postits__list.--phase8{
+        height: fit-content;    
+        background-color: var(--firstMora);
+    }
+
+    .menu__title.--phase8 {
+        background-color: var(--titleMora);
+    }
+
+    .menu__title.--phase8:before {
+        border-left: 36px solid var(--titleMora);
+        border-top: 12px solid var(--titleMora);
+    }
+
+    .phase__menuIcon.--phase8 {
+        background-color: var(--titleMora);
+    }
+
+    .phase__text_active.--phase8 {
+        color: var(--titleMora);
+    }
+
+    .phase__text.--phase8:hover {
+        color: var(--titleMora);
     }
 }
-
-.menu__title.--phase8 {
-    background-color: var(--titleMora);
-}
-
-.menu__title.--phase8:before {
-    border-left: 36px solid var(--titleMora);
-    border-top: 12px solid var(--titleMora);
-}
-
-.phase__menuIcon.--phase8 {
-    background-color: var(--titleMora);
-}
-
-.phase__text_active.--phase8 {
-    color: var(--titleMora);
-}
-
-.phase__text.--phase8:hover {
-    color: var(--titleMora);
-}
-
