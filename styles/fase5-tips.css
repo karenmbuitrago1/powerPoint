@@ -1,6 +1,13 @@
 .tools.--toolsTips5{
     height: inherit;
 }
+
+.tools.--phase5{
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+
+}
 .cards.--toolsTips5{
     flex-direction: column;
     align-content: center;

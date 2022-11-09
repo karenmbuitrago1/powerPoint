@@ -2092,6 +2092,14 @@ p.titulo_opc {
     justify-content: center;
 }
 
+
+.person.--pas_fase5{
+    height: 65%;
+    bottom: 0;
+    position: absolute;
+    left: 22%;
+}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase5{
         height: 73%;
@@ -2102,6 +2110,13 @@ p.titulo_opc {
 
 .tools.--toolsTips5{
     height: inherit;
+}
+
+.tools.--phase5{
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+
 }
 .cards.--toolsTips5{
     flex-direction: column;
