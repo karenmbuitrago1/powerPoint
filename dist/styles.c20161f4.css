@@ -2121,6 +2121,14 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.background.--tip_fase6{
+    background-image: url('/recurso_73.0ad2bcce.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .menu__title.--phase6 {
     background-color: var(--titleYellow);
 }
@@ -2142,10 +2150,23 @@ p.titulo_opc {
     color: var(--titleYellow);
 }
 
+.content__dialog.--tip_fase6{
+    align-items: flex-end;
+}
+
+
 @media screen and (max-width: 720px){
     .background__animation.--phase6{
         height: 73%;
     }
+}
+
+@media screen and (max-width: 375px){
+	.content__dialog.--tip_fase6 {
+		height: 46%;
+		display: flex;
+		align-items: flex-end;
+	}
 }
 
 .pas__list6{
