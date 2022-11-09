@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     z-index: 1;
 }
 
@@ -239,7 +239,7 @@ audio::-webkit-media-controls-timeline{
 
 @media screen and (max-width:1450px){
     .person {
-        height: 500px;
+        height: 100%;
         left: 22%;
         position: absolute;
         bottom: 0;
@@ -276,6 +276,9 @@ audio::-webkit-media-controls-timeline{
 }
 
 @media screen and (max-width:720px){
+    .person {
+        height: 55%;
+    }
     .background__square{
         display: none;
     }
@@ -288,15 +291,14 @@ audio::-webkit-media-controls-timeline{
     }
     .content {
         display: block;
+        background-color: rgba(6,5,41, 65%);
     }
     .content__menu{
         height: 40%;
         width: 100%;
     }
     .content__dialog{
-        height: 100%;
         width: 100%;
-        background-color: rgba(6,5,41, 65%);
     }
     .logo{
         width: 96px;
@@ -391,7 +393,7 @@ audio::-webkit-media-controls-timeline{
         top: 110px;
         border-bottom: 16px solid transparent;
     }
-    .person{
+    .person {
         height: 47%; 
     }
 }

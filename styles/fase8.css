@@ -29,7 +29,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: 317px;
 }
 
 .content__dialog.--pas_2_fase8{
@@ -39,6 +38,11 @@
     background-size: cover;
 }
 
+.pas__list{
+    padding: 0;
+    margin: 8px;
+}
+
 .content__dialog.--obj_fase8_postits{
     background-image: url('../images/recurso_238.png');
     background-repeat: no-repeat;
@@ -46,64 +50,31 @@
     background-size: cover;
 }
 
-.bckg__img{
-    position: absolute;
-    top: 48%;
-    right: 17%;
-}
-
-.menu__title.--phase8 {
-    background-color: var(--titleMora);
-}
-
-.menu__title.--phase8:before {
-    border-left: 36px solid var(--titleMora);
-    border-top: 12px solid var(--titleMora);
-}
-
-.phase__menuIcon.--phase8 {
-    background-color: var(--titleMora);
-}
-
-.phase__text_active.--phase8 {
-    color: var(--titleMora);
-}
-
-.phase__text.--phase8:hover {
-    color: var(--titleMora);
-}
-
-
-@media screen and (max-width: 1450px){
-    .bckg__img{
-        top: 41%;
-        right: 7%;
-    }
-}
-
-
-@media screen and (max-width: 1280px){
-    .bckg__img{
-        top: 41%;
-        right: 6%;
-    }
-}
-
 
 @media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
+    .postits__list.--phase8{
+        height: fit-content;    
+        background-color: var(--firstMora);
+    }
+
+    .menu__title.--phase8 {
+        background-color: var(--titleMora);
+    }
+
+    .menu__title.--phase8:before {
+        border-left: 36px solid var(--titleMora);
+        border-top: 12px solid var(--titleMora);
+    }
+
+    .phase__menuIcon.--phase8 {
+        background-color: var(--titleMora);
+    }
+
+    .phase__text_active.--phase8 {
+        color: var(--titleMora);
+    }
+
+    .phase__text.--phase8:hover {
+        color: var(--titleMora);
     }
 }
-
-
-@media screen and (max-width: 375px){
-    .bckg__img{
-        top: 61%;
-        right: 0%;
-        width: 100%;
-    }
-}
-
-
