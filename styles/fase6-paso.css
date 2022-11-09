@@ -38,6 +38,9 @@
 .pas__title.--globo3{
     background-color: #f85636;
 }
+.pas__title.--globo4{
+    background-color: #79c279;
+}
 
 .pas__globe{
     cursor: pointer;

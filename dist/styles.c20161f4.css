@@ -1889,12 +1889,41 @@ p.titulo_opc {
     background-size: cover;
 }
 
-.background.--pas_fase3_bg{
+.background.--pas_fase3{
     background-image: url('/recurso_16.94b2fa25.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
+.content__dialog.--obj_fase3_postits{
+    background-image: url('/recurso_15.d0444efe.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase3{
+    background-image: url('/recurso_16.94b2fa25.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background.--her_fase3{
+    background-image: url('/recurso_27_27.cee0f44b.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background.--tip_fase3{
+    background-image: url('/recurso_128.c274f720.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 .background__animation.--phase3{
     display: flex;
@@ -1903,6 +1932,14 @@ p.titulo_opc {
     height: 61%;
     width: 89%;
 }
+
+.background__animation2{
+    position: absolute;
+    bottom: 15%;
+    right: 12%;
+    height: 23%;
+}
+
 .casa{
     z-index: 99;
 }
@@ -1935,6 +1972,17 @@ p.titulo_opc {
     color: var(--titleOrange);
 }
 
+.content__dialog.--tip_fase3{
+    align-items: flex-end;
+}
+
+#person8{
+    position: absolute;
+    height: 52%;
+    bottom: 0;
+    left: 22%;
+}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase3{
         height: 73%;
@@ -1948,6 +1996,16 @@ p.titulo_opc {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+.pas__listItem3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 32px 0px 32px;
+}
+
+.pas__description.--phase3{
+    top: 8%;
 }
 .background__square.--phase4{
     background-color: var(--firstGreen);
@@ -2344,6 +2402,9 @@ p.titulo_opc {
 }
 .pas__title.--globo3{
     background-color: #f85636;
+}
+.pas__title.--globo4{
+    background-color: #79c279;
 }
 
 .pas__globe{

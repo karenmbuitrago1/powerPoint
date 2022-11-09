@@ -1,0 +1,10 @@
+.pas__listItem3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 32px 0px 32px;
+}
+
+.pas__description.--phase3{
+    top: 8%;
+}
