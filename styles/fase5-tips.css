@@ -1,0 +1,23 @@
+.tools.--toolsTips5{
+    height: inherit;
+}
+.cards.--toolsTips5{
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.cards.--toolsTips5 li:nth-child(1){
+    height: 28%;
+    background-image: url('../images/recurso_62.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(1){
+    background-image: url('../images/recurso_24.png');
+}
+.cards.--toolsTips5 li:nth-child(2){
+    height: 28%;
+    background-image: url('../images/recurso_63.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(2){
+    background-image: url('../images/recurso_25.png');
+}
