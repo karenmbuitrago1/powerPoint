@@ -2023,28 +2023,49 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.background__image.--pas_phase6{
+    position: absolute;
+    top: 57%;
+    right: 25%;
+    z-index: 11;
+    width: 17%;
+}
+
 .content__dialog.--pas_fase5{
-    background-image: url('/recurso_16.94b2fa25.png');
+    background-image: url('/recurso_122_122.3cf2d426.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content__dialog.--pas_2_fase6{
+    background-image: url('/recurso_160.cbb770e0.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.background__animation.--phase5{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 61%;
-    width: 89%;
+.content__dialog.--obj_fase5_postits{
+    background-image: url('/recurso_122_122.3cf2d426.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.cow{
-    width: 28%;
+.background.--her_fase6{
+    background-image: url('/recurso_174.cb3d77e2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.pig{
-    width: 16%;
+.background.--tip_fase6{
+    background-image: url('/recurso_73.0ad2bcce.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
 
 .menu__title.--phase5 {
     background-color: var(--titlePink);
@@ -2121,6 +2142,14 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.background.--tip_fase6{
+    background-image: url('/recurso_73.0ad2bcce.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .menu__title.--phase6 {
     background-color: var(--titleYellow);
 }
@@ -2142,10 +2171,23 @@ p.titulo_opc {
     color: var(--titleYellow);
 }
 
+.content__dialog.--tip_fase6{
+    align-items: flex-end;
+}
+
+
 @media screen and (max-width: 720px){
     .background__animation.--phase6{
         height: 73%;
     }
+}
+
+@media screen and (max-width: 375px){
+	.content__dialog.--tip_fase6 {
+		height: 46%;
+		display: flex;
+		align-items: flex-end;
+	}
 }
 
 .pas__list6{
