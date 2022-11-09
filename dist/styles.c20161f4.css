@@ -2032,13 +2032,13 @@ p.titulo_opc {
 }
 
 .content__dialog.--pas_fase5{
-    background-image: url('/recurso_122_122.3cf2d426.png');
+    background-image: url('/recurso_144.59b73b90.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.content__dialog.--pas_2_fase6{
-    background-image: url('/recurso_160.cbb770e0.png');
+.content__dialog.--pas_2_fase5{
+    background-image: url('/recurso_122_122.3cf2d426.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2051,21 +2051,19 @@ p.titulo_opc {
     background-size: cover;
 }
 
-.background.--her_fase6{
-    background-image: url('/recurso_174.cb3d77e2.png');
+.background.--her_fase5{
+    background-image: url('/recurso_128.c274f720.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.background.--tip_fase6{
-    background-image: url('/recurso_73.0ad2bcce.png');
+.background.--tip_fase5{
+    background-image: url('/recurso_138.58ab77cf.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-
 
 .menu__title.--phase5 {
     background-color: var(--titlePink);
@@ -2088,6 +2086,20 @@ p.titulo_opc {
     color: var(--titlePink);
 }
 
+.pas__list.--phase5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.person.--pas_fase5{
+    height: 65%;
+    bottom: 0;
+    position: absolute;
+    left: 22%;
+}
+
 @media screen and (max-width: 720px){
     .background__animation.--phase5{
         height: 73%;
@@ -2095,6 +2107,37 @@ p.titulo_opc {
 }
 
 
+
+.tools.--toolsTips5{
+    height: inherit;
+}
+
+.tools.--phase5{
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+
+}
+.cards.--toolsTips5{
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.cards.--toolsTips5 li:nth-child(1){
+    height: 28%;
+    background-image: url('/recurso_62.2955d4f9.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(1){
+    background-image: url('/recurso_24.2429bc12.png');
+}
+.cards.--toolsTips5 li:nth-child(2){
+    height: 28%;
+    background-image: url('/recurso_63.c7cf548f.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(2){
+    background-image: url('/recurso_25.d6e177be.png');
+}
 
 .background__square.--phase6{
     background-color: var(--firstYellow);

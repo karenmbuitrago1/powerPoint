@@ -27,7 +27,11 @@ function btn_obj_f5() {
 
 	$("#person6").addClass("--invisible");
 	$("#person7").addClass("--invisible");
+	$("#person8").addClass("--invisible");
 	$("#person5").removeClass("--invisible");
+	$("#person9").removeClass("--invisible");
+    $("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
 
 	// Contenidos por pantalla
 	$(".--pas_fase5").addClass("--invisible");
@@ -60,6 +64,10 @@ function btn_pas_f5() {
 	$("#person5").addClass("--invisible");
 	$("#person6").removeClass("--invisible");
 	$("#person7").removeClass("--invisible");
+	$("#person8").removeClass("--invisible");
+    $("#person9").addClass("--invisible");
+    $("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
 	$(".obj_f5").addClass("--invisible");
 	$(".herr_f5").addClass("--invisible");
 
@@ -92,6 +100,10 @@ function btn_her_f5() {
 	$("#person5").addClass("--invisible");
 	$("#person6").addClass("--invisible");
 	$("#person7").addClass("--invisible");
+	$("#person8").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	$("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
 	$(".obj_f5").addClass("--invisible");
 
 	$(".--pas_2_fase5").addClass("--invisible");
@@ -121,6 +133,10 @@ function btn_tip_f5() {
 	$("#person5").addClass("--invisible");
 	$("#person6").addClass("--invisible");
 	$("#person7").addClass("--invisible");
+	$("#person8").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	$("#person10").removeClass("--invisible");
+	$("#person11").removeClass("--invisible");
 
 	$(".obj_f5").addClass("--invisible");
 	$(".herr_f5").addClass("--invisible");
@@ -248,6 +264,7 @@ $(function () {
 		$(".--pas_2_fase5").removeClass("--invisible");
 		$(".background").removeClass("--type010");
 		$(".background").addClass("--obj_fase5_postits");
+        $("#person8").addClass("--invisible");
 	});
 
 });

@@ -18,13 +18,13 @@
 }
 
 .content__dialog.--pas_fase5{
-    background-image: url('../images/recurso_122_122.png');
+    background-image: url('../images/recurso_144.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.content__dialog.--pas_2_fase6{
-    background-image: url('../images/recurso_160.png');
+.content__dialog.--pas_2_fase5{
+    background-image: url('../images/recurso_122_122.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -37,21 +37,19 @@
     background-size: cover;
 }
 
-.background.--her_fase6{
-    background-image: url('../images/recurso_174.png');
+.background.--her_fase5{
+    background-image: url('../images/recurso_128.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.background.--tip_fase6{
-    background-image: url('../images/recurso_73.png');
+.background.--tip_fase5{
+    background-image: url('../images/recurso_138.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-
 
 .menu__title.--phase5 {
     background-color: var(--titlePink);
@@ -72,6 +70,20 @@
 
 .phase__text.--phase5:hover {
     color: var(--titlePink);
+}
+
+.pas__list.--phase5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.person.--pas_fase5{
+    height: 65%;
+    bottom: 0;
+    position: absolute;
+    left: 22%;
 }
 
 @media screen and (max-width: 720px){
