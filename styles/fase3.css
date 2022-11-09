@@ -23,7 +23,9 @@
     height: 61%;
     width: 89%;
 }
-
+.casa{
+    z-index: 99;
+}
 .cow{
     width: 28%;
 }

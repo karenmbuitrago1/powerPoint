@@ -32,10 +32,10 @@ function btn_obj_f3(){
     $(".background").removeClass("--type005");
     $(".background").addClass("--type009");
     $(".--her_fase3").addClass("--invisible");
-    $(".--obj_fase3_postits").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
     $(".--tip_fase3").addClass("--invisible");
+    $(".--obj_fase3_postits").addClass("--invisible");
 
     var highestTimeoutId = setTimeout(";");
     for (var i = 0 ; i < highestTimeoutId ; i++) {
@@ -57,11 +57,11 @@ function btn_pas_f3(){
     $(".--pas_2_fase3").addClass("--invisible");
     $(".background").removeClass("--type005");
     $(".background").removeClass("--type009");
-    $(".--obj_fase3_postits").addClass("--invisible");
     $(".--her_fase3").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
     $(".--tip_fase3").addClass("--invisible");
+    $(".--obj_fase3_postits").addClass("--invisible");
 
 
 
@@ -86,10 +86,10 @@ function btn_pas_f3(){
         $(".background").removeClass("--type005");
         $(".--her_fase3").removeClass("--invisible");
         $(".background").removeClass("--type008");
-        $(".--obj_fase3_postits").addClass("--invisible");
         $(".background").addClass("--type009");
         $(".background").removeClass("--invisible");
         $(".--tip_fase3").addClass("--invisible");
+        $(".--obj_fase3_postits").addClass("--invisible");
 
 
     
@@ -113,10 +113,11 @@ function btn_pas_f3(){
             $(".--pas_2_fase3").addClass("--invisible");
             $(".background").removeClass("--type005");
             $(".--her_fase3").addClass("--invisible");
-            $(".--obj_fase3_postits").addClass("--invisible");
             $(".background").addClass("--type008");
             $(".background").removeClass("--invisible");
             $(".--tip_fase3").removeClass("--invisible");
+            $(".--obj_fase3_postits").addClass("--invisible");
+
 
         
             var highestTimeoutId = setTimeout(";");
@@ -180,7 +181,6 @@ $(function() {
     $("#my_audio_f3_1").on("ended", function() {
       $("#play_f3_bienvenida").html('Reproducir Audio');
       $(".--obj_fase3_postits").removeClass("--invisible");
-      $(".--type009").addClass("--invisible");
       $(".obj_f3").addClass("--invisible");
       $(".--obj_fase3").addClass("--invisible");
       $(".background").addClass("--type005");
@@ -227,7 +227,9 @@ $(function() {
     //$(".--pas_fase3").addClass("--invisible");
     //$(".--pas_2_fase3").removeClass("--invisible");
     //$(".background").addClass("--type005");
-    $(".background__square").removeClass("--invisible");
+    $(".--pas_2_fase3").removeClass("--invisible");
+    $(".--pas_fase3").addClass("--invisible");
+    $(".background").addClass("--pas_fase3");
 });
 
 
