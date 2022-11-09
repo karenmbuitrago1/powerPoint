@@ -60,6 +60,7 @@ function btn_pas_f3(){
     $(".--her_fase3").addClass("--invisible");
     $(".background").removeClass("--invisible");
     $(".background").removeClass("--type008");
+    $(".background").addClass("--pas_fase3_bg");
     $(".--tip_fase3").addClass("--invisible");
     $(".--obj_fase3_postits").addClass("--invisible");
 
@@ -228,8 +229,8 @@ $(function() {
     //$(".--pas_2_fase3").removeClass("--invisible");
     //$(".background").addClass("--type005");
     $(".--pas_2_fase3").removeClass("--invisible");
+    $(".background").addClass("--pas_fase3_bg");
     $(".--pas_fase3").addClass("--invisible");
-    $(".background").addClass("--pas_fase3");
 });
 
 

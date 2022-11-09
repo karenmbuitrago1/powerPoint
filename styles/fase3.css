@@ -9,7 +9,7 @@
     background-size: cover;
 }
 
-.content__dialog.--pas_fase3{
+.background.--pas_fase3_bg{
     background-image: url('../images/recurso_16.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
