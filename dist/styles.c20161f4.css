@@ -2114,6 +2114,13 @@ p.titulo_opc {
     background-size: cover;
 }
 
+.background.--her_fase6{
+    background-image: url('/recurso_174.cb3d77e2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .menu__title.--phase6 {
     background-color: var(--titleYellow);
 }

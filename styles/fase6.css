@@ -37,6 +37,13 @@
     background-size: cover;
 }
 
+.background.--her_fase6{
+    background-image: url('../images/recurso_174.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .menu__title.--phase6 {
     background-color: var(--titleYellow);
 }
