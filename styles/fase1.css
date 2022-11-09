@@ -238,7 +238,7 @@ p.titulo_opc {
         height: 14%;
     }
     .menu__title:before {
-        top: 156px;
+        top: 85%;
     }
     .titlePhase {
         font-size: 48px;
@@ -285,7 +285,7 @@ p.titulo_opc {
         margin: 0;
     }
     .menu__title:before {
-        top: 70px;
+        top: 80%;
         left: 158px;
     }
     .menu__phase {

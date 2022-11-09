@@ -39,6 +39,11 @@
     background-size: cover;
 }
 
+.pas__list{
+    padding: 0;
+    margin: 8px;
+}
+
 .content__dialog.--obj_fase8_postits{
     background-image: url('../images/recurso_238.png');
     background-repeat: no-repeat;
@@ -46,10 +51,15 @@
     background-size: cover;
 }
 
-.bckg__img{
-    position: absolute;
-    top: 48%;
-    right: 17%;
+
+@media screen and (max-width: 720px){
+    .postits.--fase8{
+        background-image: url('../images/recurso_238.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+    }
 }
 
 .menu__title.--phase8 {
@@ -72,38 +82,4 @@
 .phase__text.--phase8:hover {
     color: var(--titleMora);
 }
-
-
-@media screen and (max-width: 1450px){
-    .bckg__img{
-        top: 41%;
-        right: 7%;
-    }
-}
-
-
-@media screen and (max-width: 1280px){
-    .bckg__img{
-        top: 41%;
-        right: 6%;
-    }
-}
-
-
-@media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    .bckg__img{
-        top: 61%;
-        right: 0%;
-        width: 100%;
-    }
-}
-
 

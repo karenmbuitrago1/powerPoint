@@ -25,11 +25,6 @@
     background-size: cover;
     background-position-x: 317px;
 }
-.bckg__img{
-    position: absolute;
-    top: 48%;
-    right: 17%;
-}
 
 .menu__title.--phase7 {
     background-color: var(--titleLightGreen);
@@ -50,39 +45,6 @@
 
 .phase__text.--phase7:hover {
     color: var(--titleLightGreen);
-}
-
-
-@media screen and (max-width: 1450px){
-    .bckg__img{
-        top: 41%;
-        right: 7%;
-    }
-}
-
-
-@media screen and (max-width: 1280px){
-    .bckg__img{
-        top: 41%;
-        right: 6%;
-    }
-}
-
-
-@media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    .bckg__img{
-        top: 61%;
-        right: 0%;
-        width: 100%;
-    }
 }
 
 
