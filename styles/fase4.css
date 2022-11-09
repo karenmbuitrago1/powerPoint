@@ -10,7 +10,21 @@
 }
 
 .content__dialog.--pas_fase4{
-    background-image: url('../images/recurso_16.png');
+    background-image: url('../images/recurso_73_73.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase4{
+    background-image: url('../images/recurso_67.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--obj_fase4_postits{
+    background-image: url('../images/recurso_67.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

@@ -1961,7 +1961,21 @@ p.titulo_opc {
 }
 
 .content__dialog.--pas_fase4{
-    background-image: url('/recurso_16.94b2fa25.png');
+    background-image: url('/recurso_73_73.2e9b00d5.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase4{
+    background-image: url('/recurso_67.41d0ebe7.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--obj_fase4_postits{
+    background-image: url('/recurso_67.41d0ebe7.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2012,6 +2026,50 @@ p.titulo_opc {
 
 
 
+.memory {
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .memory__card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.memory__card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory__card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+
+  .front-face {
+    transform: rotateY(180deg);
+  }
 .background__square.--phase5{
     background-color: var(--firstPink);
 
