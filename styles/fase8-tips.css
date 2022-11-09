@@ -68,3 +68,19 @@
 	margin: 16px;
 	text-decoration: none;
 }	
+
+
+@media screen and (max-width: 375px){
+	.content__dialog.--tip_fase8 {
+		height: 46%;
+		display: flex;
+		align-items: flex-end;
+	}
+	.tools.--toolsTips8 {
+		height: 96%;
+		align-items: flex-end;
+	}
+	.cards.--toolsTips {
+		height: fit-content;
+	}
+}

@@ -1571,7 +1571,7 @@ p.titulo_opc {
 
 .tools{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
 }
 
@@ -1703,6 +1703,15 @@ p.titulo_opc {
     .card__btn.--toolsTips{
         padding: 0;
     }
+    .cards.--toolsTips li:nth-child(1){
+        height: 72px;
+    }
+    .cards.--toolsTips li:nth-child(2){
+        height: 72px;
+    }
+    .cards.--toolsTips li:nth-child(3){
+        height: 72px;
+    }
 }
 
 
@@ -1739,7 +1748,6 @@ p.titulo_opc {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: 317px;
 }
 .bckg__img{
     position: absolute;
@@ -1802,12 +1810,6 @@ p.titulo_opc {
 }
 
 
-
-.tools{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
 
 .cards.--toolsCards2{
     justify-content: flex-end;
@@ -2221,7 +2223,6 @@ p.titulo_opc {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: 317px;
 }
 
 .menu__title.--phase7 {
@@ -2278,7 +2279,6 @@ p.titulo_opc {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: 317px;
 }
 
 .content__dialog.--pas_2_fase8{
@@ -2329,9 +2329,29 @@ p.titulo_opc {
     }
 }
 
+.cards.--phase8{
+    flex-direction: column;
+}
 .card__text.--toolsText8{
     font-size: 24px;
     margin: 16px;
+}
+
+.content__dialog.--her_fase8{
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width: 375px){
+    .card__text.--toolsText8{
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .card__item.--toolsCards8{
+        height: 79px;
+    }
+
 }
 
 .content__dialog.--tip_fase8{
@@ -2405,6 +2425,21 @@ p.titulo_opc {
 	text-decoration: none;
 }	
 
+
+@media screen and (max-width: 375px){
+	.content__dialog.--tip_fase8 {
+		height: 46%;
+		display: flex;
+		align-items: flex-end;
+	}
+	.tools.--toolsTips8 {
+		height: 96%;
+		align-items: flex-end;
+	}
+	.cards.--toolsTips {
+		height: fit-content;
+	}
+}
 /* Estilos globales */
 
 /* Estilos intro */

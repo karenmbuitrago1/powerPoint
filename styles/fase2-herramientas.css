@@ -1,9 +1,3 @@
-.tools{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
 .cards.--toolsCards2{
     justify-content: flex-end;
     align-items: flex-end;
