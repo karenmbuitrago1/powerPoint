@@ -7,26 +7,64 @@
 }
 
 .pas__listItem{
-    background-color: #fff;
-	border-radius: 10px;
+    background-color: white;
+	border-radius: 24px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
 	max-width: 100%;
-	margin: 20px;
+	margin: 16px;
 	overflow: hidden;
 	width: 700px;
 }
 
-.pas__textPaso{
-	background-color: #a640a9;
-	color: #fff;
+.pas__paso{
+	color: white;
 	padding: 30px;
 	max-width: 250px;
+	text-align: center;
+	font-size: 24px;
+}
+
+#paso1{
+	background-color: #a640a9;
+}
+#pasoText1{
+	color:  #a640a9;;
+}
+#paso2{
+	background-color: #1db5e0;
+}
+#pasoText2{
+	color:  #1db5e0;;
+}
+#paso3{
+	background-color: #f85636;
+}
+#pasoText3{
+	color:  #f85636;;
+}
+#paso4{
+	background-color: #79c279;
+}
+#pasoText4{
+	color:  #79c279;;
+}
+#paso5{
+	background-color: #083b85;
+}
+#pasoText5{
+	color:  #083b85;;
 }
 
 .pas__pasoTitle{
-	opacity: 0.6;
 	margin: 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
+.pas__text{
+	color: black;
+	display: inline-block;
+	margin: 16px;
+	text-decoration: none;
+}	
