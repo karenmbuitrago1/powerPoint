@@ -188,7 +188,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_38.png":[["recurso_38.bcce04d1.png","../images/recurso_38.png"],"../images/recurso_38.png"],"./..\\images\\recurso57.jpg":[["recurso57.0ad092c1.jpg","../images/recurso57.jpg"],"../images/recurso57.jpg"],"./..\\images\\recurso_tip.jpg":[["recurso_tip.f7d213c5.jpg","../images/recurso_tip.jpg"],"../images/recurso_tip.jpg"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase1-post.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_38.png":[["recurso_38.bcce04d1.png","../images/recurso_38.png"],"../images/recurso_38.png"],"./..\\images\\recurso_31.png":[["recurso_31.b1a2787e.png","../images/recurso_31.png"],"../images/recurso_31.png"],"./..\\images\\recurso57.jpg":[["recurso57.0ad092c1.jpg","../images/recurso57.jpg"],"../images/recurso57.jpg"],"./..\\images\\recurso_tip.jpg":[["recurso_tip.f7d213c5.jpg","../images/recurso_tip.jpg"],"../images/recurso_tip.jpg"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase1-post.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -293,7 +293,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52140" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54542" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -4,18 +4,36 @@
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--type007{
+
+.content__dialog.--obj_fase1_postits{
+    background-image: url('../images/recurso_31.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase1{
+    background-image: url('../images/recurso_31.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.background.--her_fase1{
     background-image: url('../images/recurso57.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--type008{
+
+.background.--tip_fase1{
     background-image: url('../images/recurso_tip.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
 
 .background__back{
     position: absolute;
@@ -179,13 +197,13 @@
   margin-bottom: 30px;
 }
 p.titulo_opc {
-    line-height: 13px;
+    line-height: 20px;
     color: #083b85;
-    font-size: 13px;
+    font-size: 18px;
 }
 .text_opc{
-    line-height: 13px;
-    font-size: 11px;
+    line-height: 20px;
+    font-size: 14px;
 }
 .bg_bl{
 	background: #fff;
