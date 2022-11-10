@@ -1,150 +1,160 @@
 //active
-$('.phase__text').click(function(){
-    if($(this).hasClass('phase__text_active')){
-        $('.phase__text').removeClass('phase__text_active')
-    } else {
-        $('.phase__text').removeClass('phase__text_active')
-        $(this).addClass('phase__text_active')
-    }
+$('.phase__text').click(function () {
+	if ($(this).hasClass('phase__text_active')) {
+		$('.phase__text').removeClass('phase__text_active')
+	} else {
+		$('.phase__text').removeClass('phase__text_active')
+		$(this).addClass('phase__text_active')
+	}
 });
 
+document.getElementById("btn_obj_f2").addEventListener("click", btn_obj_f2, false);
+document.getElementById("btn_pas_f2").addEventListener("click", btn_pas_f2, false);
+document.getElementById("btn_her_f2").addEventListener("click", btn_her_f2, false);
+document.getElementById("btn_tip_f2").addEventListener("click", btn_tip_f2, false);
 
-document.getElementById ("btn_obj_f2").addEventListener ("click", btn_obj_f2, false);
-document.getElementById ("btn_pas_f2").addEventListener ("click", btn_pas_f2, false);
-document.getElementById ("btn_her_f2").addEventListener ("click", btn_her_f2, false);
-document.getElementById ("btn_tip_f2").addEventListener ("click", btn_tip_f2, false);
+// Acciones botones objetivo
+function btn_obj_f2() {
 
-// Cambio de Botones
+	// Audio
+	$("#my_audio_f2").trigger('pause');
+	$("#play_f2_bienvenida").html('Reproducir Audio');
 
-function btn_obj_f2(){
-    $("#my_audio_f2").trigger('pause');
-    $("#play_f2_bienvenida").html('Reproducir Audio');
-    $("#person6").addClass("--invisible");
-    $(".--pas_fase2").addClass("--invisible");
-    $("#person7").addClass("--invisible"); 
-    $("#person4").removeClass("--invisible");
-    $("#person5").removeClass("--invisible");
-    $(".paso_paso").removeClass("--invisible");
-    $(".obj_f2").removeClass("--invisible");
-    $(".herr_f2").addClass("--invisible");
-    $(".tip_f2").addClass("--invisible");
-    $(".--pas_2_fase2").addClass("--invisible");
-    $(".background").removeClass("--type005");
-    $(".background").removeClass("--type007");
-    $(".--her_fase2").addClass("--invisible");
-    $(".--obj_fase2_postits").addClass("--invisible");
-    $(".background").removeClass("--invisible");
-    $(".background").removeClass("--type008");
-    $(".background").removeClass("--tip_fase2");
-    $(".--tip_fase2").addClass("--invisible");
-    $(".background").addClass("--type006");
-    $(".background").removeClass("--obj_fase2_postits");
-    $(".background").removeClass("--her_fase2");
-    $(".background__image").removeClass("--invisible");
+	// Personas hablantes y dialogos
+	$(".obj_f2").removeClass("--invisible");
+	$(".herr_f2").addClass("--invisible");
+	$(".tip_f2").addClass("--invisible");
 
+	$("#person6").addClass("--invisible");
+	$("#person7").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	$("#person5").removeClass("--invisible");
+    $("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
 
+	// Contenidos por pantalla
+	$(".--pas_fase2").addClass("--invisible");
+	$(".--pas_2_fase2").addClass("--invisible");
+	$(".--her_fase2").addClass("--invisible");
+	$(".--obj_fase2_postits").addClass("--invisible");
+	$(".--tip_fase2").addClass("--invisible");
 
-    var highestTimeoutId = setTimeout(";");
-    for (var i = 0 ; i < highestTimeoutId ; i++) {
-        clearTimeout(i); 
-    }
-    }
-
-function btn_pas_f2(){
-    $("#my_audio_f2_1").trigger('pause');
-    $("#play_paso_f2").html('Reproducir Audio');
-    $(".--pas_fase2").removeClass("--invisible");
-    $("#person4").addClass("--invisible");
-    $("#person5").addClass("--invisible"); 
-    $("#person6").removeClass("--invisible");
-    $("#person7").removeClass("--invisible");
-    $(".paso_paso").removeClass("--invisible");
-    $(".obj_f2").addClass("--invisible");
-    $(".herr_f2").addClass("--invisible");
-    $(".tip_f2").addClass("--invisible");
-    $(".--pas_2_fase2").addClass("--invisible");
-    $(".background").removeClass("--type005");
-    $(".background").removeClass("--type007");
-    $(".--obj_fase2_postits").addClass("--invisible");
-    $(".--her_fase2").addClass("--invisible");
-    $(".background").removeClass("--invisible");
-    $(".background").removeClass("--type008");
-    $(".background").removeClass("--tip_fase2");
-    $(".--tip_fase2").addClass("--invisible");
-    $(".background").addClass("--type006");
-    $(".background").removeClass("--obj_fase2_postits");
-    $(".background").removeClass("--her_fase2");
-    $(".background__image").removeClass("--invisible");
+	// background por pantalla
+	$(".background").removeClass("--pas_fase2")
+		.removeClass("--obj_fase2_postits")
+		.removeClass("--her_fase2")
+		.removeClass("--tip_fase2");
+	$(".background").removeClass("--invisible").addClass("--type006");
+	$(".background__image").removeClass("--invisible");
+	$(".--pas_phase2").addClass("--invisible");
 
 
-    var highestTimeoutId = setTimeout(";");
-    for (var i = 0 ; i < highestTimeoutId ; i++) {
-        clearTimeout(i); 
-    }
-    }
-    function btn_her_f2(){
-        $("#my_audio_f2_1").trigger('pause');
-        $("#my_audio_f2").trigger('pause');
-        $(".--pas_fase2").addClass("--invisible");
-        $("#person4").addClass("--invisible");
-        $("#person5").addClass("--invisible"); 
-        $("#person6").addClass("--invisible");
-        $("#person7").addClass("--invisible");
-        $(".paso_paso").addClass("--invisible");
-        $(".obj_f2").addClass("--invisible");
-        $(".herr_f2").addClass("--invisible");
-        $(".tip_f2").addClass("--invisible");
-        $(".--pas_2_fase2").addClass("--invisible");
-        $(".background").removeClass("--type005");
-        $(".--her_fase2").removeClass("--invisible");
-        $(".background").removeClass("--type008");
-        $(".--obj_fase2_postits").addClass("--invisible");
-        $(".background").addClass("--her_fase2");
-        $(".background").removeClass("--invisible");
-        $(".background").removeClass("--tip_fase2");
-        $(".--tip_fase2").addClass("--invisible");
-        $(".background__image").addClass("--invisible");
+	var highestTimeoutId = setTimeout(";");
+	for (var i = 0; i < highestTimeoutId; i++) {
+		clearTimeout(i);
+	}
+}
+
+function btn_pas_f2() {
+	$("#my_audio_f2_1").trigger('pause');
+	$("#play_paso_f2").html('Reproducir Audio');
+
+	// Personas hablantes y dialogos
+	$("#person5").addClass("--invisible");
+	$("#person6").removeClass("--invisible");
+	$("#person7").removeClass("--invisible");
+	$("#person9").removeClass("--invisible");
+    $("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
+	$(".obj_f2").addClass("--invisible");
+	$(".herr_f2").addClass("--invisible");
+
+	//contenidos por pantalla
+	$(".--pas_fase2").removeClass("--invisible");
+	$(".--obj_fase2_postits").addClass("--invisible");
+	$(".--pas_2_fase2").addClass("--invisible");
+	$(".--her_fase2").addClass("--invisible");
+	$(".--tip_fase2").addClass("--invisible");
+
+	// background por pantalla
+	$(".background").removeClass("--obj_fase2_postits")
+		.removeClass("--her_fase2")
+		.removeClass("--tip_fase2");
+	$(".background").removeClass("--invisible").addClass("--type006");
+	$(".background__image").removeClass("--invisible");
 
 
-    
-        var highestTimeoutId = setTimeout(";");
-        for (var i = 0 ; i < highestTimeoutId ; i++) {
-            clearTimeout(i); 
-        }
-        }
-        function btn_tip_f2(){
-            $("#my_audio_f2_1").trigger('pause');
-            $("#my_audio_f2").trigger('pause');
-            $(".--pas_fase2").addClass("--invisible");
-            $("#person4").addClass("--invisible");
-            $("#person5").addClass("--invisible"); 
-            $("#person6").addClass("--invisible");
-            $("#person7").addClass("--invisible");
-            $(".paso_paso").addClass("--invisible");
-            $(".obj_f2").addClass("--invisible");
-            $(".herr_f2").addClass("--invisible");
-            $(".tip_f2").addClass("--invisible");
-            $(".--pas_2_fase2").addClass("--invisible");
-            $(".background").removeClass("--type005");
-            $(".--her_fase2").addClass("--invisible");
-            $(".--obj_fase2_postits").addClass("--invisible");
-            $(".background").removeClass("--invisible");
-            $(".--tip_fase2").removeClass("--invisible");
-            $(".background").removeClass("--her_fase2");
-            $(".background").addClass("--tip_fase2");
-            $(".background__image").addClass("--invisible");
+	var highestTimeoutId = setTimeout(";");
+	for (var i = 0; i < highestTimeoutId; i++) {
+		clearTimeout(i);
+	}
+}
+function btn_her_f2() {
+	$("#my_audio_f2_1").trigger('pause');
+	$("#my_audio_f2").trigger('pause');
 
+	$(".--pas_fase2").addClass("--invisible");
+	$("#person5").addClass("--invisible");
+	$("#person6").addClass("--invisible");
+	$("#person7").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	$("#person10").addClass("--invisible");
+	$("#person11").addClass("--invisible");
+	$(".obj_f2").addClass("--invisible");
 
+	$(".--pas_2_fase2").addClass("--invisible");
+	$(".--her_fase2").removeClass("--invisible");
+	$(".--obj_fase2_postits").addClass("--invisible");
+	$(".--tip_fase2").addClass("--invisible");
 
+	// background por pantalla
+	$(".background").removeClass("--type006")
+		.removeClass("--obj_fase2_postits")
+		.removeClass("--pas_fase2")
+		.removeClass("--tip_fase2");
+	$(".background").removeClass("--invisible").addClass("--her_fase2");
+	$(".background__image").addClass("--invisible");
 
+	var highestTimeoutId = setTimeout(";");
+	for (var i = 0; i < highestTimeoutId; i++) {
+		clearTimeout(i);
+	}
+}
+function btn_tip_f2() {
+	$("#my_audio_f2_1").trigger('pause');
+	$("#my_audio_f2").trigger('pause');
 
-        
-            var highestTimeoutId = setTimeout(";");
-            for (var i = 0 ; i < highestTimeoutId ; i++) {
-                clearTimeout(i); 
-            }
-            }
-    
+	$(".--pas_fase2").addClass("--invisible");
+
+	$("#person5").addClass("--invisible");
+	$("#person6").addClass("--invisible");
+	$("#person7").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	$("#person10").removeClass("--invisible");
+	$("#person11").removeClass("--invisible");
+
+	$(".obj_f2").addClass("--invisible");
+	$(".herr_f2").addClass("--invisible");
+	$(".tip_f2").addClass("--invisible");
+
+	$(".--pas_2_fase2").addClass("--invisible");
+	$(".--her_fase2").addClass("--invisible");
+	$(".--obj_fase2_postits").addClass("--invisible");
+	$(".--tip_fase2").removeClass("--invisible");
+
+	// background por pantalla
+	$(".background").removeClass("--type006")
+		.removeClass("--obj_fase2_postits")
+		.removeClass("--pas_fase2")
+		.removeClass("--her_fase2");
+	$(".background").removeClass("--invisible").addClass("--tip_fase2");
+	$(".background__image").addClass("--invisible");
+
+	var highestTimeoutId = setTimeout(";");
+	for (var i = 0; i < highestTimeoutId; i++) {
+		clearTimeout(i);
+	}
+}
 
 //Audios y textos
 $(function() {
@@ -238,6 +248,7 @@ $(function() {
   $("#my_audio_f2").on("ended", function() {
     $("#play_paso_f2").html('Reproducir Audio');
     $(".--pas_fase2").addClass("--invisible");
+    $("#person9").addClass("--invisible");
     $(".--pas_2_fase2").removeClass("--invisible");
     $(".background").removeClass("--type005");
     $(".background").removeClass("--type006");
@@ -245,107 +256,3 @@ $(function() {
 });
 
 });
-
-
-
-
-//Juegos de Arrastre
-document.addEventListener('DOMContentLoaded', (event) => {
-    const draggableListItems = document.querySelectorAll('.draggable-list li');
-    const endMessage = document.getElementById('endMessage');
-    
-    // current phrase being dragged
-    let selectedId;
-    
-    // target phrase
-    let dropTargetId;
-    
-    // counter for correct phrases
-    let matchingCounter = 0;
-    
-    addEventListeners();
-    
-    function dragStart() {
-      selectedId = this.id;
-    }
-    
-    function dragEnter() {
-      this.classList.add('over');
-    }
-    
-    function dragLeave() {
-      this.classList.remove('over');
-    }
-    
-    function dragOver(ev) {
-      ev.preventDefault();
-    }
-    
-    function dragDrop() {
-      dropTargetId = this.id;
-    
-      if (checkForMatch(selectedId, dropTargetId)) {
-        document.getElementById(selectedId).style.display = 'none';
-        document.getElementById(dropTargetId).style.display = 'none';
-        matchingCounter++;
-      } else if (checkForMatch2(selectedId, dropTargetId)) {
-        document.getElementById(selectedId).style.display = 'none';
-        document.getElementById(dropTargetId).style.display = 'none';
-        matchingCounter++;
-      }
-    
-      if (matchingCounter === 4) {
-        endMessage.style.display = 'block';
-      }
-    
-      this.classList.remove('over');
-    }
-    
-    function checkForMatch(selected, dropTarget) {
-      switch (selected) {
-        case 'e1':
-          return dropTarget === 's1' ? true : false;
-    
-        case 'e2':
-          return dropTarget === 's2' ? true : false;
-    
-        case 'e3':
-          return dropTarget === 's3' ? true : false;
-    
-        case 'e4':
-          return dropTarget === 's4' ? true : false;
-    
-        default:
-          return false;
-      }
-    }
-    
-    function checkForMatch2(selected, dropTarget) {
-      switch (selected) {
-        case 's1':
-          return dropTarget === 'e1' ? true : false;
-    
-        case 's2':
-          return dropTarget === 'e2' ? true : false;
-    
-        case 's3':
-          return dropTarget === 'e3' ? true : false;
-    
-        case 's4':
-          return dropTarget === 'e4' ? true : false;
-    
-        default:
-          return false;
-      }
-    }
-        
-    function addEventListeners() {
-      draggableListItems.forEach (item => {
-        item.addEventListener('dragstart', dragStart);
-        item.addEventListener('dragenter', dragEnter);
-        item.addEventListener('drop', dragDrop);
-        item.addEventListener('dragover', dragOver);
-        item.addEventListener('dragleave', dragLeave);
-      })
-    }
-    });

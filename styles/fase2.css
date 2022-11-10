@@ -12,6 +12,22 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+.content__dialog.--obj_fase2_postits{
+    background-image: url('../images/recurso90.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase2{
+    background-image: url('../images/recurso90.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .background.--her_fase2{
     background-image: url('../images/recurso95.png');
     background-repeat: no-repeat;
@@ -24,6 +40,8 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+
 .bckg__img{
     position: absolute;
     top: 48%;

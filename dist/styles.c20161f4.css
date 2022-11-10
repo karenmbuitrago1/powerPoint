@@ -1737,6 +1737,22 @@ p.titulo_opc {
     background-attachment: fixed;
     background-size: cover;
 }
+
+.content__dialog.--obj_fase2_postits{
+    background-image: url('/recurso90.058d747a.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content__dialog.--pas_2_fase2{
+    background-image: url('/recurso90.058d747a.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .background.--her_fase2{
     background-image: url('/recurso95.8b88286d.png');
     background-repeat: no-repeat;
@@ -1749,6 +1765,8 @@ p.titulo_opc {
     background-attachment: fixed;
     background-size: cover;
 }
+
+
 .bckg__img{
     position: absolute;
     top: 48%;
@@ -2252,21 +2270,30 @@ p.titulo_opc {
     justify-content: flex-end;
 }
 .cards.--toolsTips5 li:nth-child(1){
-    height: 28%;
+    width: 28%;
+    height: 21%;
     background-image: url('/recurso_62.2955d4f9.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(1){
     background-image: url('/recurso_24.2429bc12.png');
 }
 .cards.--toolsTips5 li:nth-child(2){
-    height: 28%;
+    width: 28%;
+    height: 21%;
     background-image: url('/recurso_63.c7cf548f.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(2){
+    width: 28%;
+    height: 21%;
     background-image: url('/recurso_25.d6e177be.png');
 }
 .cards.--toolsTips5 li:nth-child(3){
+    width: 28%;
+    height: 21%;
     background-image: url('/recurso_41_41.c1a4a2d9.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(3){
+    background-image: url('/recurso_26.3d9f7e3e.png');
 }
 
 .background__square.--phase6{

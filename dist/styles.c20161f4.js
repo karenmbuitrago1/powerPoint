@@ -204,7 +204,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_73.png":[["recurso_73.0ad2bcce.png","../images/recurso_73.png"],"../images/recurso_73.png"],"./..\\images\\recurso95.png":[["recurso95.8b88286d.png","../images/recurso95.png"],"../images/recurso95.png"],"./..\\images\\recurso97.png":[["recurso97.fba8b7e3.png","../images/recurso97.png"],"../images/recurso97.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase2-herramientas.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_73.png":[["recurso_73.0ad2bcce.png","../images/recurso_73.png"],"../images/recurso_73.png"],"./..\\images\\recurso90.png":[["recurso90.058d747a.png","../images/recurso90.png"],"../images/recurso90.png"],"./..\\images\\recurso95.png":[["recurso95.8b88286d.png","../images/recurso95.png"],"../images/recurso95.png"],"./..\\images\\recurso97.png":[["recurso97.fba8b7e3.png","../images/recurso97.png"],"../images/recurso97.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase2-herramientas.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -236,7 +236,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_62.png":[["recurso_62.2955d4f9.png","../images/recurso_62.png"],"../images/recurso_62.png"],"./..\\images\\recurso_24.png":[["recurso_24.2429bc12.png","../images/recurso_24.png"],"../images/recurso_24.png"],"./..\\images\\recurso_63.png":[["recurso_63.c7cf548f.png","../images/recurso_63.png"],"../images/recurso_63.png"],"./..\\images\\recurso_25.png":[["recurso_25.d6e177be.png","../images/recurso_25.png"],"../images/recurso_25.png"],"./..\\images\\recurso_41_41.png":[["recurso_41_41.c1a4a2d9.png","../images/recurso_41_41.png"],"../images/recurso_41_41.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase6.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_62.png":[["recurso_62.2955d4f9.png","../images/recurso_62.png"],"../images/recurso_62.png"],"./..\\images\\recurso_24.png":[["recurso_24.2429bc12.png","../images/recurso_24.png"],"../images/recurso_24.png"],"./..\\images\\recurso_63.png":[["recurso_63.c7cf548f.png","../images/recurso_63.png"],"../images/recurso_63.png"],"./..\\images\\recurso_25.png":[["recurso_25.d6e177be.png","../images/recurso_25.png"],"../images/recurso_25.png"],"./..\\images\\recurso_41_41.png":[["recurso_41_41.c1a4a2d9.png","../images/recurso_41_41.png"],"../images/recurso_41_41.png"],"./..\\images\\recurso_26.png":[["recurso_26.3d9f7e3e.png","../images/recurso_26.png"],"../images/recurso_26.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fase6.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -293,7 +293,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64609" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52140" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

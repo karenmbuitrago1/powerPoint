@@ -15,19 +15,28 @@
     justify-content: flex-end;
 }
 .cards.--toolsTips5 li:nth-child(1){
-    height: 28%;
+    width: 28%;
+    height: 21%;
     background-image: url('../images/recurso_62.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(1){
     background-image: url('../images/recurso_24.png');
 }
 .cards.--toolsTips5 li:nth-child(2){
-    height: 28%;
+    width: 28%;
+    height: 21%;
     background-image: url('../images/recurso_63.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(2){
+    width: 28%;
+    height: 21%;
     background-image: url('../images/recurso_25.png');
 }
 .cards.--toolsTips5 li:nth-child(3){
+    width: 28%;
+    height: 21%;
     background-image: url('../images/recurso_41_41.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(3){
+    background-image: url('../images/recurso_26.png');
 }
