@@ -166,7 +166,7 @@ $(function () {
 	var is_playing;
 
 	$("#play_f5_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
+		var original = '¡Bienvenido! Mi nombre es Nahuel, soy un sabedor de la comunidad indígena wayuu. Hoy estoy reunido con mi comunidad para mostrarte los pasos que debes seguir para desarrollar esta fase. Todos juntos, a partir de un diálogo de saberes, diseñamos esta hoja de ruta con fichas de memoria… El propósito es emparejar cada fase con su descripción ¡Adelante!	';
 		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
 		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
 		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
