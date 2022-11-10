@@ -2,10 +2,108 @@
     background-color: var(--firstPurple);
 
 }
-.rompecabezas{
-    width: 100%;
-    margin-top: 7%;
+
+
+
+
+
+/*drag and drop styles*/
+.dnd-image-drag .container {
+    float: left;
+    margin: 0 10px 20px 10px;
+  }
+  
+ 
+  .dnd-image-drag .gallery-list {
+    width: 50%;
+    min-height: 217px;
+    background: #eee;
+    border: solid 1px #ccc;
+    margin: auto;
+    padding: 5px 0 5px 5px;
+    display: block;
+    margin-top: 60px;
 }
+  .dnd-image-drag .gallery-list .drag {
+    width: 100px;
+    display: inline-block;
+    height: 100px;
+    border: solid 1px #ccc;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    border: solid 1px transparent;
+  }
+  
+  .dnd-image-drag .gallery-list .drag.drag-active {
+    border: solid 1px #2c3e50;
+  }
+  
+  .dnd-image-drag .gallery-painting {
+    width: 50%;
+    background: #eee;
+    background-position: center center;
+    background-size: cover;
+    border: solid 1px #ccc;
+    margin: auto;
+    padding: 5px 0 5px 5px;
+    display: block;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background: rgba(50, 50, 50, 0.7);
+    border: solid 1px transparent;
+    overflow: hidden;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.drop-active {
+    border: solid 1px #f1c40f;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.correct {
+    border: solid 1px #32ce74;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.incorrect {
+    border: solid 1px #c0392b;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reset-button {
+    background: #eee;
+    border: solid 1px #ccc;
+    padding: 12px 15px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    min-width: 100px;
+    clear: both;
+  }
+  
+  .message-container {
+    clear: both;
+  }
+  
+  .ie-message {
+    display: none;
+    padding: 15px;
+    background: #e74c3c;
+    color: #fff;
+    border: dashed 2px #c0392b;
+    margin-bottom: 15px;
+  }
+  
+
+
+
+
 .background.--type006{
     background-image: url('../images/recurso_73.png');
     background-repeat: no-repeat;
