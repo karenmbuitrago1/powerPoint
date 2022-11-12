@@ -15,15 +15,15 @@
   
  
   .dnd-image-drag .gallery-list {
-    width: 50%;
-    min-height: 317px;
+    width: 60%;
+    min-height: 417px;
     margin: auto;
     padding: 5px 0 5px 5px;
     display: block;
     margin-top: 60px;;
 }
   .dnd-image-drag .gallery-list .drag {
-    width: 24%;
+    width: 23%;
     display: inline-block;
     height: auto;;
     cursor: -webkit-grab;
@@ -35,7 +35,7 @@
   }
   
   .dnd-image-drag .gallery-painting {
-    width: 50%;
+    width: 60%;
     background: #eee;
     background-position: center center;
     background-size: cover;
@@ -52,7 +52,7 @@
   .dnd-image-drag .gallery-painting .drop {
     position: relative;
     height: auto;
-    width: 24%;
+    width: 23%;
     min-height: 100px;
     display: inline-block;
     background: rgb(220 153 241 / 70%);
