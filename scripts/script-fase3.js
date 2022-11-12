@@ -159,10 +159,11 @@ $(function () {
 	var is_playing;
 
 	$("#play_f3_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Magdalena, soy madre comunitaria y también hago parte de esta iniciativa. Quisiera contarte en qué consiste esta fase que hemos denominado ¡Construyendo puentes!';
-		var text1 = 'El propósito es diseñar con la comunidad y con miembros de diferentes sectores, acciones que contribuyan a mejorar los comportamientos viales y a cuidar la vida de todos y todas. ¡Así es, tal cual lo están haciendo mis compañeros allí atrás!';
-		var text1_1 = 'De manera conjunta, hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Telesforo y Amalia para que te cuenten un poco más.';
-
+		var original = 'Hola, mi nombre es Pastor. Soy un ganadero de la región. Mis vaquitas y yo proveemos de leche a todos los vecinos del sector. Por ahí se rumora que aquí producimos la mejor leche de todo el país. No sé si sea cierto, lo único que sé, es que lo que hacemos, lo hacemos con mucho amor.';
+		var text1 = 'Les cuento que yo también hago parte de esta metodología, pues muchas veces, las obras afectan espacios que utilizamos aquí en la finca para mis animalitos, entonces trabajamos de manera conjunta para reducir los problemas y los riesgos. Como dicen por ahí, para que nadie salga perjudicado';
+		var text1_1 = 'Voy a contarles un poco sobre la fase que más me gusta, se llama: ¡Geografías humanas! Ahí lo que hacemos es caracterizar el espacio físico y humano donde se realizará el proyecto vial, para identificar factores de riesgo asociados a la ocupación y uso del espacio.';
+		var text1_2 = 'Anoche estuve preparando algunas notas adhesivas para ustedes, con datos importantes que deben tener en cuenta. Ahora, los dejo con William y Andrés, para que les cuenten un poco más al respecto';
+		
 		$("#play_f3_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
@@ -173,10 +174,13 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f3_1').html(text1);
-				}, 12000);
+				}, 19000);
 				setTimeout(function () {
 					$('#change_f3_1').html(text1_1);
-				}, 26000);				
+				}, 36000);	
+				setTimeout(function () {
+					$('#change_f3_1').html(text1_2);
+				}, 52000);				
 				$('#change_f3_1').html(original);
 				is_playing = true;
 
@@ -187,10 +191,13 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f3_1').html(text1);
-				}, 12000);
+				}, 19000);
 				setTimeout(function () {
 					$('#change_f3_1').html(text1_1);
-				}, 26000);				
+				}, 36000);	
+				setTimeout(function () {
+					$('#change_f3_1').html(text1_2);
+				}, 52000);				
 				$('#change_f3_1').html(original);
 				is_playing = true;
 			}
@@ -209,8 +216,8 @@ $(function () {
 	});
 
 	$("#play_paso_f3").click(function (e) {
-		var original = '¡Hola, cómo está! Mi nombre es Amalia y estoy aquí con Telesforo para mostrarle los pasos que debe seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos le ayude. Como hay tantos niños y niñas en la comunidad, para el encuentro de hoy pusimos el paso a paso en unos globos de fiesta,';
-		var text1 = '...así, cada vez que se estalla uno, sale volando el papelito con la descripción... ¡Venga y juega con nosotros! De clic en cada globo y descubra en qué consiste cada paso.';
+		var original = '¡Bienvenido de vuelta! Mi nombre es William. Trabajo con Andrés repartiendo la leche de Pastor por toda la vereda. Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase';
+		var text1 = 'Ambos diseñamos una hoja de ruta, a manera de mapa, que esperamos sea de gran ayuda… No olvides dar clic sobre cada estación, para conocer en qué consisten los pasos a seguir…';
 
 
 		$("#play_paso_f3").html('Reproduciendo...');
@@ -223,7 +230,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f3_2').html(text1);
-				}, 17000);
+				}, 15000);
 				$('#change_f3_2').html(original);
 				is_playing = true;
 
@@ -234,7 +241,7 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f3_2').html(text1);
-				}, 17000);
+				}, 15000);
 
 				$('#change_f3_2').html(original);
 				is_playing = true;

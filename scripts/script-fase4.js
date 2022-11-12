@@ -149,12 +149,14 @@ $(function () {
 	var is_playing;
 
 	$("#play_f4_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
-		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
-		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
-		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
+		var original = '¡Hola! Mi nombre es Linda. Soy la representante del grupo de teatro Teloneros de vida, conformado por más de veinte jóvenes de la zona. Semanalmente, nos reunimos en el parque del barrio para realizar nuestros ensayos. ';
+		var text1 = 'Hace unos días nos enteramos que se iba a realizar un proyecto vial en el espacio en que ensayamos, lo cual nos preocupó mucho. Sin embargo, Jacinta, la directora de la Junta de Acción Comunal, nos habló de una metodología';
+		var text1_1 = ' ...que iba a implementarse con la comunidad, para mitigar las afectaciones de la obra y nos invitó a participar en una reunión para empaparnos más del tema. ¡Fue así como nos acercamos a la metodología y nos vinculamos a ella!';
+		var text1_2 = 'Hoy nos hemos reunido aquí, antes del ensayo, para compartirte en qué consiste esta cuarta fase denominada ¡Planos de acción y prevención! Esta fase tiene como propósito construir y aplicar un instrumento que nos permita identificar posibles factores';
+		var text1_3 = '...de riesgo derivados del proyecto vial, por ejemplo esos que tienen que ver con la seguridad, el medio ambiente, la salud, la movilidad, entre otros.';
+		var text1_4 ='El grupo y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta cuarta fase. Ahora, te dejamos con el colectivo Buen vivir, para que te cuenten un poco más al respecto.'
 
-		$("#play_f4_bienvenida").html('Reproduciendo...');
+		$("#play_f4_bienvenida").html('Reproduciendo...') ;
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -167,10 +169,17 @@ $(function () {
 				}, 15000);
 				setTimeout(function () {
 					$('#change_f4_1').html(text1_1);
-				}, 30000);
+				}, 27000);
 				setTimeout(function () {
 					$('#change_f4_1').html(text1_2);
-				}, 45000);
+				}, 40000);
+				$('#change_f4_1').html(original);
+				setTimeout(function () {
+					$('#change_f4_1').html(text1_3);
+				}, 54000);
+				setTimeout(function () {
+					$('#change_f4_1').html(text1_4);
+				}, 63000);
 				$('#change_f4_1').html(original);
 				is_playing = true;
 
@@ -184,11 +193,19 @@ $(function () {
 				}, 15000);
 				setTimeout(function () {
 					$('#change_f4_1').html(text1_1);
-				}, 30000);
+				}, 27000);
 				setTimeout(function () {
 					$('#change_f4_1').html(text1_2);
-				}, 45000);
+				}, 40000);
 				$('#change_f4_1').html(original);
+				setTimeout(function () {
+					$('#change_f4_1').html(text1_3);
+				}, 54000);
+				setTimeout(function () {
+					$('#change_f4_1').html(text1_4);
+				}, 63000);
+				$('#change_f4_1').html(original);
+				is_playing = true;
 				is_playing = true;
 			}
 		} else {
@@ -206,8 +223,8 @@ $(function () {
 	});
 
 	$("#play_paso_f4").click(function (e) {
-		var original = '¡Bienvenido de nuevo! Mi nombre es Josefina. Soy empresaria automotriz. Una de las sedes de mi negocio queda aquí en el barrio, así que ya sabe, si tiene alguna falla con su vehículo, no dude en contactarme.';
-		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
+		var original = '¡Bienvenido! Mi nombre es Nahuel, soy un sabedor de la comunidad indígena wayuu. Hoy estoy reunido con mi comunidad para mostrarte los pasos que debes seguir para desarrollar esta fase. Todos juntos, a partir de un diálogo de saberes, diseñamos esta hoja de ruta con fichas de memoria… El propósito es emparejar cada fase con su descripción ¡Adelante!';
+		
 
 
 		$("#play_paso_f4").html('Reproduciendo...');
@@ -218,10 +235,6 @@ $(function () {
 				$('#my_audio_f4')[0].load();
 				$('#my_audio_f4')[0].play();
 
-				setTimeout(function () {
-					$('#change_f4_2').html(text1);
-				}, 14000);
-				$('#change_f4_2').html(original);
 				is_playing = true;
 
 			} else {
@@ -229,9 +242,7 @@ $(function () {
 				$('#my_audio_f4')[0].load();
 				$('#my_audio_f4')[0].play();
 				is_playing = true;
-				setTimeout(function () {
-					$('#change_f4_2').html(text1);
-				}, 14000);
+
 
 				$('#change_f4_2').html(original);
 				is_playing = true;

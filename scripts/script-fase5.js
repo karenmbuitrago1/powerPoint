@@ -166,10 +166,10 @@ $(function () {
 	var is_playing;
 
 	$("#play_f5_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Edilberto. Soy costurero desde muy pequeño.Ya sabe, cualquier arreglo, enmendadura o corte que necesite, nada más me dice. Al igual que mis compañeros, yo también hago parte de esta metodología.';
-		var text1 = 'Hoy me han encargado la tarea de contarle en qué consiste esta última fase llamada ¡Vallas por la vida! Pues bien, lo que hacemos aquí es recoger los frutos de lo que hemos caminado. Revisando las cosas buenas y las que podemos mejorar.';
-		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
-		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
+		var original = ' ¡Hola! Bienvenido a la quinta fase de nuestra metodología. Mi nombre es Lucía, soy parte de la concesión que está desarrollando el proyecto vial en la zona. Me acompaña Gabriel, otro de los miembros de la concesión.';
+		var text1 = 'Nos hemos reunido aquí para contarte en qué consiste esta fase que hemos denominado ¡Cimientos para la edificación! ';
+		var text1_1 = '¡Así es! Esta fase tiene como propósito identificar los factores de riesgo derivados del proyecto vial que deben ser abordados y atendidos de manera prioritaria.';
+		var text1_2 = 'Lucía y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta quinta fase. Ahora, te dejamos con Soraya y Antonio para que te cuenten un poco más al respecto.';
 
 		$("#play_f5_bienvenida").html('Reproduciendo...');
 
@@ -184,10 +184,11 @@ $(function () {
 				}, 15000);
 				setTimeout(function () {
 					$('#change_f5_1').html(text1_1);
-				}, 30000);
+				}, 21000);
 				setTimeout(function () {
 					$('#change_f5_1').html(text1_2);
-				}, 45000);				
+				}, 31000);				
+							
 				$('#change_f5_1').html(original);
 				is_playing = true;
 
@@ -201,10 +202,11 @@ $(function () {
 				}, 15000);
 				setTimeout(function () {
 					$('#change_f5_1').html(text1_1);
-				}, 30000);
+				}, 21000);
 				setTimeout(function () {
 					$('#change_f5_1').html(text1_2);
-				}, 45000);				
+				}, 31000);			
+							
 				$('#change_f5_1').html(original);
 				is_playing = true;
 			}
@@ -224,8 +226,8 @@ $(function () {
 	});
 
 	$("#play_paso_f5").click(function (e) {
-		var original = '¡Bienvenido de nuevo! Mi nombre es Josefina. Soy empresaria automotriz. Una de las sedes de mi negocio queda aquí en el barrio, así que ya sabe, si tiene alguna falla con su vehículo, no dude en contactarme.';
-		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
+		var original = '¡Bienvenido de vuelta! Mi nombre es Antonio. Estoy junto a mi compañera Soraya. Ambos pertenecemos a la Organización Movilidad digna. Trabajamos para defender y garantizar los derechos de las personas en condición de discapacidad física en la zona.';
+		var text1 = 'Hace unos meses nos integramos de manera activa en esta metodología. Hoy, somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos sea de gran ayuda… ';
 
 
 		$("#play_paso_f5").html('Reproduciendo...');
@@ -238,7 +240,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f5_2').html(text1);
-				}, 14000);
+				}, 17000);
 				$('#change_f5_2').html(original);
 				is_playing = true;
 
@@ -249,7 +251,7 @@ $(function () {
 				is_playing = true;
 				setTimeout(function () {
 					$('#change_f5_2').html(text1);
-				}, 14000);
+				}, 17000);
 
 				$('#change_f5_2').html(original);
 				is_playing = true;
