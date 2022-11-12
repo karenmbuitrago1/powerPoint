@@ -1036,7 +1036,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .title__secondary{
-    font-size: 64px;
+    font-size: 44px;
     color: white;
     margin: 0;
 }
@@ -1405,7 +1405,6 @@ p.titulo_opc {
 
 #post2 p{
     font-size: 40px;
-    font-family: 'indie';
 }
 
 .postits__itemList{
@@ -2022,6 +2021,12 @@ p.titulo_opc {
     height: 52%;
     bottom: 0;
     left: 22%;
+}
+#person9{
+    height: 90%;
+}
+#person20{
+    height: 90%;
 }
 
 @media screen and (max-width: 720px){

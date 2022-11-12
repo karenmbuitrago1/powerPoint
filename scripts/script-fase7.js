@@ -206,7 +206,7 @@ $(function () {
 	});
 
 	$("#play_paso_f7").click(function (e) {
-		var original = '¡Hola! Mi nombre es Paula. Soy taxista desde hace 10 años. Transito frecuentemente por esta zona. La mayoría de mis servicios inician o llegan aquí.';
+		var original = '¡Hola! Mi nombre es Paula. Soy taxista desde hace 10 años. Tránsito frecuentemente por esta zona. La mayoría de mis servicios inician o llegan aquí.';
 		var text1 = 'Como miembro de esta metodología, quiero mostrarte los pasos que debes seguir para desarrollar esta fase. Diseñé una hoja de ruta que espero te ayude... ¡Da clic sobre cada paso y descubre de qué se trata!';
 
 

@@ -102,6 +102,12 @@
     bottom: 0;
     left: 22%;
 }
+#person9{
+    height: 90%;
+}
+#person20{
+    height: 90%;
+}
 
 @media screen and (max-width: 720px){
     .background__animation.--phase3{
