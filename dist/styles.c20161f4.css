@@ -139,7 +139,7 @@ audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
 .principal {
-    height: 90%;
+    height: 75% !important;
     width: auto !important;
     position: absolute;
     bottom: 0;
@@ -212,6 +212,10 @@ audio::-webkit-media-controls-timeline{
     width: 30%;
     max-width: 100%;
     background-color: var(--secondBlue);
+}
+
+.menu__phase {
+    overflow: scroll;
 }
 
 .menu__title{
@@ -386,8 +390,12 @@ audio::-webkit-media-controls-timeline{
     .background__animation{
         display: none;
     }
-    #person1
-    #person2
+    #person1{
+        height: 72%;
+    }
+    #person2{
+        height: 72%;
+    }
     #peson3 {
         height: 72%;
     }
@@ -447,6 +455,63 @@ audio::-webkit-media-controls-timeline{
         top: 144px;
     }
 }
+
+@media screen and (max-width:376px){
+    .logo{
+        width: 45%;
+    }
+
+    .content__menu {
+        height: 36%;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .menu__listItem{
+        margin: 4px 0;
+    }
+    .menu__listBtn{
+        font-size: 14px;
+        width: 80%;
+    }
+    .menu__listBtn__img{
+        margin: 3px;
+        height: 29%;
+    }
+    
+    .menu__listBtn__text {
+        font-size: 16px;
+    }
+    .dialog{
+        font-size: 16px;
+        line-height: 16px;
+        top: 29%;
+        padding: 12px;
+    }
+    .dialog.--intro{
+        top: 33%;;
+    }
+    .dialog:before{
+        display: none;
+    }
+    .person {
+        height: 47%; 
+    }
+    #person1{
+        height: 62%;
+
+    }
+    #person2{
+        height: 62%;
+    }
+    #person3 {
+        height: 62%;
+    }
+}
     
 @media screen and (max-width:360px){
     .content__menu {
@@ -482,8 +547,12 @@ audio::-webkit-media-controls-timeline{
         height: 32%;
         margin: 6px;
     }
-    #person1
-    #person2
+    #person1{
+        height: 52%;
+    }
+    #person2{
+        height: 52%;
+    }
     #peson3 {
         height: 52%;
     }
@@ -665,11 +734,7 @@ audio::-webkit-media-controls-timeline{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.background__content{
-    height: 100%;
-    width: 100%;
+    position: relative;
     display: flex;
 }
 
@@ -806,7 +871,7 @@ audio::-webkit-media-controls-timeline{
     }
 }
 
-@media screen and (max-width:1366px){
+@media screen and (max-width:1360px){
     .route__img {
         width: 237px;
     }
@@ -832,9 +897,8 @@ audio::-webkit-media-controls-timeline{
 }
 
 @media screen and (max-width:768px){
-    .background__content{
-        height: 100%;
-        width: 100%;
+    .background.--type003 {
+        position: relative;
         display: flex;
         flex-direction: column;
     }
@@ -899,7 +963,7 @@ audio::-webkit-media-controls-timeline{
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     .route__item {
         margin: 2px;
     }
@@ -1726,7 +1790,6 @@ p.titulo_opc {
  
   .dnd-image-drag .gallery-list {
     width: 60%;
-    min-height: 417px;
     margin: auto;
     padding: 5px 0 5px 5px;
     display: block;
@@ -2023,7 +2086,7 @@ p.titulo_opc {
 }
 
 .background.--tip_fase3{
-    background-image: url('/recurso_128.c274f720.png');
+    background-image: url('/recurso_128_1.40bcd563.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

@@ -5,11 +5,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.background__content{
-    height: 100%;
-    width: 100%;
+    position: relative;
     display: flex;
 }
 
@@ -146,7 +142,7 @@
     }
 }
 
-@media screen and (max-width:1366px){
+@media screen and (max-width:1360px){
     .route__img {
         width: 237px;
     }
@@ -172,9 +168,8 @@
 }
 
 @media screen and (max-width:768px){
-    .background__content{
-        height: 100%;
-        width: 100%;
+    .background.--type003 {
+        position: relative;
         display: flex;
         flex-direction: column;
     }
@@ -239,7 +234,7 @@
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     .route__item {
         margin: 2px;
     }

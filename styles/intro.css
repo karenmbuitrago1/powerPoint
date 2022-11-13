@@ -300,8 +300,12 @@ audio::-webkit-media-controls-timeline{
     .background__animation{
         display: none;
     }
-    #person1
-    #person2
+    #person1{
+        height: 72%;
+    }
+    #person2{
+        height: 72%;
+    }
     #peson3 {
         height: 72%;
     }
@@ -361,6 +365,63 @@ audio::-webkit-media-controls-timeline{
         top: 144px;
     }
 }
+
+@media screen and (max-width:376px){
+    .logo{
+        width: 45%;
+    }
+
+    .content__menu {
+        height: 36%;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .menu__listItem{
+        margin: 4px 0;
+    }
+    .menu__listBtn{
+        font-size: 14px;
+        width: 80%;
+    }
+    .menu__listBtn__img{
+        margin: 3px;
+        height: 29%;
+    }
+    
+    .menu__listBtn__text {
+        font-size: 16px;
+    }
+    .dialog{
+        font-size: 16px;
+        line-height: 16px;
+        top: 29%;
+        padding: 12px;
+    }
+    .dialog.--intro{
+        top: 33%;;
+    }
+    .dialog:before{
+        display: none;
+    }
+    .person {
+        height: 47%; 
+    }
+    #person1{
+        height: 62%;
+
+    }
+    #person2{
+        height: 62%;
+    }
+    #person3 {
+        height: 62%;
+    }
+}
     
 @media screen and (max-width:360px){
     .content__menu {
@@ -396,8 +457,12 @@ audio::-webkit-media-controls-timeline{
         height: 32%;
         margin: 6px;
     }
-    #person1
-    #person2
+    #person1{
+        height: 52%;
+    }
+    #person2{
+        height: 52%;
+    }
     #peson3 {
         height: 52%;
     }
