@@ -1277,6 +1277,9 @@ p.titulo_opc {
     #person9 {
         height: 47%;
     }
+    #person20 {
+        height: 47%;
+    }
 }
 
 @media screen and (max-width:430px){
@@ -2169,9 +2172,6 @@ p.titulo_opc {
     height: 52%;
     bottom: 0;
     left: 22%;
-}
-#person20{
-    height: 90%;
 }
 
 @media screen and (max-width: 720px){

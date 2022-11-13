@@ -302,6 +302,9 @@ p.titulo_opc {
     #person9 {
         height: 47%;
     }
+    #person20 {
+        height: 47%;
+    }
 }
 
 @media screen and (max-width:430px){
