@@ -316,6 +316,7 @@ $(function () {
     $(".--type002").removeClass("--invisible");
     $(".dialog").addClass("--invisible");
     $("#person2").addClass("--invisible");
+    $("#girl__img").addClass("--invisible");
   });
 
   //Dialogos Boton Ruta
