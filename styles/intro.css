@@ -309,6 +309,9 @@ audio::-webkit-media-controls-timeline{
     #peson3 {
         height: 72%;
     }
+    .principal {
+        height: 65% !important;
+    }      
     .content {
         display: block;
         background-color: rgba(6,5,41, 65%);
@@ -421,6 +424,9 @@ audio::-webkit-media-controls-timeline{
     #person3 {
         height: 62%;
     }
+    .principal {
+        height: 53% !important;
+    }    
 }
     
 @media screen and (max-width:360px){
@@ -465,6 +471,9 @@ audio::-webkit-media-controls-timeline{
     }
     #peson3 {
         height: 52%;
+    }
+    .principal {
+        height: 45% !important;
     }
 }
 
