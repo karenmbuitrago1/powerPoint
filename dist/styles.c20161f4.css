@@ -1288,12 +1288,15 @@ p.titulo_opc {
     .background__backtText{
         margin: 0;
     }
+    .menu__title {
+        height: 11%;
+    }
     .menu__title:before {
         top: 80%;
         left: 158px;
     }
     .content__menu.--phases {
-        height: 43%;
+        height: 49%;
     }
     .title__secondary {
         font-size: 28px;
@@ -1330,7 +1333,7 @@ p.titulo_opc {
         width: 52%;
     }
     .phase__dialog.--phases {
-        top: 44%;
+        top: 47%;
     }
     .phase__textMin {
         font-size: 6px;
@@ -1358,15 +1361,20 @@ p.titulo_opc {
         height: 10%;
     }
     .menu__title:before {
-        top: 50px;
-        border-top: 11px solid var(--titleBlue);
-        border-bottom: 24px solid transparent;
+        display: none;
     }
     .menu__phase {
         top: 12%;
     }
+
     .title__secondary {
         font-size: 22px;
+    }
+    .phase__menuList {
+        flex-direction: column;
+    }
+    .phase__menuItem {
+        width: 100%;
     }
     .phase__dialog {
         top: 52%;
