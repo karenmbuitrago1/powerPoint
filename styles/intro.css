@@ -366,7 +366,7 @@ audio::-webkit-media-controls-timeline{
     }
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width: 430px){
     .logo{
         width: 45%;
     }
