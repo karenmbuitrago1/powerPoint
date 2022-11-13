@@ -328,11 +328,11 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__listBtn{
         align-items: center;
-        width: 93%;
+        width: 100%;
         border-radius: 32px;
     }
     .menu__listBtn__text {
-        font-size: 24px;
+        font-size: 26px;
     }
     .menu__person.--person4{
         left: 6%;
@@ -362,6 +362,10 @@ audio::-webkit-media-controls-timeline{
         width: 45%;
     }
 
+    .content__menu {
+        height: 53%;
+    }
+
     .menu__list {
         display: flex;
         flex-direction: column;
@@ -374,11 +378,7 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn{
         font-size: 14px;
     }
-    .menu__listBtn__img{
-        margin: 0;
-        height: 16px;
-        padding: 6px;
-    }
+   
     .menu__listBtn__text {
         font-size: 16px;
     }
@@ -390,8 +390,10 @@ audio::-webkit-media-controls-timeline{
         justify-content: center;
     }
     .dialog{
-        width: 80%;
-        top: 216px;
+        font-size: 16px;
+        line-height: 16px;
+        top: 29%;
+        padding: 12px;
     }
     .dialog__text{
         font-size: 16px;
@@ -409,7 +411,7 @@ audio::-webkit-media-controls-timeline{
 
 @media screen and (max-width:360px){
     .content__menu {
-        height: 30%;
+        height: 38%;
     }
     .logo{
         width: 48px;
@@ -421,7 +423,10 @@ audio::-webkit-media-controls-timeline{
         font-size: 14px;
     }
     .dialog{
-        top: 203px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 8px;
+        top: 30%;
     }
     .dialog__text{
         line-height: 17px;
