@@ -237,10 +237,10 @@ audio::-webkit-media-controls-timeline{
     width: 63%;
     height: fit-content;
     position: absolute;
-    top: 112px;
+    top: 11%;
 }
 
-.dialog__text:before{
+.dialog:before{
     content: "";
     width: 0px;
     height: 0px;
@@ -249,8 +249,8 @@ audio::-webkit-media-controls-timeline{
     border-right: 27px solid transparent;
     border-top: 12px solid var(--dialogBeige);
     border-bottom: 54px solid transparent;
-    left: 34px;
-    top: 70px;
+    top: 72%;
+    left: 6%;
 }
 
 @media screen and (max-width:1450px){
@@ -382,7 +382,7 @@ audio::-webkit-media-controls-timeline{
     .menu__listBtn{
         font-size: 14px;
     }
-   
+    
     .menu__listBtn__text {
         font-size: 16px;
     }
@@ -412,7 +412,7 @@ audio::-webkit-media-controls-timeline{
         height: 47%; 
     }
 }
-
+    
 @media screen and (max-width:360px){
     .content__menu {
         height: 38%;
@@ -420,11 +420,18 @@ audio::-webkit-media-controls-timeline{
     .logo{
         width: 48px;
     }
+    .menu__options{
+        height: 90%;
+    }
     .menu__listItem {
         margin: 2px 0;
     }
+    .menu__listBtn{
+        width: 80%;
+
+    }
     .menu__listBtn__text {
-        font-size: 14px;
+        font-size: 16px;
     }
     .dialog{
         font-size: 14px;
@@ -432,12 +439,16 @@ audio::-webkit-media-controls-timeline{
         padding: 8px;
         top: 30%;
     }
-    .dialog__text{
-        line-height: 17px;
-        font-size: 14px;
+    .dialog::before{
+        border-bottom: 27px solid transparent;
+        top: 89%;
     }
-    .dialog__text:before{
-        top: 117px;
+    .menu__listBtn__img{
+        height: 32%;
+        margin: 6px;
+    }
+    #person1 {
+        height: 52%;
     }
 }
 
