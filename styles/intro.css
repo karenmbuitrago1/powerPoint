@@ -271,10 +271,6 @@ audio::-webkit-media-controls-timeline{
     .dialog{
         width: 55%;
     }
-    .girl {
-        height: 70%;
-        width: 27%;
-    }
     .logo{
         width: 80%;
     }
@@ -283,6 +279,10 @@ audio::-webkit-media-controls-timeline{
     }
     .menu__title:before {
         top: 82%;
+    }
+    #person1{
+        height: 84%;
+        bottom: 3%;
     }
     
 }
@@ -295,18 +295,17 @@ audio::-webkit-media-controls-timeline{
         display: none;
     }
     .background__animation{
-        display: block;
-        z-index: 2;
-    }
-    .girl{
         display: none;
+    }
+    #person1 {
+        height: 72%;
     }
     .content {
         display: block;
         background-color: rgba(6,5,41, 65%);
     }
     .content__menu{
-        height: 40%;
+        height: 30%;
         width: 100%;
     }
     .content__dialog{
@@ -315,18 +314,15 @@ audio::-webkit-media-controls-timeline{
     .logo{
         width: 96px;
     }
-    .menu__options{
-        display: block;
-    }
-    .menu__list{
+    .menu__options {
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: -webkit-fill-available;
     }
     .menu__listItem{
         margin: 8px 0;
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -346,9 +342,10 @@ audio::-webkit-media-controls-timeline{
     }
     .dialog{
         width: 80%;
-        top: 403px;
+        top: 33%;
         line-height: 28px;
         padding: 24px;
+        font-size: 24px;
     }
     .dialog__text{
         font-size: 24px;

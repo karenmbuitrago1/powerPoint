@@ -243,9 +243,6 @@ p.titulo_opc {
 
 
 @media screen and (max-width:768px){
-    .content__menu {
-        height: 48%;
-    }
 
     .background__back {
         border: none;
@@ -286,9 +283,7 @@ p.titulo_opc {
         width: 50%;
     }
 
-    #person1 {
-        height: 98%;
-    }
+
    
     #person4
     #person5 {
