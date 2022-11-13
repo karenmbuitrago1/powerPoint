@@ -26,7 +26,7 @@ function btn_origen(){
   $(".background").removeClass("--invisible");
   $(".--type002").addClass("--invisible");
   $(".dialog").removeClass("--invisible");
-  $(".girl__img").removeClass("principal");
+  $("#girl__img").removeClass("principal");
   var highestTimeoutId = setTimeout(";");
   for (var i = 0 ; i < highestTimeoutId ; i++) {
       clearTimeout(i); 
@@ -61,7 +61,7 @@ function btn_ruta(){
   $(".--type002").addClass("--invisible");  
   $(".dialog").removeClass("--invisible");
   $("#person3").removeClass("--invisible");  
-  $(".girl__img").removeClass("principal");
+  $("#girl__img").removeClass("principal");
   var highestTimeoutId = setTimeout(";");
   for (var i = 0 ; i < highestTimeoutId ; i++) {
       clearTimeout(i); 
@@ -187,7 +187,7 @@ $(function() {
         }, 71000);
         setTimeout(function(){
           $('#change2').html(text2_5);
-          $(".girl__img").addClass("principal");          
+          $("#girl__img").addClass("principal");          
         }, 80000);   
         setTimeout(function(){
           $('#change2').html(text2_6);

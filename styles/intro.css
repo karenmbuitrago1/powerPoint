@@ -49,7 +49,7 @@ audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
 .principal {
-    height: 90%;
+    height: 75% !important;
     width: auto !important;
     position: absolute;
     bottom: 0;
@@ -122,6 +122,10 @@ audio::-webkit-media-controls-timeline{
     width: 30%;
     max-width: 100%;
     background-color: var(--secondBlue);
+}
+
+.menu__phase {
+    overflow: scroll;
 }
 
 .menu__title{
