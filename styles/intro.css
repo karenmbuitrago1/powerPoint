@@ -54,7 +54,7 @@ audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
 .principal {
-    height: 460px;
+    height: 90%;
     width: auto !important;
     position: absolute;
     bottom: 0;

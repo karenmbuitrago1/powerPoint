@@ -158,7 +158,7 @@ $(function() {
         }, 71000);
         setTimeout(function(){
           $('#change2').html(text2_5);
-          $(".girl__img").addClass("principal");
+          $("#girl__img").addClass("principal");
         }, 80000);   
         setTimeout(function(){
           $('#change2').html(text2_6);
