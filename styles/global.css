@@ -49,28 +49,23 @@
     src: url("../fonts/futura_medium.ttf");
 }
 
-@font-face {
-    font-family: indie;
-    src: url("../fonts/indie.ttf");
-}
-
 @keyframes animationMoto {
-    0%   {left: calc(0px); bottom: calc(104px);}
-    50%  {left: calc(620px); bottom: calc(104px);}
+    0%   {left: calc(0%);}
+    50%  {left: calc(30%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {left: calc(2000px); bottom: calc(104px);}
+    100% {left: calc(85%);}
 }
 
 @keyframes animationBike{
-    0%   {left: calc(200px); bottom: calc(156px);}
+    0%   {left: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {left: calc(2000px); bottom: calc(156px);}
+    100% {left: calc(85%);}
 }
 
 @keyframes animationBike2{
-    0%   {right: calc(0px); bottom: calc(180px);}
+    0%   {right: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {right: calc(1880px); bottom: calc(180px);}
+    100% {right: calc(90%);}
 }
 
 html{

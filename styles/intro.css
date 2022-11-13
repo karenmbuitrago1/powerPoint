@@ -7,10 +7,10 @@
     z-index: 1;
 }
 
-.main.--intro{
+/* .main.--intro{
     overflow-x: hidden;
     overflow-y: hidden;
-}
+} */
 
 .background{
     height: 100%;
@@ -25,6 +25,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .background__square{
@@ -61,35 +63,38 @@ audio::-webkit-media-controls-timeline{
 /* Estilos elementos animados*/
 
 .background__animation{
-    height: 100%;
     width: 100%;
+    height: -webkit-fill-available;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .background__animationList{
+    padding: 0;
+    position: relative;
     list-style: none;
+    width: -webkit-fill-available;
 }
 
 .background__item{
-    right: calc(0px);
+    /* right: calc(0px); */
     position: absolute;
     animation-duration: 30s;
     animation-iteration-count: infinite;
 }
 
 #moto{
-    bottom: calc(104px);
+    bottom: calc(11%);
     animation-name: animationMoto;
 }
 
 #bike{
-    bottom: calc(156px);
+    bottom: calc(13%);
     animation-name: animationBike;
 }
 
 #bike2{
-    bottom: calc(206px);
+    bottom: calc(14%);
     animation-name: animationBike2;
 }
 
@@ -101,8 +106,10 @@ audio::-webkit-media-controls-timeline{
     z-index: 9;
 }
 
-.girl__img{
-    width: 57px;
+#girl__img{
+    height: 35%;
+    position: absolute;
+    bottom: 14%;
 }
 
 .content{
@@ -280,7 +287,7 @@ audio::-webkit-media-controls-timeline{
     
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
     .person {
         height: 55%;
     }

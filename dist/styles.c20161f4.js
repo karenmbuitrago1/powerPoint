@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\fonts\\Futura_Bold_font.ttf":[["Futura_Bold_font.a62f843a.ttf","../fonts/Futura_Bold_font.ttf"],"../fonts/Futura_Bold_font.ttf"],"./..\\fonts\\Futura_Extra_Black_font.ttf":[["Futura_Extra_Black_font.2e5f4a13.ttf","../fonts/Futura_Extra_Black_font.ttf"],"../fonts/Futura_Extra_Black_font.ttf"],"./..\\fonts\\futura_medium.ttf":[["futura_medium.e953120c.ttf","../fonts/futura_medium.ttf"],"../fonts/futura_medium.ttf"],"./..\\fonts\\indie.ttf":[["indie.02959d34.ttf","../fonts/indie.ttf"],"../fonts/indie.ttf"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro.css":[function(require,module,exports) {
+},{"./..\\fonts\\Futura_Heavy_font.ttf":[["Futura_Heavy_font.d4dfe0e7.ttf","../fonts/Futura_Heavy_font.ttf"],"../fonts/Futura_Heavy_font.ttf"],"./..\\fonts\\Futura_Bold_font.ttf":[["Futura_Bold_font.a62f843a.ttf","../fonts/Futura_Bold_font.ttf"],"../fonts/Futura_Bold_font.ttf"],"./..\\fonts\\Futura_Extra_Black_font.ttf":[["Futura_Extra_Black_font.2e5f4a13.ttf","../fonts/Futura_Extra_Black_font.ttf"],"../fonts/Futura_Extra_Black_font.ttf"],"./..\\fonts\\futura_medium.ttf":[["futura_medium.e953120c.ttf","../fonts/futura_medium.ttf"],"../fonts/futura_medium.ttf"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -293,7 +293,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49980" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51655" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

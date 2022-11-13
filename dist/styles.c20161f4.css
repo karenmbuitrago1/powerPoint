@@ -49,28 +49,23 @@
     src: url("/futura_medium.e953120c.ttf");
 }
 
-@font-face {
-    font-family: indie;
-    src: url("/indie.02959d34.ttf");
-}
-
 @keyframes animationMoto {
-    0%   {left: calc(0px); bottom: calc(104px);}
-    50%  {left: calc(620px); bottom: calc(104px);}
+    0%   {left: calc(0%);}
+    50%  {left: calc(30%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {left: calc(2000px); bottom: calc(104px);}
+    100% {left: calc(85%);}
 }
 
 @keyframes animationBike{
-    0%   {left: calc(200px); bottom: calc(156px);}
+    0%   {left: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {left: calc(2000px); bottom: calc(156px);}
+    100% {left: calc(85%);}
 }
 
 @keyframes animationBike2{
-    0%   {right: calc(0px); bottom: calc(180px);}
+    0%   {right: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
-    100% {right: calc(1880px); bottom: calc(180px);}
+    100% {right: calc(90%);}
 }
 
 html{
@@ -102,10 +97,10 @@ button{
     z-index: 1;
 }
 
-.main.--intro{
+/* .main.--intro{
     overflow-x: hidden;
     overflow-y: hidden;
-}
+} */
 
 .background{
     height: 100%;
@@ -120,6 +115,8 @@ button{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .background__square{
@@ -156,35 +153,38 @@ audio::-webkit-media-controls-timeline{
 /* Estilos elementos animados*/
 
 .background__animation{
-    height: 100%;
     width: 100%;
+    height: -webkit-fill-available;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .background__animationList{
+    padding: 0;
+    position: relative;
     list-style: none;
+    width: -webkit-fill-available;
 }
 
 .background__item{
-    right: calc(0px);
+    /* right: calc(0px); */
     position: absolute;
     animation-duration: 30s;
     animation-iteration-count: infinite;
 }
 
 #moto{
-    bottom: calc(104px);
+    bottom: calc(11%);
     animation-name: animationMoto;
 }
 
 #bike{
-    bottom: calc(156px);
+    bottom: calc(13%);
     animation-name: animationBike;
 }
 
 #bike2{
-    bottom: calc(206px);
+    bottom: calc(14%);
     animation-name: animationBike2;
 }
 
@@ -196,8 +196,10 @@ audio::-webkit-media-controls-timeline{
     z-index: 9;
 }
 
-.girl__img{
-    width: 57px;
+#girl__img{
+    height: 35%;
+    position: absolute;
+    bottom: 14%;
 }
 
 .content{
@@ -375,7 +377,7 @@ audio::-webkit-media-controls-timeline{
     
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
     .person {
         height: 55%;
     }
@@ -645,7 +647,7 @@ audio::-webkit-media-controls-timeline{
     }
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:7768px){
     .background.--type002{
         bottom: 0;
         height: 68%;
@@ -864,7 +866,7 @@ audio::-webkit-media-controls-timeline{
     }
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
     .background__content{
         height: 100%;
         width: 100%;
@@ -1189,7 +1191,7 @@ p.titulo_opc {
 }
 
 
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
     .content__menu {
         height: 48%;
     }
@@ -1233,6 +1235,9 @@ p.titulo_opc {
         width: 50%;
     }
 
+    #person1 {
+        height: 98%;
+    }
    
     #person4
     #person5 {
@@ -1508,7 +1513,7 @@ p.titulo_opc {
     }
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
     .postits {
         height: 54%;
         width: 100%;
@@ -1749,10 +1754,112 @@ p.titulo_opc {
     background-color: var(--firstPurple);
 
 }
-.rompecabezas{
-    width: 100%;
-    margin-top: 7%;
+
+
+
+
+
+/*drag and drop styles*/
+.dnd-image-drag .container {
+    float: left;
+    margin: 0 10px 20px 10px;
+  }
+  
+ 
+  .dnd-image-drag .gallery-list {
+    width: 50%;
+    min-height: 317px;
+    margin: auto;
+    padding: 5px 0 5px 5px;
+    display: block;
+    margin-top: 60px;;
 }
+  .dnd-image-drag .gallery-list .drag {
+    width: 24%;
+    display: inline-block;
+    height: auto;;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+  }
+  
+  .dnd-image-drag .gallery-list .drag.drag-active {
+    border: solid 1px #2c3e50;
+  }
+  
+  .dnd-image-drag .gallery-painting {
+    width: 50%;
+    background: #eee;
+    background-position: center center;
+    background-size: cover;
+    border: solid 1px #ccc;
+    margin: auto;
+    padding: 5px 0 5px 5px;
+    display: block;
+  }
+
+  .container2 h3{
+      text-align: center;
+  }
+
+  .dnd-image-drag .gallery-painting .drop {
+    position: relative;
+    height: auto;
+    width: 24%;
+    min-height: 100px;
+    display: inline-block;
+    background: rgb(220 153 241 / 70%);
+    border: solid 1px transparent;
+    overflow: hidden;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.drop-active {
+    border: solid 1px #f1c40f;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.correct {
+    border: solid 1px #32ce74;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop.incorrect {
+    border: solid 1px #c0392b;
+  }
+  
+  .dnd-image-drag .gallery-painting .drop img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reset-button {
+    background: #083b85;
+    border: solid 1px #ccc;
+    padding: 12px 15px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    min-width: 100px;
+    clear: both;
+    border-radius: 19px;
+    color: #fff;
+    margin-top: 20px;
+}
+  
+  .message-container {
+    clear: both;
+  }
+  
+  .ie-message {
+    display: none;
+    padding: 15px;
+    background: #e74c3c;
+    color: #fff;
+    border: dashed 2px #c0392b;
+    margin-bottom: 15px;
+  }
+  
+
+
+
+
 .background.--type006{
     background-image: url('/recurso_73.0ad2bcce.png');
     background-repeat: no-repeat;
@@ -1975,7 +2082,7 @@ p.titulo_opc {
 
 .background__animation2{
     position: absolute;
-    bottom: 15%;
+    top: 46%;
     right: 12%;
     height: 23%;
 }
