@@ -268,7 +268,7 @@ $(function () {
         }, 71000);
         setTimeout(function () {
           $('#change2').html(text2_5);
-          $(".girl__img").addClass("principal");
+          $("#girl__img").addClass("principal");
         }, 80000);
         setTimeout(function () {
           $('#change2').html(text2_6);
@@ -375,7 +375,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54629" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50878" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

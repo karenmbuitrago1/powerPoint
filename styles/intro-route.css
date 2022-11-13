@@ -51,6 +51,7 @@
 
 #contentBtn{
     width: 100%;
+    text-decoration: none;
 }
 
 .route__list li:nth-child(1) a{

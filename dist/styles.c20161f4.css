@@ -97,11 +97,6 @@ button{
     z-index: 1;
 }
 
-/* .main.--intro{
-    overflow-x: hidden;
-    overflow-y: hidden;
-} */
-
 .background{
     height: 100%;
 }
@@ -144,7 +139,7 @@ audio::-webkit-media-controls-timeline{
     pointer-events: none;
 }
 .principal {
-    height: 460px;
+    height: 90%;
     width: auto !important;
     position: absolute;
     bottom: 0;
@@ -215,7 +210,7 @@ audio::-webkit-media-controls-timeline{
 
 .content__menu{
     width: 30%;
-    height: 100%;
+    max-width: 100%;
     background-color: var(--secondBlue);
 }
 
@@ -338,6 +333,10 @@ audio::-webkit-media-controls-timeline{
     top: 72%;
     left: 6%;
 }
+#person1{
+    height: 98%;
+    bottom: 3%;
+}
 
 @media screen and (max-width:1450px){
     .person {
@@ -387,7 +386,9 @@ audio::-webkit-media-controls-timeline{
     .background__animation{
         display: none;
     }
-    #person1 {
+    #person1
+    #person2
+    #peson3 {
         height: 72%;
     }
     .content {
@@ -446,58 +447,6 @@ audio::-webkit-media-controls-timeline{
         top: 144px;
     }
 }
-
-@media screen and (max-width:375px){
-    .logo{
-        width: 45%;
-    }
-
-    .content__menu {
-        height: 53%;
-    }
-
-    .menu__list {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-    .menu__listItem{
-        margin: 4px 0;
-    }
-    .menu__listBtn{
-        font-size: 14px;
-    }
-    
-    .menu__listBtn__text {
-        font-size: 16px;
-    }
-
-    .menu__options {
-        display: flex;
-        height: 64%;
-        align-items: center;
-        justify-content: center;
-    }
-    .dialog{
-        font-size: 16px;
-        line-height: 16px;
-        top: 29%;
-        padding: 12px;
-    }
-    .dialog__text{
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .dialog__text:before{
-        left: 77px;
-        top: 110px;
-        border-bottom: 16px solid transparent;
-    }
-    .person {
-        height: 47%; 
-    }
-}
     
 @media screen and (max-width:360px){
     .content__menu {
@@ -533,7 +482,9 @@ audio::-webkit-media-controls-timeline{
         height: 32%;
         margin: 6px;
     }
-    #person1 {
+    #person1
+    #person2
+    #peson3 {
         height: 52%;
     }
 }
@@ -760,6 +711,7 @@ audio::-webkit-media-controls-timeline{
 
 #contentBtn{
     width: 100%;
+    text-decoration: none;
 }
 
 .route__list li:nth-child(1) a{
