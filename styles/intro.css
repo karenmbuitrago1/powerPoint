@@ -124,9 +124,9 @@ audio::-webkit-media-controls-timeline{
     background-color: var(--secondBlue);
 }
 
-.menu__phase {
+/* .menu__phase {
     overflow: scroll;
-}
+} */
 
 .menu__title{
     height: 18%;

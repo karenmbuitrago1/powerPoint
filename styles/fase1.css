@@ -219,6 +219,10 @@ p.titulo_opc {
     padding-top: 7%;
 }
 
+#person9{
+    height: 90%;
+}
+
 
 @media screen and (max-width:1450px){
     .titlePhase{
@@ -243,9 +247,12 @@ p.titulo_opc {
 
 
 @media screen and (max-width:768px){
-
     .background__back {
         border: none;
+    }
+
+    .content__menu.--phases{
+        height: 54%;
     }
 
     .menu__title{
@@ -260,7 +267,7 @@ p.titulo_opc {
     }
     .menu__phase{
         width: 100%;
-        top: 180px;
+        top: 12%;
     }
     .phase__textDescription {
         padding: 0 8px;
@@ -269,9 +276,11 @@ p.titulo_opc {
         font-size: 20px;
     }
 
-    .phase__dialog{
-        top: 46%;
-        font-size: 20px;
+    .phase__dialog.--phases{
+        top: 52%;
+        font-size: 16px;
+        line-height: 18px;
+        width: 89%;
     }
 
     .phase__menuList{
@@ -281,17 +290,21 @@ p.titulo_opc {
 
     .phase__menuItem{
         width: 50%;
+        margin: 3px 0;
     }
-
-
    
-    #person4
-    #person5 {
+    #person4 {
         height: 463px;
+    }
+    #person5 {
+        height: 47%;
+    }
+    #person9 {
+        height: 47%;
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:430px){
     .background__back{
         font-size: 14px;
         margin: 0;
@@ -300,15 +313,19 @@ p.titulo_opc {
     .background__backtText{
         margin: 0;
     }
+    .menu__title {
+        height: 11%;
+    }
     .menu__title:before {
         top: 80%;
         left: 158px;
     }
-    .menu__phase {
-        top: 15%;
+    .content__menu.--phases {
+        height: 49%;
     }
     .title__secondary {
         font-size: 28px;
+        margin: 16px 0 0 0;
     }
     .phase__textMain {
         margin: 0 16px;
@@ -330,7 +347,7 @@ p.titulo_opc {
         width: 45%;
     }
     .phase__text {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0;
     }
     .phase__menuIcon {
@@ -340,23 +357,24 @@ p.titulo_opc {
     .phase__icon {
         width: 52%;
     }
-    .phase__dialog {
-        top: 55%;
-        font-size: 14px;
-        line-height: 15px;
-        width: 81%;
+    .phase__dialog.--phases {
+        top: 47%;
     }
     .phase__textMin {
         font-size: 6px;
         margin: 0;
     }
 
+    .menu__person{
+        left: 7%;
+    }
+
     #person4{
         height: 150px;
     }
 
-    #person5{
-        height: 150px;
+    #person5 {
+        height: 48%;
     }
 }
 
@@ -368,15 +386,20 @@ p.titulo_opc {
         height: 10%;
     }
     .menu__title:before {
-        top: 50px;
-        border-top: 11px solid var(--titleBlue);
-        border-bottom: 24px solid transparent;
+        display: none;
     }
     .menu__phase {
         top: 12%;
     }
+
     .title__secondary {
         font-size: 22px;
+    }
+    .phase__menuList {
+        flex-direction: column;
+    }
+    .phase__menuItem {
+        width: 100%;
     }
     .phase__dialog {
         top: 52%;
