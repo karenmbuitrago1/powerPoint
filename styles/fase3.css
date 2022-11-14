@@ -92,10 +92,6 @@
     color: var(--titleOrange);
 }
 
-.content__dialog.--tip_fase3{
-    align-items: flex-end;
-}
-
 #person8{
     position: absolute;
     height: 52%;

@@ -1259,6 +1259,9 @@ audio::-webkit-media-controls-timeline{
     .content__dialog.--tip_fase1{
         height: 46%;
     }
+    .content__dialog.--5{
+        height: 46%;
+    }
 
     .menu__title{
         width: 100%;
@@ -1316,6 +1319,9 @@ audio::-webkit-media-controls-timeline{
     }
     #person5 {
         height: 47%;
+    }
+    #person6 {
+        height: 46%;
     }
     #person9 {
         height: 47%;
@@ -1400,6 +1406,9 @@ audio::-webkit-media-controls-timeline{
     #person5 {
         height: 43%;
     }
+    #person6 {
+        height: 40%;
+    }
 
     .cards.--toolsCards2 li:nth-child(1) {
         height: 84%;
@@ -1415,6 +1424,9 @@ audio::-webkit-media-controls-timeline{
     }
 
     .content__dialog.--tip_fase1 {
+        height: 50%;
+    }
+    .content__dialog.--tip_fase5 {
         height: 50%;
     }
 
@@ -1699,6 +1711,16 @@ display: none;
     .content__dialog.--obj_fase1_postits{
         position: relative;
     }
+    .content__dialog.--obj_fase3_postits{
+        position: relative;
+    }
+    .content__dialog.--obj_fase4_postits{
+        position: relative;
+    }
+    .content__dialog.--obj_fase5_postits{
+        position: relative;
+    }
+
     .postits {
         height: 54%;
         width: 100%;
@@ -1721,6 +1743,21 @@ display: none;
         flex-direction: column;
         height: fit-content;
         background-image: url('/recurso90.058d747a.png');
+    }
+    .postits__list.--phase3{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso_15.d0444efe.png');
+    }
+    .postits__list.--phase4{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso_67.41d0ebe7.png');
+    }
+    .postits__list.--phase5{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso_122_122.3cf2d426.png');
     }
 
     .postits__item{
@@ -1821,6 +1858,18 @@ display: none;
     font-size: 16px;
     padding: 0;
 }
+.tools.--phase4{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.tools.--phase5{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
 @media screen and (max-width: 720px){
     .cards.--toolsCards {
@@ -1849,9 +1898,34 @@ display: none;
     .content__dialog.--her_fase2{
         height: 48%; 
     }
+    .content__dialog.--her_fase3{
+        height: 48%; 
+    }
+    .content__dialog.--her_fase4{
+        height: 80%; 
+        background-color: var(--titleGreen);
+    }
+    .content__dialog.--her_fase5{
+        height: 80%; 
+        background-color: var(--titlePink);
+    }
     .tools.--phase2{
         position: relative;
         height: 100%;
+    }
+    .tools.--phase4{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .tools.--phase5{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
     }
     .cards.--toolsCards2.--phase2{
         display: flex;
@@ -1861,24 +1935,52 @@ display: none;
         justify-content: flex-start;
         height: 100%;
     }
+    .cards.--toolsCards2.--phase3{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .cards.--toolsCards2.--phase4{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 80%;
+        justify-content: center;
+    }
     .cards.--toolsCards2 li:nth-child(1) {
+        height: 82%;
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 40%;
     }
+    .cards.--toolsCards2.--phase3 li:nth-child(1) {
+        height: 40%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(1) {
+        width: 70%;
+        height: 32%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(2) {
+        width: 70%;
+        height: 32%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(3) {
+        width: 70%;
+        height: 32%;
+    }
     .card__text.--toolsText8{
-        font-size: 22px;
+        font-size: 16px;
         margin: 0;
+        width: 100%;
     }
 }
 
 
 .tools.--toolsTips{
     justify-content: space-around;
-}
-.tools.--phase5{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-
 }
 .cards.--toolsTips{
     justify-content: flex-end;
@@ -2021,7 +2123,11 @@ display: none;
     }
     .tools.--toolsTips5 {
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
+    }
+    .tools.--toolsTips5.--phase1{
+        display: flex;
+        justify-content: center;
     }
 
     .cards.--toolsTips5.--phase2{
@@ -2031,6 +2137,13 @@ display: none;
         align-content: center;
         justify-content: center;
         height: 100%;
+    }
+
+    .cards.--toolsTips5 li:nth-child(1) {
+        height: 25%;
+    }
+    .cards.--toolsTips5 li:nth-child(2) {
+        height: 25%;
     }
 
     .cards.--toolsTips5.--phase2 li:nth-child(1) {
@@ -2261,8 +2374,14 @@ display: none;
   .content__dialog.--tip_fase2{
     height: 46%;
   }
+  .content__dialog.--tip_fase3{
+    height: 46%;
+  }
+  .content__dialog.--tip_fase4{
+    height: 46%;
+  }
   .bckg__img{
-      top: 64%;
+      top: 68%;
       right: 13%;
       width: 67%;
   }    
@@ -2278,7 +2397,13 @@ display: none;
   }
   .content__dialog.--tip_fase2 {
     height: 49%;
-}
+  }
+  .content__dialog.--tip_fase4 {
+    height: 49%;
+  }
+  .content__dialog.--tip_fase3 {
+    height: 49%;
+  }
 }
 
 
@@ -2294,12 +2419,6 @@ display: none;
     margin: 16px;
 }
 
-.card__text2.--toolsText{
-    margin: 0;
-    font-size: 16px;
-    padding: 0;
-}
-
 @media screen and (max-width: 720px){
     .cards.--toolsCards2 {
         margin: 8px;
@@ -2307,27 +2426,7 @@ display: none;
     }
 }
 
-@media screen and (max-width: 375px){
-    .card__item.--toolsCards2 {
-        width: 43%;
-        height: 27%;
-    }
-    .cards.--toolsCards2 {
-        margin: 8px;
-        height: 45%;
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-    }
-    .card__text.--toolsText {
-        margin: 0 0 0 63px;
-    }
-    .card__text2.--toolsText{
-        margin: 0;
-        font-size: 10px;
-    }
-}
+
 
 
 .background__square.--phase3{
@@ -2422,10 +2521,6 @@ display: none;
 
 .phase__text.--phase3:hover {
     color: var(--titleOrange);
-}
-
-.content__dialog.--tip_fase3{
-    align-items: flex-end;
 }
 
 #person8{
@@ -2531,14 +2626,6 @@ display: none;
     color: var(--titleGreen);
 }
 
-
-.tools.--phase4{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-
-}
-
 @media screen and (max-width: 720px){
     .background__animation.--phase4{
         height: 73%;
@@ -2590,6 +2677,20 @@ display: none;
 
   .front-face {
     transform: rotateY(180deg);
+  }
+
+
+  @media screen and (max-width: 768px){
+    .content__dialog.--pas_2_fase4{
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 730px){
+    .memory {
+      width: 100%;
+      margin: 8px;
+    }
   }
 .background__square.--phase5{
     background-color: var(--firstPink);
@@ -2682,6 +2783,11 @@ display: none;
 @media screen and (max-width: 720px){
     .background__animation.--phase5{
         height: 73%;
+    }
+}
+@media screen and (max-width:430px){
+    .pas__list.--phase5{
+        width: 85%;
     }
 }
 

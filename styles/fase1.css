@@ -245,6 +245,9 @@
     .content__dialog.--tip_fase1{
         height: 46%;
     }
+    .content__dialog.--5{
+        height: 46%;
+    }
 
     .menu__title{
         width: 100%;
@@ -302,6 +305,9 @@
     }
     #person5 {
         height: 47%;
+    }
+    #person6 {
+        height: 46%;
     }
     #person9 {
         height: 47%;
@@ -386,6 +392,9 @@
     #person5 {
         height: 43%;
     }
+    #person6 {
+        height: 40%;
+    }
 
     .cards.--toolsCards2 li:nth-child(1) {
         height: 84%;
@@ -401,6 +410,9 @@
     }
 
     .content__dialog.--tip_fase1 {
+        height: 50%;
+    }
+    .content__dialog.--tip_fase5 {
         height: 50%;
     }
 
