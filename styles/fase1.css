@@ -178,31 +178,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.container_drag{
+/* .container_drag{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin: 10px;
-}
+} */
 .box.over {
   border: 3px dotted #666;
 }
-.box {
-  border-radius: .5em;
-  padding: 10px;
-  cursor: move;
-  list-style: none;
-  margin-bottom: 30px;
-}
-p.titulo_opc {
-    line-height: 20px;
-    color: #083b85;
-    font-size: 18px;
-}
-.text_opc{
-    line-height: 20px;
-    font-size: 14px;
-}
+
 .bg_bl{
 	background: #fff;
 }
@@ -213,10 +198,6 @@ p.titulo_opc {
     color: #fff;
     font-size: 42px;
 }
-.--pas_2_fase1{
-    padding-top: 7%;
-}
-
 #person9{
     height: 90%;
 }
@@ -469,7 +450,7 @@ p.titulo_opc {
     .cards.--toolsCards2 li:nth-child(1) {
         height: 100%;
     }
-    
+
     .content__dialog.--tip_fase1 {
         height: 50%;
     }
