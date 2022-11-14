@@ -167,7 +167,7 @@ $(function () {
     var text1_1 = '¡Así es! Esta fase tiene como propósito conformar el equipo que, desde las concesiones, implementará la metodología, atendiendo a las capacidades y saberes requeridos, para lo cual estimamos un tiempo de un mes.';
     var text1_2 = 'Ana y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta primera fase. Ahora, te dejamos con Alirio y Marcela para que te cuenten un poco más al respecto.';
 
-    $("#play_f1_bienvenida").html('Reproduciendo...');
+    //$("#play_f1_bienvenida").html('Reproduciendo...');
 
     if (e.target.tagName !== "AUDIO") {
       if (is_playing) {
