@@ -1,0 +1,71 @@
+.draggable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.draggable__up{
+    display: flex;
+    justify-content: center;
+}
+
+.draggable__down{
+    display: flex;
+    justify-content: center;
+}
+
+.container_drag{
+    padding: 0;
+    margin: 8px;
+    display: flex;
+    width: 87%;
+}
+
+p.titulo_opc {
+    color: #083b85;
+    font-size: 18px;
+}
+
+.text_opc{
+    font-size: 16px;
+}
+
+.box {
+    border-radius: .5em;
+    padding: 8px;
+    cursor: move;
+    list-style: none;
+    margin: 8px;
+}
+.box.over {
+    border: 3px dotted #666;
+  }
+  
+.bg_bl{
+    background: #fff;
+}
+#endMessage {
+display: none;
+}
+.drag_done{
+    color: #fff;
+    font-size: 42px;
+}
+  
+
+@media screen and (max-width:430px){
+    .draggable {
+        flex-direction: row;
+    }
+    .draggable__up {
+        width: 76%;
+        padding: 8px;
+        margin: 8px;
+    }
+    .container_drag{
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

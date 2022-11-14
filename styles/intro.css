@@ -422,7 +422,7 @@ audio::-webkit-media-controls-timeline{
     .dialog{
         font-size: 16px;
         line-height: 16px;
-        top: 29%;
+        top: 35%;
         padding: 12px;
     }
     .dialog.--intro{

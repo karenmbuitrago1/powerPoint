@@ -178,26 +178,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/* .container_drag{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin: 10px;
-} */
-.box.over {
-  border: 3px dotted #666;
-}
-
-.bg_bl{
-	background: #fff;
-}
-#endMessage {
-  display: none;
-}
-.drag_done{
-    color: #fff;
-    font-size: 42px;
-}
 #person9{
     height: 90%;
 }
@@ -385,17 +365,20 @@
     }
     .menu__title {
         height: 11%;
+        align-items: self-end;
     }
     .menu__title:before {
-        top: 80%;
-        left: 158px;
+        display: none;
+    }
+    .titlePhase {
+        font-size: 40px;
     }
     .content__menu.--phases {
-        height: 49%;
+        height: 51%;
     }
     .title__secondary {
         font-size: 28px;
-        margin: 16px 0 0 0;
+        margin: 0;
     }
     .phase__textMain {
         margin: 0 16px;
@@ -428,7 +411,7 @@
         width: 52%;
     }
     .phase__dialog.--phases {
-        top: 47%;
+        top: 50%;
     }
     .phase__textMin {
         font-size: 6px;
@@ -448,7 +431,16 @@
     }
 
     .cards.--toolsCards2 li:nth-child(1) {
-        height: 100%;
+        height: 84%;
+        width: 65%;
+    }
+
+    .card__text.--toolsText1 {
+        font-size: 21px;
+        margin: auto;
+    }
+    .card__text2.--toolsText3{
+        font-size: 12px;
     }
 
     .content__dialog.--tip_fase1 {
@@ -461,12 +453,12 @@
     }
 
     .cards.--toolsTips5 li:nth-child(1) {
-        width: 63%;
-        height: 35%;
+        width: 53%;
+        height: 29%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
-        width: 63%;
-        height: 35%;
+        width: 53%;
+        height: 29%;
     }
 }
 

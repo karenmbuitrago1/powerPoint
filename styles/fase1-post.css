@@ -174,6 +174,9 @@
 }
 
 @media screen and (max-width:768px){
+    .content__dialog.--obj_fase1_postits{
+        position: relative;
+    }
     .postits {
         height: 54%;
         width: 100%;
@@ -190,7 +193,9 @@
     .postits__list{
         flex-direction: column;
         height: fit-content;
+        background-image: url('../images/recurso_31.png');
     }
+
     .postits__item{
         width: 80%;
     }
@@ -221,13 +226,16 @@
     }
 }
 
-@media screen and (max-width:375px){
-    .postits {
-        width: 100%;
-        height: 50%;
+@media screen and (max-width:430px){
+
+    .content__dialog.--obj_fase1_postits{
+        height: -webkit-fill-available;
+        position: relative;
     }
-    .postits__list{
-        flex-direction: column;
+    .postits {
+        position: relative;
+        width: 100%;
+        height: -webkit-fill-available;
     }
 
     .postits__text{
@@ -252,6 +260,6 @@
         width: 95%;
     }
     #post5 {
-        width: 95%;
+        width: 78%;
     }
 }
