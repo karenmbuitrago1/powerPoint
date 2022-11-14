@@ -70,14 +70,6 @@
     color: var(--titleGreen);
 }
 
-
-.tools.--phase4{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-
-}
-
 @media screen and (max-width: 720px){
     .background__animation.--phase4{
         height: 73%;

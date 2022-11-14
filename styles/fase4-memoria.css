@@ -42,3 +42,17 @@
   .front-face {
     transform: rotateY(180deg);
   }
+
+
+  @media screen and (max-width: 768px){
+    .content__dialog.--pas_2_fase4{
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 730px){
+    .memory {
+      width: 100%;
+      margin: 8px;
+    }
+  }

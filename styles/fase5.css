@@ -91,5 +91,10 @@
         height: 73%;
     }
 }
+@media screen and (max-width:430px){
+    .pas__list.--phase5{
+        width: 85%;
+    }
+}
 
 

@@ -1,12 +1,6 @@
 .tools.--toolsTips{
     justify-content: space-around;
 }
-.tools.--phase5{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-
-}
 .cards.--toolsTips{
     justify-content: flex-end;
     align-items: flex-end;
@@ -148,7 +142,11 @@
     }
     .tools.--toolsTips5 {
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
+    }
+    .tools.--toolsTips5.--phase1{
+        display: flex;
+        justify-content: center;
     }
 
     .cards.--toolsTips5.--phase2{
@@ -158,6 +156,13 @@
         align-content: center;
         justify-content: center;
         height: 100%;
+    }
+
+    .cards.--toolsTips5 li:nth-child(1) {
+        height: 25%;
+    }
+    .cards.--toolsTips5 li:nth-child(2) {
+        height: 25%;
     }
 
     .cards.--toolsTips5.--phase2 li:nth-child(1) {

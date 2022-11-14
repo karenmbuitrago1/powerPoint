@@ -28,6 +28,18 @@
     font-size: 16px;
     padding: 0;
 }
+.tools.--phase4{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.tools.--phase5{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
 @media screen and (max-width: 720px){
     .cards.--toolsCards {
@@ -56,9 +68,34 @@
     .content__dialog.--her_fase2{
         height: 48%; 
     }
+    .content__dialog.--her_fase3{
+        height: 48%; 
+    }
+    .content__dialog.--her_fase4{
+        height: 80%; 
+        background-color: var(--titleGreen);
+    }
+    .content__dialog.--her_fase5{
+        height: 80%; 
+        background-color: var(--titlePink);
+    }
     .tools.--phase2{
         position: relative;
         height: 100%;
+    }
+    .tools.--phase4{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .tools.--phase5{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
     }
     .cards.--toolsCards2.--phase2{
         display: flex;
@@ -68,12 +105,46 @@
         justify-content: flex-start;
         height: 100%;
     }
+    .cards.--toolsCards2.--phase3{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .cards.--toolsCards2.--phase4{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 80%;
+        justify-content: center;
+    }
     .cards.--toolsCards2 li:nth-child(1) {
+        height: 82%;
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 40%;
     }
+    .cards.--toolsCards2.--phase3 li:nth-child(1) {
+        height: 40%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(1) {
+        width: 70%;
+        height: 32%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(2) {
+        width: 70%;
+        height: 32%;
+    }
+    .cards.--toolsCards2.--phase4 li:nth-child(3) {
+        width: 70%;
+        height: 32%;
+    }
     .card__text.--toolsText8{
-        font-size: 22px;
+        font-size: 16px;
         margin: 0;
+        width: 100%;
     }
 }
 
