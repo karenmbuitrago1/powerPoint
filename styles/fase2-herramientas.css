@@ -4,26 +4,6 @@
 }
 
 
-.cards.--toolsCards2 li:nth-child(1){
-    height: 40%;
-    background-image: url('../images/recurso_25.png');
-}
-
-.cards.--toolsCards2 li:hover:nth-child(1){
-    height: 40%;
-    background-image: url('../images/recurso_25.png');
-}
-
-.cards.--toolsCards2 li:nth-child(2){
-    height: 40%;
-    background-image: url('../images/recurso_26.png');
-}
-
-.cards.--toolsCards2 li:hover:nth-child(2){
-    height: 40%;
-    background-image: url('../images/recurso_26.png');
-}
-
 .card__text.--toolsText2{
     font-size: 40px;
     margin: 16px;
