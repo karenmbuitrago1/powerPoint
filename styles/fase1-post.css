@@ -244,6 +244,11 @@
         height: fit-content;
         background-image: url('../images/recurso_198.png');
     }
+    .postits__list.--phase7{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('../images/recurso_238.png');
+    }
 
     .postits__item{
         width: 80%;

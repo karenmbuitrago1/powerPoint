@@ -1788,6 +1788,11 @@ display: none;
         height: fit-content;
         background-image: url('/recurso_198.b0c4e2ea.png');
     }
+    .postits__list.--phase7{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso_238.f2b052e9.png');
+    }
 
     .postits__item{
         width: 80%;
@@ -1931,6 +1936,9 @@ display: none;
         height: 48%; 
     }
     .content__dialog.--her_fase7{
+        height: 48%; 
+    }
+    .content__dialog.--her_fase8{
         height: 48%; 
     }
     .content__dialog.--her_fase4{
@@ -2415,6 +2423,9 @@ display: none;
   .content__dialog.--tip_fase7{
     height: 46%;
   }
+  .content__dialog.--tip_fase8{
+    height: 46%;
+  }
   .bckg__img{
       top: 68%;
       right: 13%;
@@ -2440,6 +2451,9 @@ display: none;
     height: 49%;
   }
   .content__dialog.--tip_fase7 {
+    height: 49%;
+  }
+  .content__dialog.--tip_fase8 {
     height: 49%;
   }
 }
@@ -3196,7 +3210,12 @@ display: none;
     .phase__text.--phase8:hover {
         color: var(--titleMora);
     }
+    
+    .pas__list{
+        width: 80%;
+    }
 }
+
 
 .cards.--phase8{
     flex-direction: column;
