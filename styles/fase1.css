@@ -411,7 +411,7 @@
         width: 52%;
     }
     .phase__dialog.--phases {
-        top: 50%;
+        top: 49%;
     }
     .phase__textMin {
         font-size: 6px;
@@ -427,7 +427,7 @@
     }
 
     #person5 {
-        height: 48%;
+        height: 43%;
     }
 
     .cards.--toolsCards2 li:nth-child(1) {
@@ -453,8 +453,8 @@
     }
 
     .cards.--toolsTips5 li:nth-child(1) {
-        width: 53%;
-        height: 29%;
+        width: 58%;
+        height: 33%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
         width: 53%;
