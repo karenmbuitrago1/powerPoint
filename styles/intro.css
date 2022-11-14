@@ -36,7 +36,7 @@ p.background__backtText, .btn-continue {
     border: solid 2px;
     border-radius: 20px;
     padding: 5px 10px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .btn-continue{
@@ -45,6 +45,7 @@ p.background__backtText, .btn-continue {
     bottom: 10px;
     right: 10px;
     font-family: 'Futura_heavy';
+    display:none;
 }
 
 
