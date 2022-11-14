@@ -17,9 +17,9 @@ document.getElementById ("btn_ruta").addEventListener ("click", btn_ruta, false)
 // Cambio de Botones
 function btn_origen(){
   $("#my_audio_conoce").trigger('pause');
-  $("#play_conoce").html('Reproducir Audio');
+  //$("#play_conoce").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
-  $("#play_ruta").html('Reproducir Audio');
+  //$("#play_ruta").html('Reproducir Audio');
   $(".origen").removeClass("--invisible");
   $(".ruta").addClass("--invisible");
   $(".conoce").addClass("--invisible"); 
@@ -34,9 +34,9 @@ function btn_origen(){
   }
 function btn_conoce(){
   $("#my_audio").trigger('pause');
-  $("#play_origen").html('Reproducir Audio');
+  //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
-  $("#play_ruta").html('Reproducir Audio');
+  //$("#play_ruta").html('Reproducir Audio');
   $(".origen").addClass("--invisible");
   $(".ruta").addClass("--invisible");
   $(".conoce").removeClass("--invisible"); 
@@ -51,9 +51,9 @@ function btn_conoce(){
 }
 function btn_ruta(){
   $("#my_audio").trigger('pause');
-  $("#play_origen").html('Reproducir Audio');
+  //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_conoce").trigger('pause');
-  $("#play_conoce").html('Reproducir Audio');  
+  //$("#play_conoce").html('Reproducir Audio');  
   $(".origen").addClass("--invisible");
   $(".conoce").addClass("--invisible"); 
   $(".ruta").removeClass("--invisible");
@@ -77,7 +77,7 @@ $(function() {
     var text1_1 = 'Para dar alcance a este objetivo, indagó acciones adelantadas por 36 concesiones en el país para garantizar la participación comunitaria y la gestión social en el marco de la implementación de proyectos viales, identificando, entre otros, lecciones aprendidas y buenas prácticas.';
     var text1_2 = 'A partir de los hallazgos de esta exploración, surge la presente propuesta metodológica, estructurada en 8 fases, cuyo propósito central es proporcionar herramientas de co-construcción orientadas a promover la generación de una cultura vial';
     var text1_3 = 'basada en el respeto por la vida, a partir de la intervención participativa, integradora y pertinente, tanto de las concesiones, como de los actores sociales y comunitarios. ¡Sin más preámbulo, comencemos este recorrido!';
-    $("#play_origen").html('Reproduciendo...');
+    //$("#play_origen").html('Reproduciendo...');
 
     if(e.target.tagName !== "AUDIO") {
     if (is_playing) {
@@ -124,7 +124,7 @@ $(function() {
     }
   });
   $("#my_audio").on("ended", function() {
-    $("#play_origen").html('Reproducir Audio');
+    //$("#play_origen").html('Reproducir Audio');
 });
 
     $("#play_conoce").click(function(e) {
@@ -136,7 +136,7 @@ $(function() {
     var text2_5 = '¡Buenas tardes, Juanita! Estamos conversando un poco sobre el proyecto de seguridad vial. ¿Quieres acomodar las cosas en tu lugar y contarnos un poco al respecto?';
     var text2_6 = 'Claro que sí Don Manuel! Lo que a mí más me ha gustado de la metodología, es que todos participamos reconociendo nuestras diferencias. De hecho, tenía como tarea para hoy, construir algunos carteles para compartir ';
     var text2_7 = 'con mis compañeros cómo, con esta metodología nos hemos comprometido a promover la integración de todas las personas. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
-    $("#play_conoce").html('Reproduciendo...');
+    //$("#play_conoce").html('Reproduciendo...');
 
 
     if(e.target.tagName !== "AUDIO") {
@@ -204,7 +204,7 @@ $(function() {
 
   });
 $("#my_audio_conoce").on("ended", function() {
-    $("#play_conoce").html('Reproducir Audio');
+    //$("#play_conoce").html('Reproducir Audio');
     $(".background").addClass("--invisible");
     $(".--type002").removeClass("--invisible");
     $(".dialog").addClass("--invisible");
@@ -217,7 +217,7 @@ $("#my_audio_conoce").on("ended", function() {
 
     var original3 = '¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la construcción e implementación de la metodología para fortalecer una cultura vial. ';
     var text3 = 'a se encuentra estructurada en 8 fases que te presentaré a continuación. No olvides dar clic sobre cada una para descubrir cuál es su objetivo… ¡Comencemos! ';
-    $("#play_ruta").html('Reproduciendo...');
+    //$("#play_ruta").html('Reproduciendo...');
 
     if(e.target.tagName !== "AUDIO") {
     if (is_playing) {
@@ -245,7 +245,7 @@ $("#my_audio_conoce").on("ended", function() {
 
   });
 $("#my_audio_ruta").on("ended", function() {
-    $("#play_ruta").html('Reproducir Audio');
+    //$("#play_ruta").html('Reproducir Audio');
     window.location.href = 'ruta.html'
 });
 
