@@ -18,7 +18,7 @@ function btn_obj_f4() {
 
 	// Audio
 	$("#my_audio_f4").trigger('pause');
-	$("#play_f4_bienvenida").html('Reproducir Audio');
+	//$("#play_f4_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f4").removeClass("--invisible");
@@ -53,7 +53,7 @@ function btn_obj_f4() {
 
 function btn_pas_f4() {
 	$("#my_audio_f4_1").trigger('pause');
-	$("#play_paso_f4").html('Reproducir Audio');
+//	$("#play_paso_f4").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -156,7 +156,7 @@ $(function () {
 		var text1_3 = '...de riesgo derivados del proyecto vial, por ejemplo esos que tienen que ver con la seguridad, el medio ambiente, la salud, la movilidad, entre otros.';
 		var text1_4 ='El grupo y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta cuarta fase. Ahora, te dejamos con el colectivo Buen vivir, para que te cuenten un poco más al respecto.'
 
-		$("#play_f4_bienvenida").html('Reproduciendo...') ;
+		//$("#play_f4_bienvenida").html('Reproduciendo...') ;
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -213,7 +213,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f4_1").on("ended", function () {
-		$("#play_f4_bienvenida").html('Reproducir Audio');
+		//$("#play_f4_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase4_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f4").addClass("--invisible");
@@ -227,7 +227,7 @@ $(function () {
 		
 
 
-		$("#play_paso_f4").html('Reproduciendo...');
+		//$("#play_paso_f4").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -252,7 +252,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f4").on("ended", function () {
-		$("#play_paso_f4").html('Reproducir Audio');
+		//$("#play_paso_f4").html('Reproducir Audio');
 		$(".--pas_fase4").addClass("--invisible");
 		$(".--pas_2_fase4").removeClass("--invisible");
 		$(".background").removeClass("--type008");

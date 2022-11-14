@@ -22,7 +22,7 @@ function btn_obj_f6() {
 
 	// Audio
 	$("#my_audio_f6").trigger('pause');
-	$("#play_f6_bienvenida").html('Reproducir Audio');
+	//$("#play_f6_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f6").removeClass("--invisible");
@@ -58,7 +58,7 @@ function btn_obj_f6() {
 
 function btn_pas_f6() {
 	$("#my_audio_f6_1").trigger('pause');
-	$("#play_paso_f6").html('Reproducir Audio');
+	//$("#play_paso_f6").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -158,7 +158,7 @@ $(function () {
 		var text1 = 'El propósito es diseñar con la comunidad y con miembros de diferentes sectores, acciones que contribuyan a mejorar los comportamientos viales y a cuidar la vida de todos y todas. ¡Así es, tal cual lo están haciendo mis compañeros allí atrás!';
 		var text1_1 = 'De manera conjunta, hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Telesforo y Amalia para que te cuenten un poco más.';
 
-		$("#play_f6_bienvenida").html('Reproduciendo...');
+		//$("#play_f6_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -194,7 +194,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f6_1").on("ended", function () {
-		$("#play_f6_bienvenida").html('Reproducir Audio');
+		//$("#play_f6_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase6_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f6").addClass("--invisible");
@@ -208,7 +208,7 @@ $(function () {
 		var text1 = '...así, cada vez que se estalla uno, sale volando el papelito con la descripción... ¡Venga y juega con nosotros! De clic en cada globo y descubra en qué consiste cada paso.';
 
 
-		$("#play_paso_f6").html('Reproduciendo...');
+		//$("#play_paso_f6").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -239,7 +239,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f6").on("ended", function () {
-		$("#play_paso_f6").html('Reproducir Audio');
+		//$("#play_paso_f6").html('Reproducir Audio');
 		$(".--pas_fase6").addClass("--invisible");
 		$(".--pas_2_fase6").removeClass("--invisible");
 		$(".background").removeClass("--type012");

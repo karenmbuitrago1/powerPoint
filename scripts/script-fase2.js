@@ -18,7 +18,7 @@ function btn_obj_f2() {
 
 	// Audio
 	$("#my_audio_f2").trigger('pause');
-	$("#play_f2_bienvenida").html('Reproducir Audio');
+	//$("#play_f2_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f2").removeClass("--invisible");
@@ -57,7 +57,7 @@ function btn_obj_f2() {
 
 function btn_pas_f2() {
 	$("#my_audio_f2_1").trigger('pause');
-	$("#play_paso_f2").html('Reproducir Audio');
+	//$("#play_paso_f2").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -165,7 +165,7 @@ $(function() {
       var text1 = 'Esta fase tiene como propósito identificar los actores clave que, dentro de nuestra comunidad y en los diferentes sectores que en ella intervienen, pueden aportar de manera positiva en la implementación de nuestra metodología, favoreciendo la apropiación local y promoviendo la seguridad vial.';
       var text1_1 = 'La Junta de Acción Comunal ha preparado algunas notas adhesivas, con datos importantes que debemos tener en cuenta en esta segunda fase. Ahora, los dejo con Juan y Margarita, que les van a presentar el paso a paso a seguir.';
       
-      $("#play_f2_bienvenida").html('Reproduciendo...');
+      //$("#play_f2_bienvenida").html('Reproduciendo...');
   
       if(e.target.tagName !== "AUDIO") {
       if (is_playing) {
@@ -201,7 +201,7 @@ $(function() {
       }
     });
     $("#my_audio_f2_1").on("ended", function() {
-      $("#play_f2_bienvenida").html('Reproducir Audio');
+      //$("#play_f2_bienvenida").html('Reproducir Audio');
       $(".--obj_fase2_postits").removeClass("--invisible");
       $(".--type006").addClass("--invisible");
       $(".obj_f2").addClass("--invisible");
@@ -215,7 +215,7 @@ $(function() {
     var text1 = 'Hoy nos han dado la tarea de mostrarles las instrucciones que deben seguir para desarrollar esta fase. Como soy amante de los rompecabezas, construimos unas fichas con la hoja de ruta. ¡Ayúdennos a armarlas para conocer el paso a paso';
     
     
-    $("#play_paso_f2").html('Reproduciendo...');
+    //$("#play_paso_f2").html('Reproduciendo...');
 
     if(e.target.tagName !== "AUDIO") {
     if (is_playing) {
@@ -246,7 +246,7 @@ $(function() {
     }
   });
   $("#my_audio_f2").on("ended", function() {
-    $("#play_paso_f2").html('Reproducir Audio');
+   // $("#play_paso_f2").html('Reproducir Audio');
     $(".--pas_fase2").addClass("--invisible");
     $("#person9").addClass("--invisible");
     $(".--pas_2_fase2").removeClass("--invisible");

@@ -20,7 +20,7 @@ function btn_obj_f1() {
 
   // Audio
   $("#my_audio_f1").trigger('pause');
-  $("#play_f1_bienvenida").html('Reproducir Audio');
+  //$("#play_f1_bienvenida").html('Reproducir Audio');
 
   // Personas hablantes y dialogos
   $(".obj_f1").removeClass("--invisible");
@@ -59,7 +59,7 @@ function btn_obj_f1() {
 
 function btn_pas_f1() {
   $("#my_audio_f1_1").trigger('pause');
-  $("#play_paso_f1").html('Reproducir Audio');
+  //$("#play_paso_f1").html('Reproducir Audio');
 
   // Personas hablantes y dialogos
   $("#person5").addClass("--invisible");
@@ -209,7 +209,7 @@ $(function () {
     }
   });
   $("#my_audio_f1_1").on("ended", function () {
-    $("#play_f1_bienvenida").html('Reproducir Audio');
+    //$("#play_f1_bienvenida").html('Reproducir Audio');
     $(".--obj_fase1_postits").removeClass("--invisible");
     $(".--type004").addClass("--invisible");
     $(".obj_f1").addClass("--invisible");
@@ -224,7 +224,7 @@ $(function () {
     var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda';
 
 
-    $("#play_paso_f1").html('Reproduciendo...');
+    //$("#play_paso_f1").html('Reproduciendo...');
 
     if (e.target.tagName !== "AUDIO") {
       if (is_playing) {
@@ -261,7 +261,7 @@ $(function () {
     }
   });
   $("#my_audio_f1_2").on("ended", function () {
-    $("#play_paso_f1").html('Reproducir Audio');
+    //$("#play_paso_f1").html('Reproducir Audio');
     $(".--pas_fase1").addClass("--invisible");
     $(".--pas_2_fase1").removeClass("--invisible");
     $("#person9").addClass("--invisible");

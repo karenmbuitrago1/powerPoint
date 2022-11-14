@@ -18,7 +18,7 @@ function btn_obj_f7() {
 
 	// Audio
 	$("#my_audio_f7").trigger('pause');
-	$("#play_f7_bienvenida").html('Reproducir Audio');
+	//$("#play_f7_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f7").removeClass("--invisible");
@@ -53,7 +53,7 @@ function btn_obj_f7() {
 
 function btn_pas_f7() {
 	$("#my_audio_f7_1").trigger('pause');
-	$("#play_paso_f7").html('Reproducir Audio');
+	//$("#play_paso_f7").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -154,7 +154,7 @@ $(function () {
 		var text1_1 = 'Quisiera contarte en qué consiste esta fase llamada ¡Manos a la obra! El propósito es implementar las estrategias de intervención comunitaria que diseñamos en la fase anterior. Los vecinos y yo';
 		var text1_2 = '...hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Paula para que te cuente mas al respecto';
 
-		$("#play_f7_bienvenida").html('Reproduciendo...');
+		//$("#play_f7_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -196,7 +196,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f7_1").on("ended", function () {
-		$("#play_f7_bienvenida").html('Reproducir Audio');
+	//	$("#play_f7_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase7_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f7").addClass("--invisible");
@@ -210,7 +210,7 @@ $(function () {
 		var text1 = 'Como miembro de esta metodología, quiero mostrarte los pasos que debes seguir para desarrollar esta fase. Diseñé una hoja de ruta que espero te ayude... ¡Da clic sobre cada paso y descubre de qué se trata!';
 
 
-		$("#play_paso_f7").html('Reproduciendo...');
+		//$("#play_paso_f7").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -241,7 +241,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f7").on("ended", function () {
-		$("#play_paso_f7").html('Reproducir Audio');
+		//$("#play_paso_f7").html('Reproducir Audio');
 		$(".--pas_fase7").addClass("--invisible");
 		$(".--pas_2_fase7").removeClass("--invisible");
 		$(".background").removeClass("--type014");

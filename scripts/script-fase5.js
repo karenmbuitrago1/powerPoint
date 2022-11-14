@@ -18,7 +18,7 @@ function btn_obj_f5() {
 
 	// Audio
 	$("#my_audio_f5").trigger('pause');
-	$("#play_f5_bienvenida").html('Reproducir Audio');
+	//$("#play_f5_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f5").removeClass("--invisible");
@@ -58,7 +58,7 @@ function btn_obj_f5() {
 
 function btn_pas_f5() {
 	$("#my_audio_f5_1").trigger('pause');
-	$("#play_paso_f5").html('Reproducir Audio');
+	//$("#play_paso_f5").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -171,7 +171,7 @@ $(function () {
 		var text1_1 = '¡Así es! Esta fase tiene como propósito identificar los factores de riesgo derivados del proyecto vial que deben ser abordados y atendidos de manera prioritaria.';
 		var text1_2 = 'Lucía y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta quinta fase. Ahora, te dejamos con Soraya y Antonio para que te cuenten un poco más al respecto.';
 
-		$("#play_f5_bienvenida").html('Reproduciendo...');
+		//$("#play_f5_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -215,7 +215,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f5_1").on("ended", function () {
-		$("#play_f5_bienvenida").html('Reproducir Audio');
+		//$("#play_f5_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase5_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f5").addClass("--invisible");
@@ -230,7 +230,7 @@ $(function () {
 		var text1 = 'Hace unos meses nos integramos de manera activa en esta metodología. Hoy, somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos sea de gran ayuda… ';
 
 
-		$("#play_paso_f5").html('Reproduciendo...');
+		//$("#play_paso_f5").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -261,7 +261,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f5").on("ended", function () {
-		$("#play_paso_f5").html('Reproducir Audio');
+		//$("#play_paso_f5").html('Reproducir Audio');
 		$(".--pas_fase5").addClass("--invisible");
 		$(".--pas_2_fase5").removeClass("--invisible");
 		$(".background").removeClass("--type010");

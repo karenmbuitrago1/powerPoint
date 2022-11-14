@@ -18,7 +18,7 @@ function btn_obj_f8() {
 
 	// Audio
 	$("#my_audio_f8").trigger('pause');
-	$("#play_f8_bienvenida").html('Reproducir Audio');
+	//$("#play_f8_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f8").removeClass("--invisible");
@@ -53,7 +53,7 @@ function btn_obj_f8() {
 
 function btn_pas_f8() {
 	$("#my_audio_f8_1").trigger('pause');
-	$("#play_paso_f8").html('Reproducir Audio');
+	//$("#play_paso_f8").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -154,7 +154,7 @@ $(function () {
 		var text1_1 = 'Así, podemos perfeccionar nuestra práctica. Esto es como la costura su merced, se trata de hilar colectivamente y buscar los mejores modelos, a partir del ensayo y el error.';
 		var text1_2 = 'Anoche luego de tejer una manta para los niños y niñas del Jardín infantil del barrio, escribí unas notas adhesivas para usted, con datos importantes que debe tener en cuenta en esta fase. Ahora, voy a llamar a la señora Josefina para que le cuente un poco más al respecto. Un gusto saludarle.';
 
-		$("#play_f8_bienvenida").html('Reproduciendo...');
+		//$("#play_f8_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -196,7 +196,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f8_1").on("ended", function () {
-		$("#play_f8_bienvenida").html('Reproducir Audio');
+		//$("#play_f8_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase8_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f8").addClass("--invisible");
@@ -210,7 +210,7 @@ $(function () {
 		var text1 = 'Como parte de esta iniciativa, tengo la responsabilidad de mostrarle los pasos que debe seguir para desarrollar esta última fase. Diseñé un gráfico que espero sea de ayuda. Me despido. Cualquier cosa que necesite, estamos para servirle.';
 
 
-		$("#play_paso_f8").html('Reproduciendo...');
+		//$("#play_paso_f8").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -241,7 +241,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f8").on("ended", function () {
-		$("#play_paso_f8").html('Reproducir Audio');
+		//$("#play_paso_f8").html('Reproducir Audio');
 		$(".--pas_fase8").addClass("--invisible");
 		$(".--pas_2_fase8").removeClass("--invisible");
 		$(".background").removeClass("--type016");

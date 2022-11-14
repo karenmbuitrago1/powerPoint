@@ -23,7 +23,7 @@ function btn_obj_f3() {
 
 	// Audio
 	$("#my_audio_f3").trigger('pause');
-	$("#play_f3_bienvenida").html('Reproducir Audio');
+	//$("#play_f3_bienvenida").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$(".obj_f3").removeClass("--invisible");
@@ -59,7 +59,7 @@ function btn_obj_f3() {
 
 function btn_pas_f3() {
 	$("#my_audio_f3_1").trigger('pause');
-	$("#play_paso_f3").html('Reproducir Audio');
+	//$("#play_paso_f3").html('Reproducir Audio');
 
 	// Personas hablantes y dialogos
 	$("#person5").addClass("--invisible");
@@ -164,7 +164,7 @@ $(function () {
 		var text1_1 = 'Voy a contarles un poco sobre la fase que más me gusta, se llama: ¡Geografías humanas! Ahí lo que hacemos es caracterizar el espacio físico y humano donde se realizará el proyecto vial, para identificar factores de riesgo asociados a la ocupación y uso del espacio.';
 		var text1_2 = 'Anoche estuve preparando algunas notas adhesivas para ustedes, con datos importantes que deben tener en cuenta. Ahora, los dejo con William y Andrés, para que les cuenten un poco más al respecto';
 		
-		$("#play_f3_bienvenida").html('Reproduciendo...');
+		//$("#play_f3_bienvenida").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -206,7 +206,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f3_1").on("ended", function () {
-		$("#play_f3_bienvenida").html('Reproducir Audio');
+		//$("#play_f3_bienvenida").html('Reproducir Audio');
 		$(".--obj_fase3_postits").removeClass("--invisible");
 		$(".--type006").addClass("--invisible");
 		$(".obj_f3").addClass("--invisible");
@@ -220,7 +220,7 @@ $(function () {
 		var text1 = 'Ambos diseñamos una hoja de ruta, a manera de mapa, que esperamos sea de gran ayuda… No olvides dar clic sobre cada estación, para conocer en qué consisten los pasos a seguir…';
 
 
-		$("#play_paso_f3").html('Reproduciendo...');
+		//$("#play_paso_f3").html('Reproduciendo...');
 
 		if (e.target.tagName !== "AUDIO") {
 			if (is_playing) {
@@ -251,7 +251,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f3").on("ended", function () {
-		$("#play_paso_f3").html('Reproducir Audio');
+		//$("#play_paso_f3").html('Reproducir Audio');
 		$(".--pas_fase3").addClass("--invisible");
 		$(".--pas_2_fase3").removeClass("--invisible");
 		$(".background").removeClass("--type009");
