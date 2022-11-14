@@ -187,15 +187,20 @@
 }
 
 
-@media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
-    }
+@media screen and (max-width: 768px){
+  .content__dialog.--obj_fase2_postits{
+    position: relative;
+  }
+  .bckg__img{
+      top: 64%;
+      right: 13%;
+      width: 67%;
+  }    
 }
-
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
+  .dnd-image-drag .gallery-painting{
+    width: 94%;
+  }
     .bckg__img{
         top: 60%;
         right: 14%;

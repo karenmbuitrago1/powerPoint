@@ -1766,10 +1766,15 @@ display: none;
         height: inherit;
     }
 
-    .postits__list{
+    .postits__list.--phase1{
         flex-direction: column;
         height: fit-content;
         background-image: url('/recurso_31.b1a2787e.png');
+    }
+    .postits__list.--phase2{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso90.058d747a.png');
     }
 
     .postits__item{
@@ -2183,15 +2188,20 @@ display: none;
 }
 
 
-@media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
-    }
+@media screen and (max-width: 768px){
+  .content__dialog.--obj_fase2_postits{
+    position: relative;
+  }
+  .bckg__img{
+      top: 64%;
+      right: 13%;
+      width: 67%;
+  }    
 }
-
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
+  .dnd-image-drag .gallery-painting{
+    width: 94%;
+  }
     .bckg__img{
         top: 60%;
         right: 14%;

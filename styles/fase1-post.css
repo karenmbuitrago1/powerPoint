@@ -190,10 +190,15 @@
         height: inherit;
     }
 
-    .postits__list{
+    .postits__list.--phase1{
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_31.png');
+    }
+    .postits__list.--phase2{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('../images/recurso90.png');
     }
 
     .postits__item{
