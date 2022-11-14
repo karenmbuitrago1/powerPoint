@@ -186,6 +186,15 @@
     .content__dialog.--obj_fase5_postits{
         position: relative;
     }
+    .content__dialog.--obj_fase6_postits{
+        position: relative;
+    }
+    .content__dialog.--obj_fase7_postits{
+        position: relative;
+    }
+    .content__dialog.--obj_fase8_postits{
+        position: relative;
+    }
 
     .postits {
         height: 54%;
@@ -224,6 +233,21 @@
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_122_122.png');
+    }
+    .postits__list.--phase6{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('../images/recurso_160.png');
+    }
+    .postits__list.--phase7{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('../images/recurso_198.png');
+    }
+    .postits__list.--phase7{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('../images/recurso_238.png');
     }
 
     .postits__item{

@@ -60,9 +60,3 @@
     align-items: flex-end;
 }
 
-@media screen and (max-width: 720px){
-    .postits__list.--phase7{
-        height: fit-content;    
-        background-color: var(--firstLightGreen);
-    }
-}

@@ -77,4 +77,9 @@
     .phase__text.--phase8:hover {
         color: var(--titleMora);
     }
+    
+    .pas__list{
+        width: 80%;
+    }
 }
+

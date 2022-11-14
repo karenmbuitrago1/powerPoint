@@ -200,6 +200,12 @@
   .content__dialog.--tip_fase4{
     height: 46%;
   }
+  .content__dialog.--tip_fase7{
+    height: 46%;
+  }
+  .content__dialog.--tip_fase8{
+    height: 46%;
+  }
   .bckg__img{
       top: 68%;
       right: 13%;
@@ -222,6 +228,12 @@
     height: 49%;
   }
   .content__dialog.--tip_fase3 {
+    height: 49%;
+  }
+  .content__dialog.--tip_fase7 {
+    height: 49%;
+  }
+  .content__dialog.--tip_fase8 {
     height: 49%;
   }
 }
