@@ -71,6 +71,9 @@
     .content__dialog.--her_fase3{
         height: 48%; 
     }
+    .content__dialog.--her_fase7{
+        height: 48%; 
+    }
     .content__dialog.--her_fase4{
         height: 80%; 
         background-color: var(--titleGreen);

@@ -241,8 +241,15 @@
         width: 100%;
         height: 46%;  
     }
+    .content__dialog.--her_fase6{
+        width: 100%;
+        height: 46%;  
+    }
 
     .content__dialog.--tip_fase1{
+        height: 46%;
+    }
+    .content__dialog.--tip_fase6{
         height: 46%;
     }
     .content__dialog.--5{
@@ -410,6 +417,9 @@
     }
 
     .content__dialog.--tip_fase1 {
+        height: 50%;
+    }
+    .content__dialog.--tip_fase6 {
         height: 50%;
     }
     .content__dialog.--tip_fase5 {
