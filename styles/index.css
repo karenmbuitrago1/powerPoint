@@ -12,6 +12,7 @@
 /* Estilos fases  */
 
 @import "../styles/fase1.css";
+@import "../styles/fase1-drag.css";
 @import "../styles/fase1-post.css";
 @import "../styles/fase1-herramientas.css";
 @import "../styles/fase1-tips.css";

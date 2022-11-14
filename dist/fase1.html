@@ -75,6 +75,9 @@
 					<img id="person20" class="person --invisible" loading="lazy" src="/recurso_50.ff9f4334.png" alt="persona que habla">
 				</div>
 			</section>
+			<div>
+				<button class="btn-continue" id="continue-f1">Continuar</button>
+			</div>
 			<section id="obj_f1" class="content__dialog obj_f1 ">
 				<div class="phase__dialog --phases">
 					<div class="dialogBox__text" id="change_f1_1">¡Hola! Bienvenido a la primera fase de nuestra
@@ -87,7 +90,9 @@
 						<source src="/1Ana-Pedro-campo.6a6d1cc5.mp3" type="audio/mp3">
 						Your browser does not support the audio element.
 					</audio>
-					<div id="play_f1_bienvenida" class="play">Reproducir Audio</div>
+					<div id="play_f1_bienvenida" class="play">
+						<img src="/recurso144.956d6627.png" alt="sound" width="20">
+					</div>
 			</div></section>
 			<section class="content__dialog --obj_fase1_postits --invisible">
 				<div class="postits">
@@ -142,6 +147,7 @@
 					</ul>
 				</div>
 			</section>
+
 			<section class="content__dialog origen --invisible --pas_fase1">
 				<div class="phase__dialog --phases">
 					<div class="dialogBox__text" id="change_f1_2">¡Bienvenido de vuelta! Mi nombre es Alirio, soy un
@@ -155,7 +161,7 @@
 					</audio>
 					<div id="play_paso_f1" class="play">Reproducir Audio</div>
 			</div></section>
-			
+
 			<section class="content__dialog --her_fase1 --invisible">
 				<div class="phase__dialog --phases">
 					<div class="dialogBox__text" id="change_f1_2">Aquí encontrarás las herramientas necesarias para
@@ -172,7 +178,8 @@
 								<p class="card__text --toolsText8">LISTA DE CHEQUEO
 									DEL PROFESIONAL SOCIAL
 								</p>
-								<p class="card__text2 --toolsText">Describe algunos conocimientos, capacidades y atributos que deben tener las
+								<p class="card__text2 --toolsText">Describe algunos conocimientos, capacidades y
+									atributos que deben tener las
 									personas que, desde las concesiones,
 									acompañen la implementación de la
 									metodología. Esta herramienta permitirá
@@ -185,48 +192,49 @@
 				</div>
 			</section>
 			<section class="content__dialog --pas_2_fase1 --invisible">
-				<div>
-					<div>
-
-					<ul class="draggable-list container_drag">
-						<li id="e1" class="box bg_bl" draggable="true">
-							<p class="titulo_opc">Revisión de capacidades instaladas</p>
-							<p class="text_opc">Las concesiones establecerán los miembros del equipo que podrían aportar
-								en la
-								construcción e implementación de la medolología.</p>
-						</li>
-						<li id="e2" class="box bg_bl" draggable="true">
-							<p class="titulo_opc">Definición de roles y funciones</p>
-							<p class="text_opc">Atendiendo a las capacidades del equipo, se establecerán los roles y
-								funciones de
-								cada uno de sus integrantes</p>
-						</li>
-						<li id="e3" class="box bg_bl" draggable="true">
-							<p class="titulo_opc">Selección del equipo</p>
-							<p class="text_opc">Una vez identificados los posibles integrantes del equipo, se procederá
-								a la revisión
-								de hojas de vida y la realización de entrevistas.</p>
-						</li>
-						<li id="e4" class="box bg_bl" draggable="true">
-							<p class="titulo_opc">Valoración de contratación adicional </p>
-							<p class="text_opc">Unidades instaladas en las conversiones, se evaluará la necesidad de
-								controlar o no un
-								profesional externo que apoye la implementación</p>
-						</li>
-					</ul>
-				</div>
-					<div>
-					<ul class="draggable-list container_drag">
-						<li id="s1" class="box" draggable="true"><img src="/Recurso52.4716f682.png" loading="lazy" alt="opcion_uno" width="100%">
-						</li>
-						<li id="s3" class="box" draggable="true"><img src="/Recurso53.c1d0f954.png" loading="lazy" alt="opcion_uno" width="100%">
-						</li>
-						<li id="s4" class="box" draggable="true"><img src="/Recurso54.93f3096d.png" loading="lazy" alt="opcion_uno" width="100%">
-						</li>
-						<li id="s2" class="box" draggable="true"><img src="/Recurso55.570b3a94.png" loading="lazy" alt="opcion_uno" width="100%">
-						</li>
-					</ul>
-				</div>
+				<div class="draggable">
+					<div class="draggable__up">
+						<ul class="draggable-list container_drag">
+							<li id="e1" class="box bg_bl" draggable="true">
+								<p class="titulo_opc">Revisión de capacidades instaladas</p>
+								<p class="text_opc">Las concesiones establecerán los miembros del equipo que podrían
+									aportar
+									en la
+									construcción e implementación de la medolología.</p>
+							</li>
+							<li id="e2" class="box bg_bl" draggable="true">
+								<p class="titulo_opc">Definición de roles y funciones</p>
+								<p class="text_opc">Atendiendo a las capacidades del equipo, se establecerán los roles y
+									funciones de
+									cada uno de sus integrantes</p>
+							</li>
+							<li id="e3" class="box bg_bl" draggable="true">
+								<p class="titulo_opc">Selección del equipo</p>
+								<p class="text_opc">Una vez identificados los posibles integrantes del equipo, se
+									procederá
+									a la revisión
+									de hojas de vida y la realización de entrevistas.</p>
+							</li>
+							<li id="e4" class="box bg_bl" draggable="true">
+								<p class="titulo_opc">Valoración de contratación adicional </p>
+								<p class="text_opc">Unidades instaladas en las conversiones, se evaluará la necesidad de
+									controlar o no un
+									profesional externo que apoye la implementación</p>
+							</li>
+						</ul>
+					</div>
+					<div class="draggable__down">
+						<ul class="draggable-list container_drag">
+							<li id="s1" class="box" draggable="true"><img src="/Recurso52.4716f682.png" loading="lazy" alt="opcion_uno" width="100%">
+							</li>
+							<li id="s3" class="box" draggable="true"><img src="/Recurso53.c1d0f954.png" loading="lazy" alt="opcion_uno" width="100%">
+							</li>
+							<li id="s4" class="box" draggable="true"><img src="/Recurso54.93f3096d.png" loading="lazy" alt="opcion_uno" width="100%">
+							</li>
+							<li id="s2" class="box" draggable="true"><img src="/Recurso55.570b3a94.png" loading="lazy" alt="opcion_uno" width="100%">
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div id="endMessage">
 					<h3 class="drag_done">¡Bien hecho!</h3>
@@ -252,16 +260,20 @@
 								<p class="card__text2 --tipsText">Realiza procesos de convocatoria oportunos
 									y abiertos para las acciones programadas
 									dentro de esta fase. Anúncialos con antelación y recuérdalos de manera reiterada a
-									través de diferentes estrategias (redes sociales, Juntas de Acción Comunal, bolsas de
+									través de diferentes estrategias (redes sociales, Juntas de Acción Comunal, bolsas
+									de
 									empleo, medios de comunicación locales,
 									entre otros).</p>
 							</button>
 						</li>
 						<li class="card__item --toolsTips5">
 							<button type="button" class="card__btn" name="carta">
-								<p class="card__text2 --tipsText">Promueve la participación de las personas que habitan en el área de influencia de la
+								<p class="card__text2 --tipsText">Promueve la participación de las personas que habitan
+									en el área de influencia de la
 									concesión, en el proceso de selección de la
-									persona que liderará la metodología. Selecciona las hojas de vida para avanzar en su revisión. Garantiza que, en las entrevistas, por ejemplo, no se filtren prejuicios con respecto a la pertenencia étnica, el género, la
+									persona que liderará la metodología. Selecciona las hojas de vida para avanzar en su
+									revisión. Garantiza que, en las entrevistas, por ejemplo, no se filtren prejuicios
+									con respecto a la pertenencia étnica, el género, la
 									ideología, la nacionalidad, el curso de vida,
 									entre otros.</p>
 							</button>
