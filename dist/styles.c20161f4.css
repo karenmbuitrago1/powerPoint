@@ -460,15 +460,24 @@ audio::-webkit-media-controls-timeline{
         left: 6%;
     }
     .menu__personRight{
+       
         right: 30%;
     }
-    .dialog{
-        width: 80%;
-        top: 33%;
-        line-height: 28px;
-        padding: 24px;
-        font-size: 24px;
+    .menu__listBtn__img {
+        margin: 4px;
     }
+
+    .dialog{
+        width: 84%;
+        top: 30%;
+        line-height: 28px;
+        padding: 8px;
+        font-size: 21px;
+    }
+    .dialog:before{
+        display: none;
+    }
+    
     .dialog__text{
         font-size: 24px;
     }
@@ -1542,6 +1551,7 @@ p.titulo_opc {
 #endMessage {
 display: none;
 }
+
 .drag_done{
     color: #fff;
     font-size: 42px;
