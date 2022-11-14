@@ -191,6 +191,9 @@
   .content__dialog.--obj_fase2_postits{
     position: relative;
   }
+  .content__dialog.--tip_fase2{
+    height: 46%;
+  }
   .bckg__img{
       top: 64%;
       right: 13%;
@@ -201,11 +204,14 @@
   .dnd-image-drag .gallery-painting{
     width: 94%;
   }
-    .bckg__img{
-        top: 60%;
-        right: 14%;
-        width: 74%;
-    }
+  .bckg__img{
+      top: 60%;
+      right: 14%;
+      width: 74%;
+  }
+  .content__dialog.--tip_fase2 {
+    height: 49%;
+}
 }
 
 
