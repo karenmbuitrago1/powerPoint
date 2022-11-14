@@ -126,7 +126,7 @@ p.background__backtText, .btn-continue {
     border: solid 2px;
     border-radius: 20px;
     padding: 5px 10px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .btn-continue{
@@ -135,6 +135,7 @@ p.background__backtText, .btn-continue {
     bottom: 10px;
     right: 10px;
     font-family: 'Futura_heavy';
+    display:none;
 }
 
 
@@ -1218,34 +1219,7 @@ audio::-webkit-media-controls-timeline{
     background-image: url('/recurso_26.3d9f7e3e.png');
 }
 
-.tools.--toolsTips5{
-    height: -webkit-fill-available;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.cards.--toolsTips5{
-    height: 36%;
-    display: contents;
-}
-
-.cards.--toolsTips5 li:nth-child(1){
-    width: 31%;
-    height: 25%;
-    background-image: url('/recurso_62.2955d4f9.png');
-}
-.cards.--toolsTips5 li:hover:nth-child(1){
-    background-image: url('/recurso_24.2429bc12.png');
-}
-.cards.--toolsTips5 li:nth-child(2){
-    width: 31%;
-    height: 25%;
-    background-image: url('/recurso_63.c7cf548f.png');
-}
-.cards.--toolsTips5 li:hover:nth-child(2){
-    background-image: url('/recurso_25.d6e177be.png');
-}
 
 @media screen and (max-width:1450px){
     .titlePhase{
@@ -1335,23 +1309,7 @@ audio::-webkit-media-controls-timeline{
         height: 70%;
     }
 
-    .tools.--toolsTips5{
-        height: -webkit-fill-available;
-        align-items: center;
-    }
-    
-    .card__btn {
-        padding: 1px;
-    }
 
-    .cards.--toolsTips5 li:nth-child(1) {
-        width: 46%;
-        height: 49%;
-    }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 46%;
-        height: 49%;
-    }
    
     #person4 {
         height: 463px;
@@ -1460,19 +1418,7 @@ audio::-webkit-media-controls-timeline{
         height: 50%;
     }
 
-    .tools.--toolsTips5 {
-        flex-direction: column;
-        justify-content: flex-end;
-    }
 
-    .cards.--toolsTips5 li:nth-child(1) {
-        width: 58%;
-        height: 33%;
-    }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 53%;
-        height: 29%;
-    }
 }
 
 @media screen and (max-width:360px){
@@ -1766,10 +1712,15 @@ display: none;
         height: inherit;
     }
 
-    .postits__list{
+    .postits__list.--phase1{
         flex-direction: column;
         height: fit-content;
         background-image: url('/recurso_31.b1a2787e.png');
+    }
+    .postits__list.--phase2{
+        flex-direction: column;
+        height: fit-content;
+        background-image: url('/recurso90.058d747a.png');
     }
 
     .postits__item{
@@ -1878,7 +1829,7 @@ display: none;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
     .card__item {
         width: 62%;
         height: 50%;
@@ -1895,13 +1846,40 @@ display: none;
         margin: 0;
         font-size: 10px;
     }
+    .content__dialog.--her_fase2{
+        height: 48%; 
+    }
+    .tools.--phase2{
+        position: relative;
+        height: 100%;
+    }
+    .cards.--toolsCards2.--phase2{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 40%;
+    }
+    .card__text.--toolsText8{
+        font-size: 22px;
+        margin: 0;
+    }
 }
 
 
 .tools.--toolsTips{
     justify-content: space-around;
 }
+.tools.--phase5{
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
 
+}
 .cards.--toolsTips{
     justify-content: flex-end;
     align-items: flex-end;
@@ -1935,9 +1913,46 @@ display: none;
     font-size: 14px;
     padding: 0;
 }
+.tools.--toolsTips5{
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards.--toolsTips5{
+    height: 36%;
+    display: contents;
+}
+
+.cards.--toolsTips5 li:nth-child(1){
+    width: 31%;
+    height: 25%;
+    background-image: url('/recurso_62.2955d4f9.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(1){
+    background-image: url('/recurso_24.2429bc12.png');
+}
+.cards.--toolsTips5 li:nth-child(2){
+    width: 31%;
+    height: 25%;
+    background-image: url('/recurso_63.c7cf548f.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(2){
+    background-image: url('/recurso_25.d6e177be.png');
+}
+.cards.--toolsTips5 li:nth-child(3){
+    width: 31%;
+    height: 25%;
+    background-image: url('/recurso_41_41.c1a4a2d9.png');
+}
+.cards.--toolsTips5 li:hover:nth-child(3){
+    background-image: url('/recurso_26.3d9f7e3e.png');
+}
 
 
-@media screen and (max-width: 720px){
+
+@media screen and (max-width: 768px){
     .tools.--toolsTips{
         justify-content: space-around;
     }
@@ -1950,9 +1965,30 @@ display: none;
         font-size: 12px;
         padding: 0;
     }
+    .tools.--toolsTips5{
+        height: -webkit-fill-available;
+        align-items: center;
+    }
+    
+    .card__btn {
+        padding: 1px;
+    }
+
+    .cards.--toolsTips5 li:nth-child(1) {
+        width: 46%;
+        height: 49%;
+    }
+    .cards.--toolsTips5 li:nth-child(2) {
+        width: 46%;
+        height: 49%;
+    }
+    .cards.--toolsTips5 li:nth-child(3) {
+        width: 46%;
+        height: 49%;
+    }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 430px){
     .tools.--toolsTips {
         width: 100%;
         height: 55%;
@@ -1983,6 +2019,32 @@ display: none;
     .cards.--toolsTips li:nth-child(3){
         height: 72px;
     }
+    .tools.--toolsTips5 {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .cards.--toolsTips5.--phase2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .cards.--toolsTips5.--phase2 li:nth-child(1) {
+        width: 41%;
+        height: 21%;
+    }
+    .cards.--toolsTips5.--phase2 li:nth-child(2) {
+        width: 41%;
+        height: 21%;
+    }
+    .cards.--toolsTips5.--phase2 li:nth-child(3) {
+        width: 41%;
+        height: 21%;
+    }
 }
 
 
@@ -1992,6 +2054,15 @@ display: none;
     }
     .card__btn.--toolsTips{
         padding: 0;
+    }
+    .cards.--toolsTips5.--phase2 li:nth-child(1) {
+        width: 40%;
+    }
+    .cards.--toolsTips5.--phase2 li:nth-child(2) {
+        width: 40%;
+    }
+    .cards.--toolsTips5.--phase2 li:nth-child(3) {
+        width: 40%;
     }
 }
 .background__square.--phase2{
@@ -2183,20 +2254,31 @@ display: none;
 }
 
 
-@media screen and (max-width: 720px){
-    .bckg__img{
-        top: 57%;
-        right: 0%;
-    }
+@media screen and (max-width: 768px){
+  .content__dialog.--obj_fase2_postits{
+    position: relative;
+  }
+  .content__dialog.--tip_fase2{
+    height: 46%;
+  }
+  .bckg__img{
+      top: 64%;
+      right: 13%;
+      width: 67%;
+  }    
 }
-
-
-@media screen and (max-width: 375px){
-    .bckg__img{
-        top: 60%;
-        right: 14%;
-        width: 74%;
-    }
+@media screen and (max-width: 430px){
+  .dnd-image-drag .gallery-painting{
+    width: 94%;
+  }
+  .bckg__img{
+      top: 60%;
+      right: 14%;
+      width: 74%;
+  }
+  .content__dialog.--tip_fase2 {
+    height: 49%;
+}
 }
 
 
@@ -2605,28 +2687,6 @@ display: none;
 
 
 
-.tools.--phase5{
-    height: inherit;
-    display: flex;
-    align-items: flex-end;
-
-}
-/* .cards.--toolsTips5{
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-end;
-    justify-content: flex-end;
-} */
-
-.cards.--toolsTips5 li:nth-child(3){
-    width: 28%;
-    height: 21%;
-    background-image: url('/recurso_41_41.c1a4a2d9.png');
-}
-.cards.--toolsTips5 li:hover:nth-child(3){
-    background-image: url('/recurso_26.3d9f7e3e.png');
-}
-
 .background__square.--phase6{
     background-color: var(--firstYellow);
 
@@ -3003,22 +3063,12 @@ display: none;
 .cards.--phase8{
     flex-direction: column;
 }
-.card__text.--toolsText8{
-    font-size: 24px;
-    margin: 16px;
-}
-
 .content__dialog.--her_fase8{
     align-items: flex-end;
 }
 
 
 @media screen and (max-width: 375px){
-    .card__text.--toolsText8{
-        font-size: 12px;
-        width: 100%;
-        margin: 0;
-    }
     .card__item.--toolsCards8{
         height: 79px;
     }

@@ -205,34 +205,7 @@
     background-image: url('../images/recurso_26.png');
 }
 
-.tools.--toolsTips5{
-    height: -webkit-fill-available;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.cards.--toolsTips5{
-    height: 36%;
-    display: contents;
-}
-
-.cards.--toolsTips5 li:nth-child(1){
-    width: 31%;
-    height: 25%;
-    background-image: url('../images/recurso_62.png');
-}
-.cards.--toolsTips5 li:hover:nth-child(1){
-    background-image: url('../images/recurso_24.png');
-}
-.cards.--toolsTips5 li:nth-child(2){
-    width: 31%;
-    height: 25%;
-    background-image: url('../images/recurso_63.png');
-}
-.cards.--toolsTips5 li:hover:nth-child(2){
-    background-image: url('../images/recurso_25.png');
-}
 
 @media screen and (max-width:1450px){
     .titlePhase{
@@ -322,23 +295,7 @@
         height: 70%;
     }
 
-    .tools.--toolsTips5{
-        height: -webkit-fill-available;
-        align-items: center;
-    }
-    
-    .card__btn {
-        padding: 1px;
-    }
 
-    .cards.--toolsTips5 li:nth-child(1) {
-        width: 46%;
-        height: 49%;
-    }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 46%;
-        height: 49%;
-    }
    
     #person4 {
         height: 463px;
@@ -447,19 +404,7 @@
         height: 50%;
     }
 
-    .tools.--toolsTips5 {
-        flex-direction: column;
-        justify-content: flex-end;
-    }
 
-    .cards.--toolsTips5 li:nth-child(1) {
-        width: 58%;
-        height: 33%;
-    }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 53%;
-        height: 29%;
-    }
 }
 
 @media screen and (max-width:360px){
