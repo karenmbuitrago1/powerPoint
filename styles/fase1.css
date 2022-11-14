@@ -465,6 +465,11 @@ p.titulo_opc {
     #person5 {
         height: 48%;
     }
+
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 100%;
+    }
+    
     .content__dialog.--tip_fase1 {
         height: 50%;
     }
