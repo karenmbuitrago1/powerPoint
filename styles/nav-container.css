@@ -252,7 +252,7 @@ ul.slide-list {
 .btn-audio-play {
   width: 80px;
   height: 80px;
-  background-image: url("../resources/images/btn_sound.png");
+  /*background-image: url("../images/btn_sound.png");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%; }

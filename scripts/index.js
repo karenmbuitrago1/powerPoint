@@ -25,10 +25,10 @@ var currentActivityController = "";
 var currentAudioPlay = ''
 var slideDemoPresentated = false
 
-var slideImagesPath = () => `resources/images/${currentPath}`
-var slideAudioPath = () => `resources/audio/${currentPath}`
-var slideVideoPath = () => `resources/video/${currentPath}`
-var slideDocumentsPath = () => `resources/docs/${currentPath}`
+var slideImagesPath = () => `../images/${currentPath}`
+var slideAudioPath = () => `../audio/${currentPath}`
+var slideVideoPath = () => `../video/${currentPath}`
+var slideDocumentsPath = () => `../docs/${currentPath}`
 
 
 $(document).ready(function () {
