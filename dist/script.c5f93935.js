@@ -127,12 +127,54 @@ $('.menu__listBtn').click(function () {
     $(this).addClass('menu__listBtn_active');
   }
 });
+function siguiente() {
+  console.log("navega");
+  if (document.getElementById("origin_next")) {
+    document.getElementById("origin_next").addEventListener("click", btn_conoce, false);
+  }
+  if (document.getElementById("conoce_next")) {
+    document.getElementById("conoce_next").addEventListener("click", btn_conoce2, false);
+  }
+  if (document.getElementById("conoce2_next")) {
+    document.getElementById("conoce2_next").addEventListener("click", btn_ruta, false);
+  }
+  if (document.getElementById("ruta_next")) {
+    window.location.href = 'ruta.html';
+  }
+}
+function anterior() {
+  console.log("navega");
+  if (document.getElementById("origin_prev")) {
+    document.getElementById("origin_prev").addEventListener("click", btn_origen, false);
+  }
+  if (document.getElementById("conoce_prev")) {
+    document.getElementById("conoce_prev").addEventListener("click", btn_origen, false);
+  }
+  if (document.getElementById("conoce2_prev")) {
+    document.getElementById("conoce2_prev").addEventListener("click", btn_conoce, false);
+  }
+  if (document.getElementById("ruta_prev")) {
+    document.getElementById("ruta_prev").addEventListener("click", btn_conoce2, false);
+  }
+}
 document.getElementById("btn_origen").addEventListener("click", btn_origen, false);
 document.getElementById("btn_conoce").addEventListener("click", btn_conoce, false);
 document.getElementById("btn_ruta").addEventListener("click", btn_ruta, false);
 
 // Cambio de Botones
 function btn_origen() {
+  if (document.getElementById("origin_next")) {
+    document.getElementById("origin_next").id = 'conoce_next';
+  }
+  if (document.getElementById("conoce_next")) {
+    document.getElementById("conoce_next").id = 'conoce_next';
+  }
+  if (document.getElementById("conoce_prev")) {
+    document.getElementById("conoce_prev").id = 'origin_prev';
+    if (document.getElementById("conoce_next")) {
+      document.getElementById("conoce_next").id = 'origin_next';
+    }
+  }
   $("#my_audio_conoce").trigger('pause');
   //$("#play_conoce").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
@@ -150,6 +192,18 @@ function btn_origen() {
   }
 }
 function btn_conoce() {
+  if (document.getElementById("origin_next")) {
+    document.getElementById("origin_next").id = 'conoce_next';
+  }
+  if (document.getElementById("conoce2_next")) {
+    document.getElementById("conoce2_next").id = 'conoce_next';
+  }
+  if (document.getElementById("origin_prev")) {
+    document.getElementById("origin_prev").id = 'conoce_prev';
+  }
+  if (document.getElementById("conoce2_prev")) {
+    document.getElementById("conoce2_prev").id = 'conoce_prev';
+  }
   $("#my_audio").trigger('pause');
   //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
@@ -166,7 +220,32 @@ function btn_conoce() {
     clearTimeout(i);
   }
 }
+function btn_conoce2() {
+  if (document.getElementById("conoce_next")) {
+    document.getElementById("conoce_next").id = 'conoce2_next';
+  }
+  if (document.getElementById("ruta_next")) {
+    document.getElementById("ruta_next").id = 'conoce2_next';
+  }
+  if (document.getElementById("ruta_prev")) {
+    document.getElementById("ruta_prev").id = 'conoce2_prev';
+  }
+  if (document.getElementById("conoce_prev")) {
+    document.getElementById("conoce_prev").id = 'conoce2_prev';
+  }
+  $(".background").addClass("--invisible");
+  $(".--type002").removeClass("--invisible");
+  $(".dialog").addClass("--invisible");
+  $("#person2").addClass("--invisible");
+  $("#girl__img").addClass("--invisible");
+}
 function btn_ruta() {
+  if (document.getElementById("conoce2_next")) {
+    document.getElementById("conoce2_next").id = 'ruta_next';
+  }
+  if (document.getElementById("conoce2_prev")) {
+    document.getElementById("conoce2_prev").id = 'ruta_prev';
+  }
   $("#my_audio").trigger('pause');
   //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_conoce").trigger('pause');
@@ -184,6 +263,7 @@ function btn_ruta() {
     clearTimeout(i);
   }
 }
+
 //Audios y textos
 $(function () {
   var is_playing;
@@ -379,7 +459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57047" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57608" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
