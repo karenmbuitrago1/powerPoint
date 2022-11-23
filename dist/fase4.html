@@ -9,6 +9,54 @@
 </head>
 
 <body>
+	<nav id="controls" class="navbar navbar-expand-md item-visible">
+		<div class="float-right w-100 d-flex">
+		  <div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
+		  </div>
+		  <div class="d-flex align-items-center justify-content-end">
+			<div class="float-right">
+			  <ul class="navbar-nav slide-direction-buttons">
+				<li class="nav-item mx-1">
+				  <button id="origin_prev" class="btn btn-blue-dark prev" onclick="window.location.href = 'fase3.html'" data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>
+				</li>
+				<li class="nav-item mx-1">
+				  <button id="origin_next" class="btn btn-blue-dark next focused" onclick="window.location.href = 'fase5.html'" data-toggle="tooltip" title="Siguiente" tabindex="0">&#10095;</button>
+				</li>
+			  </ul>
+			</div>
+			<div class="float-right mx-1">
+			  <button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu" title="Menu Principal"><span class="text-center">&#9776;</span></button>
+			</div>
+			<div class="accesibility-container">
+			  <div class="float-right mx-1 accesibility-btn-toggle">
+				<button type="button" class="btn btn-blue-dark menu btn-accesibility" onclick="toggleAccesibilityMenu(); loadSpeechPlayer();" data-toggle="tooltip" title="Opciones de accesibilidad"><img class="img-fluid" src="/img_ac_menu.7ebe6445.png"></button>
+			  </div>
+			  <div class="speechPlayer-container">
+				<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos" alt="Lector de textos">
+				  <button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled="" data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid" src="/img_prev.22d2e802.png"></button>
+				  <button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip" title="Leer Texto"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
+				  <button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
+				  <button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip" title="Detener lectura"><img class="img-fluid" src="/img_stop.5bd6d92b.png"></button>
+				  <button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip" title="Texto Siguiente"><img class="img-fluid" src="/img_next.634998c2.png"></button>
+				</div>
+			  </div>
+			  <div class="accesibility-menu">
+				<div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
+				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;+&quot;)" data-toggle="tooltip" title="Incrementar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_increase.35901f0d.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;-&quot;)" data-toggle="tooltip" title="Disminuir tamaño de fuente"><img class="img-fluid" src="/img_ac_font_decrease.26cdc049.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;0&quot;)" data-toggle="tooltip" title="Restaurar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_reset.90745988.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrast&quot;)" data-toggle="tooltip" title="Invertir color"><img class="img-fluid" src="/img_ac_contrast01.54b264b1.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColor&quot;)" data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid" src="/img_ac_contrast02.bf367c30.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColorBright&quot;)" data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid" src="/img_ac_contrast03.3d66d6f3.png"></button>
+				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;grayScale&quot;)" data-toggle="tooltip" title="Sin color"><img class="img-fluid" src="/img_ac_contrast04.c537f69f.png"></button>
+				  <button class="btn btn-accesibility-option btn-read" onclick="showSpeechPlayer()" data-toggle="tooltip" title="Lector de textos"><img class="img-fluid" src="/img_ac_reader.6ef21e67.png"></button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	  <div class="container-blue">
 	<main class="main">
 		<div class="background --type008">
 			<div class="background__square --phase4"></div>
@@ -122,7 +170,7 @@
 												actividad social, cultural, recreativa o
 												económica, de manera itinerante o
 												permanente, en la zona de realización
-												del proyecto -con quienes se implementará el instrumento cualimétrico.</p>
+												del proyecto con quienes se implementará el instrumento cualimétrico.</p>
 										</div>
 									</li>
 									<li class="list__item">
@@ -306,11 +354,16 @@
 				</div>
 			</section>	
 		</div>
-		
-	</main>
+		</main></div>
+	
+
 </body>
 
 <script data-require="jquery@3.0.0" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
 <script src="/script-fase4.a6bb3c45.js"></script>
+<script type="text/javascript" src="/bootstrap.min.63b76b31.js"></script>
+<script type="text/javascript" src="/javascript.common.18137588.js"></script>
+<script type="text/javascript" src="/scripts.3cddadf4.js"></script>
+<script type="text/javascript" src="/accessibility.27b0c518.js"></script>
 
 </html>
