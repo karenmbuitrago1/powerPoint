@@ -149,7 +149,7 @@ $(function () {
 	var is_playing;
 
 	$("#play_f7_bienvenida").click(function (e) {
-		var original = '¡Hola! Mi nombre es Saúl, soy el gerente comercial de Calzados paso firme, una tienda de zapatos formales y deportivos que lleva 30 años en esta zona. Ahí trabajaron mis abuelos, mis padres y ahora mi esposa y yo. Al igual que ellos,';
+		var original = '¡Hola! Mi nombre es Saúl, soy el gerente comercial de Calzados paso firme, una tienda de zapatos formales y deportivos que lleva 30 años en esta zona. Ahí trabajaron mis abuelos, mis padres y ahora mi esposa y yo. Al igual que ellos...';
 		var text1 = '...he vivido toda mi vida aquí. Por esa razón, siempre ayudo a mi comunidad en lo que puedo. ¡Por supuesto, yo también hago parte de esta iniciativa!';
 		var text1_1 = 'Quisiera contarte en qué consiste esta fase llamada ¡Manos a la obra! El propósito es implementar las estrategias de intervención comunitaria que diseñamos en la fase anterior. Los vecinos y yo';
 		var text1_2 = '...hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Paula para que te cuente mas al respecto';
