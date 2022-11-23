@@ -15,7 +15,36 @@
 </head>
 
 <body>
-
+	<ul class="navbar-nav">
+		<li class="nav-item">
+		  <div class="modal fade modalMenu show" id="mainMenu" aria-modal="true" style="padding-right: 15px; display: block;">
+			<div class="modal-dialog modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h4 class="modal-title">Menú principal</h4>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="tooltip" title="Cerrar menú">
+					×
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <div class="list-group">
+				  
+	  <a href="#" onclick="goToSlide([],1)" data-dismiss="modal" class="list-group-item list-group-item-action">Inicio</a>
+	  <a href="#" onclick="goToSlide([],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - Introducción
+	  </a>
+	  <a href="#" onclick="goToSlide([1],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - Voy de la casa al colegio y de vuelta</a>
+	  <a href="#" onclick="goToSlide([2],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - ¿Sabes cómo ubicarte para no perderte?</a>
+	  <a href="#" onclick="goToSlide([3],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - Guardianes y guardianas de la vía</a>
+	  <a href="#" onclick="goToSlide([4],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - Concéntrate, observa y gana</a>
+	  <a href="#" onclick="goToSlide([5],2)" data-dismiss="modal" class="list-group-item list-group-item-action">Ciclo 2 - ¿Cómo te moverás hoy?</a>
+	</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</li>
+	  </ul>
+	  
 	<nav id="controls" class="navbar navbar-expand-md item-visible">
 		<div class="float-right w-100 d-flex">
 		  <div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
