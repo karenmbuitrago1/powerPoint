@@ -41,7 +41,6 @@
     font-family: 'Futura_bold';
     color:  var(--secondBlue);  
     font-size: 40px;
-    font-weight: 500;
 }
 
 .postits__text{
@@ -49,6 +48,7 @@
     padding: 16px;
     font-size: 14px;
     color:  var(--secondBlue);  
+    font-weight: 500;
 }
 
 .postits__itemPost{
@@ -173,7 +173,10 @@
         font-size: 36px;
     }
 }
-@media screen and (max-width:1024x){
+@media screen and (max-width:1024px){
+    .logo {
+        width: 43%;
+    }
     #post1 {
         height: 30%;
     }
@@ -185,6 +188,8 @@
 @media screen and (max-width:768px){
     .content__dialog.--obj_fase1_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase3_postits{
         position: relative;
@@ -292,8 +297,13 @@
 @media screen and (max-width:430px){
 
     .content__dialog.--obj_fase1_postits{
-        height: -webkit-fill-available;
+        height: 42%;
         position: relative;
+    }
+    .postits__list.--phase1{
+        height: max-content;
+        align-items: center;
+
     }
     .postits {
         position: relative;
@@ -307,22 +317,29 @@
     .postits__item {
         width: 100%;
     }
+    .list__item{
+        display: flex;
+        justify-content: center;
+    }
     .postits__itemPost{
         width: 90%;
     }
     #post1 {
-        width: 73%;
+        width: 48%;
     }
     #post2 {
-        width: 55%;
+        width: 42%;
     }
     #post3 {
-        width: 95%;
+        width: 49%;
+        height: 212px;
     }
     #post4 {
-        width: 95%;
+        width: 49%;
+        height: 202px;
     }
     #post5 {
-        width: 78%;
+        width: 62%;
+        height: 263px;
     }
 }
