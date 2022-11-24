@@ -2081,8 +2081,7 @@ display: none;
 .tools.--phase4{
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .tools.--phase5{
     height: 100%;
@@ -2991,25 +2990,27 @@ display: none;
 
 
 .memory {
-    width: 50%;
-    height: 60%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
-    list-style: none;
-    padding: 0;
-  }
+  width: 100%;
+  height: -webkit-fill-available;
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
 
-  .memory__card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    /* transform: scale(1); */
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    cursor: pointer;
+.memory__card {
+  width: calc(22% - 10px);
+  height: calc(40% - 10px);
+  margin: 5px;
+  position: relative;
+  /* transform: scale(1); */
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  cursor: pointer;
 }
 
 .memory__card:active {
@@ -3018,36 +3019,61 @@ display: none;
 }
 
 .memory__card.flip {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1450px) {
+  .memory__card {
+    width: calc(25% - 10px);
   }
-  
-  .front-face,
-  .back-face {
+}
+
+@media screen and (max-width: 1024px) {
+  .memory__card {
+    width: calc(30% - 10px);
+    height: calc(33% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .memory {
     width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    backface-visibility: hidden;
+    margin: 8px;
   }
 
-  .front-face {
-    transform: rotateY(180deg);
+  .memory__card {
+    width: calc(21% - 10px);
+    height: calc(52% - 10px);
   }
+}
 
-
-  @media screen and (max-width: 768px){
-    .content__dialog.--pas_2_fase4{
-      height: 100%;
-    }
+@media screen and (max-width: 430px) {
+  .memory__card {
+    width: calc(32% - 10px);
+    height: calc(40% - 10px);
   }
+}
 
-  @media screen and (max-width: 730px){
-    .memory {
-      width: 100%;
-      margin: 8px;
-    }
+@media screen and (max-width: 375px) {
+  .memory__card {
+    width: calc(32% - 10px);
+    height: calc(37% - 10px);
   }
+}
 .background__square.--phase5{
     background-color: var(--firstPink);
 
@@ -3270,7 +3296,7 @@ display: none;
 .pas__title{
     color: white;
     padding: 16px;
-    height: 46%;
+    height: 40%;
     border-radius: 32px 32px 0 0;
     margin: 4px;
 }
@@ -3402,26 +3428,33 @@ display: none;
 }
 
 .pas__listItem8{
-    height: 745px;
-    width: 390px;
+    height: 508px;
+    width: 329px;
     margin: 8px;
     cursor: pointer;
 }
 .pas__list8 li:nth-child(1){
     background-image: url('/recurso_201.3a2be584.png');
     background-repeat: no-repeat;
+    background-size: contain;
 }
 .pas__list8 li:hover:nth-child(1){
     background-image: url('/recurso_204.dfe94b50.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .pas__list8 li:nth-child(2){
     background-image: url('/recurso_202.66565b89.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .pas__list8 li:hover:nth-child(2){
     background-image: url('/recurso_205.73af3311.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 
