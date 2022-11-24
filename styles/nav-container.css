@@ -2945,7 +2945,6 @@ padding: 0 2% 0 0;
 
 @media (min-width: 1930px) {
   body {
-    max-width: 1920px;
     background-color: #2D2F69;
     margin: 0 auto;
   }

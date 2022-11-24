@@ -49,7 +49,7 @@
 
 .cards.--toolsTips5 li:nth-child(1){
     width: 31%;
-    height: 25%;
+    height: 29%;
     background-image: url('../images/recurso_62.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(1){
@@ -57,7 +57,7 @@
 }
 .cards.--toolsTips5 li:nth-child(2){
     width: 31%;
-    height: 25%;
+    height: 29%;
     background-image: url('../images/recurso_63.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(2){
@@ -65,13 +65,39 @@
 }
 .cards.--toolsTips5 li:nth-child(3){
     width: 31%;
-    height: 25%;
+    height: 29%;
     background-image: url('../images/recurso_41_41.png');
 }
 .cards.--toolsTips5 li:hover:nth-child(3){
     background-image: url('../images/recurso_26.png');
 }
 
+@media screen and (max-width:1450px){
+    .cards.--toolsTips5 li:nth-child(1) {
+        width: 38%;
+        height: 28%;
+    }
+    .cards.--toolsTips5 li:nth-child(2) {
+        width: 38%;
+        height: 28%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .tools.--toolsTips5 {
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    .cards.--toolsTips5 li:nth-child(1) {
+        width: 64%;
+        height: 33%;
+    }
+    .cards.--toolsTips5 li:nth-child(2) {
+        width: 64%;
+        height: 33%;
+    }
+
+}
 
 
 @media screen and (max-width: 768px){
@@ -98,15 +124,15 @@
 
     .cards.--toolsTips5 li:nth-child(1) {
         width: 46%;
-        height: 49%;
+        height: 55%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
         width: 46%;
-        height: 49%;
+        height: 55%;
     }
     .cards.--toolsTips5 li:nth-child(3) {
         width: 46%;
-        height: 49%;
+        height: 55%;
     }
 }
 

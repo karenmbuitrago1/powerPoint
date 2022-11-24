@@ -87,7 +87,8 @@
 }
 
 .title__secondary{
-    font-size: 44px;
+    font-size: 40px;
+    line-height: 40px;
     color: white;
     margin: 0;
 }
@@ -101,6 +102,7 @@
 
 .textDescription{
     font-size: 20px;
+    line-height: 22px;
 }
 
 .phase__menuList{
@@ -329,6 +331,7 @@
     }
     #person5 {
         height: 47%;
+        left: auto;
     }
     #person6 {
         height: 46%;
@@ -366,6 +369,7 @@
     .title__secondary {
         font-size: 28px;
         margin: 0;
+        line-height: 24px;
     }
     .phase__textMain {
         margin: 0 16px;
