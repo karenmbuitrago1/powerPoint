@@ -6,26 +6,33 @@
 }
 
 .pas__listItem8{
-    height: 745px;
-    width: 390px;
+    height: 508px;
+    width: 329px;
     margin: 8px;
     cursor: pointer;
 }
 .pas__list8 li:nth-child(1){
     background-image: url('../images/recurso_201.png');
     background-repeat: no-repeat;
+    background-size: contain;
 }
 .pas__list8 li:hover:nth-child(1){
     background-image: url('../images/recurso_204.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .pas__list8 li:nth-child(2){
     background-image: url('../images/recurso_202.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .pas__list8 li:hover:nth-child(2){
     background-image: url('../images/recurso_205.png');
     background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 
