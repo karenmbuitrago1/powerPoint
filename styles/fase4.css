@@ -76,4 +76,11 @@
     }
 }
 
+@media screen and (max-width: 430px){
+    .dialogBox__text{
+        font-size: 13px;
+    }
+}
+
+
 

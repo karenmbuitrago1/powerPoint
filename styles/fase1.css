@@ -251,15 +251,6 @@
         height: 54%;
     }
 
-    .content__dialog.--her_fase1{
-        width: 100%;
-        height: 46%;  
-    }
-    .content__dialog.--her_fase6{
-        width: 100%;
-        height: 46%;  
-    }
-
     .content__dialog.--tip_fase1{
         height: 46%;
     }
@@ -355,10 +346,7 @@
         align-items: center;
     }
 
-    .cards.--toolsCards2 li:nth-child(1) {
-        height: 62%;
-    }
-
+   
 
    
     #person4 {
@@ -389,11 +377,14 @@
         margin: 0;
     }
     .menu__title {
-        height: 11%;
+        height: 9%;
         align-items: self-end;
     }
     .menu__title:before {
         display: none;
+    }
+    .menu__phase {
+        top: 10%;
     }
     .titlePhase {
         font-size: 40px;
@@ -454,6 +445,7 @@
 
     #person5 {
         height: 43%;
+        left: inherit;
     }
     #person6 {
         height: 40%;

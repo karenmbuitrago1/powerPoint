@@ -1304,15 +1304,6 @@ audio::-webkit-media-controls-timeline{
         height: 54%;
     }
 
-    .content__dialog.--her_fase1{
-        width: 100%;
-        height: 46%;  
-    }
-    .content__dialog.--her_fase6{
-        width: 100%;
-        height: 46%;  
-    }
-
     .content__dialog.--tip_fase1{
         height: 46%;
     }
@@ -1408,10 +1399,7 @@ audio::-webkit-media-controls-timeline{
         align-items: center;
     }
 
-    .cards.--toolsCards2 li:nth-child(1) {
-        height: 62%;
-    }
-
+   
 
    
     #person4 {
@@ -1442,11 +1430,14 @@ audio::-webkit-media-controls-timeline{
         margin: 0;
     }
     .menu__title {
-        height: 11%;
+        height: 9%;
         align-items: self-end;
     }
     .menu__title:before {
         display: none;
+    }
+    .menu__phase {
+        top: 10%;
     }
     .titlePhase {
         font-size: 40px;
@@ -1507,6 +1498,7 @@ audio::-webkit-media-controls-timeline{
 
     #person5 {
         height: 43%;
+        left: inherit;
     }
     #person6 {
         height: 40%;
@@ -2080,6 +2072,12 @@ display: none;
     font-size: 16px;
     padding: 0;
 }
+.tools.--phase2{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 .tools.--phase4{
     height: 100%;
     display: flex;
@@ -2092,8 +2090,31 @@ display: none;
     align-items: flex-end;
     justify-content: flex-end;
 }
+.cards.--toolsCards2.--phase2  li:nth-child(1) {
+    height: 38%;
+    width: 44%;
+}
+.cards.--toolsCards2.--phase2  li:nth-child(2) {
+    height: 38%;
+    width: 44%;
+}
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1024px){
+    .cards.--toolsCards2.--phase2{
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+        height: 34%;
+        width: 71%;
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(2) {
+        height: 34%;
+        width: 71%;
+    }
+}
+
+@media screen and (max-width: 768px){
     .cards.--toolsCards {
         margin: 8px;
         height: 42%;
@@ -2102,6 +2123,46 @@ display: none;
         margin: 8px;
         height: 42%;
        
+    }
+    .content__dialog.--her_fase1{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase2{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase3{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase4{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase5{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase6{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase7{
+        width: 100%;
+        height: 46%;  
+    }
+    .content__dialog.--her_fase8{
+        width: 100%;
+        height: 46%;  
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+        height: 99%;
+        width: 39%;
+    }
+    .cards.--toolsCards2.--phase2 li:nth-child(2) {
+        height: 99%;
+        width: 39%;
     }
 }
 
@@ -2919,6 +2980,13 @@ display: none;
         height: 73%;
     }
 }
+
+@media screen and (max-width: 430px){
+    .dialogBox__text{
+        font-size: 13px;
+    }
+}
+
 
 
 
