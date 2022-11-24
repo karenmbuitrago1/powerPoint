@@ -187,7 +187,7 @@
 }
 
 .cards.--toolsCards2 li:nth-child(1){
-    height: 40%;
+    height: 50%;
     background-image: url('../images/recurso_25.png');
 }
 
@@ -209,6 +209,9 @@
 
 
 @media screen and (max-width:1450px){
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 37%;
+    }
     .titlePhase{
         font-size: 56px;
     }
@@ -228,6 +231,12 @@
 @media screen and (max-width:1280px){
     .menu__phase {
         height: 84%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 35%;
     }
 }
 
@@ -257,6 +266,11 @@
     }
     .content__dialog.--5{
         height: 46%;
+    }
+    .content__dialog.--pas_2_fase1{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
     }
 
     .menu__title{
@@ -305,7 +319,7 @@
     }
 
     .cards.--toolsCards2 li:nth-child(1) {
-        height: 70%;
+        height: 62%;
     }
 
 
