@@ -1629,7 +1629,6 @@ display: none;
     font-family: 'Futura_bold';
     color:  var(--secondBlue);  
     font-size: 40px;
-    font-weight: 500;
 }
 
 .postits__text{
@@ -1637,6 +1636,7 @@ display: none;
     padding: 16px;
     font-size: 14px;
     color:  var(--secondBlue);  
+    font-weight: 500;
 }
 
 .postits__itemPost{
@@ -1761,7 +1761,10 @@ display: none;
         font-size: 36px;
     }
 }
-@media screen and (max-width:1024x){
+@media screen and (max-width:1024px){
+    .logo {
+        width: 43%;
+    }
     #post1 {
         height: 30%;
     }
@@ -1773,6 +1776,8 @@ display: none;
 @media screen and (max-width:768px){
     .content__dialog.--obj_fase1_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase3_postits{
         position: relative;
@@ -1880,8 +1885,13 @@ display: none;
 @media screen and (max-width:430px){
 
     .content__dialog.--obj_fase1_postits{
-        height: -webkit-fill-available;
+        height: 42%;
         position: relative;
+    }
+    .postits__list.--phase1{
+        height: max-content;
+        align-items: center;
+
     }
     .postits {
         position: relative;
@@ -1895,23 +1905,30 @@ display: none;
     .postits__item {
         width: 100%;
     }
+    .list__item{
+        display: flex;
+        justify-content: center;
+    }
     .postits__itemPost{
         width: 90%;
     }
     #post1 {
-        width: 73%;
+        width: 48%;
     }
     #post2 {
-        width: 55%;
+        width: 42%;
     }
     #post3 {
-        width: 95%;
+        width: 49%;
+        height: 212px;
     }
     #post4 {
-        width: 95%;
+        width: 49%;
+        height: 202px;
     }
     #post5 {
-        width: 78%;
+        width: 62%;
+        height: 263px;
     }
 }
 
@@ -2650,13 +2667,12 @@ display: none;
     background-attachment: fixed;
     background-size: cover;
 }
-.pas__listItem3{
+.pas__listItem3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 140px 32px 0px 32px;
+    margin: 130px 0px 0px 0px;
 }
-
 .pas__description.--phase3{
     top: 8%;
 }
@@ -3020,7 +3036,7 @@ display: none;
 .pas__title{
     color: white;
     padding: 16px;
-    height: 22%;
+    height: 46%;
     border-radius: 32px 32px 0 0;
     margin: 4px;
 }
