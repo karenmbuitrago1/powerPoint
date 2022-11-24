@@ -137,6 +137,7 @@
 
 .phase__text{
     margin: 8px;
+    line-height: 21px;
     font-size: 21px;
     padding: 0 8px;
     font-family: 'Futura_heavy';
@@ -213,12 +214,14 @@
     }
     .title__secondary {
         font-size: 48px;
+        line-height: 44px;
     }
     .menu__title:before {
-        top: 123px;
+        top: 91px;
     }
     .textDescription {
         font-size: 18px;
+        line-height: 19px;
     }
 }
 

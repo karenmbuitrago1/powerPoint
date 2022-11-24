@@ -33,6 +33,7 @@
     margin: 0;
     font-size: 14px;
     padding: 0;
+    line-height: 14px;
 }
 .tools.--toolsTips5{
     height: -webkit-fill-available;
