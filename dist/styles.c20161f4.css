@@ -1240,7 +1240,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .cards.--toolsCards2 li:nth-child(1){
-    height: 40%;
+    height: 50%;
     background-image: url('/recurso_25.d6e177be.png');
 }
 
@@ -1262,6 +1262,9 @@ audio::-webkit-media-controls-timeline{
 
 
 @media screen and (max-width:1450px){
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 37%;
+    }
     .titlePhase{
         font-size: 56px;
     }
@@ -1281,6 +1284,12 @@ audio::-webkit-media-controls-timeline{
 @media screen and (max-width:1280px){
     .menu__phase {
         height: 84%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .cards.--toolsCards2 li:nth-child(1) {
+        height: 35%;
     }
 }
 
@@ -1310,6 +1319,11 @@ audio::-webkit-media-controls-timeline{
     }
     .content__dialog.--5{
         height: 46%;
+    }
+    .content__dialog.--pas_2_fase1{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
     }
 
     .menu__title{
@@ -1358,7 +1372,7 @@ audio::-webkit-media-controls-timeline{
     }
 
     .cards.--toolsCards2 li:nth-child(1) {
-        height: 70%;
+        height: 62%;
     }
 
 
@@ -1533,6 +1547,7 @@ audio::-webkit-media-controls-timeline{
     margin: 8px;
     display: flex;
     width: 87%;
+    font-weight: 500;
 }
 
 p.titulo_opc {
@@ -1568,7 +1583,13 @@ display: none;
     color: #fff;
     font-size: 42px;
 }
-  
+
+
+@media screen and (max-width:768px){
+    .draggable {
+        height: max-content;
+    }
+}
 
 @media screen and (max-width:430px){
     .draggable {
@@ -1583,6 +1604,7 @@ display: none;
         width: 87%;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 
 }
