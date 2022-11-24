@@ -191,23 +191,40 @@
         height: 47%;
         overflow-y: scroll;
     }
+    .content__dialog.--obj_fase2_postits{
+        position: relative;
+        height: 47%;
+        overflow-y: scroll;
+    }
     .content__dialog.--obj_fase3_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase4_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase5_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase6_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase7_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
     .content__dialog.--obj_fase8_postits{
         position: relative;
+        height: 47%;
+        overflow-y: scroll;
     }
 
     .postits {
@@ -300,10 +317,41 @@
         height: 42%;
         position: relative;
     }
+    .content__dialog.--obj_fase2_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase3_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase4_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase5_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase6_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase7_postits{
+        height: 42%;
+        position: relative;
+    }
+    .content__dialog.--obj_fase8_postits{
+        height: 42%;
+        position: relative;
+    }
     .postits__list.--phase1{
         height: max-content;
         align-items: center;
-
+    }
+    .postits__list.--phase2{
+        height: max-content;
+        align-items: center;
     }
     .postits {
         position: relative;
@@ -341,5 +389,17 @@
     #post5 {
         width: 62%;
         height: 263px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #post1 {
+        width: 52%;
+    }
+    #post4 {
+        width: 61%;
+    }
+    #post5 {
+        width: 69%;
     }
 }

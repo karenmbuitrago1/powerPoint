@@ -46,6 +46,11 @@
         margin: 8px;
         height: 42%;
     }
+    .cards.--toolsCards2 {
+        margin: 8px;
+        height: 42%;
+       
+    }
 }
 
 @media screen and (max-width: 430px){
@@ -103,6 +108,11 @@
         justify-content: center;
         align-items: flex-end;
     }
+    .cards.--toolsCards2 {
+        margin: 8px;
+        height: 50%;
+        width: 100%;
+    }
     .cards.--toolsCards2.--phase2{
         display: flex;
         align-content: flex-end;
@@ -111,6 +121,7 @@
         justify-content: flex-start;
         height: 100%;
     }
+    
     .cards.--toolsCards2.--phase3{
         display: flex;
         align-content: flex-end;

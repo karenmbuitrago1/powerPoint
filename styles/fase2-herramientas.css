@@ -9,12 +9,3 @@
     margin: 16px;
 }
 
-@media screen and (max-width: 720px){
-    .cards.--toolsCards2 {
-        margin: 8px;
-        height: 42%;
-    }
-}
-
-
-

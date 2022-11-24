@@ -1,5 +1,5 @@
-.background__square.--phase2{
-    background-color: var(--firstPurple);
+.background__square.--phase2 {
+  background-color: var(--firstPurple);
 
 }
 
@@ -9,233 +9,248 @@
 
 /*drag and drop styles*/
 .dnd-image-drag .container {
-    float: left;
-    margin: 0 10px 20px 10px;
-  }
-  
- 
-  .dnd-image-drag .gallery-list {
-    width: 60%;
-    margin: auto;
-    padding: 5px 0 5px 5px;
-    display: block;
-    margin-top: 60px;;
-}
-  .dnd-image-drag .gallery-list .drag {
-    width: 23%;
-    display: inline-block;
-    height: auto;;
-    cursor: -webkit-grab;
-    cursor: -moz-grab;
-  }
-  
-  .dnd-image-drag .gallery-list .drag.drag-active {
-    border: solid 1px #2c3e50;
-  }
-  
-  .dnd-image-drag .gallery-painting {
-    width: 60%;
-    background: #eee;
-    background-position: center center;
-    background-size: cover;
-    border: solid 1px #ccc;
-    margin: auto;
-    padding: 5px 0 5px 5px;
-    display: block;
-  }
-
-  .container2 h3{
-      text-align: center;
-  }
-
-  .dnd-image-drag .gallery-painting .drop {
-    position: relative;
-    height: auto;
-    width: 23%;
-    min-height: 100px;
-    display: inline-block;
-    background: rgb(220 153 241 / 70%);
-    border: solid 1px transparent;
-    overflow: hidden;
-  }
-  
-  .dnd-image-drag .gallery-painting .drop.drop-active {
-    border: solid 1px #f1c40f;
-  }
-  
-  .dnd-image-drag .gallery-painting .drop.correct {
-    border: solid 1px #32ce74;
-  }
-  
-  .dnd-image-drag .gallery-painting .drop.incorrect {
-    border: solid 1px #c0392b;
-  }
-  
-  .dnd-image-drag .gallery-painting .drop img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .reset-button {
-    background: #083b85;
-    border: solid 1px #ccc;
-    padding: 12px 15px;
-    display: block;
-    cursor: pointer;
-    margin: 0 auto;
-    min-width: 100px;
-    clear: both;
-    border-radius: 19px;
-    color: #fff;
-    margin-top: 20px;
-}
-  
-  .message-container {
-    clear: both;
-  }
-  
-  .ie-message {
-    display: none;
-    padding: 15px;
-    background: #e74c3c;
-    color: #fff;
-    border: dashed 2px #c0392b;
-    margin-bottom: 15px;
-  }
-  
-
-
-
-
-.background.--type006{
-    background-image: url('../images/recurso_73.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.content__dialog.--obj_fase2_postits{
-    background-image: url('../images/recurso90.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.content__dialog.--pas_2_fase2{
-    background-image: url('../images/recurso90.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  float: left;
+  margin: 0 10px 20px 10px;
 }
 
 
-.background.--her_fase2{
-    background-image: url('../images/recurso95.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.dnd-image-drag .gallery-list {
+  width: 60%;
+  margin: auto;
+  padding: 5px 0 5px 5px;
+  display: block;
+  margin-top: 60px;
+  ;
 }
-.background.--tip_fase2{
-    background-image: url('../images/recurso97.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
+.dnd-image-drag .gallery-list .drag {
+  width: 23%;
+  display: inline-block;
+  height: auto;
+  ;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
+.dnd-image-drag .gallery-list .drag.drag-active {
+  border: solid 1px #2c3e50;
+}
+
+.dnd-image-drag .gallery-painting {
+  width: 60%;
+  background: #eee;
+  background-position: center center;
+  background-size: cover;
+  border: solid 1px #ccc;
+  margin: auto;
+  padding: 5px 0 5px 5px;
+  display: block;
+}
+
+.container2 h3 {
+  text-align: center;
+}
+
+.dnd-image-drag .gallery-painting .drop {
+  position: relative;
+  height: auto;
+  width: 23%;
+  min-height: 100px;
+  display: inline-block;
+  background: rgb(220 153 241 / 70%);
+  border: solid 1px transparent;
+  overflow: hidden;
+}
+
+.dnd-image-drag .gallery-painting .drop.drop-active {
+  border: solid 1px #f1c40f;
+}
+
+.dnd-image-drag .gallery-painting .drop.correct {
+  border: solid 1px #32ce74;
+}
+
+.dnd-image-drag .gallery-painting .drop.incorrect {
+  border: solid 1px #c0392b;
+}
+
+.dnd-image-drag .gallery-painting .drop img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reset-button {
+  background: #083b85;
+  border: solid 1px #ccc;
+  padding: 12px 15px;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 100px;
+  clear: both;
+  border-radius: 19px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.message-container {
+  clear: both;
+}
+
+.ie-message {
+  display: none;
+  padding: 15px;
+  background: #e74c3c;
+  color: #fff;
+  border: dashed 2px #c0392b;
+  margin-bottom: 15px;
+}
+
+.background.--type006 {
+  background-image: url('../images/recurso_73.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content__dialog.--obj_fase2_postits {
+  background-image: url('../images/recurso90.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content__dialog.--pas_2_fase2 {
+  background-image: url('../images/recurso90.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
-.bckg__img{
-    position: absolute;
-    top: 32%;
-    right: 4%;
+.background.--her_fase2 {
+  background-image: url('../images/recurso95.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background.--tip_fase2 {
+  background-image: url('../images/recurso97.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.bckg__img {
+  position: absolute;
+  top: 32%;
+  right: 4%;
 }
 
 .menu__title.--phase2 {
-    background-color: var(--titlePurple);
+  background-color: var(--titlePurple);
 }
 
 .menu__title.--phase2:before {
-    border-left: 36px solid var(--titlePurple);
-    border-top: 12px solid var(--titlePurple);
+  border-left: 36px solid var(--titlePurple);
+  border-top: 12px solid var(--titlePurple);
 }
 
 .phase__menuIcon.--phase2 {
-    background-color: var(--titlePurple);
+  background-color: var(--titlePurple);
 }
 
 .phase__text_active.--phase2 {
-    color: var(--titlePurple);
+  color: var(--titlePurple);
 }
 
 .phase__text.--phase2:hover {
-    color: var(--titlePurple);
+  color: var(--titlePurple);
 }
 
 
-@media screen and (max-width: 1450px){
-    .bckg__img{
-        top: 41%;
-        right: 7%;
-    }
+@media screen and (max-width: 1450px) {
+  .bckg__img {
+    top: 41%;
+    right: 7%;
+  }
 }
 
 
-@media screen and (max-width: 1280px){
-    .bckg__img{
-        top: 41%;
-        right: 6%;
-    }
+@media screen and (max-width: 1280px) {
+  .bckg__img {
+    top: 41%;
+    right: 6%;
+  }
 }
 
 
-@media screen and (max-width: 768px){
-  .content__dialog.--obj_fase2_postits{
-    position: relative;
+@media screen and (max-width: 1024px) {
+  .bckg__img {
+    top: 50%;
+    right: 4%;
+    height: 35%;
   }
-  .content__dialog.--tip_fase2{
-    height: 46%;
-  }
-  .content__dialog.--tip_fase3{
-    height: 46%;
-  }
-  .content__dialog.--tip_fase4{
-    height: 46%;
-  }
-  .content__dialog.--tip_fase7{
-    height: 46%;
-  }
-  .content__dialog.--tip_fase8{
-    height: 46%;
-  }
-  .bckg__img{
-      top: 68%;
-      right: 13%;
-      width: 67%;
-  }    
 }
-@media screen and (max-width: 430px){
-  .dnd-image-drag .gallery-painting{
+
+@media screen and (max-width: 768px) {
+  .content__dialog.--tip_fase2 {
+    height: 46%;
+  }
+
+  .content__dialog.--tip_fase3 {
+    height: 46%;
+  }
+
+  .content__dialog.--tip_fase4 {
+    height: 46%;
+  }
+
+  .content__dialog.--tip_fase7 {
+    height: 46%;
+  }
+
+  .content__dialog.--tip_fase8 {
+    height: 46%;
+  }
+
+  .bckg__img {
+    top: 65%;
+    right: 6%;
+    width: inherit;
+}
+}
+
+@media screen and (max-width: 430px) {
+  .dnd-image-drag .gallery-painting {
     width: 94%;
   }
-  .bckg__img{
-      top: 60%;
-      right: 14%;
-      width: 74%;
-  }
+
+  .bckg__img {
+    top: 74%;
+    right: 14%;
+    height: 17%;
+}
+
   .content__dialog.--tip_fase2 {
     height: 49%;
   }
+
   .content__dialog.--tip_fase4 {
     height: 49%;
   }
+
   .content__dialog.--tip_fase3 {
     height: 49%;
   }
+
   .content__dialog.--tip_fase7 {
     height: 49%;
   }
+
   .content__dialog.--tip_fase8 {
     height: 49%;
   }
 }
-
-
