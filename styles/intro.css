@@ -98,7 +98,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 #moto{
-    bottom: calc(11%);
+    bottom: calc(5%);
     animation-name: animationMoto;
 }
 
@@ -123,7 +123,7 @@ audio::-webkit-media-controls-timeline{
 #girl__img{
     height: 35%;
     position: absolute;
-    bottom: 14%;
+    bottom: 7%;
 }
 
 .content{
@@ -199,7 +199,6 @@ audio::-webkit-media-controls-timeline{
     align-items: center;
     color: white;
     text-decoration: none;
-
 }
 
 .menu__listBtn:hover,.menu__listBtn_active{
@@ -381,9 +380,9 @@ audio::-webkit-media-controls-timeline{
     .dialog{
         width: 84%;
         top: 30%;
-        line-height: 28px;
+        line-height: 22px;
         padding: 8px;
-        font-size: 21px;
+        font-size: 18px;
     }
     .dialog:before{
         display: none;

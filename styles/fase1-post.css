@@ -51,7 +51,7 @@
 }
 
 .postits__itemPost{
-    height: 370px;
+    height: 43%;
     width: 80%;
     display: flex;
     align-items: center;

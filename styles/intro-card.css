@@ -18,9 +18,10 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
     z-index: 11;
     width: 90%;
+    height: -webkit-fill-available;
 }
 
 .cards li:nth-child(1){
@@ -50,14 +51,13 @@
 
 .card__item{
     margin: 8px;
-    width: 38%;
+    width: 46%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     perspective: 1000px;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 8px;
-    height: 257px;  
+    height: 40%;  
 }
 
 .card__item .card__text2{
@@ -104,7 +104,9 @@
 
 @media screen and (max-width:1450px){
     .card__item{
-        width: 46%;
+        width: 43%;
+        height: 29%;
+
     }
     .card__btn{
         padding: 8px;
@@ -125,26 +127,41 @@
     }
 }
 
+@media screen and (max-width:1024px){
+    .backgroundC.--type002 {
+        overflow-y: scroll;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .card__item {
+        width: 58%;
+        height: 28%;
+    }
+}
+
 @media screen and (max-width:768px){
     .backgroundC.--type002{
-        position: relative;
         width: 100%;
-        align-items: flex-start;
     }
     .cards{
-        margin: 8px;
-        height: 67%;
+        height: 100%;
     }
-    .card__item{
-        padding: 8px;
-        height: 182px;
+    .card__item {
+        width: 58%;
+        height: 41%;
+    }
+    .card__btn {
+        height: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width:430px){
-    .card__item{
-        width: 76%;
-        height: 165px;
+    .card__item {
+        width: 80%;
+        height: 34%;
     }
     .card__text{
         font-size: 18px;
