@@ -148,7 +148,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .menu__title{
-    height: 18%;
+    height: 15%;
     width: 30%;
     position: absolute;
     display: flex;
@@ -163,7 +163,7 @@ audio::-webkit-media-controls-timeline{
     top: 0;
 }
 .logo{
-    width: 90%;
+    width: 67%;
 }
 
 .menu__options{

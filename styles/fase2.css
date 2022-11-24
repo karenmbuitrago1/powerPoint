@@ -8,9 +8,14 @@
 
 
 /*drag and drop styles*/
+
+.gallery__text{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
 .dnd-image-drag .container {
-  float: left;
-  margin: 0 10px 20px 10px;
+  margin: 8px;
 }
 
 
@@ -19,7 +24,6 @@
   margin: auto;
   padding: 5px 0 5px 5px;
   display: block;
-  margin-top: 60px;
   ;
 }
 
@@ -27,7 +31,7 @@
   width: 23%;
   display: inline-block;
   height: auto;
-  ;
+  margin: 4px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
@@ -90,7 +94,6 @@
   clear: both;
   border-radius: 19px;
   color: #fff;
-  margin-top: 20px;
 }
 
 .message-container {
@@ -175,6 +178,9 @@
   .bckg__img {
     top: 41%;
     right: 7%;
+  }
+  .dnd-image-drag .gallery-list {
+    width: 90%;
   }
 }
 

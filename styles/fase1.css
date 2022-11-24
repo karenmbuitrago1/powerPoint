@@ -74,7 +74,7 @@
 }
 
 .phase__textMain{
-    margin: 16px;
+    margin: 3px 16px;
     padding: 8px;
 }
 
@@ -270,6 +270,41 @@
         height: 46%;
     }
     .content__dialog.--pas_2_fase1{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase2{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase3{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase4{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase5{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase6{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase7{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase8{
         overflow-y: scroll;
         height: 46%;
         position: relative;
