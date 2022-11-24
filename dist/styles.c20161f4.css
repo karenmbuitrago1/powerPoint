@@ -1844,9 +1844,7 @@ display: none;
     .postits {
         height: 54%;
         width: 100%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        position: absolute;        
     }
 
     .postits__itemPost.--thirdColumn{
