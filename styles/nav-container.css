@@ -554,12 +554,6 @@ ul.slide-list li::before {
   border-radius: 1rem 1rem 0 0 !important;
 }
 
-.card.purple .card-body {
-  background-color: #2D2F69;
-  color: #ffffff;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
 
 .card.purple .card-footer {
   background-color: #E6E8EF;
@@ -2721,9 +2715,6 @@ padding: 0 2% 0 0;
 --------------Media Query-----------
 ------------------------------------*/
 @media (min-width: 576px) {
-  body {
-    font-size: 16px;
-  }
 
   .step-subtitle {
     flex-direction: row;
@@ -2742,14 +2733,6 @@ padding: 0 2% 0 0;
 
   .p-img {
     text-align: left !important;
-  }
-
-  .stars-container {
-    margin-left: 60px;
-  }
-
-  .section-title .section-heading.with-number {
-    padding: 8px 75px 8px 60px;
   }
 
   .section-title .section-heading .number {
@@ -2954,37 +2937,6 @@ padding: 0 2% 0 0;
   }
 }
 
-@media (min-width: 992px) {
-  body {
-    font-size: 18px;
-  }
-
-  .p-info-bg .p-info-text {
-    font-size: 1.8vw;
-  }
-
-  .main-subtitle {
-    text-align: left !important;
-  }
-
-  .img-v-center {
-    align-self: baseline !important;
-  }
-
-  .tab-content .tab-video-info {
-    display: flex;
-  }
-
-  .tab-content .tab-video-info .tab-video-title {
-    width: 22%;
-  }
-
-  .label-demostration .demo-description.icons .list-buttons {
-    width: 75%;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: 1200px) {
   .img-corner img {
     max-width: 100%;
@@ -2993,7 +2945,6 @@ padding: 0 2% 0 0;
 
 @media (min-width: 1930px) {
   body {
-    font-size: 22px;
     max-width: 1920px;
     background-color: #2D2F69;
     margin: 0 auto;
@@ -3016,11 +2967,3 @@ padding: 0 2% 0 0;
   }
 }
 
-.paint-header {
-  width: 100%;
-  background-color: #1B1D3C;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-}

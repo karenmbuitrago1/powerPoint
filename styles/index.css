@@ -1,6 +1,8 @@
 /* Estilos globales */
 
 @import "../styles/global.css";
+@import "../styles/bootstrap.min.css";
+
 
 /* Estilos intro */
 
@@ -41,7 +43,6 @@
 @import "../styles/fase8-herramientas.css";
 @import "../styles/fase8-tips.css";
 
-@import "../styles/bootstrap.min.css";
 @import "../styles/nav-container.css";
 
 
