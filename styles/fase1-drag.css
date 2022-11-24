@@ -23,11 +23,13 @@
 
 p.titulo_opc {
     color: #083b85;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 17px;
 }
 
 .text_opc{
-    font-size: 16px;
+    font-size: 13px;
+    line-height: 13px;
 }
 
 .box {
