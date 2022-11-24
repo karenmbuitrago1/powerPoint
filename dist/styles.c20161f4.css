@@ -1260,6 +1260,15 @@ audio::-webkit-media-controls-timeline{
     /* height: 40%; */
     background-image: url('/recurso_26.3d9f7e3e.png');
 }
+.cards.--toolsCards2 li:nth-child(3){
+    height: 40%;
+    background-image: url('/recurso_24.2429bc12.png');
+}
+
+.cards.--toolsCards2 li:hover:nth-child(3){
+    /* height: 40%; */
+    background-image: url('/recurso_24.2429bc12.png');
+}
 
 
 
@@ -2069,7 +2078,8 @@ display: none;
 
 .card__text2.--toolsText{
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 16px;
     padding: 0;
 }
 .tools.--phase2{
@@ -2098,8 +2108,33 @@ display: none;
     width: 44%;
 }
 
+.cards.--toolsCards2.--phase4{
+    align-content: flex-end;
+}
+
+.cards.--toolsCards2.--phase4  li:nth-child(1) {
+    height: 35%;
+    width: 41%;
+}
+.cards.--toolsCards2.--phase4  li:nth-child(2) {
+    height: 35%;
+    width: 41%;
+}
+.cards.--toolsCards2.--phase4  li:nth-child(3) {
+    height: 35%;
+    width: 41%;
+}
+
+.card__text.--toolsText8{
+    width: 93%;
+}
+
 @media screen and (max-width: 1024px){
     .cards.--toolsCards2.--phase2{
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .cards.--toolsCards2.--phase3{
         align-items: flex-end;
         align-content: flex-end;
     }
@@ -2226,6 +2261,14 @@ display: none;
         width: 100%;
     }
     .cards.--toolsCards2.--phase2{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .cards.--toolsCards2.--phase3{
         display: flex;
         align-content: flex-end;
         flex-direction: row;

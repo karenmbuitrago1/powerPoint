@@ -25,7 +25,8 @@
 
 .card__text2.--toolsText{
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 16px;
     padding: 0;
 }
 .tools.--phase2{
@@ -54,8 +55,33 @@
     width: 44%;
 }
 
+.cards.--toolsCards2.--phase4{
+    align-content: flex-end;
+}
+
+.cards.--toolsCards2.--phase4  li:nth-child(1) {
+    height: 35%;
+    width: 41%;
+}
+.cards.--toolsCards2.--phase4  li:nth-child(2) {
+    height: 35%;
+    width: 41%;
+}
+.cards.--toolsCards2.--phase4  li:nth-child(3) {
+    height: 35%;
+    width: 41%;
+}
+
+.card__text.--toolsText8{
+    width: 93%;
+}
+
 @media screen and (max-width: 1024px){
     .cards.--toolsCards2.--phase2{
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .cards.--toolsCards2.--phase3{
         align-items: flex-end;
         align-content: flex-end;
     }
@@ -182,6 +208,14 @@
         width: 100%;
     }
     .cards.--toolsCards2.--phase2{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .cards.--toolsCards2.--phase3{
         display: flex;
         align-content: flex-end;
         flex-direction: row;
