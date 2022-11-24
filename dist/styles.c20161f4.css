@@ -245,7 +245,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .menu__title{
-    height: 18%;
+    height: 15%;
     width: 30%;
     position: absolute;
     display: flex;
@@ -260,7 +260,7 @@ audio::-webkit-media-controls-timeline{
     top: 0;
 }
 .logo{
-    width: 90%;
+    width: 67%;
 }
 
 .menu__options{
@@ -1127,7 +1127,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .phase__textMain{
-    margin: 16px;
+    margin: 3px 16px;
     padding: 8px;
 }
 
@@ -1323,6 +1323,41 @@ audio::-webkit-media-controls-timeline{
         height: 46%;
     }
     .content__dialog.--pas_2_fase1{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase2{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase3{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase4{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase5{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase6{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase7{
+        overflow-y: scroll;
+        height: 46%;
+        position: relative;
+    }
+    .content__dialog.--pas_2_fase8{
         overflow-y: scroll;
         height: 46%;
         position: relative;
@@ -2419,9 +2454,14 @@ display: none;
 
 
 /*drag and drop styles*/
+
+.gallery__text{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
 .dnd-image-drag .container {
-  float: left;
-  margin: 0 10px 20px 10px;
+  margin: 8px;
 }
 
 
@@ -2430,7 +2470,6 @@ display: none;
   margin: auto;
   padding: 5px 0 5px 5px;
   display: block;
-  margin-top: 60px;
   ;
 }
 
@@ -2438,7 +2477,7 @@ display: none;
   width: 23%;
   display: inline-block;
   height: auto;
-  ;
+  margin: 4px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
@@ -2501,7 +2540,6 @@ display: none;
   clear: both;
   border-radius: 19px;
   color: #fff;
-  margin-top: 20px;
 }
 
 .message-container {
@@ -2586,6 +2624,9 @@ display: none;
   .bckg__img {
     top: 41%;
     right: 7%;
+  }
+  .dnd-image-drag .gallery-list {
+    width: 90%;
   }
 }
 
