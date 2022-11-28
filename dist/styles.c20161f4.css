@@ -688,7 +688,7 @@ audio::-webkit-media-controls-timeline{
 
 .card__item{
     margin: 8px;
-    width: 46%;
+    width: 38%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -734,7 +734,8 @@ audio::-webkit-media-controls-timeline{
     width: 100%;
     padding: 2px;
     margin: 2px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: none;
 }
 
@@ -1268,6 +1269,9 @@ audio::-webkit-media-controls-timeline{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#person5{
+    height: 99%;
+}
 #person9{
     height: 90%;
 }
@@ -1733,7 +1737,8 @@ display: none;
 .postits__text{
     margin: 16px;
     padding: 16px;
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 13px;
     color:  var(--secondBlue);  
     font-weight: 500;
 }
@@ -1767,12 +1772,13 @@ display: none;
 #post3 {
     background-image: url('/recurso_48.6ce0b401.png');
     background-repeat: no-repeat;
-    height: 278px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     width: 260px;
+    height: 256px;
 }
+
 #post4 {
     background-image: url('/recurso_45.c7ec4aca.png');
     background-repeat: no-repeat;
@@ -2140,12 +2146,12 @@ display: none;
     justify-content: flex-end;
 }
 .cards.--toolsCards2.--phase2  li:nth-child(1) {
-    height: 38%;
-    width: 44%;
+    height: 36%;
+    width: 42%;
 }
 .cards.--toolsCards2.--phase2  li:nth-child(2) {
-    height: 38%;
-    width: 44%;
+    height: 36%;
+    width: 42%;
 }
 
 .cards.--toolsCards2.--phase4{
@@ -2394,9 +2400,9 @@ display: none;
 }
 .card__text2.--tipsText{
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0;
-    line-height: 14px;
+    line-height: 13px;
 }
 .tools.--toolsTips5{
     height: 100%; 
@@ -2964,7 +2970,7 @@ display: none;
 
 #person8{
     position: absolute;
-    height: 52%;
+    height: 83%;
     bottom: 0;
     left: 22%;
 }
@@ -3381,7 +3387,7 @@ display: none;
     width: 14em;
     border-radius: 32px;
     position: absolute;
-    top: 58%;
+    top: 48%;
     background-color: #eaeaea;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -3599,6 +3605,7 @@ display: none;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: scroll;
 }
 
 .pas__list{
@@ -6633,7 +6640,13 @@ padding: 0 2% 0 0;
     width: 120px;
     right: -80px;
   }
-
+.centrar{
+  margin: auto;
+  display: block;
+}
+.vid-top{
+  margin-top: 2%;
+}
   .img-v-center {
     align-self: center !important;
   }

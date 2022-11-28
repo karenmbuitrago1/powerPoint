@@ -47,12 +47,12 @@
     justify-content: flex-end;
 }
 .cards.--toolsCards2.--phase2  li:nth-child(1) {
-    height: 38%;
-    width: 44%;
+    height: 36%;
+    width: 42%;
 }
 .cards.--toolsCards2.--phase2  li:nth-child(2) {
-    height: 38%;
-    width: 44%;
+    height: 36%;
+    width: 42%;
 }
 
 .cards.--toolsCards2.--phase4{

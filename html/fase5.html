@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,10 +60,8 @@
 	</div>
 					</div>
 				</div>
-				</div>
-			</div>
 			</li>
-		</ul>	
+		</ul>
 	</div>
 	<nav id="controls" class="navbar navbar-expand-md item-visible">
 		<div class="float-right w-100 d-flex">
@@ -84,339 +83,386 @@
 				</li>
 			  </ul>
 			</div>
-			<div class="float-right mx-1">
-			  <button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu"
-				title="Menu Principal"><span class="text-center">&#9776;</span></button>
-			</div>
-			<div class="accesibility-container">
-			  <div class="float-right mx-1 accesibility-btn-toggle">
-				<button type="button" class="btn btn-blue-dark menu btn-accesibility"
-				  onclick='toggleAccesibilityMenu(); loadSpeechPlayer();' data-toggle="tooltip"
-				  title="Opciones de accesibilidad"><img class="img-fluid" src="../images/img_ac_menu.png"></button>
-			  </div>
-			  <div class="speechPlayer-container">
-				<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos"
-				  alt="Lector de textos">
-				  <button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled
-					data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid"
-					  src="../images/img_prev.png"></button>
-				  <button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip"
-					title="Leer Texto"><img class="img-fluid" src="../images/img_play.png"></button>
-				  <button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip"
-					title="Continuar lectura"><img class="img-fluid" src="../images/img_play.png"></button>
-				  <button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip"
-					title="Detener lectura"><img class="img-fluid" src="../images/img_stop.png"></button>
-				  <button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip"
-					title="Texto Siguiente"><img class="img-fluid" src="../images/img_next.png"></button>
+			<div class="d-flex align-items-center justify-content-end">
+				<div class="float-right">
+					<ul class="navbar-nav slide-direction-buttons">
+						<li class="nav-item mx-1">
+							<button id="origin_prev" class="btn btn-blue-dark prev"
+								onclick="window.location.href = 'fase4.html'" data-toggle="tooltip" title="Volver"
+								tabindex="0">&#10094;</button>
+						</li>
+						<li class="nav-item mx-1">
+							<button id="origin_next" class="btn btn-blue-dark next focused"
+								onclick="window.location.href = 'fase6.html'" data-toggle="tooltip" title="Siguiente"
+								tabindex="0">&#10095;</button>
+						</li>
+					</ul>
 				</div>
-			  </div>
-			  <div class="accesibility-menu">
-				<div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad"
-				  alt="Opciones de accesibilidad">
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("+")' data-toggle="tooltip"
-					title="Incrementar tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_increase.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("-")' data-toggle="tooltip"
-					title="Disminuir tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_decrease.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("0")' data-toggle="tooltip"
-					title="Restaurar tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_reset.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrast")' data-toggle="tooltip"
-					title="Invertir color"><img class="img-fluid" src="../images/img_ac_contrast01.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColor")'
-					data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid"
-					  src="../images/img_ac_contrast02.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColorBright")'
-					data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid"
-					  src="../images/img_ac_contrast03.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("grayScale")' data-toggle="tooltip"
-					title="Sin color"><img class="img-fluid" src="../images/img_ac_contrast04.png"></button>
-				  <button class="btn btn-accesibility-option btn-read" onclick='showSpeechPlayer()' data-toggle="tooltip"
-					title="Lector de textos"><img class="img-fluid" src="../images/img_ac_reader.png"></button>
+				<div class="float-right mx-1">
+					<button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu"
+						title="Menu Principal"><span class="text-center">&#9776;</span></button>
 				</div>
-			  </div>
+				<div class="accesibility-container">
+					<div class="float-right mx-1 accesibility-btn-toggle">
+						<button type="button" class="btn btn-blue-dark menu btn-accesibility"
+							onclick='toggleAccesibilityMenu(); loadSpeechPlayer();' data-toggle="tooltip"
+							title="Opciones de accesibilidad"><img class="img-fluid"
+								src="../images/img_ac_menu.png"></button>
+					</div>
+					<div class="speechPlayer-container">
+						<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos"
+							alt="Lector de textos">
+							<button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled
+								data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid"
+									src="../images/img_prev.png"></button>
+							<button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText"
+								data-toggle="tooltip" title="Leer Texto"><img class="img-fluid"
+									src="../images/img_play.png"></button>
+							<button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText"
+								data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid"
+									src="../images/img_play.png"></button>
+							<button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText"
+								data-toggle="tooltip" title="Detener lectura"><img class="img-fluid"
+									src="../images/img_stop.png"></button>
+							<button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip"
+								title="Texto Siguiente"><img class="img-fluid" src="../images/img_next.png"></button>
+						</div>
+					</div>
+					<div class="accesibility-menu">
+						<div class="accesibility-options btn-group-vertical" role="group"
+							aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
+							<button class="btn btn-accesibility-option" onclick='resizeFont("+")' data-toggle="tooltip"
+								title="Incrementar tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_increase.png"></button>
+							<button class="btn btn-accesibility-option" onclick='resizeFont("-")' data-toggle="tooltip"
+								title="Disminuir tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_decrease.png"></button>
+							<button class="btn btn-accesibility-option" onclick='resizeFont("0")' data-toggle="tooltip"
+								title="Restaurar tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_reset.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("highContrast")'
+								data-toggle="tooltip" title="Invertir color"><img class="img-fluid"
+									src="../images/img_ac_contrast01.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColor")'
+								data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid"
+									src="../images/img_ac_contrast02.png"></button>
+							<button class="btn btn-accesibility-option"
+								onclick='changeTheme("highContrastHalfColorBright")' data-toggle="tooltip"
+								title="Invertir Brillo"><img class="img-fluid"
+									src="../images/img_ac_contrast03.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("grayScale")'
+								data-toggle="tooltip" title="Sin color"><img class="img-fluid"
+									src="../images/img_ac_contrast04.png"></button>
+							<button class="btn btn-accesibility-option btn-read" onclick='showSpeechPlayer()'
+								data-toggle="tooltip" title="Lector de textos"><img class="img-fluid"
+									src="../images/img_ac_reader.png"></button>
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </nav>
-	  <div class="container-blue">
-	<main class="main">
-		<div class="background --type010">
-			<div class="background__square --phase5"></div>
+	</nav>
+	<div class="container-blue">
+		<main class="main">
+			<div class="background --type010">
+				<div class="background__square --phase5"></div>
 				<!-- <a class="background__back" href="ruta.html">
 					<p class="background__backtText">Fases propuesta metodológica</p>
 				</a> -->
-		</div>
-		<div class="content">
-			<section class="content__menu --phases">
-				<div class="menu__title --phase5">
-					<h1 class="titlePhase">Fase 5</h1>
-				</div>
-				<div class="menu__logo">
-					<img class="logo" src="../images/recurso_11.png" alt="logo">
-				</div>
-				<div class="menu__phase">
-					<div class="phase__textMain">
-						<h2 class="title__secondary">¡Cimientos para la edificación!    </h2>
+			</div>
+			<div class="content">
+				<section class="content__menu --phases">
+					<div class="menu__title --phase5">
+						<h1 class="titlePhase">Fase 5</h1>
 					</div>
-					<div class="phase__textDescription">
-						<p class="textDescription">Establecer los factores de riesgo y de cuidado que serán priorizados en la construcción de estrategias de intervención para la promoción de comportamientos seguros y la consolidación de una cultura vial.                        </p>
+					<div class="menu__logo">
+						<img class="logo" src="../images/recurso_11.png" alt="logo">
 					</div>
-					<div class="phase__menu">
-						<ul class="phase__menuList">
-							<li class="phase__menuItem" id="btn_obj_f5">
-								<div class="phase__menuIcon --phase5 ">
-									<img class="phase__icon" src="../images/recurso_32.png" alt="Icono tabla de planificacion">
+					<div class="menu__phase">
+						<div class="phase__textMain">
+							<h2 class="title__secondary">¡Cimientos para la edificación! </h2>
+						</div>
+						<div class="phase__textDescription">
+							<p class="textDescription">Establecer los factores de riesgo y de cuidado que serán
+								priorizados en la construcción de estrategias de intervención para la promoción de
+								comportamientos seguros y la consolidación de una cultura vial. </p>
+						</div>
+						<div class="phase__menu">
+							<ul class="phase__menuList">
+								<li class="phase__menuItem" id="btn_obj_f5">
+									<div class="phase__menuIcon --phase5 ">
+										<img class="phase__icon" src="../images/recurso_32.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text phase__text_active --phase5">Objetivo - Tiempo - Recursos </p>
+								</li>
+								<li class="phase__menuItem" id="btn_pas_f5">
+									<div class="phase__menuIcon --phase5 ">
+										<img class="phase__icon" src="../images/recurso_33.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase5">Paso a paso </p>
+								</li>
+								<li class="phase__menuItem" id="btn_her_f5">
+									<div class="phase__menuIcon --phase5 ">
+										<img class="phase__icon" src="../images/recurso_34.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase5">Herramientas </p>
+								</li>
+								<li class="phase__menuItem" id="btn_tip_f5">
+									<div class="phase__menuIcon --phase5 ">
+										<img class="phase__icon" src="../images/recurso_35.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<div class="phase__menuText">
+										<p class="phase__text --phase5">Tips</p>
+										<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__person">
+						<img id="person5" class="person --obj_fase5" src="../images/recurso_105.png" loading="lazy"
+							alt="persona que habla">
+						<img id="person6" class="person --pas_fase5 --invisible" src="../images/recurso_123_123.png"
+							loading="lazy" alt="persona que habla">
+						<img id="person7" class="person --her_fase5 --invisible" src="../images/recurso56.png"
+							loading="lazy" alt="persona que habla">
+						<img id="person10" class="person --invisible" src="../images/recurso_136.png" loading="lazy"
+							alt="persona que habla">
+					</div>
+					<div class="menu__personRight">
+						<img id="person9" class="person" loading="lazy" src="../images/recurso_106.png"
+							alt="persona que habla" />
+						<img id="person8" class="person --invisible" loading="lazy" src="../images/recurso_124_124.png"
+							alt="persona que habla" />
+						<img id="person11" class="person --invisible" loading="lazy" src="../images/recurso_137.png"
+							alt="persona que habla" />
+					</div>
+				</section>
+
+				<div>
+					<button class="btn-continue" id="continue-f5">Continuar</button>
+				</div>
+
+				<section id="obj_f5" class="content__dialog obj_f5 ">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text" id="change_f5_1"> ¡Hola! Bienvenido a la quinta fase de nuestra
+							metodología. Mi nombre es Lucía, soy parte de la concesión que está desarrollando el
+							proyecto vial en la zona. Me
+							acompaña Gabriel, otro de los miembros de la concesión.
+						</div>
+						<audio id="my_audio_f5_1">
+							<source src="../audios/1-Lucia-Gabriel-transito.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_f5_bienvenida" class="play">
+							<img src="../images/recurso144.png" alt="sound" width="20" />
+						</div>
+				</section>
+				<section class="content__dialog --obj_fase5_postits --invisible">
+					<div class="postits">
+						<ul class="postits__list --phase5">
+							<li class="postits__item">
+								<p class="postits__itemTittle">Objetivo de la fase:</p>
+								<div class="postits__itemPost" id="post1">
+									<p class="postits__text">Establecer los factores de riesgo y de cuidado que serán
+										priorizados en la construcción de estrategias de intervención para la promoción
+										de comportamientos seguros y la consolidación de una cultura vial.
+									<p>
 								</div>
-								<p class="phase__text phase__text_active --phase5">Objetivo - Tiempo - Recursos </p>
 							</li>
-							<li class="phase__menuItem" id="btn_pas_f5">
-								<div class="phase__menuIcon --phase5 ">
-									<img class="phase__icon" src="../images/recurso_33.png" alt="Icono tabla de planificacion">
+							<li class="postits__item">
+								<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
+								<div class="postits__itemPost" id="post2">
+									<p class="postits__text">15 días</p>
 								</div>
-								<p class="phase__text --phase5">Paso a paso </p>
 							</li>
-							<li class="phase__menuItem" id="btn_her_f5">
-								<div class="phase__menuIcon --phase5 ">
-									<img class="phase__icon" src="../images/recurso_34.png" alt="Icono tabla de planificacion">
-								</div>
-								<p class="phase__text --phase5">Herramientas </p>
-							</li>
-							<li class="phase__menuItem" id="btn_tip_f5">
-								<div class="phase__menuIcon --phase5 ">
-									<img class="phase__icon" src="../images/recurso_35.png" alt="Icono tabla de planificacion">
-								</div>
-								<div class="phase__menuText">
-									<p class="phase__text --phase5">Tips</p>
-									<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
+							<li class="postits__item">
+								<p class="postits__itemTittle">Recursos requeridos:</p>
+								<div class="postits__itemPost --thirdColumn">
+									<ul class="postits__itemList">
+										<li class="list__item">
+											<div id="post3">
+												<p class="postits__text">Humanos: Comités Comunitarios y
+													Multisectoriales.</p>
+												<br>
+												<p class="postits__text">Físicos: Espacio dotado de sillas, mesas y
+													demás implementos requeridos para el desarrollo de los encuentros
+													programados (máximo 6).</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div id="post5">
+												<p class="postits__text">Tecnológicos: Computador; videobeam o televisor para realizar la proyección de las matrices de priorización y las orientaciones del informe, en el marco de su co-construcción; repositorio del proyecto que contenga las matrices y las orientaciones, los formatos de acta de concertación, entre otros</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div id="post4">
+												<p class="postits__text">Materiales: Matrices para la identificación de
+													factores de riesgo en la implementación de proyectos viales,
+													orientaciones para la construcción del informe de priorización</p>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="menu__person">
-					<img id="person5" class="person --obj_fase5" src="../images/recurso_105.png" loading="lazy" alt="persona que habla">
-					<img id="person6" class="person --pas_fase5 --invisible" src="../images/recurso_123_123.png"
-					loading="lazy" alt="persona que habla">
-					<img id="person7" class="person --her_fase5 --invisible" src="../images/recurso56.png"
-					loading="lazy" alt="persona que habla">
-					<img id="person10" class="person --invisible" src="../images/recurso_136.png" loading="lazy" alt="persona que habla">
-				</div>
-				<div class="menu__personRight">
-					<img id="person9" class="person" loading="lazy" src="../images/recurso_106.png"
-						alt="persona que habla" />
-					<img id="person8" class="person --invisible" loading="lazy" src="../images/recurso_124_124.png"
-					alt="persona que habla" />
-					<img id="person11" class="person --invisible" loading="lazy" src="../images/recurso_137.png"
-					alt="persona que habla" />
-				</div>
-			</section>
-
-			<div>
-				<button class="btn-continue" id="continue-f5">Continuar</button>
+				</section>
+				<section class="content__dialog --pas_fase5 --invisible">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text" id="change_f5_2"> ¡Bienvenido de vuelta! Mi nombre es Antonio.
+							Estoy junto
+							a mi compañera Soraya. Ambos pertenecemos a la Organización Movilidad digna. Trabajamos para
+							defender y garantizar los derechos de las personas en condición de discapacidad física en la
+							zona.
+						</div>
+						<audio id="my_audio_f5">
+							<source src="../audios/2-Antonio-transito.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_paso_f5" class="play">
+							<img src="../images/recurso144.png" alt="sound" width="20" />
+						</div>
+				</section>
+				<section class="content__dialog --her_fase5 --invisible">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text" id="change_f5_2">Aquí encontrarás las herramientas necesarias para
+							desarrollar
+							las
+							instrucciones propuestas
+							¡No olvides dar clic en cada una de ellas, para conocerlas!
+						</div>
+					</div>
+					<div class="tools --phase5">
+						<ul class="cards --toolsCards2 --phase4">
+							<li class="card__item --toolsCards2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText8">ORIENTACIONES CONSTRUCCIÓN INFORME DIAGNÓSTICO DE
+										PRIORIZACIÓN</p>
+									<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
+										establecer los tipos y niveles de riesgo
+										identificados en la zona en que se desarrollará
+										el proyecto vial. Su diligenciamiento
+										permitirá dimensionar las afectaciones que
+										dichos riesgos generarían en la seguridad y
+										los comportamientos viales de los actores
+										que confluyen, de manera itinerante y
+										permanente, en dicha zona.
+									</p>
+								</button>
+							</li>
+							<li class="card__item --toolsCards2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText8">MATRICES PARA LA
+										IDENTIFICACIÓN DE
+										FACTORES DE RIESGO
+									</p>
+									<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
+										generar orientaciones para la identificación de
+										focos de priorización en la construcción de
+										estrategias de intervención a corto,
+										mediano y largo plazo. Su implementación
+										permitirá establecer los indicadores que serán
+										priorizados dentro de la estrategia de
+										intervención (medio ambiente, salud,
+										movilidad…), los actores viales a los que
+										estará dirigida la misma, los impactos
+										esperados, entre otros.</p>
+								</button>
+							</li>
+							<li class="card__item --toolsCards2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText8">INFOGRAFÍA FOCALIZACIÓN
+										DE ACTORES POR ÍNDICES
+										DE SINIESTRALIDAD VIAL
+									</p>
+									<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
+										presentar el índice de actores afectados por
+										siniestros viales en Colombia en el último año
+										(Agencia Nacional de Seguridad Vial, 2021).
+										Su revisión permitirá identificar posibles
+										actores viales a priorizar </p>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="content__dialog --pas_2_fase5 --invisible">
+					<ul class="pas__list --phase5">
+						<li class="pas__listItem">
+							<div class="pas__paso" id="paso1">
+								<p class="pas__pasoTitle">Paso 1</p>
+							</div>
+							<div class="pas__text">
+								<p class="pas__textTitle" id="pasoText1">Consolidación matríces de identificación de
+									factores de riesgo</p>
+								<p class="pas__textDescription">Encuentro de Comités Comunitarios y
+									Multisectoriales para diligenciar las matrices,
+									atendiendo a los resultados obtenidos en las fases
+									3 y 4.</p>
+							</div>
+						</li>
+						<li class="pas__listItem">
+							<div class="pas__paso" id="paso2">
+								<p class="pas__pasoTitle">Paso 2</p>
+							</div>
+							<div class="pas__text">
+								<p class="pas__textTitle" id="pasoText2">Consolidación informe diagnóstico de
+									priorización:</p>
+								<p class="pas__textDescription">Encuentro de los Comités Comunitarios y
+									Multisectoriales para socializar las matrices y
+									co-construir un informe de priorización.</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="content__dialog --tip_fase5 --invisible">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text">Te compartimos los siguientes Tips para garantizar la participación
+							de los actores comunitarios y multisectoriales
+							¡Ponlos a prueba!
+						</div>
+					</div>
+					<div class="tools --toolsTips5  --phase1">
+						<ul class="cards --toolsTips5">
+							<li class="card__item --toolsTips5">
+								<button type="button" class="card__btn --toolsTips" name="carta">
+									<p class="card__text2 --tipsText">Los actores comunitarios y multisectoriales
+										que participan de los comités y de los
+										encuentros, son los directamente afectados
+										por los riesgos derivados de la
+										implementación del proyecto vial, razón por
+										la cual sus puntos de vista, percepciones,
+										sentimientos, opiniones y saberes resultan
+										de alta relevancia a la hora de definir los
+										ejes de priorización, en alineación con los
+										instrumentos</p>
+								</button>
+							</li>
+							<li class="card__item --toolsTips5">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text2 --tipsText">Los actores comunitarios y multisectoriales son
+										claves para reconocer las posibles
+										problemáticas y necesidades que desencadenará,
+										en términos de seguridad y comportamiento
+										vial, la implementación del proyecto. Por ello,
+										es imperante sistematizar las ideas que van
+										surgiendo en el marco de los diálogos de
+										saberes, en relación con posibles estrategias
+										para el cuidado de la vida.</p>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
-
-			<section id="obj_f5" class="content__dialog obj_f5 ">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" id="change_f5_1"> ¡Hola! Bienvenido a la quinta fase de nuestra 
-						metodología. Mi nombre es Lucía, soy parte de la concesión que está desarrollando el proyecto vial en la zona. Me 
-						acompaña Gabriel, otro de los miembros de la concesión.											
-					</div>
-					<audio id="my_audio_f5_1">
-						<source src="../audios/1-Lucia-Gabriel-transito.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_f5_bienvenida" class="play">
-						<img src="../images/recurso144.png" alt="sound" width="20"/>
-					</div>
-			</section>
-			<section class="content__dialog --obj_fase5_postits --invisible">
-				<div class="postits">
-					<ul class="postits__list --phase5">
-						<li class="postits__item">
-							<p class="postits__itemTittle">Objetivo de la fase:</p>
-							<div class="postits__itemPost" id="post1">
-								<p class="postits__text">Establecer los factores de riesgo y de cuidado que serán priorizados en la construcción de estrategias de intervención para la promoción de comportamientos seguros y la consolidación de una cultura vial. <p>
-							</div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
-							<div class="postits__itemPost" id="post2">
-								<p class="postits__text">15 días</p>
-							</div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Recursos requeridos:</p>
-							<div class="postits__itemPost --thirdColumn">
-								<ul class="postits__itemList">
-									<li class="list__item">
-										<div id="post3">
-											<p class="postits__text">Humanos: Comités Comunitarios y Multisectoriales.</p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div id="post5">
-											<p class="postits__text">Físicos: Espacio dotado de sillas, mesas y demás implementos requeridos para el desarrollo de los encuentros programados (máximo 6).</p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div id="post4">
-											<p class="postits__text">Materiales: Matrices para la identificación de factores de riesgo en la implementación de proyectos viales, orientaciones para la construcción del informe de priorización</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --pas_fase5 --invisible">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" id="change_f5_2"> ¡Bienvenido de vuelta! Mi nombre es Antonio. Estoy junto 
-						a mi compañera Soraya. Ambos pertenecemos a la Organización Movilidad digna. Trabajamos para defender y garantizar los derechos de las personas en condición de discapacidad física en la zona.						
-					</div>
-					<audio id="my_audio_f5">
-						<source src="../audios/2-Antonio-transito.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_paso_f5" class="play">
-						<img src="../images/recurso144.png" alt="sound" width="20"/>
-					</div>
-			</section>
-			<section class="content__dialog --her_fase5 --invisible">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" id="change_f5_2">Aquí encontrarás las herramientas necesarias para desarrollar
-						las
-						instrucciones propuestas
-						¡No olvides dar clic en cada una de ellas, para conocerlas!
-					</div>
-				</div>
-				<div class="tools --phase5">
-					<ul class="cards --toolsCards2 --phase4">
-						<li class="card__item --toolsCards2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText8">ORIENTACIONES CONSTRUCCIÓN INFORME DIAGNÓSTICO DE PRIORIZACIÓN</p>
-								<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
-									establecer los tipos y niveles de riesgo
-									identificados en la zona en que se desarrollará
-									el proyecto vial. Su diligenciamiento
-									permitirá dimensionar las afectaciones que
-									dichos riesgos generarían en la seguridad y
-									los comportamientos viales de los actores
-									que confluyen, de manera itinerante y
-									permanente, en dicha zona.
-									 </p>
-							</button>
-						</li>
-						<li class="card__item --toolsCards2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText8">MATRICES PARA LA
-									IDENTIFICACIÓN DE
-									FACTORES DE RIESGO
-								</p>
-								<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
-									generar orientaciones para la identificación de
-									focos de priorización en la construcción de
-									estrategias de intervención a corto,
-									mediano y largo plazo. Su implementación
-									permitirá establecer los indicadores que serán
-									priorizados dentro de la estrategia de
-									intervención (medio ambiente, salud,
-									movilidad…), los actores viales a los que
-									estará dirigida la misma, los impactos
-									esperados, entre otros.</p>
-							</button>
-						</li>
-						<li class="card__item --toolsCards2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText8">INFOGRAFÍA FOCALIZACIÓN
-									DE ACTORES POR ÍNDICES
-									DE SINIESTRALIDAD VIAL
-								</p>
-								<p class="card__text2 --toolsText">Esta herramienta tiene como propósito
-									presentar el índice de actores afectados por
-									siniestros viales en Colombia en el último año
-									(Agencia Nacional de Seguridad Vial, 2021).
-									Su revisión permitirá identificar posibles
-									actores viales a priorizar </p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --pas_2_fase5 --invisible">
-				<ul class="pas__list --phase5">
-					<li class="pas__listItem">
-						<div class="pas__paso" id="paso1">
-							<p class="pas__pasoTitle">Paso 1</p>
-						</div>
-						<div class="pas__text">
-							<p class="pas__textTitle" id="pasoText1">Consolidación matríces de identificación de
-								factores de riesgo</p>
-							<p class="pas__textDescription">Encuentro de Comités Comunitarios y
-								Multisectoriales para diligenciar las matrices,
-								atendiendo a los resultados obtenidos en las fases
-								3 y 4.</p>
-						</div>
-					</li>
-					<li class="pas__listItem">
-						<div class="pas__paso" id="paso2">
-							<p class="pas__pasoTitle">Paso 2</p>
-						</div>
-						<div class="pas__text">
-							<p class="pas__textTitle" id="pasoText2">Consolidación informe diagnóstico de
-								priorización:</p>
-							<p class="pas__textDescription">Encuentro de los Comités Comunitarios y
-								Multisectoriales para socializar las matrices y
-								co-construir un informe de priorización.</p>
-						</div>
-					</li>
-				</ul>				
-			</section>
-			<section class="content__dialog --tip_fase5 --invisible">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" >Te compartimos los siguientes Tips para garantizar la participación 
-						de los actores comunitarios y multisectoriales
-						¡Ponlos a prueba!							
-					</div>
-				</div>	
-				<div class="tools --toolsTips5  --phase1">
-					<ul class="cards --toolsTips5">
-						<li class="card__item --toolsTips5">
-							<button type="button" class="card__btn --toolsTips" name="carta">
-								<p class="card__text2 --tipsText">Los actores comunitarios y multisectoriales
-									que participan de los comités y de los
-									encuentros, son los directamente afectados
-									por los riesgos derivados de la
-									implementación del proyecto vial, razón por
-									la cual sus puntos de vista, percepciones,
-									sentimientos, opiniones y saberes resultan
-									de alta relevancia a la hora de definir los
-									ejes de priorización, en alineación con los
-									instrumentos</p>
-							</button>
-						</li>
-						<li class="card__item --toolsTips5">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text2 --tipsText">Los actores comunitarios y multisectoriales son
-									claves para reconocer las posibles
-									problemáticas y necesidades que desencadenará,
-									en términos de seguridad y comportamiento
-									vial, la implementación del proyecto. Por ello,
-									es imperante sistematizar las ideas que van
-									surgiendo en el marco de los diálogos de
-									saberes, en relación con posibles estrategias
-									para el cuidado de la vida.</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>	
-		</div>
-		</div>
+	</div>
 	</main>
-</div>
+	</div>
 </body>
 
 <script data-require="jquery@3.0.0" data-semver="3.0.0"

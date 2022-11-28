@@ -46,7 +46,8 @@
 .postits__text{
     margin: 16px;
     padding: 16px;
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 13px;
     color:  var(--secondBlue);  
     font-weight: 500;
 }
@@ -80,12 +81,13 @@
 #post3 {
     background-image: url('../images/recurso_48.png');
     background-repeat: no-repeat;
-    height: 278px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     width: 260px;
+    height: 256px;
 }
+
 #post4 {
     background-image: url('../images/recurso_45.png');
     background-repeat: no-repeat;
