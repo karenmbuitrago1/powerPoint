@@ -54,12 +54,12 @@
             <div class="row h-md-33 pl-3">
                 <div class="col-md-8 d-flex justify-content-center flex-column">
                     <h1 class="microlesson-title w-100 mb-0" data-readable="true">UNIDAD DE APRENDIZAJE</h1>
-                    <h1 class="w-100" data-readable="true">Actividades gamificadas niños, niñas y adolescentes - Ciclo 2: grados 3° y 4° de primaria</h1>
+                    <h1 class="w-100" data-readable="true">Metodología de intervención basada en modelos de desarrollo comunitario para proyectos viales</h1>
                 </div>
             </div>
             <div class="row h-md-33 pl-3">
                 <div class="col-md-9 mb-5 mb-md-0 d-flex align-items-center">
-                    <h1 class="w-100 "><small data-readable="true">Apropia los conceptos básicos de educación vial por medio de actividades interactivas gamificadas</small></h1>
+                    <h1 class="w-100 "><small data-readable="true">Apropia los conceptos básicos de educación vial por medio de actividades interactivas</small></h1>
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
                       <button onclick="gotoDemo()" class="btn btn-success btn-lg" data-toggle="tooltip" title="Ver guía" aria-description="Ver guía">Ver la guía</button>
                     </div>
                     <div class="button-container col-md-6 text-center p-4">
-                      <button onclick="gotoContent()" class="btn btn-yellow-semidark btn-lg" data-toggle="tooltip" title="Iniciar" aria-description="Iniciar">Ir al recurso</button>
+                      <button onclick="window.location.href = 'Bienvenida.html'" class="btn btn-yellow-semidark btn-lg" data-toggle="tooltip" title="Iniciar" aria-description="Iniciar">Ir al recurso</button>
                     </div>
                   </div>  
                 </div>  
@@ -382,7 +382,7 @@
                             más sobre seguridad vial. O, si es necesario, podemos volver nuevamente a la guía de navegación.<br>
                               <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
                             </p>
-                            <button onclick="gotoContentBeforeGuide()" class="btn btn-yellow-semidark btn-lg mb-2 float-right" data-toggle="tooltip" title="Ir al Recurso" aria-description="Iniciar">Ir al recurso</button>
+                            <button onclick="window.location.href = 'Bienvenida.html'" class="btn btn-yellow-semidark btn-lg mb-2 float-right" data-toggle="tooltip" title="Ir al Recurso" aria-description="Iniciar">Ir al recurso</button>
                           </div>
                         </div>
                       </div> 
@@ -407,4 +407,55 @@
   </div>
 </div>
 </body>
+<script data-require="jquery@3.0.0" data-semver="3.0.0"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+<script type="text/javascript" src="../scripts/script.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="../scripts/javascript.common.js"></script>
+<script type="text/javascript" src="../scripts/index.js"></script>
+<script type="text/javascript" src="../scripts/accessibility.js"></script>
+<script>
+    
+var slideActivityContent = {};
+$(document).ready(function () {
+  $("#controls").hide();
+  $(".slideshow-container").css({ "margin-bottom": "0", "border": "0" });
+  checkScrollTop()
+});
+
+
+function showDemostration(){
+  $("#showDemostration").modal();
+}
+
+function gotoDemo(){
+$("#showDemostration").modal("hide");
+$("#showDemostration").on('hidden.bs.modal', function () {
+  $("#navigationGuide").modal();
+});
+}
+
+function gotoContentBeforeGuide(){
+$("#navigationGuide").modal("hide");
+$("#navigationGuide").on('hidden.bs.modal', function () {
+  goToSlide([],2)
+});
+}
+
+function closeModal(){
+$("#navigationGuide").modal("hide");
+$("#navigationGuide").on('hidden.bs.modal', function () {
+  goToSlide([],1)
+});
+}
+
+function gotoContent(){
+$("#showDemostration").modal("hide");
+$("#showDemostration").on('hidden.bs.modal', function () {
+  goToSlide([],2);
+});
+}
+
+</script>
+
 <html
