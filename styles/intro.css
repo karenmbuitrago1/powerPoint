@@ -147,11 +147,11 @@ audio::-webkit-media-controls-timeline{
 }
 
 .menu__phase {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .menu__title{
-    height: 15%;
+    height: 12%;
     width: 30%;
     position: absolute;
     display: flex;

@@ -1,16 +1,18 @@
-.background.--type005{
+.background.--type005 {
     background-image: url('../images/recurso_39.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.background.--obj_fase2_postits{
+
+.background.--obj_fase2_postits {
     background-image: url('../images/recurso90.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.postits{
+
+.postits {
     height: 100%;
     width: 70%;
     position: absolute;
@@ -18,9 +20,39 @@
     display: inline-flex;
     justify-content: flex-end;
     align-content: center;
+    overflow-y: scroll;
 
 }
-.postits__list{
+
+.postit {
+    line-height: 1;
+    width: 77%;
+    margin: 8px;
+    min-height: fit-content;
+    max-height: fit-content;
+    padding: 8px;
+    border: 1px solid #E8E8E8;
+    border-top: 4px solid #f9f4b4;
+    border-bottom-right-radius: 60px 5px;
+    display: inline-block;
+    background: #f9f4b4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f9f4b4 81%, #f9f4b4 82%, #f9f4b4 82%, #ffff 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #f9f4b4), color-stop(82%, #f9f4b4), color-stop(82%, #f9f4b4), color-stop(100%, #ffff));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #f9f4b4 81%, #f9f4b4 82%, #f9f4b4 82%, #ffff 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #f9f4b4 81%, #f9f4b4 82%, #f9f4b4 82%, #ffff 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #f9f4b4 81%, #f9f4b4 82%, #f9f4b4 82%, #ffff 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #f9f4b4 81%, #f9f4b4 82%, #f9f4b4 82%, #ffff 100%);
+    box-shadow: -1px 3px 10px rgb(33 33 33 / 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f4b4', endColorstr='#ffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.postits__list {
     height: 100%;
     padding: 0;
     display: flex;
@@ -29,30 +61,30 @@
     align-items: center;
 }
 
-.postits__item{
+.postits__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 30%;
     height: 100%;
 }
 
-.postits__itemTittle{
+.postits__itemTittle {
     font-family: 'Futura_bold';
-    color:  var(--secondBlue);  
+    color: var(--secondBlue);
     font-size: 40px;
 }
 
-.postits__text{
-    margin: 16px;
-    padding: 16px;
-    font-size: 13px;
-    line-height: 13px;
-    color:  var(--secondBlue);  
+.postits__text {
+    margin: 8px;
+    padding: 9px;
+    font-size: 0.9em;
+    line-height: 15px;
+    color: var(--secondBlue);
     font-weight: 500;
 }
 
-.postits__itemPost{
+.postits__itemPost {
     height: 43%;
     width: 80%;
     display: flex;
@@ -60,67 +92,86 @@
 }
 
 #post1 {
-    background-image: url('../images/recurso_41.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    border: 1px solid #7ecfe4;
+    border-top: 4px solid #7ecfe4;
+    background: #7ecfe4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #7ecfe4), color-stop(82%, #7ecfe4), color-stop(82%, #7ecfe4), color-stop(100%, #eaeaea));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
+    box-shadow: -1px 3px 10px rgb(33 33 33 / 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ecfe4', endColorstr='#eaeaea', GradientType=1);
 }
+
+
 #post2 {
-    background-image: url('../images/recurso_42.png');
-    background-repeat: no-repeat;
-    height: 250px;
+    border: 1px solid #ea7de4;
+    border-top: 4px solid #ea7de4;
+    background: #ea7de4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ea7de4 81%, #ea7de4 82%, #ea7de4 82%, #f9d7f9 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ea7de4), color-stop(82%, #ea7de4), color-stop(82%, #ea7de4), color-stop(100%, #f9d7f9));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ea7de4 81%, #ea7de4 82%, #ea7de4 82%, #f9d7f9 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ea7de4 81%, #ea7de4 82%, #ea7de4 82%, #f9d7f9 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ea7de4 81%, #ea7de4 82%, #ea7de4 82%, #f9d7f9 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #ea7de4 81%, #ea7de4 82%, #ea7de4 82%, #f9d7f9 100%);
+    box-shadow: -1px 3px 10px rgb(33 33 33 / 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea7de4', endColorstr='#f9d7f9', GradientType=1);
 }
 
-#post2 p{
-    font-size: 40px;
+#post2 p {
+    font-size: 3em;
+    line-height: 1em;
+    padding: 45px 8px;
 }
 
-.postits__itemList{
+.postits__itemList {
     list-style: none;
 }
 
 #post3 {
-    background-image: url('../images/recurso_48.png');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 260px;
-    height: 256px;
+    position: absolute;
+    top: 11%;
+    right: 1%;
+    max-width: 26%;
 }
 
 #post4 {
-    background-image: url('../images/recurso_45.png');
-    background-repeat: no-repeat;
-    height: 275px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 249px;
     position: absolute;
     right: 1%;
-    top: 66%;
+    top: 60%;
+    max-width: 23%;
 }
+
 #post5 {
-    background-image: url('../images/recurso_46.png');
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 338px;
-    width: 312px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 15%;
+    max-width: 23%;
 }
 
-#post5 p{
-    padding: 0 32px 0 8px;
+#post5 p {
+    padding: 0 8px;
 }
 
-.postits__itemPost.--thirdColumn{
+.postits__itemPost.--thirdColumn {
     width: 100%;
 }
-.postits__itemList{
+
+.postits__itemList {
     height: 100%;
     padding: 0;
     display: flex;
@@ -130,24 +181,27 @@
 }
 
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1450px) {
     #post1 {
         background-size: 100%;
         height: 322px;
         width: 96%;
     }
+
     #post2 {
         background-size: 100%;
         height: 222px;
         width: 70%;
     }
-    #post3{
+
+    /* #post3 {
         background-size: 100%;
         height: 231px;
         width: 218px;
         font-size: 14px;
-    }
-    #post5{
+    } */
+
+    /* #post5 {
         background-size: 100%;
         height: 291px;
         width: 251px;
@@ -156,7 +210,8 @@
         right: 17%;
         top: 44%;
     }
-    #post4{
+
+    #post4 {
         top: 70%;
         right: 4%;
         background-size: 100%;
@@ -167,63 +222,73 @@
         width: 206px;
         position: absolute;
         font-size: 14px;
-    }
+    } */
 }
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1280px) {
     .postits__itemTittle {
         font-size: 36px;
     }
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1024px) {
     .logo {
         width: 43%;
     }
+
     #post1 {
         height: 30%;
     }
+
     #post2 {
         height: 20%;
     }
 }
 
-@media screen and (max-width:768px){
-    .content__dialog.--obj_fase1_postits{
+@media screen and (max-width:768px) {
+    .content__dialog.--obj_fase1_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase2_postits{
+
+    .content__dialog.--obj_fase2_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase3_postits{
+
+    .content__dialog.--obj_fase3_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase4_postits{
+
+    .content__dialog.--obj_fase4_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase5_postits{
+
+    .content__dialog.--obj_fase5_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase6_postits{
+
+    .content__dialog.--obj_fase6_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase7_postits{
+
+    .content__dialog.--obj_fase7_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
     }
-    .content__dialog.--obj_fase8_postits{
+
+    .content__dialog.--obj_fase8_postits {
         position: relative;
         height: 47%;
         overflow-y: scroll;
@@ -232,177 +297,209 @@
     .postits {
         height: 54%;
         width: 100%;
-        position: absolute;        
+        position: absolute;
     }
 
-    .postits__itemPost.--thirdColumn{
+    .postits__itemPost.--thirdColumn {
         width: inherit;
         height: inherit;
     }
 
-    .postits__list.--phase1{
+    .postits__list.--phase1 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_31.png');
     }
-    .postits__list.--phase2{
+
+    .postits__list.--phase2 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso90.png');
     }
-    .postits__list.--phase3{
+
+    .postits__list.--phase3 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_15.png');
     }
-    .postits__list.--phase4{
+
+    .postits__list.--phase4 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_67.png');
     }
-    .postits__list.--phase5{
+
+    .postits__list.--phase5 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_122_122.png');
     }
-    .postits__list.--phase6{
+
+    .postits__list.--phase6 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_160.png');
     }
-    .postits__list.--phase7{
+
+    .postits__list.--phase7 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_198.png');
     }
-    .postits__list.--phase7{
+
+    .postits__list.--phase7 {
         flex-direction: column;
         height: fit-content;
         background-image: url('../images/recurso_238.png');
     }
 
-    .postits__item{
+    .postits__item {
         width: 80%;
     }
 
     .postits__text {
-       font-size: 15px;
+        font-size: 15px;
     }
+
     #post1 {
         width: 40%;
     }
+
     #post2 {
         width: 32%;
     }
-    #post4 {
+
+    /* #post4 {
         position: inherit;
         width: 72%;
         height: 353px;
     }
+
     #post5 {
         width: 71%;
         height: 353px;
         position: inherit;
-    }
-    #post3 {
+    } */
+
+    /* #post3 {
         position: inherit;
         width: 75%;
         height: 374px;
-    }
+    } */
 }
 
-@media screen and (max-width:430px){
+@media screen and (max-width:430px) {
 
-    .content__dialog.--obj_fase1_postits{
+    .content__dialog.--obj_fase1_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase2_postits{
+
+    .content__dialog.--obj_fase2_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase3_postits{
+
+    .content__dialog.--obj_fase3_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase4_postits{
+
+    .content__dialog.--obj_fase4_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase5_postits{
+
+    .content__dialog.--obj_fase5_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase6_postits{
+
+    .content__dialog.--obj_fase6_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase7_postits{
+
+    .content__dialog.--obj_fase7_postits {
         height: 42%;
         position: relative;
     }
-    .content__dialog.--obj_fase8_postits{
+
+    .content__dialog.--obj_fase8_postits {
         height: 42%;
         position: relative;
     }
-    .postits__list.--phase1{
+
+    .postits__list.--phase1 {
         height: max-content;
         align-items: center;
     }
-    .postits__list.--phase2{
+
+    .postits__list.--phase2 {
         height: max-content;
         align-items: center;
     }
+
     .postits {
         position: relative;
         width: 100%;
         /* height: -webkit-fill-available;
         height: -moz-available;  
         height: fill-available; */
-        height: inherit;  
+        height: inherit;
     }
 
-    .postits__text{
+    .postits__text {
         font-size: 12px;
     }
+
     .postits__item {
         width: 100%;
     }
-    .list__item{
+
+    .list__item {
         display: flex;
         justify-content: center;
     }
-    .postits__itemPost{
+
+    .postits__itemPost {
         width: 90%;
     }
+
     #post1 {
         width: 48%;
     }
+
     #post2 {
         width: 42%;
     }
-    #post3 {
+
+    /* #post3 {
         width: 49%;
         height: 212px;
-    }
-    #post4 {
+    } */
+
+    /* #post4 {
         width: 49%;
         height: 202px;
     }
+
     #post5 {
         width: 62%;
         height: 263px;
-    }
+    } */
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     #post1 {
         width: 52%;
     }
-    #post4 {
+
+    /* #post4 {
         width: 61%;
     }
+
     #post5 {
         width: 69%;
-    }
+    } */
 }
