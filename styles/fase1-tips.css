@@ -96,6 +96,10 @@
         width: 64%;
         height: 33%;
     }
+    .cards.--toolsTips5 li:nth-child(3) {
+        width: 64%;
+        height: 33%;
+    }
 
 }
 
