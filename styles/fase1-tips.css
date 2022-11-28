@@ -74,16 +74,16 @@
 
 @media screen and (max-width:1450px){
     .cards.--toolsTips5 li:nth-child(1) {
-        width: 34%;
-        height: 28%;
+        width: 33%;
+        height: 25%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
-        width: 34%;
-        height: 28%;
+        width: 33%;
+        height: 25%;
     }
     .cards.--toolsTips5 li:nth-child(3) {
-        width: 34%;
-        height: 28%;
+        width: 33%;
+        height: 25%;
     }
 }
 
