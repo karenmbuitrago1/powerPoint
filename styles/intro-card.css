@@ -10,7 +10,10 @@
     position: absolute;
     right: 0;
     width: 70%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available;
+    height: -moz-available;  
+    height: fill-available; */
+    height: inherit; 
     justify-content: space-around;
 }
 .cards{
@@ -21,7 +24,10 @@
     align-items: center;
     z-index: 11;
     width: 90%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available;
+    height: -moz-available;  
+    height: fill-available; */
+    height: inherit; 
 }
 
 .cards li:nth-child(1){
@@ -152,7 +158,10 @@
         height: 41%;
     }
     .card__btn {
-        height: -webkit-fill-available;
+        /* height: -webkit-fill-available;
+        height: -moz-available;  
+        height: fill-available; */
+        height: inherit; 
         display: flex;
         justify-content: center;
     }

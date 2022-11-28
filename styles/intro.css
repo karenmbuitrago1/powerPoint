@@ -78,7 +78,10 @@ audio::-webkit-media-controls-timeline{
 
 .background__animation{
     width: 100%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available;
+    height: -moz-available;  
+    height: fill-available; */
+    height: inherit; 
     display: flex;
     flex-direction: row-reverse;
 }
@@ -350,7 +353,10 @@ audio::-webkit-media-controls-timeline{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: -webkit-fill-available;
+        /* height: -webkit-fill-available;
+        height: -moz-available;  
+        height: fill-available; */
+        height: inherit; 
     }
     .menu__listItem{
         margin: 8px 0;
