@@ -1312,7 +1312,7 @@ audio::-webkit-media-controls-timeline{
 
 @media screen and (max-width:1450px){
     .cards.--toolsCards2 li:nth-child(1) {
-        height: 37%;
+        height: 49%;
     }
     .titlePhase{
         font-size: 56px;
@@ -2454,11 +2454,15 @@ display: none;
 
 @media screen and (max-width:1450px){
     .cards.--toolsTips5 li:nth-child(1) {
-        width: 38%;
+        width: 34%;
         height: 28%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
-        width: 38%;
+        width: 34%;
+        height: 28%;
+    }
+    .cards.--toolsTips5 li:nth-child(3) {
+        width: 34%;
         height: 28%;
     }
 }

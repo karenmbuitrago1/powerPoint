@@ -224,7 +224,7 @@
 
 @media screen and (max-width:1450px){
     .cards.--toolsCards2 li:nth-child(1) {
-        height: 37%;
+        height: 49%;
     }
     .titlePhase{
         font-size: 56px;
