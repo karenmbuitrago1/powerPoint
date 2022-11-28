@@ -1,7 +1,7 @@
 .container-blue {
   padding: 0px 3% 3% 3%;
   background: #2D2F69;
-  height: -webkit-fill-available;
+  height: 90%;
   position: fixed;
   width: 100%;
 }
