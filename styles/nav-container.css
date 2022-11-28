@@ -2877,7 +2877,18 @@ padding: 0 2% 0 0;
     min-height: 60px;
     font-size: 2.5em;
   }
-
+  .breadcrumb-item{
+    font-family: futura;
+  }
+  #controls .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    margin-top: -13px;
+}
+.title_vid{
+  color: #fff;
+  text-align: center;
+  margin-top: 3%;
+}
   .step-title .step-logo {
     height: 120px;
     width: 120px;
