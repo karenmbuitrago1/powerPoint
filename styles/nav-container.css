@@ -2883,7 +2883,13 @@ padding: 0 2% 0 0;
     width: 120px;
     right: -80px;
   }
-
+.centrar{
+  margin: auto;
+  display: block;
+}
+.vid-top{
+  margin-top: 2%;
+}
   .img-v-center {
     align-self: center !important;
   }
