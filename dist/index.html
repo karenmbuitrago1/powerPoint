@@ -53,13 +53,13 @@
 	<nav id="controls" class="navbar navbar-expand-md item-visible">
 		<div class="float-right w-100 d-flex">
 		  <div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
+			<li class="breadcrumb-item"><p> Inicio</p></li>
 		  </div>
 		  <div class="d-flex align-items-center justify-content-end">
 			<div class="float-right">
 			  <ul class="navbar-nav slide-direction-buttons">
 				<li class="nav-item mx-1">
-				 <!-- <button id="origin_prev" class="btn btn-blue-dark prev" onclick="anterior()"
-					data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>-->
+				 <button id="origin_prev" class="btn btn-blue-dark prev" onclick="window.location.href = 'instructivo.html'" data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>
 				</li>
 				<li class="nav-item mx-1">
 				  <button id="origin_next" class="btn btn-blue-dark next focused" onclick="window.location.href = 'ruta.html'" data-toggle="tooltip" title="Siguiente" tabindex="0">&#10095;</button>
@@ -125,25 +125,25 @@
 				<div class="menu__options">
 					<ul class="menu__list" id="menu_botones">
 						<li class="menu__listItem">
-							<button type="button" name="Punto de origen" title="Punto de origen" class="menu__listBtn menu__listBtn_active" id="btn_origen">
+							<button type="button" class="menu__listBtn menu__listBtn_active" id="btn_origen">
 								<img class="menu__listBtn__img" src="/play.43c1c58b.png" loading="lazy">
 								<p class="menu__listBtn__text">Punto de origen</p>
 							</button>
 						</li>
 						<li class="menu__listItem">
-							<button type="button" name="¡Conoce nuestro modelo y enfoque!" title="¡Conoce nuestro modelo y enfoque!" class="menu__listBtn" id="btn_conoce">
+							<button type="button" class="menu__listBtn" id="btn_conoce">
 								<img class="menu__listBtn__img" src="/play.43c1c58b.png" loading="lazy">
 								<p class="menu__listBtn__text">¡Conoce nuestro modelo y enfoque!</p>
 							</button>
 						</li>
 						<li class="menu__listItem">
-							<button type="button" name="Ruta de movilidad" title="Ruta de movilidad" class="menu__listBtn" id="btn_ruta">
+							<button type="button" class="menu__listBtn" id="btn_ruta">
 								<img class="menu__listBtn__img" src="/play.43c1c58b.png" loading="lazy">
 								<p class="menu__listBtn__text">Ruta de movilidad</p>
 							</button>
 						</li>
 						<li class="menu__listItem">
-							<a href="/ruta.html" name="Fases propuesta metodológica" title="Fases propuesta metodológica" class="menu__listBtn" id="btn_ruta">
+							<a href="/ruta.html" class="menu__listBtn" id="btn_ruta">
 									<img class="menu__listBtn__img" src="/play.43c1c58b.png" loading="lazy">
 									<p class="menu__listBtn__text">Fases propuesta metodológica</p>
 							</a>
@@ -161,7 +161,9 @@
 			</section>
 			<section id="origen" class="content__dialog origen ">
 				<div class="dialog --intro">
-					<div class="dialogBox__text" id="change">¡Bienvenido a la <span style="color:#1db5e0">Metodología de intervención basada en modelos de desarrollo comunitario para proyectos viales!</span> Antes de iniciar, déjame contarte cómo nace esta iniciativa…
+					<div class="dialogBox__text" id="change">¡Bienvenido a la Metodología de intervención basada en
+						modelos de desarrollo comunitario para proyectos viales! Antes de iniciar, déjame contarte cómo
+						nace esta iniciativa…
 					</div>
 					<audio id="my_audio">
 						<source src="/1_Bienvenida_transito.bef51206.mp3" type="audio/mp3">

@@ -57,7 +57,7 @@
 
 .card__item{
     margin: 8px;
-    width: 46%;
+    width: 38%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -103,7 +103,8 @@
     width: 100%;
     padding: 2px;
     margin: 2px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: none;
 }
 
