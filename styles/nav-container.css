@@ -2870,7 +2870,11 @@ padding: 0 2% 0 0;
   #controls .breadcrumb .breadcrumb-item span {
     font-size: 1em;
   }
-
+  .main-cover-title {
+    background: url(../images/bg_main_slide.jpg) no-repeat center center/cover;
+    min-height: 70%;
+    text-align: left;
+}
   .step-title .step-heading {
     max-width: 100%;
     padding-right: 60px;

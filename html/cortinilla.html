@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/index.css">
+	<link rel="stylesheet" href="../styles/nav-container.css">
+	<link rel="stylesheet" href="../styles/cortinilla.css">
+
+
+
+	<title>Agencia Nacional de Seguridad Vial</title>
+</head>
+
+<body>
+
+<div class="col-12 d-flex flex-column justify-content-center">
+    <div class="accesibility-container main-slide-container">
+        <div class="float-right mx-1 accesibility-btn-toggle main-ac-slide">
+            <button type="button" class="btn btn-blue-dark menu btn-accesibility" onclick='toggleAccesibilityMenu(); loadSpeechPlayer();' data-toggle="tooltip" title="Opciones de accesibilidad"><img class="img-fluid" src="../images/img_ac_menu.png"></button>
+        </div>
+        <div class="speechPlayer-container">
+            <div class="speechPlayer-menu btn-group-vertical">
+                <button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid" src="../images/img_prev.png"></button>
+                <button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip" title="Leer Texto"><img class="img-fluid" src="../images/img_play.png"></button>
+                <button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid" src="../images/img_play.png"></button>
+                <button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip" title="Detener lectura"><img class="img-fluid" src="../images/img_stop.png"></button>
+                <button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip" title="Texto Siguiente"><img class="img-fluid" src="../images/img_next.png"></button>
+            </div>
+        </div>
+        <div class="accesibility-menu">
+            <div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
+                <button class="btn btn-accesibility-option" onclick='resizeFont("+")' data-toggle="tooltip" title="Incrementar tamaño de fuente"><img class="img-fluid" src="../images/img_ac_font_increase.png"></button>
+                <button class="btn btn-accesibility-option" onclick='resizeFont("-")' data-toggle="tooltip" title="Disminuir tamaño de fuente"><img class="img-fluid" src="../images/img_ac_font_decrease.png"></button>
+                <button class="btn btn-accesibility-option" onclick='resizeFont("0")' data-toggle="tooltip" title="Restaurar tamaño de fuente"><img class="img-fluid" src="../images/img_ac_font_reset.png"></button>
+                <button class="btn btn-accesibility-option" onclick='changeTheme("highContrast")' data-toggle="tooltip" title="Invertir color"><img class="img-fluid" src="../images/img_ac_contrast01.png"></button>
+                <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColor")' data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid" src="../images/img_ac_contrast02.png"></button>
+                <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColorBright")' data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid" src="../images/img_ac_contrast03.png"></button>
+                <button class="btn btn-accesibility-option" onclick='changeTheme("grayScale")' data-toggle="tooltip" title="Sin color"><img class="img-fluid" src="../images/img_ac_contrast04.png"></button>
+                <button class="btn btn-accesibility-option btn-read" onclick='showSpeechPlayer()' data-toggle="tooltip" title="Lector de textos"><img class="img-fluid" src="../images/img_ac_reader.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="row h-100">
+        <div class="col-12 main-cover-title">
+            <div class="row h-md-33 ">
+                <div class="logo-container col-12 d-flex align-items-center px-0">
+                    <img class="img-fluid" src="../images/logo_mintrans.jpg" alt="Ministerio de Transporte. La movilidad es de todos." aria-description="Ministerio de Transporte. La movilidad es de todos.">
+                </div>
+            </div>
+            <div class="row h-md-33 pl-3">
+                <div class="col-md-8 d-flex justify-content-center flex-column">
+                    <h1 class="microlesson-title w-100 mb-0" data-readable="true">UNIDAD DE APRENDIZAJE</h1>
+                    <h1 class="w-100" data-readable="true">Actividades gamificadas niños, niñas y adolescentes - Ciclo 2: grados 3° y 4° de primaria</h1>
+                </div>
+            </div>
+            <div class="row h-md-33 pl-3">
+                <div class="col-md-9 mb-5 mb-md-0 d-flex align-items-center">
+                    <h1 class="w-100 "><small data-readable="true">Apropia los conceptos básicos de educación vial por medio de actividades interactivas gamificadas</small></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 main-cover-footer">
+            <div class="row align-items-center">
+                <div class="hashtag-container col-md-6 text-center p-4">
+                    <h2 class="cover-hashtag float-md-left pl-3" data-readable="true">#SalvemosVidasEnLaVía</h2>
+                </div>
+                <div class="col-12 text-center p-4 d-md-none">
+                    <img class="img-fluid" src="../images/logo_ansv.png">
+                </div>
+                <div class="button-container col-md-6 text-center p-4">
+                    <button onclick="showDemostration()" class="btn btn-success btn-lg float-md-right mr-lg-5 mr-0 animate__animated animate__pulse animate__infinite animate__slow" data-toggle="tooltip" title="Ingresar" aria-description="Ingresar">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="showDemostration" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-4 pt-4 bg-yelow">
+              <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="teacher ana">
+            </div>
+            <div class="col-12 col-md-8 d-flex">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-12 text-center">
+                  <p data-readable="true">
+                    A continuación puede consultar la <b>guía de navegación</b> del recurso interactivo o ir directamente a su <b>contenido.</b>
+                  </p>
+                  <div class="row ustify-content-center align-items-center">
+                    <div class="button-container col-md-6 text-center p-4">
+                      <button onclick="gotoDemo()" class="btn btn-success btn-lg" data-toggle="tooltip" title="Ver guía" aria-description="Ver guía">Ver la guía</button>
+                    </div>
+                    <div class="button-container col-md-6 text-center p-4">
+                      <button onclick="gotoContent()" class="btn btn-yellow-semidark btn-lg" data-toggle="tooltip" title="Iniciar" aria-description="Iniciar">Ir al recurso</button>
+                    </div>
+                  </div>  
+                </div>  
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="navigationGuide" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header align-items-center">
+        <h3 data-readable="true">Guía de navegación</h3>
+        <button type="button" class="close" onclick="closeModal()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center">
+            <div id="carouselNavigation" class="carousel slide carousel" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselNavigation" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselNavigation" data-slide-to="1"></li>
+                <li data-target="#carouselNavigation" data-slide-to="2"></li>
+                <li data-target="#carouselNavigation" data-slide-to="3"></li>
+                <li data-target="#carouselNavigation" data-slide-to="4"></li>
+                <li data-target="#carouselNavigation" data-slide-to="5"></li>
+                <li data-target="#carouselNavigation" data-slide-to="6"></li>
+                <li data-target="#carouselNavigation" data-slide-to="7"></li>
+                <li data-target="#carouselNavigation" data-slide-to="8"></li>
+                <li data-target="#carouselNavigation" data-slide-to="9"></li>
+              </ol>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="container-fluid"> 
+                    <div class="row d-flex"> 
+                      <div class="col-12 col-md-3 pt-3 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9 p-4">
+                        <h2>¡Bienvenidas y bienvenidos a esta guía de navegación!</h2>
+                        <br>
+                        <p data-readable="true">
+                          A continuación veremos la estructura general y los recursos interactivos como botones y barras de desplazamiento, que les permitirán explorar los diferentes contenidos que encontrarán en nuestras unidades de aprendizaje. 
+                        </p>
+                        <p data-readable="true">
+                          Empecemos... 
+                          <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>
+                        </p> 
+                      </div> 
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center align-items-center">
+                          <div class="col-12 col-md-10">
+                            <p data-readable="true">
+                              Les presento la estructura y los controles de navegación de nuestro recurso interactivo.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help01.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb01.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10">
+                            <p data-readable="true">
+                              En la parte superior izquierda encontramos información acerca del <b>contexto</b> del recurso como títulos o instrucciones de actividades.<br> 
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help02.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb02.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">  
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                              En la parte superior derecha, o inferior en celulares, encontramos los 
+                              <b>controles de navegación</b> que nos permiten avanzar o retroceder en 
+                              el contenido del recurso. En algunos casos, dependiendo del tipo de contenido 
+                              y actividad, estos se habilitan cuando hemos finalizado la actividad o la 
+                              exploración del contenido. <br>  
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help03.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb03.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>    
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">  
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p>
+                              En esta sección también encontramos el menú de accesos directos a través del cual 
+                              podemos ir a apartados específicos del recurso o volver al inicio del mismo.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help03_1.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb03_1.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>    
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                            Aquí también encontramos el <b>botón de accesibilidad</b>, el cual nos permite cambiar
+                            elementos del entorno de navegación como el tamaño del texto o el color de contraste, según
+                            nuestras necesidades.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help04.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb04.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                              En la parte central de la pantalla encontraremos el desarrollo del <b>contenido temático</b> por medio de videos, animaciones, infografías, documentos, actividades y demás recursos preparados para todas y todos.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help05.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb05.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row"> 
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                              Para la actividad de aprendizaje se habilitarán los <b>botones de apoyo</b>; estos nos permitirán evaluar las respuestas, reiniciar las actividades o consultar las instrucciones sobre el funcionamiento de la actividad.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help06.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb06.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                              Cuando hay información para explorar y de acuerdo con la configuración de nuestras pantallas de computador, tableta o dispositivo de consulta, se habilita la <b>barra de desplazamiento</b> o <b><i>scroll</i></b> que se encuentra ubicada en la parte derecha.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                              <a class="badge badge-success badge-next" href="#carouselNavigation" role="button" data-slide="next">Continuar</a>  
+                            </p>
+                            <img class="img-fluid img-nav mb-4" src="../images/help07.jpg" aria-description="navigationGuide" alt="descripción">
+                            <img class="img-fluid img-nav-sm mb-4" src="../images/help-mb07.jpg" aria-description="navigationGuide" alt="descripción">
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-12 col-md-3 pt-5 teacher-col">
+                        <img class="img-teacher" src="../images/teacher.png" aria-description="navigationGuide" alt="profesora Ana">
+                        <img class="img-teacher-sm" src="../images/teacher-sm.png" aria-description="navigationGuide" alt="profesora Ana">
+                      </div>
+                      <div class="col-12 col-md-9 pb-4">
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-md-10 p-2">
+                            <p data-readable="true">
+                            Es momento de conocer, explorar e interactuar con los contenidos de este recurso y aprender
+                            más sobre seguridad vial. O, si es necesario, podemos volver nuevamente a la guía de navegación.<br>
+                              <a class="badge badge-danger badge-back" href="#carouselNavigation" role="button" data-slide="prev">Regresar</a>
+                            </p>
+                            <button onclick="gotoContentBeforeGuide()" class="btn btn-yellow-semidark btn-lg mb-2 float-right" data-toggle="tooltip" title="Ir al Recurso" aria-description="Iniciar">Ir al recurso</button>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>  
+                </div>
+
+              </div>
+              <a class="carousel-control-prev d-none" href="#carouselNavigation" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next d-none" href="#carouselNavigation" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<html
