@@ -231,7 +231,7 @@
         line-height: 44px;
     }
     .menu__title:before {
-        top: 91px;
+        top: 74%;
     }
     .textDescription {
         font-size: 18px;

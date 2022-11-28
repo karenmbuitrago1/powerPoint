@@ -49,9 +49,22 @@
     src: url("/futura_medium.e953120c.ttf");
 }
 
+@-moz-keyframes animationMoto {
+    0%   {left: calc(0%);}
+    50%  {left: calc(30%);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {left: calc(85%);}
+}
+
 @keyframes animationMoto {
     0%   {left: calc(0%);}
     50%  {left: calc(30%);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {left: calc(85%);}
+}
+
+@-moz-keyframes animationBike{
+    0%   {left: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
     100% {left: calc(85%);}
 }
@@ -60,6 +73,12 @@
     0%   {left: calc(0%);}
     /* 80%  {left: 1200px; bottom: 104px;} */
     100% {left: calc(85%);}
+}
+
+@-moz-keyframes animationBike2{
+    0%   {right: calc(0%);}
+    /* 80%  {left: 1200px; bottom: 104px;} */
+    100% {right: calc(90%);}
 }
 
 @keyframes animationBike2{
@@ -1299,7 +1318,7 @@ audio::-webkit-media-controls-timeline{
         line-height: 44px;
     }
     .menu__title:before {
-        top: 91px;
+        top: 74%;
     }
     .textDescription {
         font-size: 18px;
@@ -2437,6 +2456,10 @@ display: none;
         height: 33%;
     }
     .cards.--toolsTips5 li:nth-child(2) {
+        width: 64%;
+        height: 33%;
+    }
+    .cards.--toolsTips5 li:nth-child(3) {
         width: 64%;
         height: 33%;
     }
