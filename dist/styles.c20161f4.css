@@ -2175,6 +2175,17 @@ display: none;
     width: 93%;
 }
 
+
+@media screen and (max-width: 1450px){
+    .cards.--toolsCards2.--phase2  li:nth-child(1) {
+        height: 31%;
+        width: 42%;
+    }
+    .cards.--toolsCards2.--phase2  li:nth-child(2) {
+        height: 31%;
+        width: 42%;
+    }
+}
 @media screen and (max-width: 1024px){
     .cards.--toolsCards2.--phase2{
         align-items: flex-end;
@@ -6627,14 +6638,29 @@ padding: 0 2% 0 0;
   #controls .breadcrumb .breadcrumb-item span {
     font-size: 1em;
   }
-
+  .main-cover-title {
+    background: url(/bg_main_slide.98b6aa61.jpg) no-repeat center center/cover;
+    min-height: 70%;
+    text-align: left;
+}
   .step-title .step-heading {
     max-width: 100%;
     padding-right: 60px;
     min-height: 60px;
     font-size: 2.5em;
   }
-
+  .breadcrumb-item{
+    font-family: futura;
+  }
+  #controls .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    margin-top: -13px;
+}
+.title_vid{
+  color: #fff;
+  text-align: center;
+  margin-top: 3%;
+}
   .step-title .step-logo {
     height: 120px;
     width: 120px;

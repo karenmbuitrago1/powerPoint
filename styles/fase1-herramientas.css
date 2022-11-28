@@ -76,6 +76,17 @@
     width: 93%;
 }
 
+
+@media screen and (max-width: 1450px){
+    .cards.--toolsCards2.--phase2  li:nth-child(1) {
+        height: 31%;
+        width: 42%;
+    }
+    .cards.--toolsCards2.--phase2  li:nth-child(2) {
+        height: 31%;
+        width: 42%;
+    }
+}
 @media screen and (max-width: 1024px){
     .cards.--toolsCards2.--phase2{
         align-items: flex-end;
