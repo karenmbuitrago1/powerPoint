@@ -151,9 +151,9 @@ $(function () {
 	$("#play_f4_bienvenida").click(function (e) {
 		var original = '¡Hola! Mi nombre es Linda. Soy la representante del grupo de teatro Teloneros de vida, conformado por más de veinte jóvenes de la zona. Semanalmente, nos reunimos en el parque del barrio para realizar nuestros ensayos. ';
 		var text1 = 'Hace unos días nos enteramos que se iba a realizar un proyecto vial en el espacio en que ensayamos, lo cual nos preocupó mucho. Sin embargo, Jacinta, la directora de la Junta de Acción Comunal, nos habló de una metodología';
-		var text1_1 = ' ...que iba a implementarse con la comunidad, para mitigar las afectaciones de la obra y nos invitó a participar en una reunión para empaparnos más del tema. ¡Fue así como nos acercamos a la metodología y nos vinculamos a ella!';
+		var text1_1 = ' que iba a implementarse con la comunidad, para mitigar las afectaciones de la obra y nos invitó a participar en una reunión para empaparnos más del tema. ¡Fue así como nos acercamos a la metodología y nos vinculamos a ella!';
 		var text1_2 = 'Hoy nos hemos reunido aquí, antes del ensayo, para compartirte en qué consiste esta cuarta fase denominada ¡Planos de acción y prevención! Esta fase tiene como propósito construir y aplicar un instrumento que nos permita identificar posibles factores';
-		var text1_3 = '...de riesgo derivados del proyecto vial, por ejemplo esos que tienen que ver con la seguridad, el medio ambiente, la salud, la movilidad, entre otros.';
+		var text1_3 = 'de riesgo derivados del proyecto vial, por ejemplo esos que tienen que ver con la seguridad, el medio ambiente, la salud, la movilidad, entre otros.';
 		var text1_4 ='El grupo y yo hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta cuarta fase. Ahora, te dejamos con el colectivo Buen vivir, para que te cuenten un poco más al respecto.'
 
 		//$("#play_f4_bienvenida").html('Reproduciendo...') ;
