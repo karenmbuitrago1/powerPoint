@@ -693,9 +693,6 @@ audio::-webkit-media-controls-timeline{
     width: 38%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40%;  
 }
 
 .card__item .card__text2{
@@ -742,7 +739,7 @@ audio::-webkit-media-controls-timeline{
     text-transform: none;
 }
 
-
+/* 
 @media screen and (max-width:1450px){
     .card__item{
         width: 43%;
@@ -766,26 +763,36 @@ audio::-webkit-media-controls-timeline{
         font-size: 18px;
         line-height: 18px;
     }
-}
+} */
 
 @media screen and (max-width:1024px){
     .backgroundC.--type002 {
         overflow-y: scroll;
     }
-    .cards {
+    .card__item {
+        width: 51%;
+    }
+
+    /* .card__front{
+        height: calc(243px);
+    } */
+    /* .cards {
         justify-content: center;
     }
     .card__item {
         width: 58%;
         height: 28%;
-    }
+    } */
 }
 
 @media screen and (max-width:768px){
     .backgroundC.--type002{
         width: 100%;
     }
-    .cards{
+    .card__item {
+        width: 60%;
+    }
+    /* .cards{
         height: 100%;
     }
     .card__item {
@@ -793,17 +800,14 @@ audio::-webkit-media-controls-timeline{
         height: 41%;
     }
     .card__btn {
-        /* height: -webkit-fill-available;
-        height: -moz-available;  
-        height: fill-available; */
         height: inherit; 
         display: flex;
         justify-content: center;
-    }
+    } */
 }
 
 @media screen and (max-width:430px){
-    .card__item {
+    /* .card__item {
         width: 80%;
         height: 34%;
     }
@@ -812,18 +816,18 @@ audio::-webkit-media-controls-timeline{
     }
     .card__text2{
         font-size: 15px;
-    }
+    } */
 }
 
 @media screen and (max-width:360px){
-    .card__item{
+    /* .card__item{
         width: 98%;
         height: 24%;
     }
     .card__text {
         font-size: 16px;
         margin: 0;
-    }
+    } */
 }
 /* Estilos flip ruta intro */
 
@@ -1392,6 +1396,7 @@ audio::-webkit-media-controls-timeline{
         font-size: 16px;
         line-height: 18px;
         width: 89%;
+        z-index: 1;
     }
 
     .phase__menuList{
@@ -1497,6 +1502,7 @@ audio::-webkit-media-controls-timeline{
     }
     .phase__dialog.--phases {
         top: 49%;
+        z-index: 1;
     }
     .phase__textMin {
         font-size: 6px;
@@ -2283,7 +2289,7 @@ display: none;
 
 
 @media screen and (max-width: 1450px) {
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 31%;
         width: 42%;
     }
@@ -2291,7 +2297,7 @@ display: none;
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 31%;
         width: 42%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -2305,7 +2311,7 @@ display: none;
         align-content: flex-end;
     }
 
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 34%;
         width: 71%;
     }
@@ -2313,11 +2319,11 @@ display: none;
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 34%;
         width: 71%;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
-    .cards.--toolsCards {
+    /* .cards.--toolsCards {
         margin: 8px;
         height: 42%;
     }
@@ -2326,7 +2332,7 @@ display: none;
         margin: 8px;
         height: 42%;
 
-    }
+    } */
 
     .content__dialog.--her_fase1 {
         width: 100%;
@@ -2368,7 +2374,7 @@ display: none;
         height: 46%;
     }
 
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 99%;
         width: 39%;
     }
@@ -2376,16 +2382,23 @@ display: none;
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 99%;
         width: 39%;
-    }
+    } */
 }
 
 @media screen and (max-width: 430px) {
-    .card__item {
+    .tools.--phase1{
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 84%;
+        overflow-y: scroll;
+        display: block;
+    }
+    /* .card__item {
         width: 62%;
         height: 50%;
-    }
+    } */
 
-    .cards.--toolsCards {
+    /* .cards.--toolsCards {
         margin: 8px;
         height: 45%;
         width: 100%;
@@ -2398,7 +2411,7 @@ display: none;
     .card__text2.--toolsText {
         margin: 0;
         font-size: 10px;
-    }
+    } */
 
     .content__dialog.--her_fase2 {
         height: 48%;
@@ -2452,7 +2465,7 @@ display: none;
         margin: auto;
     }
 
-    .card__text2.--toolsText3 {
+    /* .card__text2.--toolsText3 {
         font-size: 12px;
     }
 
@@ -2460,7 +2473,7 @@ display: none;
         margin: 8px;
         height: 50%;
         width: 100%;
-    }
+    } */
 
     .cards.--toolsCards2.--phase2 {
         display: flex;
@@ -2497,7 +2510,7 @@ display: none;
         justify-content: center;
     }
 
-    .cards.--toolsCards2 li:nth-child(1) {
+    /* .cards.--toolsCards2 li:nth-child(1) {
         height: 82%;
     }
 
@@ -2522,7 +2535,7 @@ display: none;
     .cards.--toolsCards2.--phase4 li:nth-child(3) {
         width: 70%;
         height: 32%;
-    }
+    } */
 
     .card__text.--toolsText8 {
         font-size: 16px;
@@ -2628,7 +2641,7 @@ display: none;
 }
 
 @media screen and (max-width:1450px){
-    .cards.--toolsTips5 li:nth-child(1) {
+    /* .cards.--toolsTips5 li:nth-child(1) {
         width: 33%;
         height: 25%;
     }
@@ -2639,7 +2652,7 @@ display: none;
     .cards.--toolsTips5 li:nth-child(3) {
         width: 33%;
         height: 25%;
-    }
+    } */
 }
 
 @media screen and (max-width:1024px){
@@ -2647,7 +2660,7 @@ display: none;
         flex-wrap: wrap;
         align-content: flex-end;
     }
-    .cards.--toolsTips5 li:nth-child(1) {
+    /* .cards.--toolsTips5 li:nth-child(1) {
         width: 64%;
         height: 33%;
     }
@@ -2658,7 +2671,7 @@ display: none;
     .cards.--toolsTips5 li:nth-child(3) {
         width: 64%;
         height: 33%;
-    }
+    } */
 }
 
 
@@ -2666,7 +2679,22 @@ display: none;
     .tools.--toolsTips{
         justify-content: space-around;
     }
-    .cards.--toolsTips {
+    .tools.--toolsTips5 {
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 89%;
+        overflow-y: scroll;
+        display: block;
+    }
+    .cards.--toolsCards2{
+        margin: 50px 0 0 0;
+        padding: 40px 0 0 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    /* .cards.--toolsTips {
         margin: 8px;
         height: 40%;
     }
@@ -2695,11 +2723,40 @@ display: none;
     .cards.--toolsTips5 li:nth-child(3) {
         width: 46%;
         height: 55%;
-    }
+    } */
 }
 
 @media screen and (max-width: 430px){
-    .tools.--toolsTips {
+    .tools.--toolsTips5 {
+        height: 81%;
+    }
+    /* .tools.--toolsTips5 {
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 81%;
+        overflow-y: scroll;
+        display: block;
+    }
+    .cards.--toolsCards2{
+        margin: 50px 0 0 0;
+        padding: 40px 0 0 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    } */
+    .card__item{
+        margin: 8px;
+        width: 85%;
+    }
+    .card__text.--tips {
+        margin: 0;
+        width: auto;
+    }
+    .card__front {
+        height: inherit;
+    }
+    /* .tools.--toolsTips {
         width: 100%;
         height: 55%;
         display: flex;
@@ -2765,12 +2822,12 @@ display: none;
     .cards.--toolsTips5.--phase2 li:nth-child(3) {
         width: 41%;
         height: 21%;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 360px){
-    .cards.--toolsTips {
+    /* .cards.--toolsTips {
         height: 56%;
     }
     .card__btn.--toolsTips{
@@ -2784,7 +2841,7 @@ display: none;
     }
     .cards.--toolsTips5.--phase2 li:nth-child(3) {
         width: 40%;
-    }
+    } */
 }
 .background__square.--phase2 {
   background-color: var(--firstPurple);
@@ -5070,7 +5127,7 @@ ul.slide-list li::before {
 }
 
 #controls .navbar-brand {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 #controls .navbar-nav {
