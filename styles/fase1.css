@@ -62,7 +62,7 @@
     border-top: 12px solid var(--titleBlue);
     border-bottom: 36px solid transparent;
     left: 234px;
-    top: 87%;
+    top: 76%;
 }
 
 .menu__phase{
@@ -81,13 +81,13 @@
 
 .titlePhase{
     text-transform: uppercase;
-    font-size: 64px;
+    font-size: 52px;
     color: white;
     margin: 8px;
 }
 
 .title__secondary{
-    font-size: 40px;
+    font-size: 32px;
     line-height: 40px;
     color: white;
     margin: 0;
@@ -95,20 +95,21 @@
 
 .phase__textDescription{
     color: white;
-    margin: 16px;
+    margin: 8px 16px;
     padding: 0 48px 0 8px;
     font-family: 'Futura_medium';
 }
 
 .textDescription{
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
 }
 
 .phase__menuList{
     list-style: none;
     padding: 8px;
-    margin: 16px;
+    margin: 0px 16px;
 }
 
 .phase__menuItem{
@@ -139,8 +140,8 @@
 
 .phase__text{
     margin: 8px;
-    line-height: 21px;
-    font-size: 21px;
+    line-height: 20px;
+    font-size: 20px;
     padding: 0 8px;
     font-family: 'Futura_heavy';
     color: white;
@@ -191,41 +192,8 @@
     height: 90%;
 }
 
-.cards.--toolsCards2 li:nth-child(1){
-    height: 50%;
-    background-image: url('../images/recurso_25.png');
-}
-
-.cards.--toolsCards2 li:hover:nth-child(1){
-    /* height: 40%; */
-    background-image: url('../images/recurso_25.png');
-}
-
-.cards.--toolsCards2 li:nth-child(2){
-    height: 40%;
-    background-image: url('../images/recurso_26.png');
-}
-
-.cards.--toolsCards2 li:hover:nth-child(2){
-    /* height: 40%; */
-    background-image: url('../images/recurso_26.png');
-}
-.cards.--toolsCards2 li:nth-child(3){
-    height: 40%;
-    background-image: url('../images/recurso_24.png');
-}
-
-.cards.--toolsCards2 li:hover:nth-child(3){
-    /* height: 40%; */
-    background-image: url('../images/recurso_24.png');
-}
-
-
 
 @media screen and (max-width:1450px){
-    .cards.--toolsCards2 li:nth-child(1) {
-        height: 49%;
-    }
     .titlePhase{
         font-size: 56px;
     }
@@ -245,12 +213,6 @@
 @media screen and (max-width:1280px){
     .menu__phase {
         height: 84%;
-    }
-}
-
-@media screen and (max-width:1024px){
-    .cards.--toolsCards2 li:nth-child(1) {
-        height: 35%;
     }
 }
 
@@ -464,19 +426,6 @@
     }
     #person6 {
         height: 40%;
-    }
-
-    .cards.--toolsCards2 li:nth-child(1) {
-        height: 84%;
-        width: 65%;
-    }
-
-    .card__text.--toolsText1 {
-        font-size: 21px;
-        margin: auto;
-    }
-    .card__text2.--toolsText3{
-        font-size: 12px;
     }
 
     .content__dialog.--tip_fase1 {

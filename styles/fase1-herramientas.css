@@ -1,224 +1,320 @@
-.tools{
+.tools {
     width: 100%;
     height: 80%;
     display: flex;
 }
 
-.cards.--toolsCards{
+.cards.--toolsCards {
     justify-content: flex-end;
     align-items: flex-end;
 }
 
-.cards.--toolsCards li{
+.cards.--toolsCards li {
     height: 40%;
     background-image: url('../images/recurso_59.png');
 }
 
-.cards.--toolsCards li:hover{
+.cards.--toolsCards li:hover {
     height: 40%;
     background-image: url('../images/recurso_60.png');
 }
 
-.card__text.--toolsText{
+.card__text.--toolsText {
     margin: 0 0 0 98px;
 }
 
-.card__text2.--toolsText{
+.card__text2.--toolsText {
     margin: 0;
     font-size: 15px;
     line-height: 16px;
     padding: 0;
 }
-.tools.--phase2{
+
+.tools.--phase2 {
     height: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.tools.--phase4{
+
+.tools.--phase4 {
     height: 100%;
     display: flex;
     justify-content: center;
 }
-.tools.--phase5{
+
+.tools.--phase5 {
     height: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.cards.--toolsCards2.--phase2  li:nth-child(1) {
-    height: 36%;
-    width: 42%;
+
+.cards.--toolsCards2 {
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.cards.--toolsCards2.--phase2  li:nth-child(2) {
+
+.card__text.--toolsText2 {
+    font-size: 40px;
+    margin: 16px;
+}
+
+.tools.--phase1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cards.--toolsCards2 li:nth-child(1) {
+    max-width: 100%;
+    background-color: var(--firstBlue);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
+}
+
+.cards.--toolsCards2 li:hover:nth-child(1) {
+    background-color: var(--mainButton);
+}
+
+.cards.--toolsCards2 li:nth-child(2) {
+    max-width: 100%;
+    background-color: var(--hoverButton);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
+}
+
+.cards.--toolsCards2 li:hover:nth-child(2) {
+    background-color: var(--hoverButton);
+}
+
+.cards.--toolsCards2 li:nth-child(3) {
+    max-width: 100%;
+    background-color: var(--darkPurple);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
+}
+
+.cards.--toolsCards2 li:hover:nth-child(3) {
+    background-color: var(--titlePurple);
+}
+
+.cards.--toolsCards2.--phase2 li:nth-child(1) {
     height: 36%;
     width: 42%;
 }
 
-.cards.--toolsCards2.--phase4{
+.cards.--toolsCards2.--phase2 li:nth-child(2) {
+    height: 36%;
+    width: 42%;
+}
+
+.cards.--toolsCards2.--phase4 {
     align-content: flex-end;
 }
 
-.cards.--toolsCards2.--phase4  li:nth-child(1) {
-    height: 35%;
-    width: 41%;
-}
-.cards.--toolsCards2.--phase4  li:nth-child(2) {
-    height: 35%;
-    width: 41%;
-}
-.cards.--toolsCards2.--phase4  li:nth-child(3) {
+.cards.--toolsCards2.--phase4 li:nth-child(1) {
     height: 35%;
     width: 41%;
 }
 
-.card__text.--toolsText8{
+.cards.--toolsCards2.--phase4 li:nth-child(2) {
+    height: 35%;
+    width: 41%;
+}
+
+.cards.--toolsCards2.--phase4 li:nth-child(3) {
+    height: 35%;
+    width: 41%;
+}
+
+.card__text.--toolsText8 {
     width: 93%;
 }
 
 
-@media screen and (max-width: 1450px){
-    .cards.--toolsCards2.--phase2  li:nth-child(1) {
+@media screen and (max-width: 1450px) {
+    .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 31%;
         width: 42%;
     }
-    .cards.--toolsCards2.--phase2  li:nth-child(2) {
+
+    .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 31%;
         width: 42%;
     }
 }
-@media screen and (max-width: 1024px){
-    .cards.--toolsCards2.--phase2{
+
+@media screen and (max-width: 1024px) {
+    .cards.--toolsCards2.--phase2 {
         align-items: flex-end;
         align-content: flex-end;
     }
-    .cards.--toolsCards2.--phase3{
+
+    .cards.--toolsCards2.--phase3 {
         align-items: flex-end;
         align-content: flex-end;
     }
+
     .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 34%;
         width: 71%;
     }
+
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 34%;
         width: 71%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .cards.--toolsCards {
         margin: 8px;
         height: 42%;
     }
+
     .cards.--toolsCards2 {
         margin: 8px;
         height: 42%;
-       
+
     }
-    .content__dialog.--her_fase1{
+
+    .content__dialog.--her_fase1 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase2{
+
+    .content__dialog.--her_fase2 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase3{
+
+    .content__dialog.--her_fase3 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase4{
+
+    .content__dialog.--her_fase4 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase5{
+
+    .content__dialog.--her_fase5 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase6{
+
+    .content__dialog.--her_fase6 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase7{
+
+    .content__dialog.--her_fase7 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
-    .content__dialog.--her_fase8{
+
+    .content__dialog.--her_fase8 {
         width: 100%;
-        height: 46%;  
+        height: 46%;
     }
+
     .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 99%;
         width: 39%;
     }
+
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 99%;
         width: 39%;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
     .card__item {
         width: 62%;
         height: 50%;
     }
+
     .cards.--toolsCards {
         margin: 8px;
         height: 45%;
         width: 100%;
     }
+
     .card__text.--toolsText {
         margin: 0 0 0 63px;
     }
-    .card__text2.--toolsText{
+
+    .card__text2.--toolsText {
         margin: 0;
         font-size: 10px;
     }
-    .content__dialog.--her_fase2{
-        height: 48%; 
+
+    .content__dialog.--her_fase2 {
+        height: 48%;
     }
-    .content__dialog.--her_fase3{
-        height: 48%; 
+
+    .content__dialog.--her_fase3 {
+        height: 48%;
     }
-    .content__dialog.--her_fase7{
-        height: 48%; 
+
+    .content__dialog.--her_fase7 {
+        height: 48%;
     }
-    .content__dialog.--her_fase8{
-        height: 48%; 
+
+    .content__dialog.--her_fase8 {
+        height: 48%;
     }
-    .content__dialog.--her_fase4{
-        height: 80%; 
+
+    .content__dialog.--her_fase4 {
+        height: 80%;
         background-color: var(--titleGreen);
     }
-    .content__dialog.--her_fase5{
-        height: 80%; 
+
+    .content__dialog.--her_fase5 {
+        height: 80%;
         background-color: var(--titlePink);
     }
-    .tools.--phase2{
+
+    .tools.--phase2 {
         position: relative;
         height: 100%;
     }
-    .tools.--phase4{
+
+    .tools.--phase4 {
         height: 100%;
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: flex-end;
     }
-    .tools.--phase5{
+
+    .tools.--phase5 {
         height: 100%;
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: flex-end;
     }
+
+    .card__text.--toolsText1 {
+        font-size: 21px;
+        margin: auto;
+    }
+
+    .card__text2.--toolsText3 {
+        font-size: 12px;
+    }
+
     .cards.--toolsCards2 {
         margin: 8px;
         height: 50%;
         width: 100%;
     }
-    .cards.--toolsCards2.--phase2{
+
+    .cards.--toolsCards2.--phase2 {
         display: flex;
         align-content: flex-end;
         flex-direction: row;
@@ -226,7 +322,8 @@
         justify-content: flex-start;
         height: 100%;
     }
-    .cards.--toolsCards2.--phase3{
+
+    .cards.--toolsCards2.--phase3 {
         display: flex;
         align-content: flex-end;
         flex-direction: row;
@@ -234,8 +331,8 @@
         justify-content: flex-start;
         height: 100%;
     }
-    
-    .cards.--toolsCards2.--phase3{
+
+    .cards.--toolsCards2.--phase3 {
         display: flex;
         align-content: flex-end;
         flex-direction: row;
@@ -243,38 +340,45 @@
         justify-content: flex-start;
         height: 100%;
     }
-    .cards.--toolsCards2.--phase4{
+
+    .cards.--toolsCards2.--phase4 {
         display: flex;
         align-content: center;
         flex-wrap: wrap;
         height: 80%;
         justify-content: center;
     }
+
     .cards.--toolsCards2 li:nth-child(1) {
         height: 82%;
     }
+
     .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 40%;
     }
+
     .cards.--toolsCards2.--phase3 li:nth-child(1) {
         height: 40%;
     }
+
     .cards.--toolsCards2.--phase4 li:nth-child(1) {
         width: 70%;
         height: 32%;
     }
+
     .cards.--toolsCards2.--phase4 li:nth-child(2) {
         width: 70%;
         height: 32%;
     }
+
     .cards.--toolsCards2.--phase4 li:nth-child(3) {
         width: 70%;
         height: 32%;
     }
-    .card__text.--toolsText8{
+
+    .card__text.--toolsText8 {
         font-size: 16px;
         margin: 0;
         width: 100%;
     }
 }
-

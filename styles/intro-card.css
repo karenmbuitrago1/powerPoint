@@ -23,30 +23,31 @@
     flex-wrap: wrap;
     align-items: center;
     z-index: 11;
-    width: 90%;
+    width: 100%;
     /* height: -webkit-fill-available;
     height: -moz-available;  
     height: fill-available; */
     height: inherit; 
+    perspective: 1000px;
 }
 
 .cards li:nth-child(1){
-    background-image: url('../images/recurso_19.png');
+    /* background-image: url('../images/recurso_19.png'); */
 }
 .cards li:hover:nth-child(1){
-    background-image: url('../images/recurso_24.png');
+    /* background-image: url('../images/recurso_24.png'); */
 }
 .cards li:nth-child(2){
-    background-image: url('../images/recurso_21.png');
+    /* background-image: url('../images/recurso_21.png'); */
 }
 .cards li:hover:nth-child(2){
-    background-image: url('../images/recurso_25.png');
+    /* background-image: url('../images/recurso_25.png'); */
 }
 .cards li:nth-child(3){
-    background-image: url('../images/recurso_22.png');
+    /* background-image: url('../images/recurso_22.png'); */
 }
 .cards li:hover:nth-child(3){
-    background-image: url('../images/recurso_26.png');
+    /* background-image: url('../images/recurso_26.png'); */
 }
 .cards li:nth-child(4){
     background-image: url('../images/recurso_23.png');
@@ -60,7 +61,6 @@
     width: 38%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    perspective: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 40%;  
@@ -91,20 +91,22 @@
     padding: 16px;
     color: white;
     font-family: 'Futura_heavy';
+    height: 100%;
 }
 
 .card__text{
-    width: 50%;
+    width: 60%;
     font-size: 24px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .card__text2{
     width: 100%;
     padding: 2px;
     margin: 2px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.9em;
+    line-height: 16px;
     text-transform: none;
 }
 
