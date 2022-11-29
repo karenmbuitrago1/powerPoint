@@ -192,51 +192,8 @@
     height: 90%;
 }
 
-.tools.--phase1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.cards.--toolsCards2 li:nth-child(1){
-    max-width: 100%;
-    background-color: var(--firstBlue);
-    border-radius: 20px;
-    border: solid 6px var(--dialogBeige);
-}
-
-.cards.--toolsCards2 li:hover:nth-child(1){
-    background-color: var(--mainButton);
-}
-
-.cards.--toolsCards2 li:nth-child(2){
-    max-width: 100%;
-    background-color: var(--hoverButton);
-    border-radius: 20px;
-    border: solid 6px var(--dialogBeige);
-}
-
-.cards.--toolsCards2 li:hover:nth-child(2){
-    background-color: var(--hoverButton);
-}
-.cards.--toolsCards2 li:nth-child(3){
-    max-width: 100%;
-    background-color: var(--darkPurple);
-    border-radius: 20px;
-    border: solid 6px var(--dialogBeige);
-}
-
-.cards.--toolsCards2 li:hover:nth-child(3){
-    background-color: var(--titlePurple);
-}
-
-
 
 @media screen and (max-width:1450px){
-    /* .cards.--toolsCards2 li:nth-child(1) {
-        height: 49%;
-    } */
     .titlePhase{
         font-size: 56px;
     }
@@ -257,12 +214,6 @@
     .menu__phase {
         height: 84%;
     }
-}
-
-@media screen and (max-width:1024px){
-    /* .cards.--toolsCards2 li:nth-child(1) {
-        height: 35%;
-    } */
 }
 
 @media screen and (max-width:768px){
@@ -475,19 +426,6 @@
     }
     #person6 {
         height: 40%;
-    }
-
-    /* .cards.--toolsCards2 li:nth-child(1) {
-        height: 84%;
-        width: 65%;
-    } */
-
-    .card__text.--toolsText1 {
-        font-size: 21px;
-        margin: auto;
-    }
-    .card__text2.--toolsText3{
-        font-size: 12px;
     }
 
     .content__dialog.--tip_fase1 {

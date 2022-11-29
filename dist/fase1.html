@@ -13,20 +13,21 @@
 	<div id="mainMenu" class="modal" tabindex="-1" role="dialog">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-			<div class="modal fade modalMenu show" id="mainMenu" aria-modal="true" style="padding-right: 15px; display: block;">
-				<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h4 class="modal-title">Menú principal</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="tooltip" title="Cerrar menú">
-						×
-					</button>
-					</div>
-					<div class="modal-body">
-					<div class="list-group">
-					
-	                                    <a href="#" onclick="window.location.href = 'Bienvenida.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video de presentación</a>
-                                    <a href="#" onclick="window.location.href = 'Instructivo.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video ¿Cómo realizar la exploración?</a>
+				<div class="modal fade modalMenu show" id="mainMenu" aria-modal="true" style="padding-right: 15px; display: block;">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Menú principal</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="tooltip" title="Cerrar menú">
+									×
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="list-group">
+
+									<a href="#" onclick="window.location.href = 'Bienvenida.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video de presentación</a>
+									<a href="#" onclick="window.location.href = 'Instructivo.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video ¿Cómo realizar la
+										exploración?</a>
 									<a href="#" onclick="window.location.href = 'index.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Inicio</a>
 									<a href="#" onclick="window.location.href = 'ruta.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Fases Propuesta metodológica
 									</a>
@@ -43,349 +44,379 @@
 										puentes!</a>
 									<a href="#" onclick="window.location.href = 'fase7.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Fase 7 - ¡Manos a la obra!</a>
 									<a href="#" onclick="window.location.href = 'fase8.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Fase 8 - ¡Vallas por la vida!</a>
-                                    <a href="#" onclick="window.location.href = 'final.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video Tips de participación</a>
-	</div>
+									<a href="#" onclick="window.location.href = 'final.html'" data-dismiss="modal" class="list-group-item list-group-item-action">Video Tips de participación</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				</div>
-			</div>
 			</li>
-		</ul>	
+		</ul>
 	</div>
 	<nav id="controls" class="navbar navbar-expand-md item-visible">
 		<div class="float-right w-100 d-flex">
-		  <div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
-			<li class="breadcrumb-item"><p><a href="/ruta.html">Fases Propuesta metodológica</a></p></li>
-			<li class="breadcrumb-item"><p>Fase 1 - ¡Preconstrucción y
-				planificación!</p></li>
-		  </div>
-		  <div class="d-flex align-items-center justify-content-end">
-			<div class="float-right">
-			  <ul class="navbar-nav slide-direction-buttons">
-				<li class="nav-item mx-1">
-				  <button id="origin_prev" class="btn btn-blue-dark prev" onclick="window.location.href = 'ruta.html'" data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>
+			<div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
+				<li class="breadcrumb-item">
+					<p><a href="/ruta.html">Fases Propuesta metodológica</a></p>
 				</li>
-				<li class="nav-item mx-1">
-				  <button id="origin_next" class="btn btn-blue-dark next focused" onclick="window.location.href = 'fase2.html'" data-toggle="tooltip" title="Siguiente" tabindex="0">&#10095;</button>
+				<li class="breadcrumb-item">
+					<p>Fase 1 - ¡Preconstrucción y
+						planificación!</p>
 				</li>
-			  </ul>
 			</div>
-			<div class="float-right mx-1">
-			  <button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu" title="Menu Principal"><span class="text-center">&#9776;</span></button>
-			</div>
-			<div class="accesibility-container">
-			  <div class="float-right mx-1 accesibility-btn-toggle">
-				<button type="button" class="btn btn-blue-dark menu btn-accesibility" onclick="toggleAccesibilityMenu(); loadSpeechPlayer();" data-toggle="tooltip" title="Opciones de accesibilidad"><img class="img-fluid" src="/img_ac_menu.7ebe6445.png"></button>
-			  </div>
-			  <div class="speechPlayer-container">
-				<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos" alt="Lector de textos">
-				  <button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled="" data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid" src="/img_prev.22d2e802.png"></button>
-				  <button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip" title="Leer Texto"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
-				  <button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
-				  <button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip" title="Detener lectura"><img class="img-fluid" src="/img_stop.5bd6d92b.png"></button>
-				  <button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip" title="Texto Siguiente"><img class="img-fluid" src="/img_next.634998c2.png"></button>
+			<div class="d-flex align-items-center justify-content-end">
+				<div class="float-right">
+					<ul class="navbar-nav slide-direction-buttons">
+						<li class="nav-item mx-1">
+							<button id="origin_prev" class="btn btn-blue-dark prev" onclick="window.location.href = 'ruta.html'" data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>
+						</li>
+						<li class="nav-item mx-1">
+							<button id="origin_next" class="btn btn-blue-dark next focused" onclick="window.location.href = 'fase2.html'" data-toggle="tooltip" title="Siguiente" tabindex="0">&#10095;</button>
+						</li>
+					</ul>
 				</div>
-			  </div>
-			  <div class="accesibility-menu">
-				<div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
-				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;+&quot;)" data-toggle="tooltip" title="Incrementar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_increase.35901f0d.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;-&quot;)" data-toggle="tooltip" title="Disminuir tamaño de fuente"><img class="img-fluid" src="/img_ac_font_decrease.26cdc049.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="resizeFont(&quot;0&quot;)" data-toggle="tooltip" title="Restaurar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_reset.90745988.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrast&quot;)" data-toggle="tooltip" title="Invertir color"><img class="img-fluid" src="/img_ac_contrast01.54b264b1.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColor&quot;)" data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid" src="/img_ac_contrast02.bf367c30.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColorBright&quot;)" data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid" src="/img_ac_contrast03.3d66d6f3.png"></button>
-				  <button class="btn btn-accesibility-option" onclick="changeTheme(&quot;grayScale&quot;)" data-toggle="tooltip" title="Sin color"><img class="img-fluid" src="/img_ac_contrast04.c537f69f.png"></button>
-				  <button class="btn btn-accesibility-option btn-read" onclick="showSpeechPlayer()" data-toggle="tooltip" title="Lector de textos"><img class="img-fluid" src="/img_ac_reader.6ef21e67.png"></button>
+				<div class="float-right mx-1">
+					<button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu" title="Menu Principal"><span class="text-center">&#9776;</span></button>
 				</div>
-			  </div>
+				<div class="accesibility-container">
+					<div class="float-right mx-1 accesibility-btn-toggle">
+						<button type="button" class="btn btn-blue-dark menu btn-accesibility" onclick="toggleAccesibilityMenu(); loadSpeechPlayer();" data-toggle="tooltip" title="Opciones de accesibilidad"><img class="img-fluid" src="/img_ac_menu.7ebe6445.png"></button>
+					</div>
+					<div class="speechPlayer-container">
+						<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos" alt="Lector de textos">
+							<button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled="" data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid" src="/img_prev.22d2e802.png"></button>
+							<button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip" title="Leer Texto"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
+							<button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid" src="/img_play.c8be2b0b.png"></button>
+							<button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip" title="Detener lectura"><img class="img-fluid" src="/img_stop.5bd6d92b.png"></button>
+							<button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip" title="Texto Siguiente"><img class="img-fluid" src="/img_next.634998c2.png"></button>
+						</div>
+					</div>
+					<div class="accesibility-menu">
+						<div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
+							<button class="btn btn-accesibility-option" onclick="resizeFont(&quot;+&quot;)" data-toggle="tooltip" title="Incrementar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_increase.35901f0d.png"></button>
+							<button class="btn btn-accesibility-option" onclick="resizeFont(&quot;-&quot;)" data-toggle="tooltip" title="Disminuir tamaño de fuente"><img class="img-fluid" src="/img_ac_font_decrease.26cdc049.png"></button>
+							<button class="btn btn-accesibility-option" onclick="resizeFont(&quot;0&quot;)" data-toggle="tooltip" title="Restaurar tamaño de fuente"><img class="img-fluid" src="/img_ac_font_reset.90745988.png"></button>
+							<button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrast&quot;)" data-toggle="tooltip" title="Invertir color"><img class="img-fluid" src="/img_ac_contrast01.54b264b1.png"></button>
+							<button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColor&quot;)" data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid" src="/img_ac_contrast02.bf367c30.png"></button>
+							<button class="btn btn-accesibility-option" onclick="changeTheme(&quot;highContrastHalfColorBright&quot;)" data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid" src="/img_ac_contrast03.3d66d6f3.png"></button>
+							<button class="btn btn-accesibility-option" onclick="changeTheme(&quot;grayScale&quot;)" data-toggle="tooltip" title="Sin color"><img class="img-fluid" src="/img_ac_contrast04.c537f69f.png"></button>
+							<button class="btn btn-accesibility-option btn-read" onclick="showSpeechPlayer()" data-toggle="tooltip" title="Lector de textos"><img class="img-fluid" src="/img_ac_reader.6ef21e67.png"></button>
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </nav>
+	</nav>
 
-<div class="container-blue">
-	<main class="main">
-		<div class="background --type004">
-			<div class="background__square --phase1"></div>
-			<!-- <a class="background__back" href="ruta.html">
+	<div class="container-blue">
+		<main class="main">
+			<div class="background --type004">
+				<div class="background__square --phase1"></div>
+				<!-- <a class="background__back" href="ruta.html">
 				<p class="background__backtText">Fases propuesta metodológica </p>
 			</a> -->
-		</div>
-		<div class="content">
-			<section class="content__menu --phases">
-				<div class="menu__title --phase1">
-					<h1 class="titlePhase">Fase 1</h1>
-				</div>
-				<div class="menu__logo">
-					<img class="logo" src="/recurso_11.7c38c054.png" alt="logo">
-				</div>
-				<div class="menu__phase">
-					<div class="phase__textMain">
-						<h2 class="title__secondary">¡Preconstrucción y planificación!</h2>
-					</div>
-					<div class="phase__textDescription">
-						<p class="textDescription">Definir los perfiles profesionales y funciones del equipo que
-							implementará la metodología, así como establecer el plan de trabajo</p>
-					</div>
-					<div class="phase__menu">
-						<ul class="phase__menuList">
-							<li class="phase__menuItem" id="btn_obj_f1">
-								<div class="phase__menuIcon --phase1 ">
-									<img class="phase__icon" src="/recurso_32.b7671b35.png" alt="Icono tabla de planificacion">
-								</div>
-								<p class="phase__text phase__text_active --phase1">Objetivo - Tiempo - Recursos </p>
-							</li>
-							<li class="phase__menuItem" id="btn_pas_f1">
-								<div class="phase__menuIcon --phase1 ">
-									<img class="phase__icon" src="/recurso_33.2acf8c09.png" alt="Icono tabla de planificacion">
-								</div>
-								<p class="phase__text --phase1">Paso a paso </p>
-							</li>
-							<li class="phase__menuItem" id="btn_her_f1">
-								<div class="phase__menuIcon --phase1 ">
-									<img class="phase__icon" src="/recurso_34.cb2164ce.png" alt="Icono tabla de planificacion">
-								</div>
-								<p class="phase__text --phase1">Herramientas </p>
-							</li>
-							<li class="phase__menuItem" id="btn_tip_f1">
-								<div class="phase__menuIcon --phase1 ">
-									<img class="phase__icon" src="/recurso_35.f3fe874f.png" alt="Icono tabla de planificacion">
-								</div>
-								<div class="phase__menuText">
-									<p class="phase__text --phase1">Tips</p>
-									<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="menu__person">
-					<img id="person5" class="person --obj_fase1" src="/recurso_36.81b64691.png" loading="lazy" alt="persona que habla">
-					<img id="person6" class="person --pas_fase1 --invisible" src="/recurso_49.ab31750c.png" loading="lazy" alt="persona que habla">
-					<img id="person7" class="person --her_fase1 --invisible" src="/recurso56.ae47b1a7.png" loading="lazy" alt="persona que habla">
-				</div>
-				<div class="menu__personRight">
-					<img id="person9" class="person" loading="lazy" src="/recurso_37.989d7d1f.png" alt="persona que habla">
-					<img id="person20" class="person --invisible" loading="lazy" src="/recurso_50.ff9f4334.png" alt="persona que habla">
-				</div>
-			</section>
-			<div>
-				<button class="btn-continue" id="continue-f1">Continuar</button>
 			</div>
-			<section id="obj_f1" class="content__dialog obj_f1 ">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text" id="change_f1_1">¡Hola! Bienvenido a la <span style="color:
+			<div class="content">
+				<section class="content__menu --phases">
+					<div class="menu__title --phase1">
+						<h1 class="titlePhase">Fase 1</h1>
+					</div>
+					<div class="menu__logo">
+						<img class="logo" src="/recurso_11.7c38c054.png" alt="logo">
+					</div>
+					<div class="menu__phase">
+						<div class="phase__textMain">
+							<h2 class="title__secondary">¡Preconstrucción y planificación!</h2>
+						</div>
+						<div class="phase__textDescription">
+							<p class="textDescription">Definir los perfiles profesionales y funciones del equipo que
+								implementará la metodología, así como establecer el plan de trabajo</p>
+						</div>
+						<div class="phase__menu">
+							<ul class="phase__menuList">
+								<li class="phase__menuItem" id="btn_obj_f1">
+									<div class="phase__menuIcon --phase1 ">
+										<img class="phase__icon" src="/recurso_32.b7671b35.png" alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text phase__text_active --phase1">Objetivo - Tiempo - Recursos </p>
+								</li>
+								<li class="phase__menuItem" id="btn_pas_f1">
+									<div class="phase__menuIcon --phase1 ">
+										<img class="phase__icon" src="/recurso_33.2acf8c09.png" alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase1">Paso a paso </p>
+								</li>
+								<li class="phase__menuItem" id="btn_her_f1">
+									<div class="phase__menuIcon --phase1 ">
+										<img class="phase__icon" src="/recurso_34.cb2164ce.png" alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase1">Herramientas </p>
+								</li>
+								<li class="phase__menuItem" id="btn_tip_f1">
+									<div class="phase__menuIcon --phase1 ">
+										<img class="phase__icon" src="/recurso_35.f3fe874f.png" alt="Icono tabla de planificacion">
+									</div>
+									<div class="phase__menuText">
+										<p class="phase__text --phase1">Tips</p>
+										<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__person">
+						<img id="person5" class="person --obj_fase1" src="/recurso_36.81b64691.png" loading="lazy" alt="persona que habla">
+						<img id="person6" class="person --pas_fase1 --invisible" src="/recurso_49.ab31750c.png" loading="lazy" alt="persona que habla">
+						<img id="person7" class="person --her_fase1 --invisible" src="/recurso56.ae47b1a7.png" loading="lazy" alt="persona que habla">
+					</div>
+					<div class="menu__personRight">
+						<img id="person9" class="person" loading="lazy" src="/recurso_37.989d7d1f.png" alt="persona que habla">
+						<img id="person20" class="person --invisible" loading="lazy" src="/recurso_50.ff9f4334.png" alt="persona que habla">
+					</div>
+				</section>
+				<div>
+					<button class="btn-continue" id="continue-f1">Continuar</button>
+				</div>
+				<section id="obj_f1" class="content__dialog obj_f1 ">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text" id="change_f1_1">¡Hola! Bienvenido a la <span style="color:
 						#f85636">primera fase</span> de nuestra
-						metodología. Mi
-						nombre es Ana, soy lideresa social del territorio. También nos
-						acompaña Pedro, uno de los constructores que está desarrollando
-						un proyecto vial en esta zona.
-					</div>
-					<audio id="my_audio_f1_1">
-						<source src="/1Ana-Pedro-campo.6a6d1cc5.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_f1_bienvenida" class="play">
-						<img src="/recurso144.956d6627.png" alt="sound" width="20">
-					</div>
-			</div></section>
-			<section class="content__dialog --obj_fase1_postits --invisible">
-				<div class="postits">
-					<ul class="postits__list --phase1">
-						<li class="postits__item">
-							<p class="postits__itemTittle">Objetivo de la fase:</p>
-							<div class="postit" id="post1">
-								<p class="postits__text">Definir el pefil profesional y las
-									funciones de quién o quiénes,desde las concesiones, orientarán la implementación de
-									la
-									metodología.
-								</p><p>
-							</p></div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
-							<div class="postit" id="post2">
-								<p class="postits__text">30 días</p>
-							</div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Recursos requeridos:</p>
-							<div class="postits__itemPost --thirdColumn">
-								<ul class="postits__itemList">
-									<li class="list__item">
-										<div class="postit" id="post3">
-											<p class="postits__text">Financieros:
-												Se debe garantizar la disponibilidad
-												presupuestal para la contratación del profesional que liderará esta
-												metodología. </p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div class="postit" id="post5">
-											<p class="postits__text">
-												Técnicos: Es necesario contar con las herramientas
-												necesarias para que la persona contratada pueda realizar su trabajo en
-												condiciones óptimas. Por ejemplo, la creación de una cuenta de correo,
-												la entrega de un computador, acceso a documentación, entre otros.
-											</p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div class="postit" id="post4">
-											<p class="postits__text">Humanos: Se necesitará apoyo de recursos humanos
-												para adelantar procesos internos de revisión de hojas de vida, entrevistas y
-												contratación. Humanos: Se necesitará apoyo de recursos humanos
-												para adelantar procesos internos de revisión de hojas de vida, entrevistas y
-												contratación.</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="content__dialog origen --invisible --pas_fase1">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text" id="change_f1_2">¡Bienvenido de vuelta! Mi nombre es Alirio, soy un
-						líder afro de
-						este
-						territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.
-					</div>
-					<audio id="my_audio_f1_2">
-						<source src="/2Alirio-campo.8800371d.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_paso_f1" class="play">
-						<img src="/recurso144.956d6627.png" alt="sound" width="20">
-					</div>
-			</div></section>
-
-			<section class="content__dialog --her_fase1 --invisible">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text" id="change_f1_2">Aquí encontrarás las herramientas necesarias para
-						desarrollar
-						las
-						instrucciones propuestas
-						¡No olvides dar clic en cada una de ellas, para conocerlas!
-					</div>
-				</div>
-				<div class="tools --phase1">
-					<ul class="cards --toolsCards2 --phase1">
-						<li class="card__item --toolsCards2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText1">LISTA DE CHEQUEO
-									DEL PROFESIONAL SOCIAL
-								</p>
-								<p class="card__text2 --toolsText3">Describe algunos conocimientos, capacidades y
-									atributos que deben tener las
-									personas que, desde las concesiones,
-									acompañen la implementación de la
-									metodología. Esta herramienta permitirá
-									definir el equipo base y sus funciones,
-									pero también, valorar si se requiere o
-									no, la contratación de personal externo.</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --pas_2_fase1 --invisible">
-				<div class="draggable">
-					<div class="draggable__up">
-						<ul class="draggable-list container_drag">
-							<li id="e1" class="box bg_bl" draggable="true">
-								<p class="titulo_opc">Revisión de capacidades instaladas</p>
-								<p class="text_opc">Las concesiones establecerán los miembros del equipo que podrían
-									aportar
-									en la
-									construcción e implementación de la medolología.</p>
+							metodología. Mi
+							nombre es Ana, soy lideresa social del territorio. También nos
+							acompaña Pedro, uno de los constructores que está desarrollando
+							un proyecto vial en esta zona.
+						</div>
+						<audio id="my_audio_f1_1">
+							<source src="/1Ana-Pedro-campo.6a6d1cc5.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_f1_bienvenida" class="play">
+							<img src="/recurso144.956d6627.png" alt="sound" width="20">
+						</div>
+				</div></section>
+				<section class="content__dialog --obj_fase1_postits --invisible">
+					<div class="postits">
+						<ul class="postits__list --phase1">
+							<li class="postits__item">
+								<p class="postits__itemTittle">Objetivo de la fase:</p>
+								<div class="postit" id="post1">
+									<p class="postits__text">Definir el pefil profesional y las
+										funciones de quién o quiénes,desde las concesiones, orientarán la implementación
+										de
+										la
+										metodología.
+									</p><p>
+								</p></div>
 							</li>
-							<li id="e2" class="box bg_bl" draggable="true">
-								<p class="titulo_opc">Definición de roles y funciones</p>
-								<p class="text_opc">Atendiendo a las capacidades del equipo, se establecerán los roles y
-									funciones de
-									cada uno de sus integrantes</p>
+							<li class="postits__item">
+								<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
+								<div class="postit" id="post2">
+									<p class="postits__text">30 días</p>
+								</div>
 							</li>
-							<li id="e3" class="box bg_bl" draggable="true">
-								<p class="titulo_opc">Selección del equipo</p>
-								<p class="text_opc">Una vez identificados los posibles integrantes del equipo, se
-									procederá
-									a la revisión
-									de hojas de vida y la realización de entrevistas.</p>
-							</li>
-							<li id="e4" class="box bg_bl" draggable="true">
-								<p class="titulo_opc">Valoración de contratación adicional </p>
-								<p class="text_opc">Unidades instaladas en las conversiones, se evaluará la necesidad de
-									controlar o no un
-									profesional externo que apoye la implementación</p>
+							<li class="postits__item">
+								<p class="postits__itemTittle">Recursos requeridos:</p>
+								<div class="postits__itemPost --thirdColumn">
+									<ul class="postits__itemList">
+										<li class="list__item">
+											<div class="postit" id="post3">
+												<p class="postits__text">Financieros:
+													Se debe garantizar la disponibilidad
+													presupuestal para la contratación del profesional que liderará esta
+													metodología. </p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="postit" id="post5">
+												<p class="postits__text">
+													Técnicos: Es necesario contar con las herramientas
+													necesarias para que la persona contratada pueda realizar su trabajo
+													en
+													condiciones óptimas. Por ejemplo, la creación de una cuenta de
+													correo,
+													la entrega de un computador, acceso a documentación, entre otros.
+												</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="postit" id="post4">
+												<p class="postits__text">Humanos: Se necesitará apoyo de recursos
+													humanos
+													para adelantar procesos internos de revisión de hojas de vida,
+													entrevistas y
+													contratación. Humanos: Se necesitará apoyo de recursos humanos
+													para adelantar procesos internos de revisión de hojas de vida,
+													entrevistas y
+													contratación.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="draggable__down">
-						<ul class="draggable-list container_drag">
-							<li id="s1" class="box" draggable="true"><img src="/Recurso52.4716f682.png" loading="lazy" alt="opcion_uno" width="100%">
-							</li>
-							<li id="s3" class="box" draggable="true"><img src="/Recurso53.c1d0f954.png" loading="lazy" alt="opcion_uno" width="100%">
-							</li>
-							<li id="s4" class="box" draggable="true"><img src="/Recurso54.93f3096d.png" loading="lazy" alt="opcion_uno" width="100%">
-							</li>
-							<li id="s2" class="box" draggable="true"><img src="/Recurso55.570b3a94.png" loading="lazy" alt="opcion_uno" width="100%">
+				</section>
+
+				<section class="content__dialog origen --invisible --pas_fase1">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text" id="change_f1_2">¡Bienvenido de vuelta! Mi nombre es Alirio, soy un
+							líder afro de
+							este
+							territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto
+							vial.
+						</div>
+						<audio id="my_audio_f1_2">
+							<source src="/2Alirio-campo.8800371d.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_paso_f1" class="play">
+							<img src="/recurso144.956d6627.png" alt="sound" width="20">
+						</div>
+				</div></section>
+
+				<section class="content__dialog --her_fase1 --invisible">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text" id="change_f1_2">Aquí encontrarás las herramientas necesarias para
+							desarrollar
+							las
+							instrucciones propuestas
+							¡No olvides dar clic en cada una de ellas, para conocerlas!
+						</div>
+					</div>
+					<div class="tools --phase1">
+						<ul class="cards --toolsCards2 --phase1">
+							<li class="card__item --toolsCards2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText1">LISTA DE CHEQUEO
+										DEL PROFESIONAL SOCIAL
+									</p>
+									<p class="card__text2 --toolsText3">Describe algunos conocimientos, capacidades y
+										atributos que deben tener las
+										personas que, desde las concesiones,
+										acompañen la implementación de la
+										metodología. Esta herramienta permitirá
+										definir el equipo base y sus funciones,
+										pero también, valorar si se requiere o
+										no, la contratación de personal externo.</p>
+								</button>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div id="endMessage">
-					<h3 class="drag_done">¡Bien hecho!</h3>
-					<ul class="draggable-list container_drag">
-						<li id="s1" class="box" draggable="false"><img src="/recurso_res1.3c07f05d.png" loading="lazy" alt="opcion_uno" width="100%"></li>
-						<li id="s3" class="box" draggable="false"><img src="/recurso_res2.f6dd71da.png" loading="lazy" alt="opcion_uno" width="100%"></li>
-						<li id="s4" class="box" draggable="false"><img src="/recurso_res3.29708912.png" loading="lazy" alt="opcion_uno" width="100%"></li>
-						<li id="s2" class="box" draggable="false"><img src="/recurso_res4.1cdc458d.png" loading="lazy" alt="opcion_uno" width="100%"></li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --tip_fase1 --invisible">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text">Te compartimos los siguientes Tips para garantizar la participación
-						de los actores comunitarios y multisectoriales
-						¡Ponlos a prueba! ¡No olvides girar cada tarjeta!
-
+				</section>
+				<section class="content__dialog --pas_2_fase1 --invisible">
+					<div class="draggable">
+						<div class="draggable__up">
+							<ul class="draggable-list container_drag">
+								<li id="e1" class="box bg_bl" draggable="true">
+									<p class="titulo_opc">Revisión de capacidades instaladas</p>
+									<p class="text_opc">Las concesiones establecerán los miembros del equipo que podrían
+										aportar
+										en la
+										construcción e implementación de la medolología.</p>
+								</li>
+								<li id="e2" class="box bg_bl" draggable="true">
+									<p class="titulo_opc">Definición de roles y funciones</p>
+									<p class="text_opc">Atendiendo a las capacidades del equipo, se establecerán los
+										roles y
+										funciones de
+										cada uno de sus integrantes</p>
+								</li>
+								<li id="e3" class="box bg_bl" draggable="true">
+									<p class="titulo_opc">Selección del equipo</p>
+									<p class="text_opc">Una vez identificados los posibles integrantes del equipo, se
+										procederá
+										a la revisión
+										de hojas de vida y la realización de entrevistas.</p>
+								</li>
+								<li id="e4" class="box bg_bl" draggable="true">
+									<p class="titulo_opc">Valoración de contratación adicional </p>
+									<p class="text_opc">Unidades instaladas en las conversiones, se evaluará la
+										necesidad de
+										controlar o no un
+										profesional externo que apoye la implementación</p>
+								</li>
+							</ul>
+						</div>
+						<div class="draggable__down">
+							<ul class="draggable-list container_drag">
+								<li id="s1" class="box" draggable="true"><img src="/Recurso52.4716f682.png" loading="lazy" alt="opcion_uno" width="100%">
+								</li>
+								<li id="s3" class="box" draggable="true"><img src="/Recurso53.c1d0f954.png" loading="lazy" alt="opcion_uno" width="100%">
+								</li>
+								<li id="s4" class="box" draggable="true"><img src="/Recurso54.93f3096d.png" loading="lazy" alt="opcion_uno" width="100%">
+								</li>
+								<li id="s2" class="box" draggable="true"><img src="/Recurso55.570b3a94.png" loading="lazy" alt="opcion_uno" width="100%">
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="tools --toolsTips5 --phase1">
-					<ul class="cards --toolsTips5">
-						<li class="card__item --toolsTips5">
-							<button type="button" class="card__btn --toolsTips" name="carta">
-								<p class="card__text2 --tipsText">Realiza procesos de convocatoria oportunos
-									y abiertos para las acciones programadas
-									dentro de esta fase. Anúncialos con antelación y recuérdalos de manera reiterada a
-									través de diferentes estrategias (redes sociales, Juntas de Acción Comunal, bolsas
-									de
-									empleo, medios de comunicación locales,
-									entre otros).</p>
-							</button>
-						</li>
-						<li class="card__item --toolsTips5">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text2 --tipsText">Promueve la participación de las personas que habitan
-									en el área de influencia de la
-									concesión, en el proceso de selección de la
-									persona que liderará la metodología. Selecciona las hojas de vida para avanzar en su
-									revisión. Garantiza que, en las entrevistas, por ejemplo, no se filtren prejuicios
-									con respecto a la pertenencia étnica, el género, la
-									ideología, la nacionalidad, el curso de vida,
-									entre otros.</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-		</main></div>
+					<div id="endMessage">
+						<h3 class="drag_done">¡Bien hecho!</h3>
+						<ul class="draggable-list container_drag">
+							<li id="s1" class="box" draggable="false"><img src="/recurso_res1.3c07f05d.png" loading="lazy" alt="opcion_uno" width="100%"></li>
+							<li id="s3" class="box" draggable="false"><img src="/recurso_res2.f6dd71da.png" loading="lazy" alt="opcion_uno" width="100%"></li>
+							<li id="s4" class="box" draggable="false"><img src="/recurso_res3.29708912.png" loading="lazy" alt="opcion_uno" width="100%"></li>
+							<li id="s2" class="box" draggable="false"><img src="/recurso_res4.1cdc458d.png" loading="lazy" alt="opcion_uno" width="100%"></li>
+						</ul>
+					</div>
+				</section>
+				<section class="content__dialog --tip_fase1 --invisible">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text">Te compartimos los siguientes Tips para garantizar la participación
+							de los actores comunitarios y multisectoriales
+							¡Ponlos a prueba! ¡No olvides girar cada tarjeta!
+
+						</div>
+					</div>
+					<div class="tools --toolsTips5 --phase1">
+						<ul class="cards --toolsCards2 --tips">
+							<li class="card__item">
+								<button type="button" class="card__btn" name="carta">
+									<div class="card__front">
+										<p class="card__text --tips">TIP 1 </p>
+											<span class="card__icon">
+												<img class="card__img" alt="Imagen bombillo" src="/recurso_35.f3fe874f.png">
+											</span>
+									</div>
+									<p class="card__text2 --toolsText">Realiza procesos de convocatoria oportunos
+										y abiertos para las acciones programadas
+										dentro de esta fase. Anúncialos con antelación y recuérdalos de manera reiterada
+										a
+										través de diferentes estrategias (redes sociales, Juntas de Acción Comunal,
+										bolsas
+										de
+										empleo, medios de comunicación locales,
+										entre otros).</p>
+								</button>
+							</li>
+							<li class="card__item">
+								<button type="button" class="card__btn" name="carta">
+									<div class="card__front">
+										<p class="card__text --tips">TIP 2</p>
+											<span class="card__icon">
+												<img class="card__img" alt="Imagen bombillo" src="/recurso_35.f3fe874f.png">
+											</span>
+									</div>
+									<p class="card__text2 --toolsText">Promueve la participación de las personas que
+										habitan
+										en el área de influencia de la
+										concesión, en el proceso de selección de la
+										persona que liderará la metodología. Selecciona las hojas de vida para avanzar
+										en su
+										revisión. Garantiza que, en las entrevistas, por ejemplo, no se filtren
+										prejuicios
+										con respecto a la pertenencia étnica, el género, la
+										ideología, la nacionalidad, el curso de vida,
+										entre otros.</p>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+	</main></div>
 	
-
+	
 </body>
 
 <script data-require="jquery@3.0.0" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>

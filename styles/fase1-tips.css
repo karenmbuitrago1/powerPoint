@@ -6,6 +6,21 @@
     align-items: flex-end;
 }
 
+.card__front{
+    display: flex;
+    align-items: center;
+}
+
+.card__text.--tips{
+    margin: 0;
+    width: fit-content;
+    font-size: 72px;
+}
+
+.card__item:hover .card__icon{
+    display: none;
+}
+
 .cards.--toolsTips li:nth-child(1){
     height: 40%;
     background-image: url('../images/recurso_62.png');
@@ -47,29 +62,37 @@
     display: contents;
 }
 
-.cards.--toolsTips5 li:nth-child(1){
-    width: 31%;
-    height: 29%;
-    background-image: url('../images/recurso_62.png');
+.cards.--toolsCards2.--tips li:nth-child(1) {
+    max-width: 100%;
+    background-color: var(--darkPurple);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
 }
-.cards.--toolsTips5 li:hover:nth-child(1){
-    background-image: url('../images/recurso_24.png');
+
+.cards.--toolsCards2.--tips li:hover:nth-child(1) {
+    background-color: var(--titlePurple);
 }
-.cards.--toolsTips5 li:nth-child(2){
-    width: 31%;
-    height: 29%;
-    background-image: url('../images/recurso_63.png');
+
+.cards.--toolsCards2.--tips li:nth-child(2) {
+    max-width: 100%;
+    background-color: var(--firstBlue);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
 }
-.cards.--toolsTips5 li:hover:nth-child(2){
-    background-image: url('../images/recurso_25.png');
+
+.cards.--toolsCards2.--tips li:hover:nth-child(2) {
+    background-color: var(--mainButton);
 }
-.cards.--toolsTips5 li:nth-child(3){
-    width: 31%;
-    height: 29%;
-    background-image: url('../images/recurso_41_41.png');
+
+.cards.--toolsCards2.--tips li:nth-child(3) {
+    max-width: 100%;
+    background-color: var(--hoverButton);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
 }
-.cards.--toolsTips5 li:hover:nth-child(3){
-    background-image: url('../images/recurso_26.png');
+
+.cards.--toolsCards2.--tips li:hover:nth-child(3) {
+    background-color: var(--hoverButton);
 }
 
 @media screen and (max-width:1450px){
@@ -104,7 +127,6 @@
         width: 64%;
         height: 33%;
     }
-
 }
 
 
@@ -122,9 +144,6 @@
         padding: 0;
     }
     .tools.--toolsTips5{
-        /* height: -webkit-fill-available;
-        height: -moz-available;  
-        height: fill-available; */
         height: inherit; 
         align-items: center;
     }
