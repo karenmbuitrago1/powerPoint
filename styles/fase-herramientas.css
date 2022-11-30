@@ -17,6 +17,20 @@
     align-items: flex-end;
 }
 
+.card__item.--toolsCards2 {
+    width: 49%;
+}
+
+.card__text2.--toolsText3 {
+    padding: 8px;
+}
+
+.card__text.--toolsText5 {
+    padding: 14px 0;
+    width: 100%;
+    font-size: 19px;
+}
+
 .cards.--toolsCards li {
     height: 40%;
     background-image: url('../images/recurso_59.png');
@@ -148,10 +162,11 @@
     width: 93%;
 }
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1450px) {
     .card__btn {
         padding: 8px;
     }
+
     .card__text2.--toolsText {
         padding: 8px 8px;
     }
