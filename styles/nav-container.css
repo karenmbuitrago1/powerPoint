@@ -2876,7 +2876,10 @@ ul.slide-list li::before {
   #controls .breadcrumb .breadcrumb-item span {
     font-size: 1em;
   }
-
+  .centrar{
+    margin: auto;
+    display:block;
+  }
   .main-cover-title {
     background: url(../images/bg_main_slide.jpg) no-repeat center center/cover;
     min-height: 70%;
@@ -3001,3 +3004,15 @@ ul.slide-list li::before {
     min-height: auto !important;
   }
 }
+ @media (max-width: 720px){
+   .title_vid{
+     margin-top: 25%;
+   }
+   .vid-top{
+     width: 90%;
+   }
+   .centrar{
+     margin: auto !important;
+     display: block;
+   }
+ }
