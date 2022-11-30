@@ -1475,9 +1475,10 @@ audio::-webkit-media-controls-timeline{
     
     .phase__menuList {
         margin: 8px 0;
+        justify-content: space-evenly;
     }
     .phase__menuItem {
-        padding: 8px;
+        padding: 8px 2px;
         margin: 0;
         width: 45%;
     }
@@ -3598,6 +3599,7 @@ display: none;
     background-image: url('/recurso_201.3a2be584.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .pas__list8 li:hover:nth-child(1){
     background-image: url('/recurso_204.dfe94b50.png');
@@ -3609,6 +3611,8 @@ display: none;
     background-image: url('/recurso_202.66565b89.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
 
 }
 .pas__list8 li:hover:nth-child(2){
@@ -3618,8 +3622,6 @@ display: none;
 
 }
 
-
-
 @media screen and (max-width: 720px){
     .pas__list8{
         display: flex;
@@ -3628,6 +3630,8 @@ display: none;
         flex-direction: column;
     }
 }
+
+
 
 .background__square.--phase8{
     background-color: var(--firstMora);

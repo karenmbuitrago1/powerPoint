@@ -391,9 +391,10 @@
     
     .phase__menuList {
         margin: 8px 0;
+        justify-content: space-evenly;
     }
     .phase__menuItem {
-        padding: 8px;
+        padding: 8px 2px;
         margin: 0;
         width: 45%;
     }
