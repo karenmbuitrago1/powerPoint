@@ -283,7 +283,7 @@ audio::-webkit-media-controls-timeline{
     top: 0;
 }
 .logo{
-    width: 67%;
+    width: 57%;
 }
 
 .menu__options{
@@ -416,9 +416,6 @@ audio::-webkit-media-controls-timeline{
 @media screen and (max-width:1280px){
     .dialog{
         width: 55%;
-    }
-    .logo{
-        width: 80%;
     }
     .menu__title{
         width: 30%;
@@ -1185,7 +1182,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .title__secondary{
-    font-size: 29px;
+    font-size: 28px;
     line-height: 31px;
     color: white;
     margin: 0;
@@ -1678,7 +1675,6 @@ display: none;
 
 .postit {
     line-height: 1;
-    width: 77%;
     margin: 8px;
     min-height: fit-content;
     max-height: fit-content;
@@ -1785,39 +1781,16 @@ display: none;
 }
 
 #post2 p {
-    font-size: 3em;
-    line-height: 1em;
-    padding: 45px 8px;
+    font-size: 48px;
+    line-height: 43px;
+    margin: 0;
+    padding: 8px;
 }
 
 .postits__itemList {
     list-style: none;
 }
 
-#post3 {
-    position: absolute;
-    top: 11%;
-    right: 1%;
-    max-width: 26%;
-}
-
-#post4 {
-    position: absolute;
-    right: 1%;
-    top: 60%;
-    max-width: 23%;
-}
-
-#post5 {
-    position: absolute;
-    top: 30%;
-    right: 15%;
-    max-width: 23%;
-}
-
-#post5 p {
-    padding: 0 8px;
-}
 
 .postits__itemPost.--thirdColumn {
     width: 100%;
@@ -1833,50 +1806,6 @@ display: none;
 }
 
 
-@media screen and (max-width:1450px) {
-    #post1 {
-        background-size: 100%;
-        height: 322px;
-        width: 96%;
-    }
-
-    #post2 {
-        background-size: 100%;
-        height: 222px;
-        width: 70%;
-    }
-
-    /* #post3 {
-        background-size: 100%;
-        height: 231px;
-        width: 218px;
-        font-size: 14px;
-    } */
-
-    /* #post5 {
-        background-size: 100%;
-        height: 291px;
-        width: 251px;
-        font-size: 14px;
-        position: absolute;
-        right: 17%;
-        top: 44%;
-    }
-
-    #post4 {
-        top: 70%;
-        right: 4%;
-        background-size: 100%;
-        height: 224px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 206px;
-        position: absolute;
-        font-size: 14px;
-    } */
-}
-
 @media screen and (max-width:1280px) {
     .postits__itemTittle {
         font-size: 36px;
@@ -1888,13 +1817,6 @@ display: none;
         width: 43%;
     }
 
-    #post1 {
-        height: 30%;
-    }
-
-    #post2 {
-        height: 20%;
-    }
 }
 
 @media screen and (max-width:768px) {
@@ -1906,7 +1828,7 @@ display: none;
 
     .content__dialog.--obj_fase2_postits {
         position: relative;
-        height: 47%;
+        height: inherit;
         overflow-y: scroll;
     }
 
@@ -1947,16 +1869,16 @@ display: none;
     }
 
     .postits {
-        height: 54%;
         width: 100%;
-        position: absolute;
     }
 
     .postits__itemPost.--thirdColumn {
         width: inherit;
         height: inherit;
     }
-
+    .postits__itemPost {
+        justify-content: center;
+    }
     .postits__list.--phase1 {
         flex-direction: column;
         height: fit-content;
@@ -2007,6 +1929,7 @@ display: none;
 
     .postits__item {
         width: 80%;
+        align-items: center;
     }
 
     .postits__text {
@@ -2021,23 +1944,7 @@ display: none;
         width: 32%;
     }
 
-    /* #post4 {
-        position: inherit;
-        width: 72%;
-        height: 353px;
-    }
 
-    #post5 {
-        width: 71%;
-        height: 353px;
-        position: inherit;
-    } */
-
-    /* #post3 {
-        position: inherit;
-        width: 75%;
-        height: 374px;
-    } */
 }
 
 @media screen and (max-width:430px) {
@@ -2093,16 +2000,7 @@ display: none;
     }
 
     .postits {
-        position: relative;
         width: 100%;
-        /* height: -webkit-fill-available;
-        height: -moz-available;  
-        height: fill-available; */
-        height: inherit;
-    }
-
-    .postits__text {
-        font-size: 12px;
     }
 
     .postits__item {
@@ -2125,21 +2023,6 @@ display: none;
     #post2 {
         width: 42%;
     }
-
-    /* #post3 {
-        width: 49%;
-        height: 212px;
-    } */
-
-    /* #post4 {
-        width: 49%;
-        height: 202px;
-    }
-
-    #post5 {
-        width: 62%;
-        height: 263px;
-    } */
 }
 
 @media screen and (max-width: 375px) {
@@ -2147,13 +2030,6 @@ display: none;
         width: 52%;
     }
 
-    /* #post4 {
-        width: 61%;
-    }
-
-    #post5 {
-        width: 69%;
-    } */
 }
 .tools {
     width: 100%;

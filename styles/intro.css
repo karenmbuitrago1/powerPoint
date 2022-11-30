@@ -166,7 +166,7 @@ audio::-webkit-media-controls-timeline{
     top: 0;
 }
 .logo{
-    width: 67%;
+    width: 57%;
 }
 
 .menu__options{
@@ -299,9 +299,6 @@ audio::-webkit-media-controls-timeline{
 @media screen and (max-width:1280px){
     .dialog{
         width: 55%;
-    }
-    .logo{
-        width: 80%;
     }
     .menu__title{
         width: 30%;
