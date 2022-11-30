@@ -202,25 +202,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content__dialog.--tip_fase2 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase3 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase4 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase7 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase8 {
-    height: 46%;
-  }
 
   .bckg__img {
     top: 65%;

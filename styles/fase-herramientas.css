@@ -50,7 +50,7 @@
     margin: 0;
     font-size: 15px;
     line-height: 16px;
-    padding: 32px 8px;
+    padding: 12px 8px;
 }
 
 .card__text.--toolsText1 {
@@ -141,6 +141,15 @@
 
 .card__text.--toolsText8 {
     width: 93%;
+}
+.content__dialog.--her_fase4 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width:1450px) {

@@ -44,11 +44,6 @@
     background-size: cover;
 }
 
-.content__dialog.--tip_fase4{
-    align-items: flex-end;
-}
-
-
 .menu__title.--phase4 {
     background-color: var(--titleGreen);
 }

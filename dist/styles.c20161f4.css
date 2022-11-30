@@ -669,7 +669,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .card__icon{
-    width: 45%;
+    width: 34%;
 }
 .cards.--toolsCards2.--intro{
     justify-content: center;
@@ -1136,7 +1136,7 @@ audio::-webkit-media-controls-timeline{
     margin: 0;
     font-size: 15px;
     line-height: 16px;
-    padding: 32px 8px;
+    padding: 12px 8px;
 }
 
 .card__text.--toolsText1 {
@@ -1227,6 +1227,15 @@ audio::-webkit-media-controls-timeline{
 
 .card__text.--toolsText8 {
     width: 93%;
+}
+.content__dialog.--her_fase4 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width:1450px) {
@@ -2443,10 +2452,15 @@ display: none;
     justify-content: space-evenly;
 }
 
+.card__item.--tips {
+    width: 50%;
+}
+
 .card__text.--tips {
     margin: 0;
     width: fit-content;
-    font-size: 70px;
+    font-size: 50px;
+    padding: 16px 0;
 }
 
 .card__item:hover .card__icon {
@@ -2532,6 +2546,66 @@ display: none;
     background-color: var(--hoverButton);
 }
 
+.content__dialog.--tip_fase4 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--tip_fase3 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--tip_fase2 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--tip_fase6 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--tip_fase7 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--tip_fase8 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 @media screen and (max-width:1450px) {
     .card__text.--tips {
         font-size: 58px;
@@ -2553,7 +2627,7 @@ display: none;
         font-size: 14px;
         padding: 8px;
     }
-    
+
 
     /* .cards.--toolsTips5 li:nth-child(1) {
         width: 64%;
@@ -2592,43 +2666,42 @@ display: none;
         height: fit-content;
     }
 
-    /* .cards.--toolsTips {
-        margin: 8px;
-        height: 40%;
-    }
-    .card__text2.--tipsText {
-        margin: 0;
-        font-size: 12px;
-        padding: 0;
-    }
-    .tools.--toolsTips5{
-        height: inherit; 
-        align-items: center;
-    }
-    
-    .card__btn {
-        padding: 1px;
+    .card__item .--tips {
+        width: 60%;
     }
 
-    .cards.--toolsTips5 li:nth-child(1) {
-        width: 46%;
-        height: 55%;
+    .content__dialog.--tip_fase2 {
+        width: 100%;
+        height: 46%;
+      }
+    
+      .content__dialog.--tip_fase3 {
+        width: 100%;
+        height: 46%;
+      }
+    
+      .content__dialog.--tip_fase4 {
+        width: 100%;
+        height: 46%;
+      }
+    
+      .content__dialog.--tip_fase7 {
+        width: 100%;
+        height: 46%;
+      }
+    
+      .content__dialog.--tip_fase8 {
+        width: 100%;
+        height: 46%;
+      }
     }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 46%;
-        height: 55%;
-    }
-    .cards.--toolsTips5 li:nth-child(3) {
-        width: 46%;
-        height: 55%;
-    } */
-}
 
 @media screen and (max-width: 430px) {
     .tools.--toolsTips5 {
         height: 81%;
     }
-    .tools.--toolsTips5.--phases2{
+
+    .tools.--toolsTips5.--phases2 {
         height: 30%;
     }
 
@@ -2952,25 +3025,6 @@ display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .content__dialog.--tip_fase2 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase3 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase4 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase7 {
-    height: 46%;
-  }
-
-  .content__dialog.--tip_fase8 {
-    height: 46%;
-  }
 
   .bckg__img {
     top: 65%;
@@ -3181,11 +3235,6 @@ display: none;
     background-attachment: fixed;
     background-size: cover;
 }
-
-.content__dialog.--tip_fase4{
-    align-items: flex-end;
-}
-
 
 .menu__title.--phase4 {
     background-color: var(--titleGreen);
