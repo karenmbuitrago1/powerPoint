@@ -151,7 +151,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .menu__title{
-    height: 12%;
+    height: 11%;
     width: 30%;
     position: absolute;
     display: flex;
@@ -290,6 +290,9 @@ audio::-webkit-media-controls-timeline{
     }
     .girl__img {
         width: 55px;
+    }
+    .logo {
+        width: 49%;
     }
 }
 

@@ -268,7 +268,7 @@ audio::-webkit-media-controls-timeline{
 }
 
 .menu__title{
-    height: 12%;
+    height: 11%;
     width: 30%;
     position: absolute;
     display: flex;
@@ -407,6 +407,9 @@ audio::-webkit-media-controls-timeline{
     }
     .girl__img {
         width: 55px;
+    }
+    .logo {
+        width: 49%;
     }
 }
 
@@ -1176,14 +1179,14 @@ audio::-webkit-media-controls-timeline{
 
 .titlePhase{
     text-transform: uppercase;
-    font-size: 52px;
+    font-size: 40px;
     color: white;
     margin: 8px;
 }
 
 .title__secondary{
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 29px;
+    line-height: 31px;
     color: white;
     margin: 0;
 }
@@ -1197,7 +1200,7 @@ audio::-webkit-media-controls-timeline{
 
 .textDescription{
     font-size: 18px;
-    line-height: 20px;
+    line-height: 19px;
     margin: 0;
 }
 
@@ -1235,8 +1238,8 @@ audio::-webkit-media-controls-timeline{
 
 .phase__text{
     margin: 8px;
-    line-height: 20px;
-    font-size: 20px;
+    line-height: 18px;
+    font-size: 18px;
     padding: 0 8px;
     font-family: 'Futura_heavy';
     color: white;
@@ -1289,7 +1292,7 @@ audio::-webkit-media-controls-timeline{
 
 
 @media screen and (max-width:1450px){
-    .titlePhase{
+    /* .titlePhase{
         font-size: 56px;
     }
     .title__secondary {
@@ -1302,7 +1305,7 @@ audio::-webkit-media-controls-timeline{
     .textDescription {
         font-size: 18px;
         line-height: 19px;
-    }
+    } */
 }
 
 @media screen and (max-width:1280px){
@@ -2301,6 +2304,9 @@ display: none;
 }
 
 @media screen and (max-width: 1024px) {
+    .cards.--toolsCards2 {
+        align-content: flex-end;
+    }
     .cards.--toolsCards2.--phase2 {
         align-items: flex-end;
         align-content: flex-end;

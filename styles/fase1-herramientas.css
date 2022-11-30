@@ -147,6 +147,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .cards.--toolsCards2 {
+        align-content: flex-end;
+    }
     .cards.--toolsCards2.--phase2 {
         align-items: flex-end;
         align-content: flex-end;
