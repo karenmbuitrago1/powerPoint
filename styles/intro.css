@@ -353,10 +353,7 @@ audio::-webkit-media-controls-timeline{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: -webkit-fill-available;
-        height: -moz-available;  
-        height: fill-available; */
-        height: inherit; 
+        height: auto; 
     }
     .menu__listItem{
         margin: 8px 0;

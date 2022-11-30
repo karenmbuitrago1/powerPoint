@@ -421,6 +421,14 @@
         top: 49%;
         z-index: 1;
     }
+    .phase__dialog.--phases2 {
+        position: inherit;
+        justify-content: center;
+        width: 91%;
+        margin: 4px 0 0 0;
+        line-height: 18px;
+    }
+
     .phase__textMin {
         font-size: 6px;
         margin: 0;

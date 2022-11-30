@@ -198,6 +198,9 @@
     .tools.--toolsTips5 {
         height: 81%;
     }
+    .tools.--toolsTips5.--phases2{
+        height: 30%;
+    }
 
     /* .tools.--toolsTips5 {
         flex-wrap: wrap;
