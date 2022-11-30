@@ -160,6 +160,9 @@
 @media screen and (max-width:1280px) {
     .postits__itemTittle {
         font-size: 36px;
+        line-height: 31px;
+        margin-top: 14px;
+    }
     }
 }
 
