@@ -15,7 +15,6 @@
     background-image: url('../images/recurso_201.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
 }
 .pas__list8 li:hover:nth-child(1){
     background-image: url('../images/recurso_204.png');
@@ -27,8 +26,6 @@
     background-image: url('../images/recurso_202.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-
 
 }
 .pas__list8 li:hover:nth-child(2){
@@ -44,6 +41,19 @@
         width: 90%;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px){
+    .pas__listItem8 {
+        width: 133px;
+        margin: 8px;
+        cursor: pointer;
+    }
+    .pas__list8 {
+        flex-direction: inherit;
+        justify-content: center;
+        overflow-y: scroll;
+        width: 100%;
     }
 }
 
