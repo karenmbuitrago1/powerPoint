@@ -2073,6 +2073,10 @@ display: none;
     padding: 32px 8px;
 }
 
+.card__text.--toolsText1 {
+    width: 90%;
+}
+
 .tools.--phase2 {
     height: 100%;
     display: flex;
