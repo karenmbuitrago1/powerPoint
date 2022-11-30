@@ -53,6 +53,7 @@
 .cards.--toolsCards2 {
     justify-content: flex-end;
     align-items: flex-end;
+    align-content: flex-end;
 }
 
 .card__text.--toolsText2 {
