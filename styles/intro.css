@@ -412,6 +412,9 @@ audio::-webkit-media-controls-timeline{
     .content__menu {
         height: 36%;
     }
+    .menu__options{
+        height: initial;
+    }
 
     .menu__list {
         display: flex;
@@ -441,7 +444,7 @@ audio::-webkit-media-controls-timeline{
         padding: 12px;
     }
     .dialog.--intro{
-        top: 33%;;
+        top: 38%;;
     }
     .dialog:before{
         display: none;
