@@ -105,6 +105,17 @@
     background-color: var(--titlePurple);
 }
 
+.cards.--toolsCards2 li:nth-child(4) {
+    max-width: 100%;
+    background-color: var(--cardGreen);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
+}
+
+.cards.--toolsCards2 li:hover:nth-child(4) {
+    background-color: var(--titleLightGreen);
+}
+
 
 .cards.--toolsCards2.--phase4 {
     align-content: flex-end;

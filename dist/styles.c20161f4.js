@@ -133,7 +133,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\recurso_29.png":[["recurso_29.21c67454.png","../images/recurso_29.png"],"../images/recurso_29.png"],"./..\\images\\recurso_23.png":[["recurso_23.cd936983.png","../images/recurso_23.png"],"../images/recurso_23.png"],"./..\\images\\recurso_27.png":[["recurso_27.f83eaa75.png","../images/recurso_27.png"],"../images/recurso_27.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro-route.css":[function(require,module,exports) {
+},{"./..\\images\\recurso_29.png":[["recurso_29.21c67454.png","../images/recurso_29.png"],"../images/recurso_29.png"],"_css_loader":"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/intro-route.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
