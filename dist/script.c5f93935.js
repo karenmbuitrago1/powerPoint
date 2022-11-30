@@ -329,7 +329,7 @@ $(function () {
     var text2_4 = 'Pero de eso sabe más Juanita, una de las estudiantes de once que también participa en el proyecto. Ahí viene cruzando la cebra para tomar el autobús ';
     var text2_5 = '¡Buenas tardes, Juanita! Estamos conversando un poco sobre el proyecto de seguridad vial. ¿Quieres acomodar las cosas en tu lugar y contarnos un poco al respecto?';
     var text2_6 = 'Claro que sí Don Manuel! Lo que a mí más me ha gustado de la metodología, es que todos participamos reconociendo nuestras diferencias. De hecho, tenía como tarea para hoy, construir algunos carteles para compartir ';
-    var text2_7 = 'con mis compañeros los factores diferenciales que contenga nuestra metodología. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
+    var text2_7 = 'con mis compañeros los factores diferenciales que contempla nuestra metodología. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
     //$("#play_conoce").html('Reproduciendo...');
 
     if (e.target.tagName !== "AUDIO") {
@@ -460,7 +460,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53510" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53809" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

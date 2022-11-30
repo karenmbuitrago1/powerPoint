@@ -1106,6 +1106,20 @@ audio::-webkit-media-controls-timeline{
     align-items: flex-end;
 }
 
+.card__item.--toolsCards2 {
+    width: 49%;
+}
+
+.card__text2.--toolsText3 {
+    padding: 8px;
+}
+
+.card__text.--toolsText5 {
+    padding: 14px 0;
+    width: 100%;
+    font-size: 19px;
+}
+
 .cards.--toolsCards li {
     height: 40%;
     background-image: url('/recurso_59.df87a0ed.png');
@@ -1237,10 +1251,11 @@ audio::-webkit-media-controls-timeline{
     width: 93%;
 }
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1450px) {
     .card__btn {
         padding: 8px;
     }
+
     .card__text2.--toolsText {
         padding: 8px 8px;
     }
@@ -6736,7 +6751,10 @@ ul.slide-list li::before {
   #controls .breadcrumb .breadcrumb-item span {
     font-size: 1em;
   }
-
+  .centrar{
+    margin: auto;
+    display:block;
+  }
   .main-cover-title {
     background: url(/bg_main_slide.98b6aa61.jpg) no-repeat center center/cover;
     min-height: 70%;
@@ -6861,6 +6879,18 @@ ul.slide-list li::before {
     min-height: auto !important;
   }
 }
+ @media (max-width: 720px){
+   .title_vid{
+     margin-top: 25%;
+   }
+   .vid-top{
+     width: 90%;
+   }
+   .centrar{
+     margin: auto !important;
+     display: block;
+   }
+ }
 /* Estilos globales */
 
 
