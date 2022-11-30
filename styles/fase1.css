@@ -81,14 +81,14 @@
 
 .titlePhase{
     text-transform: uppercase;
-    font-size: 52px;
+    font-size: 40px;
     color: white;
     margin: 8px;
 }
 
 .title__secondary{
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 29px;
+    line-height: 31px;
     color: white;
     margin: 0;
 }
@@ -102,7 +102,7 @@
 
 .textDescription{
     font-size: 18px;
-    line-height: 20px;
+    line-height: 19px;
     margin: 0;
 }
 
@@ -140,8 +140,8 @@
 
 .phase__text{
     margin: 8px;
-    line-height: 20px;
-    font-size: 20px;
+    line-height: 18px;
+    font-size: 18px;
     padding: 0 8px;
     font-family: 'Futura_heavy';
     color: white;
@@ -194,7 +194,7 @@
 
 
 @media screen and (max-width:1450px){
-    .titlePhase{
+    /* .titlePhase{
         font-size: 56px;
     }
     .title__secondary {
@@ -207,7 +207,7 @@
     .textDescription {
         font-size: 18px;
         line-height: 19px;
-    }
+    } */
 }
 
 @media screen and (max-width:1280px){
@@ -301,6 +301,7 @@
         font-size: 16px;
         line-height: 18px;
         width: 89%;
+        z-index: 1;
     }
 
     .phase__menuList{
@@ -406,6 +407,7 @@
     }
     .phase__dialog.--phases {
         top: 49%;
+        z-index: 1;
     }
     .phase__textMin {
         font-size: 6px;

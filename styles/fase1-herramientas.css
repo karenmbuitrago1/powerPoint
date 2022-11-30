@@ -135,7 +135,7 @@
 
 
 @media screen and (max-width: 1450px) {
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 31%;
         width: 42%;
     }
@@ -143,10 +143,13 @@
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 31%;
         width: 42%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {
+    .cards.--toolsCards2 {
+        align-content: flex-end;
+    }
     .cards.--toolsCards2.--phase2 {
         align-items: flex-end;
         align-content: flex-end;
@@ -157,7 +160,7 @@
         align-content: flex-end;
     }
 
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 34%;
         width: 71%;
     }
@@ -165,11 +168,11 @@
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 34%;
         width: 71%;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
-    .cards.--toolsCards {
+    /* .cards.--toolsCards {
         margin: 8px;
         height: 42%;
     }
@@ -178,7 +181,7 @@
         margin: 8px;
         height: 42%;
 
-    }
+    } */
 
     .content__dialog.--her_fase1 {
         width: 100%;
@@ -220,7 +223,7 @@
         height: 46%;
     }
 
-    .cards.--toolsCards2.--phase2 li:nth-child(1) {
+    /* .cards.--toolsCards2.--phase2 li:nth-child(1) {
         height: 99%;
         width: 39%;
     }
@@ -228,16 +231,23 @@
     .cards.--toolsCards2.--phase2 li:nth-child(2) {
         height: 99%;
         width: 39%;
-    }
+    } */
 }
 
 @media screen and (max-width: 430px) {
-    .card__item {
+    .tools.--phase1{
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 84%;
+        overflow-y: scroll;
+        display: block;
+    }
+    /* .card__item {
         width: 62%;
         height: 50%;
-    }
+    } */
 
-    .cards.--toolsCards {
+    /* .cards.--toolsCards {
         margin: 8px;
         height: 45%;
         width: 100%;
@@ -250,7 +260,7 @@
     .card__text2.--toolsText {
         margin: 0;
         font-size: 10px;
-    }
+    } */
 
     .content__dialog.--her_fase2 {
         height: 48%;
@@ -304,7 +314,7 @@
         margin: auto;
     }
 
-    .card__text2.--toolsText3 {
+    /* .card__text2.--toolsText3 {
         font-size: 12px;
     }
 
@@ -312,7 +322,7 @@
         margin: 8px;
         height: 50%;
         width: 100%;
-    }
+    } */
 
     .cards.--toolsCards2.--phase2 {
         display: flex;
@@ -349,7 +359,7 @@
         justify-content: center;
     }
 
-    .cards.--toolsCards2 li:nth-child(1) {
+    /* .cards.--toolsCards2 li:nth-child(1) {
         height: 82%;
     }
 
@@ -374,7 +384,7 @@
     .cards.--toolsCards2.--phase4 li:nth-child(3) {
         width: 70%;
         height: 32%;
-    }
+    } */
 
     .card__text.--toolsText8 {
         font-size: 16px;
