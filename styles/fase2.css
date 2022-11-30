@@ -1,7 +1,6 @@
 .background__square.--phase2 {
   background-color: var(--firstPurple);
 }
-
 /*drag and drop styles*/
 .gallery__down{
   margin: 8px;
@@ -259,5 +258,8 @@
 
   .content__dialog.--tip_fase8 {
     height: 49%;
+  }
+  .breadcrumb-item p{
+    font-size: 0.9em !important;
   }
 }

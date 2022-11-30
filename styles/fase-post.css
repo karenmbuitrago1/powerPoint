@@ -12,6 +12,13 @@
     background-size: cover;
 }
 
+.background.--obj_fase3_postits{
+    background-image: url('../images/recurso_15.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .postits {
     height: 100%;
     width: 70%;

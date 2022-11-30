@@ -12,17 +12,16 @@
 
 
 /* Estilos fases  */
+@import "../styles/fase-herramientas.css";
+@import "../styles/fase-post.css";
 
 @import "../styles/fase1.css";
 @import "../styles/fase1-drag.css";
-@import "../styles/fase1-post.css";
-@import "../styles/fase1-herramientas.css";
 @import "../styles/fase1-tips.css";
 
 @import "../styles/fase2.css";
 
 @import "../styles/fase3.css";
-@import "../styles/fase3-post.css";
 @import "../styles/fase3-paso.css";
 
 @import "../styles/fase4.css";
@@ -39,7 +38,6 @@
 @import "../styles/fase7-paso.css";
 
 @import "../styles/fase8.css";
-@import "../styles/fase8-herramientas.css";
 @import "../styles/fase8-tips.css";
 
 @import "../styles/nav-container.css";

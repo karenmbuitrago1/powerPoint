@@ -4,6 +4,14 @@
     display: flex;
 }
 
+.cards.--phase8 {
+    flex-direction: column;
+}
+
+.content__dialog.--her_fase8 {
+    align-items: flex-end;
+}
+
 .cards.--toolsCards {
     justify-content: flex-end;
     align-items: flex-end;
@@ -144,8 +152,14 @@
 
 @media screen and (max-width: 1024px) {
     .cards.--toolsCards2 {
-        align-content: flex-end;
+        margin: 80px 0 0 0;
+        padding: 70px 0 0 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
     }
+
     .cards.--toolsCards2.--phase2 {
         align-items: flex-end;
         align-content: flex-end;
@@ -201,13 +215,14 @@
 }
 
 @media screen and (max-width: 430px) {
-    .tools.--phase1{
+    .tools.--phase1 {
         flex-wrap: wrap;
         align-content: flex-end;
         height: 84%;
         overflow-y: scroll;
         display: block;
     }
+
     /* .card__item {
         width: 62%;
         height: 50%;
@@ -279,6 +294,7 @@
         font-size: 21px;
         margin: auto;
     }
+
     .cards.--toolsCards2.--phase2 {
         display: flex;
         align-content: flex-end;
@@ -314,7 +330,7 @@
         justify-content: center;
     }
 
-     .card__text.--toolsText8 {
+    .card__text.--toolsText8 {
         font-size: 16px;
         margin: 0;
         width: 100%;
