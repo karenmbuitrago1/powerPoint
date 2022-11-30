@@ -10,9 +10,6 @@
     position: absolute;
     right: 0;
     width: 70%;
-    /* height: -webkit-fill-available;
-    height: -moz-available;  
-    height: fill-available; */
     height: inherit; 
     justify-content: space-around;
 }
@@ -24,38 +21,28 @@
     align-items: center;
     z-index: 11;
     width: 100%;
-    /* height: -webkit-fill-available;
-    height: -moz-available;  
-    height: fill-available; */
     height: inherit; 
     perspective: 1000px;
 }
 
-.cards li:nth-child(1){
-    /* background-image: url('../images/recurso_19.png'); */
-}
-.cards li:hover:nth-child(1){
-    /* background-image: url('../images/recurso_24.png'); */
-}
-.cards li:nth-child(2){
-    /* background-image: url('../images/recurso_21.png'); */
-}
-.cards li:hover:nth-child(2){
-    /* background-image: url('../images/recurso_25.png'); */
-}
-.cards li:nth-child(3){
-    /* background-image: url('../images/recurso_22.png'); */
-}
-.cards li:hover:nth-child(3){
-    /* background-image: url('../images/recurso_26.png'); */
-}
-.cards li:nth-child(4){
-    background-image: url('../images/recurso_23.png');
-}
-.cards li:hover:nth-child(4){
-    background-image: url('../images/recurso_27.png');
+.card__img{
+    width: 70%;
 }
 
+#card1{
+    font-size: 17px;
+    padding: 19px 0;
+    width: 100%;
+}
+
+.card__icon{
+    width: 45%;
+}
+.cards.--toolsCards2.--intro{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 .card__item{
     margin: 8px;
     width: 38%;

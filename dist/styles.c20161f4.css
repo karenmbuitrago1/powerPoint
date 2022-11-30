@@ -16,6 +16,7 @@
 
     --firstGreen:           #ebed98;
     --titleGreen:           #b8bf5c;
+    --cardGreen:            #79c279;
 
     --fisrtPink:            #e78784; 
     --titlePink:            #f77978; 
@@ -642,9 +643,6 @@ audio::-webkit-media-controls-timeline{
     position: absolute;
     right: 0;
     width: 70%;
-    /* height: -webkit-fill-available;
-    height: -moz-available;  
-    height: fill-available; */
     height: inherit; 
     justify-content: space-around;
 }
@@ -656,38 +654,28 @@ audio::-webkit-media-controls-timeline{
     align-items: center;
     z-index: 11;
     width: 100%;
-    /* height: -webkit-fill-available;
-    height: -moz-available;  
-    height: fill-available; */
     height: inherit; 
     perspective: 1000px;
 }
 
-.cards li:nth-child(1){
-    /* background-image: url('../images/recurso_19.png'); */
-}
-.cards li:hover:nth-child(1){
-    /* background-image: url('../images/recurso_24.png'); */
-}
-.cards li:nth-child(2){
-    /* background-image: url('../images/recurso_21.png'); */
-}
-.cards li:hover:nth-child(2){
-    /* background-image: url('../images/recurso_25.png'); */
-}
-.cards li:nth-child(3){
-    /* background-image: url('../images/recurso_22.png'); */
-}
-.cards li:hover:nth-child(3){
-    /* background-image: url('../images/recurso_26.png'); */
-}
-.cards li:nth-child(4){
-    background-image: url('/recurso_23.cd936983.png');
-}
-.cards li:hover:nth-child(4){
-    background-image: url('/recurso_27.f83eaa75.png');
+.card__img{
+    width: 70%;
 }
 
+#card1{
+    font-size: 17px;
+    padding: 19px 0;
+    width: 100%;
+}
+
+.card__icon{
+    width: 45%;
+}
+.cards.--toolsCards2.--intro{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 .card__item{
     margin: 8px;
     width: 38%;
@@ -2148,6 +2136,17 @@ display: none;
     background-color: var(--titlePurple);
 }
 
+.cards.--toolsCards2 li:nth-child(4) {
+    max-width: 100%;
+    background-color: var(--cardGreen);
+    border-radius: 20px;
+    border: solid 6px var(--dialogBeige);
+}
+
+.cards.--toolsCards2 li:hover:nth-child(4) {
+    background-color: var(--titleLightGreen);
+}
+
 
 .cards.--toolsCards2.--phase4 {
     align-content: flex-end;
@@ -3297,6 +3296,13 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.pas__listItem.--phase5{
+    width: 94%;
 }
 
 
