@@ -171,6 +171,13 @@
     position: absolute;
     top: 7%;
 }
+
+.phase__dialog.--phases2{
+    position: inherit;
+    justify-content: center;
+    width: 91%;
+    margin: 32px 0 0 0;
+}
 /*Elementos de arrastre*/
 .respuesta {
     width: 91%;

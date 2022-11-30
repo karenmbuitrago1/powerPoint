@@ -8,6 +8,26 @@
     flex-direction: column;
 }
 
+.content__dialog.--her_fase4 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content__dialog.--her_fase5 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .content__dialog.--her_fase8 {
     align-items: flex-end;
 }
