@@ -215,6 +215,7 @@ function btn_conoce() {
   $(".--type002").addClass("--invisible");
   $(".dialog").removeClass("--invisible");
   $("#person2").removeClass("--invisible");
+  $("#girl__img").removeClass("--invisible");
   var highestTimeoutId = setTimeout(";");
   for (var i = 0; i < highestTimeoutId; i++) {
     clearTimeout(i);
@@ -328,7 +329,7 @@ $(function () {
     var text2_4 = 'Pero de eso sabe más Juanita, una de las estudiantes de once que también participa en el proyecto. Ahí viene cruzando la cebra para tomar el autobús ';
     var text2_5 = '¡Buenas tardes, Juanita! Estamos conversando un poco sobre el proyecto de seguridad vial. ¿Quieres acomodar las cosas en tu lugar y contarnos un poco al respecto?';
     var text2_6 = 'Claro que sí Don Manuel! Lo que a mí más me ha gustado de la metodología, es que todos participamos reconociendo nuestras diferencias. De hecho, tenía como tarea para hoy, construir algunos carteles para compartir ';
-    var text2_7 = 'con mis compañeros cómo, con esta metodología nos hemos comprometido a promover la integración de todas las personas. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
+    var text2_7 = 'con mis compañeros los factores diferenciales que contenga nuestra metodología. ¡Acompáñame a verlos! No olvides dar clic sobre cada uno, para descubrir en qué consisten…';
     //$("#play_conoce").html('Reproduciendo...');
 
     if (e.target.tagName !== "AUDIO") {
@@ -404,7 +405,7 @@ $(function () {
   //Dialogos Boton Ruta
   $("#play_ruta").click(function (e) {
     var original3 = '¡Hola! Mi nombre es Javier. Soy docente. Al igual que Don Manuel y Juanita, he apoyado la construcción e implementación de la metodología para fortalecer una cultura vial. ';
-    var text3 = 'a se encuentra estructurada en 8 fases que te presentaré a continuación. No olvides dar clic sobre cada una para descubrir cuál es su objetivo… ¡Comencemos! ';
+    var text3 = 'Esta se encuentra estructurada en 8 fases que te presentaré a continuación. No olvides dar clic sobre cada una para descubrir cuál es su objetivo… ¡Comencemos! ';
     //$("#play_ruta").html('Reproduciendo...');
 
     if (e.target.tagName !== "AUDIO") {
@@ -459,7 +460,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60781" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

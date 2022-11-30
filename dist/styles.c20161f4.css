@@ -1294,7 +1294,7 @@ audio::-webkit-media-controls-timeline{
         font-size: 56px;
     }
     .title__secondary {
-        font-size: 48px;
+        font-size: 42px;
         line-height: 44px;
     }
     .menu__title:before {
@@ -1702,12 +1702,11 @@ display: none;
     /* IE6-9 fallback on horizontal gradient */
 }
 .postits__list {
-    height: 100%;
+    height: fit-content;
     padding: 0;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .postits__item {
@@ -1741,6 +1740,7 @@ display: none;
 }
 
 #post1 {
+    font-size: 22px;
     border: 1px solid #7ecfe4;
     border-top: 4px solid #7ecfe4;
     background: #7ecfe4;
@@ -1758,6 +1758,10 @@ display: none;
     background: linear-gradient(135deg, #7ecfe4 81%, #7ecfe4 82%, #7ecfe4 82%, #eaeaea 100%);
     box-shadow: -1px 3px 10px rgb(33 33 33 / 70%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ecfe4', endColorstr='#eaeaea', GradientType=1);
+}
+
+#post1 p{
+    line-height: 22px;
 }
 
 
@@ -1785,7 +1789,7 @@ display: none;
     font-size: 48px;
     line-height: 43px;
     margin: 0;
-    padding: 8px;
+    padding: 22px;
 }
 
 .postits__itemList {
@@ -2087,6 +2091,7 @@ display: none;
 .cards.--toolsCards2 {
     justify-content: flex-end;
     align-items: flex-end;
+    align-content: flex-end;
 }
 
 .card__text.--toolsText2 {
@@ -3413,7 +3418,6 @@ display: none;
     height: 18em;
     width: 14em;
     border-radius: 32px;
-    position: absolute;
     top: 48%;
     background-color: #eaeaea;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
