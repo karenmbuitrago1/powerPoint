@@ -9,6 +9,7 @@
 .card__front{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .card__text.--tips{
@@ -114,6 +115,13 @@
     .tools.--toolsTips5 {
         flex-wrap: wrap;
         align-content: flex-end;
+    }
+    .card__text.--tips {
+        font-size: 58px;
+    }
+    .card__text2.--toolsText {
+        font-size: 14px;
+        padding: 8px;
     }
     /* .cards.--toolsTips5 li:nth-child(1) {
         width: 64%;

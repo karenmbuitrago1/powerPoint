@@ -214,6 +214,9 @@
     .menu__phase {
         height: 84%;
     }
+    .phase__dialog.--phases{
+        z-index: 12;
+    }
 }
 
 @media screen and (max-width:768px){

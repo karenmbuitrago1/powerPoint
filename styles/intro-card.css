@@ -41,7 +41,7 @@
 .cards.--toolsCards2.--intro{
     justify-content: center;
     align-items: center;
-    justify-items: center;
+    align-content: center;
 }
 .card__item{
     margin: 8px;
