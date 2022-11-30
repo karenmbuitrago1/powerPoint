@@ -156,7 +156,7 @@ $(function () {
 	$("#play_f6_bienvenida").click(function (e) {
 		var original = '¡Hola! Mi nombre es Magdalena, soy madre comunitaria y también hago parte de esta iniciativa. Quisiera contarte en qué consiste esta fase que hemos denominado ¡Construyendo puentes!';
 		var text1 = 'El propósito es diseñar con la comunidad y con miembros de diferentes sectores, acciones que contribuyan a mejorar los comportamientos viales y a cuidar la vida de todos y todas. ¡Así es, tal cual lo están haciendo mis compañeros allí atrás!';
-		var text1_1 = 'De manera conjunta, hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Telesforo y Amalia para que te cuenten un poco más.';
+		var text1_1 = 'De manera conjunta, hemos preparado algunas notas adhesivas para ti, con datos importantes que debes tener en cuenta en esta fase. Ahora, voy a llamar a Telésforo y Amalia para que te cuenten un poco más.';
 
 		//$("#play_f6_bienvenida").html('Reproduciendo...');
 
