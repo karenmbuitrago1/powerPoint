@@ -57,6 +57,7 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    margin: 8px;
 }
 
 .postits__item {
@@ -71,6 +72,8 @@
     font-family: 'Futura_bold';
     color: var(--secondBlue);
     font-size: 40px;
+    line-height: normal;
+    margin: 8px 0;
 }
 
 .postits__text {
@@ -166,7 +169,6 @@
         font-size: 36px;
         line-height: 31px;
         margin-top: 14px;
-    }
     }
 }
 

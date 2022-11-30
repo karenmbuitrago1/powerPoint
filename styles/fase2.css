@@ -1,13 +1,11 @@
 .background__square.--phase2 {
   background-color: var(--firstPurple);
-
 }
 
-
-
-
-
 /*drag and drop styles*/
+.gallery__down{
+  margin: 8px;
+}
 
 .gallery__text{
   font-size: 16px;
@@ -17,7 +15,6 @@
 .dnd-image-drag .container {
   margin: 8px;
 }
-
 
 .dnd-image-drag .gallery-list {
   width: 60%;
@@ -94,6 +91,7 @@
   clear: both;
   border-radius: 19px;
   color: #fff;
+  margin: 16px;
 }
 
 .message-container {
@@ -128,6 +126,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 

@@ -28,6 +28,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: inherit;
+    overflow-y: scroll;
+    overflow-x: auto;
 }
 
 .background.--her_fase3{

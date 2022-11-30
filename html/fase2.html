@@ -13,22 +13,25 @@
 	<div id="mainMenu" class="modal" tabindex="-1" role="dialog">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-			<div class="modal fade modalMenu show" id="mainMenu" aria-modal="true" style="padding-right: 15px; display: block;">
-				<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h4 class="modal-title">Menú principal</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="tooltip" title="Cerrar menú">
-						×
-					</button>
-					</div>
-					<div class="modal-body">
-					<div class="list-group">
-					
-	                                    <a href="#" onclick="window.location.href = 'Bienvenida.html'" data-dismiss="modal"
+				<div class="modal fade modalMenu show" id="mainMenu" aria-modal="true"
+					style="padding-right: 15px; display: block;">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Menú principal</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+									data-toggle="tooltip" title="Cerrar menú">
+									×
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="list-group">
+
+									<a href="#" onclick="window.location.href = 'Bienvenida.html'" data-dismiss="modal"
 										class="list-group-item list-group-item-action">Video de presentación</a>
-                                    <a href="#" onclick="window.location.href = 'Instructivo.html'" data-dismiss="modal"
-										class="list-group-item list-group-item-action">Video ¿Cómo realizar la exploración?</a>
+									<a href="#" onclick="window.location.href = 'Instructivo.html'" data-dismiss="modal"
+										class="list-group-item list-group-item-action">Video ¿Cómo realizar la
+										exploración?</a>
 									<a href="#" onclick="window.location.href = 'index.html'" data-dismiss="modal"
 										class="list-group-item list-group-item-action">Inicio</a>
 									<a href="#" onclick="window.location.href = 'ruta.html'" data-dismiss="modal"
@@ -55,387 +58,424 @@
 										class="list-group-item list-group-item-action">Fase 7 - ¡Manos a la obra!</a>
 									<a href="#" onclick="window.location.href = 'fase8.html'" data-dismiss="modal"
 										class="list-group-item list-group-item-action">Fase 8 - ¡Vallas por la vida!</a>
-                                    <a href="#" onclick="window.location.href = 'final.html'" data-dismiss="modal"
+									<a href="#" onclick="window.location.href = 'final.html'" data-dismiss="modal"
 										class="list-group-item list-group-item-action">Video Tips de participación</a>
-	</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				</div>
-			</div>
 			</li>
-		</ul>	
+		</ul>
 	</div>
 	<nav id="controls" class="navbar navbar-expand-md item-visible">
 		<div class="float-right w-100 d-flex">
-		  <div id="controlBreadcrumb" aria-label="breadcrumb" class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
-			<li class="breadcrumb-item"><p><a href="ruta.html">Fases Propuesta metodológica</a></p></li>
-			<li class="breadcrumb-item"><p>Fase 2 - ¡La vida en la vía, un
-				asunto de todos!</p></li>
-		  </div>
-		  <div class="d-flex align-items-center justify-content-end">
-			<div class="float-right">
-			  <ul class="navbar-nav slide-direction-buttons">
-				<li class="nav-item mx-1">
-				  <button id="origin_prev" class="btn btn-blue-dark prev" onclick="window.location.href = 'fase1.html'"
-					data-toggle="tooltip" title="Volver" tabindex="0">&#10094;</button>
+			<div id="controlBreadcrumb" aria-label="breadcrumb"
+				class="breadcrumb navbar-brand float-left flex-grow-1 mx-1">
+				<li class="breadcrumb-item">
+					<p><a href="ruta.html">Fases Propuesta metodológica</a></p>
 				</li>
-				<li class="nav-item mx-1">
-				  <button id="origin_next" class="btn btn-blue-dark next focused" onclick="window.location.href = 'fase3.html'"
-					data-toggle="tooltip" title="Siguiente" tabindex="0">&#10095;</button>
+				<li class="breadcrumb-item">
+					<p>Fase 2 - ¡La vida en la vía, un
+						asunto de todos!</p>
 				</li>
-			  </ul>
 			</div>
-			<div class="float-right mx-1">
-			  <button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu"
-				title="Menu Principal"><span class="text-center">&#9776;</span></button>
-			</div>
-			<div class="accesibility-container">
-			  <div class="float-right mx-1 accesibility-btn-toggle">
-				<button type="button" class="btn btn-blue-dark menu btn-accesibility"
-				  onclick='toggleAccesibilityMenu(); loadSpeechPlayer();' data-toggle="tooltip"
-				  title="Opciones de accesibilidad"><img class="img-fluid" src="../images/img_ac_menu.png"></button>
-			  </div>
-			  <div class="speechPlayer-container">
-				<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos"
-				  alt="Lector de textos">
-				  <button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled
-					data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid"
-					  src="../images/img_prev.png"></button>
-				  <button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText" data-toggle="tooltip"
-					title="Leer Texto"><img class="img-fluid" src="../images/img_play.png"></button>
-				  <button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText" data-toggle="tooltip"
-					title="Continuar lectura"><img class="img-fluid" src="../images/img_play.png"></button>
-				  <button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText" data-toggle="tooltip"
-					title="Detener lectura"><img class="img-fluid" src="../images/img_stop.png"></button>
-				  <button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip"
-					title="Texto Siguiente"><img class="img-fluid" src="../images/img_next.png"></button>
+			<div class="d-flex align-items-center justify-content-end">
+				<div class="float-right">
+					<ul class="navbar-nav slide-direction-buttons">
+						<li class="nav-item mx-1">
+							<button id="origin_prev" class="btn btn-blue-dark prev"
+								onclick="window.location.href = 'fase1.html'" data-toggle="tooltip" title="Volver"
+								tabindex="0">&#10094;</button>
+						</li>
+						<li class="nav-item mx-1">
+							<button id="origin_next" class="btn btn-blue-dark next focused"
+								onclick="window.location.href = 'fase3.html'" data-toggle="tooltip" title="Siguiente"
+								tabindex="0">&#10095;</button>
+						</li>
+					</ul>
 				</div>
-			  </div>
-			  <div class="accesibility-menu">
-				<div class="accesibility-options btn-group-vertical" role="group" aria-label="Opciones de accesibilidad"
-				  alt="Opciones de accesibilidad">
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("+")' data-toggle="tooltip"
-					title="Incrementar tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_increase.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("-")' data-toggle="tooltip"
-					title="Disminuir tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_decrease.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='resizeFont("0")' data-toggle="tooltip"
-					title="Restaurar tamaño de fuente"><img class="img-fluid"
-					  src="../images/img_ac_font_reset.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrast")' data-toggle="tooltip"
-					title="Invertir color"><img class="img-fluid" src="../images/img_ac_contrast01.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColor")'
-					data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid"
-					  src="../images/img_ac_contrast02.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColorBright")'
-					data-toggle="tooltip" title="Invertir Brillo"><img class="img-fluid"
-					  src="../images/img_ac_contrast03.png"></button>
-				  <button class="btn btn-accesibility-option" onclick='changeTheme("grayScale")' data-toggle="tooltip"
-					title="Sin color"><img class="img-fluid" src="../images/img_ac_contrast04.png"></button>
-				  <button class="btn btn-accesibility-option btn-read" onclick='showSpeechPlayer()' data-toggle="tooltip"
-					title="Lector de textos"><img class="img-fluid" src="../images/img_ac_reader.png"></button>
+				<div class="float-right mx-1">
+					<button type="button" class="btn btn-blue-dark menu" data-toggle="modal" data-target="#mainMenu"
+						title="Menu Principal"><span class="text-center">&#9776;</span></button>
 				</div>
-			  </div>
+				<div class="accesibility-container">
+					<div class="float-right mx-1 accesibility-btn-toggle">
+						<button type="button" class="btn btn-blue-dark menu btn-accesibility"
+							onclick='toggleAccesibilityMenu(); loadSpeechPlayer();' data-toggle="tooltip"
+							title="Opciones de accesibilidad"><img class="img-fluid"
+								src="../images/img_ac_menu.png"></button>
+					</div>
+					<div class="speechPlayer-container">
+						<div class="speechPlayer-menu btn-group-vertical" role="group" aria-label="Lector de textos"
+							alt="Lector de textos">
+							<button onclick="prevText()" class="btn btn-speechPlayer btn-prevText disable" disabled
+								data-toggle="tooltip" title="Texto Anterior"><img class="img-fluid"
+									src="../images/img_prev.png"></button>
+							<button onclick="playCurrentText()" class="btn btn-speechPlayer btn-playText"
+								data-toggle="tooltip" title="Leer Texto"><img class="img-fluid"
+									src="../images/img_play.png"></button>
+							<button onclick="pauseCurrentSpeech()" class="btn btn-speechPlayer btn-pauseText"
+								data-toggle="tooltip" title="Continuar lectura"><img class="img-fluid"
+									src="../images/img_play.png"></button>
+							<button onclick="stopCurrentSpeech()" class="btn btn-speechPlayer btn-stopText"
+								data-toggle="tooltip" title="Detener lectura"><img class="img-fluid"
+									src="../images/img_stop.png"></button>
+							<button onclick="nextText()" class="btn btn-speechPlayer btn-nextText" data-toggle="tooltip"
+								title="Texto Siguiente"><img class="img-fluid" src="../images/img_next.png"></button>
+						</div>
+					</div>
+					<div class="accesibility-menu">
+						<div class="accesibility-options btn-group-vertical" role="group"
+							aria-label="Opciones de accesibilidad" alt="Opciones de accesibilidad">
+							<button class="btn btn-accesibility-option" onclick='resizeFont("+")' data-toggle="tooltip"
+								title="Incrementar tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_increase.png"></button>
+							<button class="btn btn-accesibility-option" onclick='resizeFont("-")' data-toggle="tooltip"
+								title="Disminuir tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_decrease.png"></button>
+							<button class="btn btn-accesibility-option" onclick='resizeFont("0")' data-toggle="tooltip"
+								title="Restaurar tamaño de fuente"><img class="img-fluid"
+									src="../images/img_ac_font_reset.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("highContrast")'
+								data-toggle="tooltip" title="Invertir color"><img class="img-fluid"
+									src="../images/img_ac_contrast01.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("highContrastHalfColor")'
+								data-toggle="tooltip" title="Invertir tonalidad"><img class="img-fluid"
+									src="../images/img_ac_contrast02.png"></button>
+							<button class="btn btn-accesibility-option"
+								onclick='changeTheme("highContrastHalfColorBright")' data-toggle="tooltip"
+								title="Invertir Brillo"><img class="img-fluid"
+									src="../images/img_ac_contrast03.png"></button>
+							<button class="btn btn-accesibility-option" onclick='changeTheme("grayScale")'
+								data-toggle="tooltip" title="Sin color"><img class="img-fluid"
+									src="../images/img_ac_contrast04.png"></button>
+							<button class="btn btn-accesibility-option btn-read" onclick='showSpeechPlayer()'
+								data-toggle="tooltip" title="Lector de textos"><img class="img-fluid"
+									src="../images/img_ac_reader.png"></button>
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </nav>
+	</nav>
 	<div class="container-blue">
-	<main class="main">
-		<div class="background --type006">
-			<div class="background__square --phase2"></div>
-			<!-- <a class="background__back" href="ruta.html">
+		<main class="main">
+			<div class="background --type006">
+				<div class="background__square --phase2"></div>
+				<!-- <a class="background__back" href="ruta.html">
 				<p class="background__backtText">Fases propuesta metodológica</p>
 			</a> -->
-			<div class="background__image">
-				<img class="bckg__img" src="../images/recurso_77.png" alt="imagen personas reunidas">
+				<div class="background__image">
+					<img class="bckg__img" src="../images/recurso_77.png" alt="imagen personas reunidas">
+				</div>
 			</div>
-		</div>
-		<div class="content">
-			<section class="content__menu --phases">
-				<div class="menu__title --phase2">
-					<h1 class="titlePhase">Fase 2</h1>
-				</div>
-				<div class="menu__logo">
-					<img class="logo" src="../images/recurso_11.png" alt="logo">
-				</div>
-				<div class="menu__phase">
-					<div class="phase__textMain">
-						<h2 class="title__secondary">¡La vida en la vía, un asunto de todos!</h2>
+			<div class="content">
+				<section class="content__menu --phases">
+					<div class="menu__title --phase2">
+						<h1 class="titlePhase">Fase 2</h1>
 					</div>
-					<div class="phase__textDescription">
-						<p class="textDescription">Realizar el mapeo de actores que dé lugar a procesos organizados de participación
-							e integración comunitaria para la gestión de comportamientos sociales seguros.</p>
+					<div class="menu__logo">
+						<img class="logo" src="../images/recurso_11.png" alt="logo">
 					</div>
-					<div class="phase__menu">
-						<ul class="phase__menuList">
-							<li class="phase__menuItem" id="btn_obj_f2">
-								<div class="phase__menuIcon --phase2 ">
-									<img class="phase__icon" src="../images/recurso_32.png" alt="Icono tabla de planificacion">
+					<div class="menu__phase">
+						<div class="phase__textMain">
+							<h2 class="title__secondary">¡La vida en la vía, un asunto de todos!</h2>
+						</div>
+						<div class="phase__textDescription">
+							<p class="textDescription">Realizar el mapeo de actores que dé lugar a procesos organizados
+								de participación
+								e integración comunitaria para la gestión de comportamientos sociales seguros.</p>
+						</div>
+						<div class="phase__menu">
+							<ul class="phase__menuList">
+								<li class="phase__menuItem" id="btn_obj_f2">
+									<div class="phase__menuIcon --phase2 ">
+										<img class="phase__icon" src="../images/recurso_32.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text phase__text_active --phase2">Objetivo - Tiempo - Recursos </p>
+								</li>
+								<li class="phase__menuItem" id="btn_pas_f2">
+									<div class="phase__menuIcon --phase2 ">
+										<img class="phase__icon" src="../images/recurso_33.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase2">Paso a paso </p>
+								</li>
+								<li class="phase__menuItem" id="btn_her_f2">
+									<div class="phase__menuIcon --phase2 ">
+										<img class="phase__icon" src="../images/recurso_34.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<p class="phase__text --phase2">Herramientas </p>
+								</li>
+								<li class="phase__menuItem" id="btn_tip_f2">
+									<div class="phase__menuIcon --phase2 ">
+										<img class="phase__icon" src="../images/recurso_35.png"
+											alt="Icono tabla de planificacion">
+									</div>
+									<div class="phase__menuText">
+										<p class="phase__text --phase2">Tips</p>
+										<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__person">
+						<img id="person5" class="person --obj_fase2" src="../images/recurso_74.png" loading="lazy"
+							alt="persona que habla">
+						<img id="person6" class="person --pas_fase2 --invisible" src="../images/recurso80.png"
+							loading="lazy" alt="persona que habla">
+						<img id="person7" class="person --her_fase2 --invisible" src="../images/recurso56.png"
+							loading="lazy" alt="persona que habla">
+						<img id="person10" class="person --invisible" src="../images/recurso_99.png" loading="lazy"
+							alt="persona que habla">
+					</div>
+					<div class="menu__personRight">
+						<img id="person9" class="person --invisible" loading="lazy" src="../images/recurso81.png"
+							alt="persona que habla" />
+					</div>
+				</section>
+				<div>
+					<button class="btn-continue" id="continue-f2">Continuar</button>
+				</div>
+				<section id="obj_f2" class="content__dialog obj_f2 ">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text" id="change_f2_1">Me alegra que estén tan participativos hoy, pero
+							vamos a pedir la palabra. De esta
+							forma, garantizamos que todos nos escuchemos por igual. Para continuar, quiero
+							presentar la <span style="color:
+						#f85636">segunda fase</span>, denominada ¡La vida en la vía, un asunto de todos!
+						</div>
+						<audio id="my_audio_f2_1">
+							<source src="../audios/1Jacinta.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_f2_bienvenida" class="play">
+							<img src="../images/recurso144.png" alt="sound" width="20" />
+						</div>
+				</section>
+				<section class="content__dialog --pas_fase2 --invisible">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text" id="change_f2_2">¡Buenos días para todos! Para los que no me
+							conocen yo soy Juan.
+							Vendo jugos de naranja y fruta en las mañanas en la esquina del
+							salón comunal. Por allá los espero. Me acompaña la señorita
+							Margarita, ella es motociclista.
+						</div>
+						<audio id="my_audio_f2">
+							<source src="../audios/2Juan.mp3" type="audio/mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<div id="play_paso_f2" class="play">
+							<img src="../images/recurso144.png" alt="sound" width="20" />
+						</div>
+				</section>
+				<section class="content__dialog --obj_fase2_postits --invisible">
+					<div class="postits">
+						<ul class="postits__list --phase1">
+							<li class="postits__item">
+								<p class="postits__itemTittle">Objetivo de la fase:</p>
+								<div class="postit" id="post1">
+									<p class="postits__text">Realizar un mapeo de actores que dé lugar a la conformación
+										de Comités Comunitarios y Multisectoriales para la implementación de la
+										metodología.
+									<p>
 								</div>
-								<p class="phase__text phase__text_active --phase2">Objetivo - Tiempo - Recursos </p>
 							</li>
-							<li class="phase__menuItem" id="btn_pas_f2">
-								<div class="phase__menuIcon --phase2 ">
-									<img class="phase__icon" src="../images/recurso_33.png" alt="Icono tabla de planificacion">
+							<li class="postits__item">
+								<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
+								<div class="postit" id="post2">
+									<p class="postits__text">30 días</p>
 								</div>
-								<p class="phase__text --phase2">Paso a paso </p>
 							</li>
-							<li class="phase__menuItem" id="btn_her_f2">
-								<div class="phase__menuIcon --phase2 ">
-									<img class="phase__icon" src="../images/recurso_34.png" alt="Icono tabla de planificacion">
-								</div>
-								<p class="phase__text --phase2">Herramientas </p>
-							</li>
-							<li class="phase__menuItem" id="btn_tip_f2">
-								<div class="phase__menuIcon --phase2 ">
-									<img class="phase__icon" src="../images/recurso_35.png" alt="Icono tabla de planificacion">
-								</div>
-								<div class="phase__menuText">
-									<p class="phase__text --phase2">Tips</p>
-									<p class="phase__textMin">Para fortalecer la participación comunitaria</p>
+							<li class="postits__item">
+								<p class="postits__itemTittle">Recursos requeridos:</p>
+								<div class="postits__itemPost --thirdColumn">
+									<ul class="postits__itemList">
+										<li class="list__item">
+											<div class="postit" id="post3">
+												<p class="postits__text">Financieros:
+													Se debe garantizar la disponibilidad presupuesta para la
+													contratación del profesional que liderará esta metodología.</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="postit" id="post5">
+												<p class="postits__text">Didácticos:
+													Se requiere de los siguientes materiales: tarjetas de colores de 10
+													X 10 cm, marcadores, 2
+													paleógrafos (3 X 1 m), 2 rollos de cinta de enmascarar, hojas de
+													papel iris, fichas redondas de 12 o 15 cm de diámetro, matrices DOFA
+													de medio pliego para cada grupo y,
+													1 matriz tamaño tres pliegos para la plenaria.
+												</p>
+											</div>
+										</li>
+										<li class="list__item">
+											<div class="postit" id="post4">
+												<p class="postits__text">Humanos:
+													El proceso de acercamiento
+													y convocatoria requiere de
+													la dedicación exclusiva de
+													al menos dos personas, así
+													como la facilitación de un
+													encuentro de diálogo
+													social para
+													la realización del mapa
+													de actores.
+												</p>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="menu__person">
-					<img id="person5" class="person --obj_fase2" src="../images/recurso_74.png" loading="lazy"
-						alt="persona que habla">
-					<img id="person6" class="person --pas_fase2 --invisible" src="../images/recurso80.png" loading="lazy"
-						alt="persona que habla">
-					<img id="person7" class="person --her_fase2 --invisible" src="../images/recurso56.png" loading="lazy"
-						alt="persona que habla">
-					<img id="person10" class="person --invisible" src="../images/recurso_99.png" loading="lazy"
-						alt="persona que habla">
-				</div>
-				<div class="menu__personRight">
-					<img id="person9" class="person --invisible" loading="lazy" src="../images/recurso81.png"
-						alt="persona que habla" />
-				</div>
-			</section>
-			<div>
-				<button class="btn-continue" id="continue-f2">Continuar</button>
+				</section>
+				<section class="content__dialog --her_fase2 --invisible">
+					<div class="phase__dialog  --phases">
+						<div class="dialogBox__text" id="change_f2_2">Aquí encontrarás las herramientas necesarias para
+							desarrollar las
+							instrucciones propuestas
+							¡No olvides dar clic en cada una de ellas, para conocerlas!
+						</div>
+					</div>
+					<div class="tools --phase2">
+						<ul class="cards --toolsCards2 --phase2">
+							<li class="card__item --toolsCards2 --phase2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText8">MAPEO DE ACTORES</p>
+									<p class="card__text2 --toolsText">Es una herramienta de análisis que
+										permite reconocer quiénes y cómo,
+										podrían aportar en la implementación
+										de la metodología, garantizando su
+										participación representativa e
+										integradora a través de la conformación
+										de Comités Comunitarios y
+										Multisectoriales.
+									</p>
+								</button>
+							</li>
+							<li class="card__item --toolsCards2 --phase2">
+								<button type="button" class="card__btn" name="carta">
+									<p class="card__text --toolsText8">MATRIZ DOFA
+									</p>
+									<p class="card__text2 --toolsText">Permite conocer la manera como se percibe el
+										desarrollo de la obra y la relación con los diferentes actores en el territorio
+										tanto comunitarios como institucionales.</p>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="content__dialog --pas_2_fase2 --invisible">
+					<article class="dnd-image-drag cf">
+						<div class="container">
+							<div>
+								<div class="inner gallery-list cf">
+									<img draggable="true" src="../images/recurso4.png" class="drag" value="2" />
+									<img draggable="true" src="../images/recurso5.png" class="drag" value="3" />
+									<img draggable="true" src="../images/recurso1.png" class="drag" value="1" />
+									<img draggable="true" src="../images/recurso6.png" class="drag" value="4" />
+									<img draggable="true" src="../images/recurso8.png" class="drag" value="6" />
+									<img draggable="true" src="../images/recurso7.png" class="drag" value="5" />
+									<img draggable="true" src="../images/recurso11.png" class="drag" value="8" />
+									<img draggable="true" src="../images/recurso9.png" class="drag" value="7" />
+								</div>
+							</div>
+							<div class="gallery__down">
+								<h3 class="gallery__text">Arrastra y ordena las piezas acá - si la pieza desaparece la
+									has colocado correctamente</h3>
+								<div class="inner gallery-painting cf">
+									<div class="drop" value="1"></div>
+									<div class="drop" value="2"></div>
+									<div class="drop" value="3"></div>
+									<div class="drop" value="4"></div>
+									<div class="drop" value="5"></div>
+									<div class="drop" value="6"></div>
+									<div class="drop" value="7"></div>
+									<div class="drop" value="8"></div>
+								</div>
+							</div>
+							<button class="reset-button">Reiniciar Rompecabezas</button>
+						</div>
+					</article>
+				</section>
+				<section class="content__dialog --tip_fase2 --invisible">
+					<div class="phase__dialog --phases">
+						<div class="dialogBox__text">Te compartimos los siguientes Tips para garantizar la participación
+							de los actores comunitarios y multisectoriales
+							¡Ponlos a prueba! ! ¡No olvides girar cada tarjeta!
+						</div>
+					</div>
+					<div class="tools --toolsTips5  --phase1">
+						<ul class="cards --toolsCards2 --tips">
+							<li class="card__item --toolsTips5 --phase2">
+								<button type="button" class="card__btn --toolsTips" name="carta">
+									<div class="card__front">
+										<p class="card__text --tips">TIP 1 </p>
+										<span class="card__icon">
+											<img class="card__img" alt="Imagen bombillo"
+												src="../images/recurso_174_174.svg" />
+										</span>
+									</div>
+									<p class="card__text2 --toolsText">Genera acercamientos y encuentros con
+										organizaciones de base y colectivos sociales ya conformados. Ten en cuenta que
+										las
+										Juntas de Acción Comunal, organizaciones comunitarias, colectivos de personas
+										como, por ejemplo, jóvenes, mujeres y agremiaciones formales e informales de
+										vendedores, transportadores,
+										entre otros, integran a múltiples actores
+										viales.
+									</p>
+								</button>
+							</li>
+							<li class="card__item --toolsTips5 --phase2">
+								<button type="button" class="card__btn" name="carta">
+									<div class="card__front">
+										<p class="card__text --tips">TIP 2 </p>
+										<span class="card__icon">
+											<img class="card__img" alt="Imagen bombillo"
+												src="../images/recurso_174_174.svg" />
+										</span>
+									</div>
+									<p class="card__text2 --toolsText">Ten presente revisar y actualizar el
+										mapa de actores periódicamente,
+										prestando especial atención a la variación que pueden tener los actores
+										en función de su influencia en el desarrollo del proyecto vial. Algunos
+										actores pueden pasar de tener una
+										influencia negativa a positiva y
+										viceversa.
+									</p>
+								</button>
+							</li>
+							<li class="card__item --toolsTips5 --phase2">
+								<button type="button" class="card__btn --toolsTips" name="carta">
+									<div class="card__front">
+										<p class="card__text --tips">TIP 3 </p>
+										<span class="card__icon">
+											<img class="card__img" alt="Imagen bombillo"
+												src="../images/recurso_174_174.svg" />
+										</span>
+									</div>
+									<p class="card__text2 --toolsText">Determina tiempos en un cronograma de gestión
+										social, para acompañar a los Comités que resulten del
+										mapeo de actores. Esta es una
+										forma de garantizar su sostenibilidad colectiva.
+									</p>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
-			<section id="obj_f2" class="content__dialog obj_f2 ">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" id="change_f2_1">Me alegra que estén tan participativos hoy, pero vamos a pedir la palabra. De esta 
-						forma, garantizamos que todos nos escuchemos por igual. Para continuar, quiero 
-						presentar la <span style="color:
-						#f85636">segunda fase</span>, denominada ¡La vida en la vía, un asunto de todos!		
-					</div>
-					<audio id="my_audio_f2_1">
-						<source src="../audios/1Jacinta.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_f2_bienvenida" class="play">
-						<img src="../images/recurso144.png" alt="sound" width="20"/>
-					</div>
-			</section>
-			<section class="content__dialog --pas_fase2 --invisible">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text" id="change_f2_2">¡Buenos días para todos! Para los que no me conocen yo soy Juan. 
-						Vendo jugos de naranja y fruta en las mañanas en la esquina del 
-						salón comunal. Por allá los espero. Me acompaña la señorita 
-						Margarita, ella es motociclista. 
-					</div>
-					<audio id="my_audio_f2">
-						<source src="../audios/2Juan.mp3" type="audio/mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<div id="play_paso_f2" class="play">
-						<img src="../images/recurso144.png" alt="sound" width="20"/>
-					</div>
-			</section>
-			<section class="content__dialog --obj_fase2_postits --invisible">
-				<div class="postits">
-					<ul class="postits__list --phase1">
-						<li class="postits__item">
-							<p class="postits__itemTittle">Objetivo de la fase:</p>
-							<div class="postit" id="post1">
-								<p class="postits__text">Realizar un mapeo de actores que dé lugar a la conformación de Comités Comunitarios y Multisectoriales para la implementación de la metodología.<p>
-							</div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Tiempo estimado de ejecución:</p>
-							<div class="postit" id="post2">
-								<p class="postits__text">30 días</p>
-							</div>
-						</li>
-						<li class="postits__item">
-							<p class="postits__itemTittle">Recursos requeridos:</p>
-							<div class="postits__itemPost --thirdColumn">
-								<ul class="postits__itemList">
-									<li class="list__item">
-										<div class="postit" id="post3">
-											<p class="postits__text">Financieros:
-												Se debe garantizar la  disponibilidad  presupuesta para la  contratación del  profesional que liderará  esta metodología.</p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div class="postit" id="post5">
-											<p class="postits__text">Didácticos:
-												Se requiere de los siguientes  materiales: tarjetas de colores  de 10 X 10 cm, marcadores, 2
-												paleógrafos (3 X 1 m), 2 rollos de  cinta de enmascarar, hojas de papel  iris, fichas redondas de 12 o 15 cm  de diámetro, matrices DOFA de  medio pliego para cada grupo y,
-												1 matriz tamaño tres pliegos para  la plenaria.
-												</p>
-										</div>
-									</li>
-									<li class="list__item">
-										<div class="postit" id="post4">
-											<p class="postits__text">Humanos:
-												El proceso de acercamiento 
-												y convocatoria requiere de
-												la dedicación exclusiva de
-												al menos dos personas, así
-												como la facilitación de un
-												encuentro de diálogo
-												social para
-												la realización del mapa
-												de actores. 
-												</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --her_fase2 --invisible">
-				<div class="phase__dialog  --phases">
-					<div class="dialogBox__text" id="change_f2_2">Aquí encontrarás las herramientas necesarias para desarrollar las 
-						instrucciones propuestas 
-						¡No olvides dar clic en cada una de ellas, para conocerlas!		
-					</div>
-				</div>
-				<div class="tools --phase2">
-					<ul class="cards --toolsCards2 --phase2">
-						<li class="card__item --toolsCards2 --phase2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText8">MAPEO DE ACTORES</p>
-								<p class="card__text2 --toolsText">Es una herramienta de análisis que
-									permite reconocer quiénes y cómo,
-									podrían aportar en la implementación
-									de la metodología, garantizando su
-									participación representativa e
-									integradora a través de la conformación
-									de Comités Comunitarios y
-									Multisectoriales.
-								</p>
-							</button>
-						</li>
-						<li class="card__item --toolsCards2 --phase2">
-							<button type="button" class="card__btn" name="carta">
-								<p class="card__text --toolsText8">MATRIZ DOFA
-								</p>
-								<p class="card__text2 --toolsText">Permite conocer la manera como se percibe el desarrollo de la obra y la relación con los diferentes actores en el territorio tanto comunitarios como institucionales.</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="content__dialog --pas_2_fase2 --invisible">
-				<article class="dnd-image-drag cf">
-					<div class="container">
-						<div>
-							<div class="inner gallery-list cf">
-								<img draggable="true" src="../images/recurso4.png" class="drag" value="2" />
-								<img draggable="true" src="../images/recurso5.png" class="drag" value="3" />
-								<img draggable="true" src="../images/recurso1.png" class="drag" value="1" />
-								<img draggable="true" src="../images/recurso6.png" class="drag" value="4" />
-								<img draggable="true" src="../images/recurso8.png" class="drag" value="6" />
-								<img draggable="true" src="../images/recurso7.png" class="drag" value="5" />
-								<img draggable="true" src="../images/recurso11.png" class="drag" value="8" />
-								<img draggable="true" src="../images/recurso9.png" class="drag" value="7" />						
-							</div>
-						</div>
-						<div>
-							<h3 class="gallery__text">Arrastra y ordena las piezas acá - si la pieza desaparece la has colocado correctamente</h3>
-							<div class="inner gallery-painting cf">
-								<div class="drop" value="1"></div>
-								<div class="drop" value="2"></div>
-								<div class="drop" value="3"></div>
-								<div class="drop" value="4"></div>
-								<div class="drop" value="5"></div>
-								<div class="drop" value="6"></div>		
-								<div class="drop" value="7"></div>
-								<div class="drop" value="8"></div>												
-							</div>
-						</div>
-					</div>
-					<div class="message-container"></div>
-					<button class="reset-button">Reset Puzzle</button>
-					<h4 class="ie-message">You appear to be on Internet Explorer. IE doesn't support the 'text/html' type (only the 'text' and 'URL' types) so jQuery will be used to copy the dragged item instead of the API (instead of copying the HTML)</h4>
-			  
-				  </article>
-			</section>
-			<section class="content__dialog --tip_fase2 --invisible">
-				<div class="phase__dialog --phases">
-					<div class="dialogBox__text">Te compartimos los siguientes Tips para garantizar la participación
-						de los actores comunitarios y multisectoriales
-						¡Ponlos a prueba! ! ¡No olvides girar cada tarjeta!
-					</div>
-				</div>
-				<div class="tools --toolsTips5  --phase1">
-					<ul class="cards --toolsCards2 --tips">
-						<li class="card__item --toolsTips5 --phase2">
-							<button type="button" class="card__btn --toolsTips" name="carta">
-								<div class="card__front">
-									<p class="card__text --tips">TIP 1 </p>
-									<span class="card__icon">
-										<img class="card__img" alt="Imagen bombillo" src="../images/recurso_174_174.svg" />
-									</span>
-								</div>
-								<p class="card__text2 --toolsText">Genera acercamientos y encuentros con 
-									organizaciones de base y colectivos sociales ya conformados. Ten en cuenta que las 
-									Juntas de Acción Comunal, organizaciones comunitarias, colectivos de personas como, por ejemplo, jóvenes, mujeres y agremiaciones formales e informales de vendedores, transportadores, 
-									entre otros, integran a múltiples actores 
-									viales.
-									</p>
-							</button>
-						</li>
-						<li class="card__item --toolsTips5 --phase2">
-							<button type="button" class="card__btn" name="carta">
-								<div class="card__front">
-									<p class="card__text --tips">TIP 2 </p>
-									<span class="card__icon">
-										<img class="card__img" alt="Imagen bombillo" src="../images/recurso_174_174.svg" />
-									</span>
-								</div>
-								<p class="card__text2 --toolsText">Ten presente revisar y actualizar el 
-									mapa de actores periódicamente, 
-									prestando especial atención a la variación que pueden tener los actores 
-									en función de su influencia en el desarrollo del proyecto vial. Algunos 
-									actores pueden pasar de tener una 
-									influencia negativa a positiva y 
-									viceversa.
-									</p>
-							</button>
-						</li>
-						<li class="card__item --toolsTips5 --phase2">
-							<button type="button" class="card__btn --toolsTips" name="carta">
-								<div class="card__front">
-									<p class="card__text --tips">TIP 3 </p>
-									<span class="card__icon">
-										<img class="card__img" alt="Imagen bombillo" src="../images/recurso_174_174.svg" />
-									</span>
-								</div>
-								<p class="card__text2 --toolsText">Determina tiempos en un cronograma de gestión social, para acompañar a los Comités que resulten del 
-									mapeo de actores. Esta es una 
-									forma de garantizar su sostenibilidad colectiva.
-									</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-		</div>
-		</div>
+	</div>
+	</div>
 	</main>
-</div>
+	</div>
 </body>
 
 <script data-require="jquery@3.0.0" data-semver="3.0.0"

@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 130px 0px 0px 0px;
 }
 .pas__description.--phase3{
     top: 8%;
+}
+.pas__globe.--houses{
+    width: 80%;
 }

@@ -1707,6 +1707,7 @@ display: none;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    margin: 8px;
 }
 
 .postits__item {
@@ -1721,6 +1722,8 @@ display: none;
     font-family: 'Futura_bold';
     color: var(--secondBlue);
     font-size: 40px;
+    line-height: normal;
+    margin: 8px 0;
 }
 
 .postits__text {
@@ -1814,6 +1817,8 @@ display: none;
 @media screen and (max-width:1280px) {
     .postits__itemTittle {
         font-size: 36px;
+        line-height: 31px;
+        margin-top: 14px;
     }
 }
 
@@ -2645,14 +2650,12 @@ display: none;
 }
 .background__square.--phase2 {
   background-color: var(--firstPurple);
-
 }
 
-
-
-
-
 /*drag and drop styles*/
+.gallery__down{
+  margin: 8px;
+}
 
 .gallery__text{
   font-size: 16px;
@@ -2662,7 +2665,6 @@ display: none;
 .dnd-image-drag .container {
   margin: 8px;
 }
-
 
 .dnd-image-drag .gallery-list {
   width: 60%;
@@ -2739,6 +2741,7 @@ display: none;
   clear: both;
   border-radius: 19px;
   color: #fff;
+  margin: 16px;
 }
 
 .message-container {
@@ -2773,6 +2776,8 @@ display: none;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -2936,6 +2941,9 @@ display: none;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: inherit;
+    overflow-y: scroll;
+    overflow-x: auto;
 }
 
 .background.--her_fase3{
@@ -3025,10 +3033,12 @@ display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 130px 0px 0px 0px;
 }
 .pas__description.--phase3{
     top: 8%;
+}
+.pas__globe.--houses{
+    width: 80%;
 }
 .background__square.--phase4{
     background-color: var(--firstGreen);
