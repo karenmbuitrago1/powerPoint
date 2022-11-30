@@ -103,18 +103,9 @@
 }
 
 @media screen and (max-width:1450px) {
-    /* .cards.--toolsTips5 li:nth-child(1) {
-        width: 33%;
-        height: 25%;
+    .card__text.--tips {
+        font-size: 58px;
     }
-    .cards.--toolsTips5 li:nth-child(2) {
-        width: 33%;
-        height: 25%;
-    }
-    .cards.--toolsTips5 li:nth-child(3) {
-        width: 33%;
-        height: 25%;
-    } */
 }
 
 @media screen and (max-width:1024px) {
@@ -132,6 +123,7 @@
         font-size: 14px;
         padding: 8px;
     }
+    
 
     /* .cards.--toolsTips5 li:nth-child(1) {
         width: 64%;

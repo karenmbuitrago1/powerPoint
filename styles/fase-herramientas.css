@@ -148,6 +148,14 @@
     width: 93%;
 }
 
+@media screen and (max-width:1450px){
+    .card__btn {
+        padding: 8px;
+    }
+    .card__text2.--toolsText {
+        padding: 8px 8px;
+    }
+}
 
 
 @media screen and (max-width: 1024px) {
