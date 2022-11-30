@@ -204,8 +204,8 @@ $(function () {
 	});
 
 	$("#play_paso_f6").click(function (e) {
-		var original = '¡Hola, cómo está! Mi nombre es Amalia y estoy aquí con Telesforo para mostrarle los pasos que debe seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos le ayude. Como hay tantos niños y niñas en la comunidad, para el encuentro de hoy pusimos el paso a paso en unos globos de fiesta,';
-		var text1 = '...así, cada vez que se estalla uno, sale volando el papelito con la descripción... ¡Venga y juega con nosotros! De clic en cada globo y descubra en qué consiste cada paso.';
+		var original = '¡Hola, cómo está! Mi nombre es Amalia y estoy aquí con Telésforo para mostrarle los pasos que debe seguir para desarrollar esta fase. Ambos diseñamos esta hoja de ruta que esperamos le ayude. Como hay tantos niños y niñas en la comunidad, para el encuentro de hoy pusimos el paso a paso en unos globos de fiesta,';
+		var text1 = 'así, cada vez que se estalla uno, sale volando el papelito con la descripción... ¡Venga y juega con nosotros! De clic en cada globo y descubra en qué consiste cada paso.';
 
 
 		//$("#play_paso_f6").html('Reproduciendo...');
@@ -253,10 +253,15 @@ $(function () {
 
 function globoAction1(){
     $("#globo1__description").removeClass("--invisible");
+	$('#globo1').addClass("--invisible");
 }
 function globoAction2(){
     $("#globo2__description").removeClass("--invisible");
+	$('#globo2').addClass("--invisible");
+
 }
 function globoAction3(){
     $("#globo3__description").removeClass("--invisible");
+	$('#globo3').addClass("--invisible");
+
 }

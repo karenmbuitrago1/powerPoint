@@ -2788,8 +2788,8 @@ display: none;
 
 .bckg__img {
   position: absolute;
-  top: 32%;
-  right: 4%;
+  bottom: 11%;
+  right: 18%;
 }
 
 .menu__title.--phase2 {
@@ -2816,9 +2816,10 @@ display: none;
 
 @media screen and (max-width: 1450px) {
   .bckg__img {
-    top: 41%;
-    right: 7%;
-  }
+    position: absolute;
+    bottom: 11%;
+    right: 18%;
+}
   .dnd-image-drag .gallery-list {
     width: 90%;
   }

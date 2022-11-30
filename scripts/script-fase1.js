@@ -20,6 +20,8 @@ function btn_obj_f1() {
 
   // Audio
   $("#my_audio_f1").trigger('pause');
+  $("#my_audio_f1_2").trigger('pause');
+
   //$("#play_f1_bienvenida").html('Reproducir Audio');
 
   // Personas hablantes y dialogos
@@ -59,6 +61,8 @@ function btn_obj_f1() {
 
 function btn_pas_f1() {
   $("#my_audio_f1_1").trigger('pause');
+  $("#my_audio_f1_2").trigger('pause');
+
   //$("#play_paso_f1").html('Reproducir Audio');
 
   // Personas hablantes y dialogos
@@ -94,6 +98,8 @@ function btn_pas_f1() {
 function btn_her_f1() {
   $("#my_audio_f1_1").trigger('pause');
   $("#my_audio_f1").trigger('pause');
+  $("#my_audio_f1_2").trigger('pause');
+
 
   $(".--pas_fase1").addClass("--invisible");
   $("#person5").addClass("--invisible");
@@ -125,6 +131,7 @@ function btn_her_f1() {
 function btn_tip_f1() {
   $("#my_audio_f1_1").trigger('pause');
   $("#my_audio_f1").trigger('pause');
+  $("#my_audio_f1_2").trigger('pause');
 
   $(".--pas_fase1").addClass("--invisible");
 
@@ -219,7 +226,7 @@ $(function () {
   });
 
   $("#play_paso_f1").click(function (e) {
-    var original = '¡¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
+    var original = '¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
     var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
     var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda';
 

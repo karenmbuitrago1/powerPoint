@@ -160,9 +160,9 @@ $(function () {
 
 	$("#play_f3_bienvenida").click(function (e) {
 		var original = 'Hola, mi nombre es Pastor. Soy un ganadero de la región. Mis vaquitas y yo proveemos de leche a todos los vecinos del sector. Por ahí se rumora que aquí producimos la mejor leche de todo el país. No sé si sea cierto, lo único que sé, es que lo que hacemos, lo hacemos con mucho amor.';
-		var text1 = 'Les cuento que yo también hago parte de esta metodología, pues muchas veces, las obras afectan espacios que utilizamos aquí en la finca para mis animalitos, entonces trabajamos de manera conjunta para reducir los problemas y los riesgos. Como dicen por ahí, para que nadie salga perjudicado';
+		var text1 = 'Les cuento que yo también hago parte de esta metodología, pues muchas veces, las obras afectan espacios que utilizamos aquí en la finca para mis animalitos, entonces trabajamos de manera conjunta para reducir los problemas y los riesgos. Como dicen por ahí, para que nadie salga perjudicado.';
 		var text1_1 = 'Voy a contarles un poco sobre la fase que más me gusta, se llama: ¡Geografías humanas! Ahí lo que hacemos es caracterizar el espacio físico y humano donde se realizará el proyecto vial, para identificar factores de riesgo asociados a la ocupación y uso del espacio.';
-		var text1_2 = 'Anoche estuve preparando algunas notas adhesivas para ustedes, con datos importantes que deben tener en cuenta. Ahora, los dejo con William y Andrés, para que les cuenten un poco más al respecto';
+		var text1_2 = 'Anoche estuve preparando algunas notas adhesivas para ustedes, con datos importantes que deben tener en cuenta. Ahora, los dejo con William y Andrés, para que les cuenten un poco más al respecto.';
 		
 		//$("#play_f3_bienvenida").html('Reproduciendo...');
 
@@ -216,8 +216,8 @@ $(function () {
 	});
 
 	$("#play_paso_f3").click(function (e) {
-		var original = '¡Bienvenido de vuelta! Mi nombre es William. Trabajo con Andrés repartiendo la leche de Pastor por toda la vereda. Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase';
-		var text1 = 'Ambos diseñamos una hoja de ruta, a manera de mapa, que esperamos sea de gran ayuda… No olvides dar clic sobre cada estación, para conocer en qué consisten los pasos a seguir…';
+		var original = '¡Bienvenido de vuelta! Mi nombre es William. Trabajo con Andrés repartiendo la leche de Pastor por toda la vereda. Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase.';
+		var text1 = 'Ambos diseñamos una hoja de ruta, a manera de mapa, que esperamos sea de gran ayuda… No olvides dar clic sobre cada estación, para conocer en qué consisten los pasos a seguir.';
 
 
 		//$("#play_paso_f3").html('Reproduciendo...');
