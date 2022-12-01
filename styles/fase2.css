@@ -1,16 +1,18 @@
 .background__square.--phase2 {
   background-color: var(--firstPurple);
 }
+
 /*drag and drop styles*/
-.gallery__down{
+.gallery__down {
   margin: 8px;
 }
 
-.gallery__text{
+.gallery__text {
   font-size: 16px;
   display: flex;
   justify-content: center;
 }
+
 .dnd-image-drag .container {
   margin: 8px;
 }
@@ -178,7 +180,8 @@
     position: absolute;
     bottom: 11%;
     right: 18%;
-}
+  }
+
   .dnd-image-drag .gallery-list {
     width: 90%;
   }
@@ -207,7 +210,7 @@
     top: 65%;
     right: 6%;
     width: inherit;
-}
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -219,28 +222,9 @@
     top: 74%;
     right: 14%;
     height: 17%;
-}
-
-  .content__dialog.--tip_fase2 {
-    height: 49%;
   }
 
-  .content__dialog.--tip_fase4 {
-    height: 49%;
-  }
-
-  .content__dialog.--tip_fase3 {
-    height: 49%;
-  }
-
-  .content__dialog.--tip_fase7 {
-    height: 49%;
-  }
-
-  .content__dialog.--tip_fase8 {
-    height: 49%;
-  }
-  .breadcrumb-item p{
+  .breadcrumb-item p {
     font-size: 0.9em !important;
   }
 }

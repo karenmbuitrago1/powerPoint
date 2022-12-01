@@ -137,6 +137,15 @@
     justify-content: flex-start;
 }
 
+.content__dialog.--tip_fase5 {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
 .content__dialog.--tip_fase6 {
     display: flex;
     width: 70%;
@@ -234,28 +243,39 @@
     .content__dialog.--tip_fase2 {
         width: 100%;
         height: 46%;
-      }
-    
-      .content__dialog.--tip_fase3 {
-        width: 100%;
-        height: 46%;
-      }
-    
-      .content__dialog.--tip_fase4 {
-        width: 100%;
-        height: 46%;
-      }
-    
-      .content__dialog.--tip_fase7 {
-        width: 100%;
-        height: 46%;
-      }
-    
-      .content__dialog.--tip_fase8 {
-        width: 100%;
-        height: 46%;
-      }
     }
+
+    .content__dialog.--tip_fase3 {
+        width: 100%;
+        height: 46%;
+    }
+
+    .content__dialog.--tip_fase4 {
+        width: 100%;
+        height: 46%;
+    }
+    .content__dialog.--tip_fase6 {
+        width: 100%;
+        height: 46%;
+    }
+
+    .content__dialog.--tip_fase7 {
+        width: 100%;
+        height: 46%;
+    }
+
+    .content__dialog.--tip_fase8 {
+        width: 100%;
+        height: 46%;
+    }
+
+    #person8{
+        display: none;
+    }
+    #person10{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 430px) {
     .tools.--toolsTips5 {
@@ -265,22 +285,9 @@
     .tools.--toolsTips5.--phases2 {
         height: 30%;
     }
-
-    /* .tools.--toolsTips5 {
-        flex-wrap: wrap;
-        align-content: flex-end;
-        height: 81%;
-        overflow-y: scroll;
-        display: block;
+    .card__item.--tips {
+        width: 80%;
     }
-    .cards.--toolsCards2{
-        margin: 50px 0 0 0;
-        padding: 40px 0 0 0;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-    } */
     .card__item {
         margin: 8px;
         width: 85%;
@@ -289,79 +296,33 @@
     .card__text.--tips {
         margin: 0;
         width: auto;
+        font-size: 30px;
     }
 
     .card__front {
         height: inherit;
     }
-
-    /* .tools.--toolsTips {
-        width: 100%;
-        height: 55%;
-        display: flex;
-        align-items: center;
+    .content__dialog.--tip_fase2 {
+        height: 75%;
     }
-    .cards.--toolsTips {
-        height: 53%;
-        width: 100%;
-        padding: 0;
+    .content__dialog.--tip_fase3 {
+        height: 75%;
     }
-    .card__item.--toolsTips{
-        height: 54%;
-        width: 40%;
+    .content__dialog.--tip_fase4 {
+        height: 75%;
     }
-    .card__text2.--tipsText {
-        font-size: 7px;
+    .content__dialog.--tip_fase5 {
+        height: 75%;
     }
-    .card__btn.--toolsTips{
-        padding: 0;
+    .content__dialog.--tip_fase6 {
+        height: 75%;
     }
-    .cards.--toolsTips li:nth-child(1){
-        height: 72px;
+    .content__dialog.--tip_fase7 {
+        height: 75%;
     }
-    .cards.--toolsTips li:nth-child(2){
-        height: 72px;
+    .content__dialog.--tip_fase8 {
+        height: 75%;
     }
-    .cards.--toolsTips li:nth-child(3){
-        height: 72px;
-    }
-    .tools.--toolsTips5 {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .tools.--toolsTips5.--phase1{
-        display: flex;
-        justify-content: center;
-    }
-
-    .cards.--toolsTips5.--phase2{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .cards.--toolsTips5 li:nth-child(1) {
-        height: 25%;
-    }
-    .cards.--toolsTips5 li:nth-child(2) {
-        height: 25%;
-    }
-
-    .cards.--toolsTips5.--phase2 li:nth-child(1) {
-        width: 41%;
-        height: 21%;
-    }
-    .cards.--toolsTips5.--phase2 li:nth-child(2) {
-        width: 41%;
-        height: 21%;
-    }
-    .cards.--toolsTips5.--phase2 li:nth-child(3) {
-        width: 41%;
-        height: 21%;
-    } */
 }
 
 
