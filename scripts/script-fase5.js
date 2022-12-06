@@ -16,6 +16,18 @@ document.getElementById("btn_tip_f5").addEventListener("click", btn_tip_f5, fals
 // Acciones botones objetivo
 function btn_obj_f5() {
 
+	$("#btn_her_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f5 > .phase__text").addClass("phase__text_active")
+	$("#btn_pas_f5 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f5-obj_2").addClass("--invisible");
+	$("#next-f5-obj").removeClass("--invisible");
+	$("#next-f5-pas").addClass("--invisible");
+	$("#next-f5-her").addClass("--invisible");
+	$("#next-f5-tip").addClass("--invisible");
+	$("#next-f5-pas_2").addClass("--invisible");
+
 	// Audio
 	$("#my_audio_f5").trigger('pause');
 	//$("#play_f5_bienvenida").html('Reproducir Audio');
@@ -55,8 +67,39 @@ function btn_obj_f5() {
 		clearTimeout(i);
 	}
 }
+function btn_obj_f5_2() {
+
+	$("#next-f5-obj_2").removeClass("--invisible");
+	$("#next-f5-obj").addClass("--invisible");
+	$("#next-f5-pas").addClass("--invisible");
+	$("#next-f5-her").addClass("--invisible");
+	$("#next-f5-tip").addClass("--invisible");
+	$("#next-f5-pas_2").addClass("--invisible");
+
+	//$("#play_f5_bienvenida").html('Reproducir Audio');
+	$(".--obj_fase5_postits").removeClass("--invisible");
+	$(".--type006").addClass("--invisible");
+	$(".obj_f5").addClass("--invisible");
+	$(".--obj_fase5").addClass("--invisible");
+	$("#person7").addClass("--invisible");
+	$("#person9").addClass("--invisible");
+	//   $(".background").addClass("--type010");
+}
 
 function btn_pas_f5() {
+	$("#btn_her_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f5 > .phase__text").addClass("phase__text_active")
+  
+	$("#next-f5-obj_2").addClass("--invisible");
+	$("#next-f5-obj").addClass("--invisible");
+	$("#next-f5-pas").removeClass("--invisible");
+	$("#next-f5-her").addClass("--invisible");
+	$("#next-f5-tip").addClass("--invisible");
+	$("#next-f5-pas_2").addClass("--invisible");
+
+
 	$("#my_audio_f5_1").trigger('pause');
 	//$("#play_paso_f5").html('Reproducir Audio');
 
@@ -92,7 +135,36 @@ function btn_pas_f5() {
 		clearTimeout(i);
 	}
 }
+
+function btn_pas_f5_2() {
+	$("#next-f5-obj_2").addClass("--invisible");
+	$("#next-f5-obj").addClass("--invisible");
+	$("#next-f5-pas").addClass("--invisible");
+	$("#next-f5-her").addClass("--invisible");
+	$("#next-f5-tip").addClass("--invisible");
+	$("#next-f5-pas_2").removeClass("--invisible");
+
+	//$("#play_paso_f5").html('Reproducir Audio');
+	$(".--pas_fase5").addClass("--invisible");
+	$(".--pas_2_fase5").removeClass("--invisible");
+	$(".background").removeClass("--type010");
+	$(".background").addClass("--obj_fase5_postits");
+	$("#person8").addClass("--invisible");
+}
+
 function btn_her_f5() {
+	$("#btn_her_f5 > .phase__text").addClass("phase__text_active")
+	$("#btn_tip_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f5 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f5-obj_2").addClass("--invisible");
+	$("#next-f5-obj").addClass("--invisible");
+	$("#next-f5-pas").addClass("--invisible");
+	$("#next-f5-her").removeClass("--invisible");
+	$("#next-f5-tip").addClass("--invisible");
+	$("#next-f5-pas_2").addClass("--invisible");
+
 	$("#my_audio_f5_1").trigger('pause');
 	$("#my_audio_f5").trigger('pause');
 
@@ -125,6 +197,19 @@ function btn_her_f5() {
 	}
 }
 function btn_tip_f5() {
+	$("#btn_her_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f5 > div > .phase__text").addClass("phase__text_active")
+	$("#btn_obj_f5 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f5 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f5-obj_2").addClass("--invisible");
+	$("#next-f5-obj").addClass("--invisible");
+	$("#next-f5-pas").addClass("--invisible");
+	$("#next-f5-her").addClass("--invisible");
+	$("#next-f5-tip").removeClass("--invisible");
+	$("#next-f5-pas_2").addClass("--invisible");
+
+
 	$("#my_audio_f5_1").trigger('pause');
 	$("#my_audio_f5").trigger('pause');
 
@@ -221,6 +306,7 @@ $(function () {
 		$(".obj_f5").addClass("--invisible");
 		$(".--obj_fase5").addClass("--invisible");
 		$("#person7").addClass("--invisible");
+		$("#person9").addClass("--invisible");
 		//   $(".background").addClass("--type010");
 
 	});

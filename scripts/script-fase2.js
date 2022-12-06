@@ -15,6 +15,17 @@ document.getElementById("btn_tip_f2").addEventListener("click", btn_tip_f2, fals
 
 // Acciones botones objetivo
 function btn_obj_f2() {
+	$("#btn_her_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f2 > .phase__text").addClass("phase__text_active")
+	$("#btn_pas_f2 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f2-obj_2").addClass("--invisible");
+	$("#next-f2-obj").removeClass("--invisible");
+	$("#next-f2-pas").addClass("--invisible");
+	$("#next-f2-her").addClass("--invisible");
+	$("#next-f2-tip").addClass("--invisible");
+	$("#next-f2-pas_2").addClass("--invisible");
 
 	// Audio
 	$("#my_audio_f2").trigger('pause');
@@ -54,8 +65,41 @@ function btn_obj_f2() {
 		clearTimeout(i);
 	}
 }
+ function btn_obj_f2_2() {
+	$("#btn_her_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f2 > .phase__text").addClass("phase__text_active")
+	$("#btn_pas_f2 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f2-obj_2").removeClass("--invisible");
+	$("#next-f2-obj").addClass("--invisible");
+	$("#next-f2-pas").addClass("--invisible");
+	$("#next-f2-her").addClass("--invisible");
+	$("#next-f2-tip").addClass("--invisible");
+	$("#next-f2-pas_2").addClass("--invisible");
+
+
+	//$("#play_f2_bienvenida").html('Reproducir Audio');
+	$(".--obj_fase2_postits").removeClass("--invisible");
+	$(".--type006").addClass("--invisible");
+	$(".obj_f2").addClass("--invisible");
+	$(".--obj_fase2").addClass("--invisible");
+	$(".background").addClass("--type005");}
 
 function btn_pas_f2() {
+	$("#btn_her_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f2 > .phase__text").addClass("phase__text_active")
+  
+	$("#next-f2-obj_2").addClass("--invisible");
+	$("#next-f2-obj").addClass("--invisible");
+	$("#next-f2-pas").removeClass("--invisible");
+	$("#next-f2-her").addClass("--invisible");
+	$("#next-f2-tip").addClass("--invisible");
+	$("#next-f2-pas_2").addClass("--invisible");
+
+
 	$("#my_audio_f2_1").trigger('pause');
 	//$("#play_paso_f2").html('Reproducir Audio');
 
@@ -90,6 +134,19 @@ function btn_pas_f2() {
 	}
 }
 function btn_her_f2() {
+	$("#btn_her_f2 > .phase__text").addClass("phase__text_active")
+	$("#btn_tip_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f2 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f2-obj_2").addClass("--invisible");
+	$("#next-f2-obj").addClass("--invisible");
+	$("#next-f2-pas").addClass("--invisible");
+	$("#next-f2-her").removeClass("--invisible");
+	$("#next-f2-tip").addClass("--invisible");
+	$("#next-f2-pas_2").addClass("--invisible");
+
+
 	$("#my_audio_f2_1").trigger('pause');
 	$("#my_audio_f2").trigger('pause');
 
@@ -120,7 +177,37 @@ function btn_her_f2() {
 		clearTimeout(i);
 	}
 }
+function btn_pas_f2_2() {
+
+  
+	$("#next-f2-obj_2").addClass("--invisible");
+	$("#next-f2-obj").addClass("--invisible");
+	$("#next-f2-pas").addClass("--invisible");
+	$("#next-f2-pas_2").removeClass("--invisible");
+	$("#next-f2-her").addClass("--invisible");
+	$("#next-f2-tip").addClass("--invisible");
+
+	// $("#play_paso_f2").html('Reproducir Audio');
+	 $(".--pas_fase2").addClass("--invisible");
+	 $("#person9").addClass("--invisible");
+	 $(".--pas_2_fase2").removeClass("--invisible");
+	 $(".background").removeClass("--type005");
+	 $(".background").removeClass("--type006");
+	 $(".background").addClass("--obj_fase2_postits");}
+
 function btn_tip_f2() {
+	$("#btn_her_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f2 > div >.phase__text").addClass("phase__text_active")
+	$("#btn_obj_f2 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f2 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f2-obj_2").addClass("--invisible");
+	$("#next-f2-obj").addClass("--invisible");
+	$("#next-f2-pas").addClass("--invisible");
+	$("#next-f2-pas_2").addClass("--invisible");
+	$("#next-f2-her").addClass("--invisible");
+	$("#next-f2-tip").removeClass("--invisible");
+
 	$("#my_audio_f2_1").trigger('pause');
 	$("#my_audio_f2").trigger('pause');
 

@@ -101,8 +101,8 @@
 }
 
 .textDescription{
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 17px;
     margin: 0;
 }
 
@@ -115,7 +115,7 @@
 .phase__menuItem{
     display: flex;
     align-items: center;
-    margin: 16px 0;
+    margin: 7px 0;
     cursor: pointer;
 }
 

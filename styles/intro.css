@@ -6,6 +6,18 @@
     overflow-y: hidden; */
     z-index: 1;
 }
+.btn-next{
+    background-color: orangered;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 3px 20px;
+    margin-top: 20px !important;
+    right: 38px;
+    bottom: 12px;
+    z-index: 999;
+    position: absolute;
+}
 
 .background{
     height: 100%;
@@ -225,7 +237,7 @@ audio::-webkit-media-controls-timeline{
     display: inline-flex;
     flex-direction: row-reverse;
     bottom: 0;
-    left: 22%;
+    left: 29%;
     height: 64%;
 }
 

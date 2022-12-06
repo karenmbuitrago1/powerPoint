@@ -20,6 +20,17 @@ document.getElementById("globo3").addEventListener("click", globoAction3);
 // Acciones botones objetivo
 function btn_obj_f6() {
 
+	$("#btn_her_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f6 > .phase__text").addClass("phase__text_active")
+	$("#btn_pas_f6 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f6-obj_2").addClass("--invisible");
+	$("#next-f6-obj").removeClass("--invisible");
+	$("#next-f6-pas").addClass("--invisible");
+	$("#next-f6-her").addClass("--invisible");
+	$("#next-f6-tip").addClass("--invisible");
+	$("#next-f6-pas_2").addClass("--invisible");
 	// Audio
 	$("#my_audio_f6").trigger('pause');
 	//$("#play_f6_bienvenida").html('Reproducir Audio');
@@ -56,7 +67,37 @@ function btn_obj_f6() {
 	}
 }
 
+function btn_obj_f6_2() {
+
+	$("#next-f6-obj_2").removeClass("--invisible");
+	$("#next-f6-obj").addClass("--invisible");
+	$("#next-f6-pas").addClass("--invisible");
+	$("#next-f6-her").addClass("--invisible");
+	$("#next-f6-tip").addClass("--invisible");
+	$("#next-f6-pas_2").addClass("--invisible");
+
+	//$("#play_f6_bienvenida").html('Reproducir Audio');
+	$(".--obj_fase6_postits").removeClass("--invisible");
+	$(".--type006").addClass("--invisible");
+	$(".obj_f6").addClass("--invisible");
+	$(".--obj_fase6").addClass("--invisible");
+	//   $(".background").addClass("--type012");
+}
+
 function btn_pas_f6() {
+
+	$("#btn_her_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f6 > .phase__text").addClass("phase__text_active")
+  
+	$("#next-f6-obj_2").addClass("--invisible");
+	$("#next-f6-obj").addClass("--invisible");
+	$("#next-f6-pas").removeClass("--invisible");
+	$("#next-f6-her").addClass("--invisible");
+	$("#next-f6-tip").addClass("--invisible");
+	$("#next-f6-pas_2").addClass("--invisible");
+
 	$("#my_audio_f6_1").trigger('pause');
 	//$("#play_paso_f6").html('Reproducir Audio');
 
@@ -88,7 +129,36 @@ function btn_pas_f6() {
 		clearTimeout(i);
 	}
 }
+function btn_pas_f6_2() {
+
+	$("#next-f6-obj_2").addClass("--invisible");
+	$("#next-f6-obj").addClass("--invisible");
+	$("#next-f6-pas").addClass("--invisible");
+	$("#next-f6-her").addClass("--invisible");
+	$("#next-f6-tip").addClass("--invisible");
+	$("#next-f6-pas_2").removeClass("--invisible");
+
+	//$("#play_paso_f6").html('Reproducir Audio');
+	$(".--pas_fase6").addClass("--invisible");
+	$(".--pas_2_fase6").removeClass("--invisible");
+	$(".background").removeClass("--type012");
+	$(".background").addClass("--obj_fase6_postits");
+}
+
 function btn_her_f6() {
+
+	$("#btn_her_f6 > .phase__text").addClass("phase__text_active")
+	$("#btn_tip_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_obj_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f6 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f6-obj_2").addClass("--invisible");
+	$("#next-f6-obj").addClass("--invisible");
+	$("#next-f6-pas").addClass("--invisible");
+	$("#next-f6-her").removeClass("--invisible");
+	$("#next-f6-tip").addClass("--invisible");
+	$("#next-f6-pas_2").addClass("--invisible");
+
 	$("#my_audio_f6_1").trigger('pause');
 	$("#my_audio_f6").trigger('pause');
 
@@ -117,6 +187,19 @@ function btn_her_f6() {
 	}
 }
 function btn_tip_f6() {
+
+	$("#btn_her_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_tip_f6 > div > .phase__text").addClass("phase__text_active")
+	$("#btn_obj_f6 > .phase__text").removeClass("phase__text_active")
+	$("#btn_pas_f6 > .phase__text").removeClass("phase__text_active")
+  
+	$("#next-f6-obj_2").addClass("--invisible");
+	$("#next-f6-obj").addClass("--invisible");
+	$("#next-f6-pas").addClass("--invisible");
+	$("#next-f6-her").addClass("--invisible");
+	$("#next-f6-tip").removeClass("--invisible");
+	$("#next-f6-pas_2").addClass("--invisible");
+
 	$("#my_audio_f6_1").trigger('pause');
 	$("#my_audio_f6").trigger('pause');
 
@@ -218,7 +301,7 @@ $(function () {
 
 				setTimeout(function () {
 					$('#change_f6_2').html(text1);
-				}, 17000);
+				}, 28000);
 				$('#change_f6_2').html(original);
 				is_playing = true;
 
