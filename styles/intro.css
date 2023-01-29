@@ -13,12 +13,11 @@
     color: #fff;
     padding: 3px 20px;
     margin-top: 20px !important;
-    right: 38px;
-    bottom: 12px;
+    right: 18px;
+    bottom:-18px;
     z-index: 999;
     position: absolute;
 }
-
 .background{
     height: 100%;
 }

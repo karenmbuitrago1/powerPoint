@@ -282,12 +282,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f7_1").on("ended", function () {
-	//	$("#play_f7_bienvenida").html('Reproducir Audio');
-		$(".--obj_fase7_postits").removeClass("--invisible");
-		$(".--type006").addClass("--invisible");
-		$(".obj_f7").addClass("--invisible");
-		$(".--obj_fase7").addClass("--invisible");
-		//   $(".background").addClass("--type014");
+		btn_obj_f7_2();
 
 	});
 
@@ -327,11 +322,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f7").on("ended", function () {
-		//$("#play_paso_f7").html('Reproducir Audio');
-		$(".--pas_fase7").addClass("--invisible");
-		$(".--pas_2_fase7").removeClass("--invisible");
-		$(".background").removeClass("--type014");
-		$(".background").addClass("--obj_fase7_postits");
+		btn_pas_f7_2();
 	});
 
 });

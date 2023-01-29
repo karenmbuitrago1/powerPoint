@@ -280,12 +280,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f8_1").on("ended", function () {
-		//$("#play_f8_bienvenida").html('Reproducir Audio');
-		$(".--obj_fase8_postits").removeClass("--invisible");
-		$(".--type006").addClass("--invisible");
-		$(".obj_f8").addClass("--invisible");
-		$(".--obj_fase8").addClass("--invisible");
-		//   $(".background").addClass("--type016");
+		btn_obj_f8_2();
 
 	});
 
@@ -325,11 +320,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f8").on("ended", function () {
-		//$("#play_paso_f8").html('Reproducir Audio');
-		$(".--pas_fase8").addClass("--invisible");
-		$(".--pas_2_fase8").removeClass("--invisible");
-		$(".background").removeClass("--type016");
-		$(".background").addClass("--obj_fase8_postits");
+		btn_pas_f8_2();
 	});
 
 });

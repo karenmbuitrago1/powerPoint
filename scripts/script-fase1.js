@@ -285,19 +285,14 @@ $(function () {
     }
   });
   $("#my_audio_f1_1").on("ended", function () {
-    //$("#play_f1_bienvenida").html('Reproducir Audio');
-    $(".--obj_fase1_postits").removeClass("--invisible");
-    $(".--type004").addClass("--invisible");
-    $(".obj_f1").addClass("--invisible");
-    $(".--obj_fase1").addClass("--invisible");
-    $("#person9").addClass("--invisible");
+    btn_obj_f1_2();
 
   });
 
   $("#play_paso_f1").click(function (e) {
     var original = '¡Bienvenido de vuelta! Mi nombre es Alirio, soy un líder afro de este territorio. Hoy estoy con mi compañera Marcela, que trabaja junto con Pedro en el proyecto vial.';
     var text1 = 'Nosotros somos los encargados de mostrarte las instrucciones que debes seguir para desarrollar esta fase. Ambos diseñamos unas fichas con la hoja de ruta que esperamos sean de gran ayuda… ¿Nos ayudarías a organizarlas? ';
-    var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda';
+    var text1_1 = 'Atendiendo a lo que te contaron Ana y Pedro ¿cuál crees que es el orden de los pasos que se deben seguir para implementar esta fase? ¡Inténtalo! Arrastra cada una de las fichas al paso que corresponda.';
 
 
     //$("#play_paso_f1").html('Reproduciendo...');
@@ -337,11 +332,7 @@ $(function () {
     }
   });
   $("#my_audio_f1_2").on("ended", function () {
-    //$("#play_paso_f1").html('Reproducir Audio');
-    $(".--pas_fase1").addClass("--invisible");
-    $(".--pas_2_fase1").removeClass("--invisible");
-    $("#person9").addClass("--invisible");
-    $("#person20").addClass("--invisible");
+    btn_pas_f1_2();
 
   });
 

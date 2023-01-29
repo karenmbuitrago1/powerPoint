@@ -255,12 +255,7 @@ $(function() {
 
   });
 $("#my_audio_conoce").on("ended", function() {
-    //$("#play_conoce").html('Reproducir Audio');
-    $(".background").addClass("--invisible");
-    $(".--type002").removeClass("--invisible");
-    $(".dialog").addClass("--invisible");
-    $("#person2").addClass("--invisible");
-    $("#girl__img").addClass("--invisible");
+  btn_conoce2();
 });
 
 //Dialogos Boton Ruta

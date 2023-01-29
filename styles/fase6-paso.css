@@ -10,7 +10,23 @@
     flex-direction: column;
     align-items: center;
     margin: 8px
-    
+}
+.pas__description_3{
+    height: 13em;
+    width: 11em;
+    border-radius: 32px;
+    top: 48%;
+    background-color: #eaeaea;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pas__title_3{
+    color: white;
+    padding: 16px;
+    height: 40%;
+    border-radius: 32px 32px 0 0;
+    margin: 4px;
+    font-size: 0.8em;
 }
 .pas__description{
     height: 18em;
@@ -40,6 +56,18 @@
 .pas__title.--globo4{
     background-color: #79c279;
 }
+.pas__title_3.--globo1{ 
+    background-color: #a640a9;
+}
+.pas__title_3.--globo2{
+   background-color: #0096e0;
+}
+.pas__title_3.--globo3{
+    background-color: #f85636;
+}
+.pas__title_3.--globo4{
+    background-color: #79c279;
+}
 
 .pas__globe{
     cursor: pointer;
@@ -50,7 +78,11 @@
     margin: 0;
     padding: 8px;
 }
-
+.pas__textGlobe_3{
+    font-size: 10px;
+    margin: 0;
+    padding: 8px;
+}
 
 @media screen and (max-width: 720px){
     .pas__list6{

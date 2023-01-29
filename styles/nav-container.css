@@ -2877,7 +2877,8 @@ ul.slide-list li::before {
     font-size: 1em;
   }
   .centrar{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display:block;
   }
   .main-cover-title {
@@ -2914,10 +2915,6 @@ ul.slide-list li::before {
     right: -80px;
   }
 
-  .centrar {
-    margin: auto;
-    display: block;
-  }
 
   .vid-top {
     margin-top: 2%;
@@ -3012,7 +3009,20 @@ ul.slide-list li::before {
      width: 90%;
    }
    .centrar{
-     margin: auto !important;
+     margin-left: auto !important;
+     margin-right: auto !important;
      display: block;
    }
+   .btn-next {
+    background-color: orangered;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0px 8px;
+    margin-top: 20px !important;
+    right: 8px;
+    bottom: 67px;
+    z-index: 999;
+    position: absolute;
+}
  }

@@ -277,13 +277,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f6_1").on("ended", function () {
-		//$("#play_f6_bienvenida").html('Reproducir Audio');
-		$(".--obj_fase6_postits").removeClass("--invisible");
-		$(".--type006").addClass("--invisible");
-		$(".obj_f6").addClass("--invisible");
-		$(".--obj_fase6").addClass("--invisible");
-		//   $(".background").addClass("--type012");
-
+		btn_obj_f6_2();
 	});
 
 	$("#play_paso_f6").click(function (e) {
@@ -322,11 +316,7 @@ $(function () {
 		}
 	});
 	$("#my_audio_f6").on("ended", function () {
-		//$("#play_paso_f6").html('Reproducir Audio');
-		$(".--pas_fase6").addClass("--invisible");
-		$(".--pas_2_fase6").removeClass("--invisible");
-		$(".background").removeClass("--type012");
-		$(".background").addClass("--obj_fase6_postits");
+		btn_pas_f6_2();
 	});
 
 });

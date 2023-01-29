@@ -288,12 +288,7 @@ $(function() {
       }
     });
     $("#my_audio_f2_1").on("ended", function() {
-      //$("#play_f2_bienvenida").html('Reproducir Audio');
-      $(".--obj_fase2_postits").removeClass("--invisible");
-      $(".--type006").addClass("--invisible");
-      $(".obj_f2").addClass("--invisible");
-      $(".--obj_fase2").addClass("--invisible");
-      $(".background").addClass("--type005");
+		btn_obj_f2_2();
 
   });
 
@@ -333,14 +328,8 @@ $(function() {
     }
   });
   $("#my_audio_f2").on("ended", function() {
-   // $("#play_paso_f2").html('Reproducir Audio');
-    $(".--pas_fase2").addClass("--invisible");
-    $("#person9").addClass("--invisible");
-    $(".--pas_2_fase2").removeClass("--invisible");
-    $(".background").removeClass("--type005");
-    $(".background").removeClass("--type006");
-    $(".background").addClass("--obj_fase2_postits");
-});
+	btn_pas_f2_2();
+	});
 
 jQuery(document).ready(function($) {
 
@@ -355,6 +344,7 @@ jQuery(document).ready(function($) {
 		thisDrag[0].addEventListener('dragstart', dragStart);
 		thisDrag[0].addEventListener('drag', drag);
 		thisDrag[0].addEventListener('dragend', dragEnd);
+
 	  });
   
 	  drop_items.each(function() {
@@ -374,6 +364,8 @@ jQuery(document).ready(function($) {
   
 	//called as soon as the draggable starts being dragged
 	//used to set up data and options
+
+
 	function dragStart(event) {
   
 	  drag = event.target;
