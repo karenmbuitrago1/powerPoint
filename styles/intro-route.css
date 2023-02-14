@@ -257,6 +257,9 @@
         margin: 8px 0;
         height: 50%;
     } */
+    .background.--type003 {
+        height: 90%;
+    }
     .route__img{
         width: 164px;
         height: 67px;

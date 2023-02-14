@@ -179,13 +179,6 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .logo {
-        width: 43%;
-    }
-
-}
-
 @media screen and (max-width:768px) {
     .content__dialog.--obj_fase1_postits {
         position: relative;

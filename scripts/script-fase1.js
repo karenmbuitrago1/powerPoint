@@ -364,6 +364,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   function dragLeave() {
+    console.log("hola");
     this.classList.remove('over');
   }
 

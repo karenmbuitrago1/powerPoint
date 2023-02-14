@@ -163,18 +163,9 @@ document.getElementById("btn_ruta").addEventListener("click", btn_ruta, false);
 
 // Cambio de Botones
 function btn_origen() {
-  if (document.getElementById("origin_next")) {
-    document.getElementById("origin_next").id = 'conoce_next';
-  }
-  if (document.getElementById("conoce_next")) {
-    document.getElementById("conoce_next").id = 'conoce_next';
-  }
-  if (document.getElementById("conoce_prev")) {
-    document.getElementById("conoce_prev").id = 'origin_prev';
-    if (document.getElementById("conoce_next")) {
-      document.getElementById("conoce_next").id = 'origin_next';
-    }
-  }
+  $("#next-intro-ori").removeClass("--invisible");
+  $("#next-intro-conoce").addClass("--invisible");
+  $("#next-intro-ruta").addClass("--invisible");
   $("#my_audio_conoce").trigger('pause');
   //$("#play_conoce").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
@@ -192,18 +183,11 @@ function btn_origen() {
   }
 }
 function btn_conoce() {
-  if (document.getElementById("origin_next")) {
-    document.getElementById("origin_next").id = 'conoce_next';
-  }
-  if (document.getElementById("conoce2_next")) {
-    document.getElementById("conoce2_next").id = 'conoce_next';
-  }
-  if (document.getElementById("origin_prev")) {
-    document.getElementById("origin_prev").id = 'conoce_prev';
-  }
-  if (document.getElementById("conoce2_prev")) {
-    document.getElementById("conoce2_prev").id = 'conoce_prev';
-  }
+  $("#next-intro-ori").addClass("--invisible");
+  $("#next-intro-ruta").addClass("--invisible");
+  $("#next-intro-conoce").removeClass("--invisible");
+  $("#btn_origen").removeClass("menu__listBtn_active");
+  $("#btn_conoce").addClass("menu__listBtn_active");
   $("#my_audio").trigger('pause');
   //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_ruta").trigger('pause');
@@ -222,18 +206,8 @@ function btn_conoce() {
   }
 }
 function btn_conoce2() {
-  if (document.getElementById("conoce_next")) {
-    document.getElementById("conoce_next").id = 'conoce2_next';
-  }
-  if (document.getElementById("ruta_next")) {
-    document.getElementById("ruta_next").id = 'conoce2_next';
-  }
-  if (document.getElementById("ruta_prev")) {
-    document.getElementById("ruta_prev").id = 'conoce2_prev';
-  }
-  if (document.getElementById("conoce_prev")) {
-    document.getElementById("conoce_prev").id = 'conoce2_prev';
-  }
+  $("#next-intro-conoce").addClass("--invisible");
+  $("#next-intro-conoce2").removeClass("--invisible");
   $(".background").addClass("--invisible");
   $(".--type002").removeClass("--invisible");
   $(".dialog").addClass("--invisible");
@@ -241,12 +215,11 @@ function btn_conoce2() {
   $("#girl__img").addClass("--invisible");
 }
 function btn_ruta() {
-  if (document.getElementById("conoce2_next")) {
-    document.getElementById("conoce2_next").id = 'ruta_next';
-  }
-  if (document.getElementById("conoce2_prev")) {
-    document.getElementById("conoce2_prev").id = 'ruta_prev';
-  }
+  $("#next-intro-ori").addClass("--invisible");
+  $("#btn_conoce").removeClass("menu__listBtn_active");
+  $("#btn_ruta").addClass("menu__listBtn_active");
+  $("#next-intro-conoce2").addClass("--invisible");
+  $("#next-intro-ruta").removeClass("--invisible");
   $("#my_audio").trigger('pause');
   //$("#play_origen").html('Reproducir Audio');
   $("#my_audio_conoce").trigger('pause');
@@ -394,12 +367,7 @@ $(function () {
     }
   });
   $("#my_audio_conoce").on("ended", function () {
-    //$("#play_conoce").html('Reproducir Audio');
-    $(".background").addClass("--invisible");
-    $(".--type002").removeClass("--invisible");
-    $(".dialog").addClass("--invisible");
-    $("#person2").addClass("--invisible");
-    $("#girl__img").addClass("--invisible");
+    btn_conoce2();
   });
 
   //Dialogos Boton Ruta
@@ -460,7 +428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56416" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

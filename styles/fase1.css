@@ -291,7 +291,7 @@
     }
     .menu__title{
         width: 100%;
-        height: 14%;
+        height: 8%;
     }
     .menu__title:before {
         top: 85%;
@@ -311,10 +311,10 @@
     }
 
     .phase__dialog.--phases{
-        top: 52%;
-        font-size: 16px;
+        top: 43%;
+        font-size: 1rem;
         line-height: 18px;
-        width: 89%;
+        width: 97%;
         z-index: 1;
     }
 
@@ -369,8 +369,9 @@
         margin: 0;
     }
     .menu__title {
-        height: 9%;
+        height: 7%;
         align-items: self-end;
+        margin: 0;
     }
     .menu__title:before {
         display: none;
@@ -379,15 +380,16 @@
         top: 10%;
     }
     .titlePhase {
-        font-size: 40px;
+        font-size: 32px;
+        margin: 0;
     }
     .content__menu.--phases {
         height: 51%;
     }
     .title__secondary {
-        font-size: 28px;
+        font-size: 20px;
         margin: 0;
-        line-height: 24px;
+        line-height: 20px;
     }
     .phase__textMain {
         margin: 0 16px;
@@ -396,7 +398,7 @@
         margin: 0 16px;
     }
     .textDescription {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0;
     }
     
@@ -405,9 +407,9 @@
         justify-content: space-evenly;
     }
     .phase__menuItem {
-        padding: 8px 2px;
+        padding: 3px 2px;
         margin: 0;
-        width: 45%;
+        width: 95%;
     }
     .phase__text {
         font-size: 16px;
@@ -415,15 +417,16 @@
         padding: 0 4px;
     }
     .phase__menuIcon {
-        width: 32px;
-        height: 32px;
+        display: none;
     }
     .phase__icon {
         width: 52%;
     }
     .phase__dialog.--phases {
-        top: 49%;
+        top: 51%;
+        padding: 8px;
         z-index: 1;
+        line-height: 16px;
     }
     .phase__dialog.--phases2 {
         position: inherit;
@@ -447,11 +450,17 @@
     }
 
     #person5 {
-        height: 43%;
+        height: 33%;
+        bottom: 10%;
         left: inherit;
     }
     #person6 {
-        height: 40%;
+        height: 33%;
+        bottom: 19%;
+    }
+    #person9 {
+        height: 36%;
+        bottom: 13%;
     }
 
     .content__dialog.--tip_fase1 {
