@@ -1045,7 +1045,7 @@ ul.slide-list li::before {
 #controls {
   display: none;
   background-color: #2D2F69;
-  padding: 15px 10px;
+  padding: 7px 10px;
 }
 
 #controls.item-visible {
@@ -1063,13 +1063,13 @@ ul.slide-list li::before {
 #controls .menu,
 #controls .next,
 #controls .prev {
-  font-size: 22px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s ease;
   user-select: none;
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3021,7 +3021,7 @@ ul.slide-list li::before {
     padding: 0px 8px;
     margin-top: 20px !important;
     right: 8px;
-    bottom: 67px;
+    bottom: 24px;
     z-index: 999;
     position: absolute;
 }

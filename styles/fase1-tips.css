@@ -303,25 +303,25 @@
         height: inherit;
     }
     .content__dialog.--tip_fase2 {
-        height: 37%;
+        height: 58%;
     }
     .content__dialog.--tip_fase3 {
-        height: 75%;
+        height: 131%;
     }
     .content__dialog.--tip_fase4 {
-        height: 75%;
+        height: 131%;
     }
     .content__dialog.--tip_fase5 {
         height: 75%;
     }
     .content__dialog.--tip_fase6 {
-        height: 75%;
+        height: 147%;
     }
     .content__dialog.--tip_fase7 {
-        height: 75%;
+        height: 133%;
     }
     .content__dialog.--tip_fase8 {
-        height: 75%;
+        height: 145%;
     }
 }
 

@@ -240,7 +240,7 @@
 
     .content__dialog.--her_fase1 {
         width: 100%;
-        height: 46%;
+        height: 56%;
     }
 
     .content__dialog.--her_fase2 {
@@ -294,28 +294,32 @@
     }
 
     .content__dialog.--her_fase2 {
-        height: 48%;
+        height: 65%;
     }
 
     .content__dialog.--her_fase3 {
-        height: 48%;
+        height: 70%;
+    }
+    .content__dialog.--her_fase6 {
+        width: 100%;
+        height: 60%;
     }
 
     .content__dialog.--her_fase7 {
-        height: 48%;
+        height: 65%;
     }
 
     .content__dialog.--her_fase4 {
-        height: 80%;
+        height: 123%;
         background-color: var(--titleGreen);
     }
 
     .content__dialog.--her_fase5 {
-        height: 80%;
+        height: 124%;
         background-color: var(--titlePink);
     }
     .content__dialog.--her_fase8 {
-        height: 80%;
+        height: 125%;
         background-color: var(--titlePurple);
     }
     .tools.--phase2 {

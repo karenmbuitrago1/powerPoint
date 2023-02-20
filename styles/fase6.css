@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 375px){
 	.content__dialog.--tip_fase6 {
-		height: 46%;
+		height: 132%;
 		display: flex;
 		align-items: flex-end;
 	}

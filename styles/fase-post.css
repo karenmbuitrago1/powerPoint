@@ -182,7 +182,7 @@
 @media screen and (max-width:768px) {
     .content__dialog.--obj_fase1_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
@@ -194,37 +194,37 @@
 
     .content__dialog.--obj_fase3_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
     .content__dialog.--obj_fase4_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
     .content__dialog.--obj_fase5_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
     .content__dialog.--obj_fase6_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
     .content__dialog.--obj_fase7_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
     .content__dialog.--obj_fase8_postits {
         position: relative;
-        height: 47%;
+        height: 57%;
         overflow-y: scroll;
     }
 
@@ -310,42 +310,42 @@
 @media screen and (max-width:430px) {
 
     .content__dialog.--obj_fase1_postits {
-        height: 42%;
+        height: 52%;
         position: relative;
     }
 
     .content__dialog.--obj_fase2_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase3_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase4_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase5_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase6_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase7_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 
     .content__dialog.--obj_fase8_postits {
-        height: 42%;
+        height: 57%;
         position: relative;
     }
 

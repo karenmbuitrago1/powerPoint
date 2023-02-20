@@ -48,6 +48,8 @@
         width: 133px;
         margin: 8px;
         cursor: pointer;
+        height: 317px;
+
     }
     .pas__list8 {
         flex-direction: inherit;

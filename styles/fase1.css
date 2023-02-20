@@ -1,3 +1,6 @@
+.--pas_2_fase1_mob{
+    display: none;
+}
 .background.--type004{
     background-image: url('../images/recurso_38.png');
     background-repeat: no-repeat;
@@ -101,8 +104,8 @@
 }
 
 .textDescription{
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 13px;
     margin: 0;
 }
 
@@ -227,6 +230,9 @@
 }
 
 @media screen and (max-width:768px){
+    .--pas_2_fase1_desk{
+        display: block;
+    } 
     .background__back {
         border: none;
     }
@@ -236,52 +242,52 @@
     }
 
     .content__dialog.--tip_fase1{
-        height: 46%;
+        height: 58%;
     }
     .content__dialog.--tip_fase6{
-        height: 46%;
+        height: 58%;
     }
     .content__dialog.--5{
-        height: 46%;
+        height: 58%;
     }
     .content__dialog.--pas_2_fase1{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase2{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase3{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase4{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase5{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase6{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase7{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
     .content__dialog.--pas_2_fase8{
         overflow-y: scroll;
-        height: 46%;
+        height: 58%;
         position: relative;
     }
 
@@ -358,7 +364,14 @@
         height: 47%;
     }
 }
-
+@media screen and (max-width:600px){
+    .--pas_2_fase1_desk{
+        display: none;
+    } 
+    .--pas_2_fase1_mob{
+        display: block;
+    }
+}
 @media screen and (max-width:430px){
     .background__back{
         font-size: 14px;
@@ -384,7 +397,7 @@
         margin: 0;
     }
     .content__menu.--phases {
-        height: 51%;
+        height: 42%;
     }
     .title__secondary {
         font-size: 20px;
@@ -398,7 +411,8 @@
         margin: 0 16px;
     }
     .textDescription {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 13px;
         margin: 0;
     }
     
@@ -407,7 +421,7 @@
         justify-content: space-evenly;
     }
     .phase__menuItem {
-        padding: 3px 2px;
+        padding: 1px 2px;
         margin: 0;
         width: 95%;
     }
@@ -423,7 +437,7 @@
         width: 52%;
     }
     .phase__dialog.--phases {
-        top: 51%;
+        top: 41%;
         padding: 8px;
         z-index: 1;
         line-height: 16px;
@@ -464,7 +478,7 @@
     }
 
     .content__dialog.--tip_fase1 {
-        height: 50%;
+        height: 64%;
     }
     .content__dialog.--tip_fase6 {
         height: 50%;
