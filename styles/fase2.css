@@ -174,6 +174,11 @@
   color: var(--titlePurple);
 }
 
+.--puzzle-mobile{
+  visibility: hidden;
+  display: none;
+}
+
 
 @media screen and (max-width: 1450px) {
   .bckg__img {
@@ -214,6 +219,34 @@
 }
 
 @media screen and (max-width: 430px) {
+.--puzzle-desktop{
+  display: none;
+}
+
+.--puzzle-mobile{
+  visibility: visible;
+  display: initial;
+}
+
+
+.pas__puzzle{
+  display: flex;
+  justify-content: center;
+}
+
+  .pas__listItem_puzzle{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .pas__listItem_img{
+    width: 50%;
+  }
+
+  .pas__globe_puzzle.--houses {
+    width: 50%;
+}
   .dnd-image-drag .gallery-painting {
     width: 94%;
   }
