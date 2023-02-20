@@ -107,5 +107,14 @@
         height: 73%;
     }
 }
+@media screen and (max-width: 768px) {
+    .background__animation2 {
+        top: 72%;
+        right: 0;
+    }
+    .bicis{
+        width: 76%;
+    }
+}
 
 
